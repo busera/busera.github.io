@@ -32,9 +32,9 @@ medium_username: "@buser.andre"
 
 # Additional icon links
 additional_links:
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
+- title: Medium
+  icon: Medium (https://seekicon.com/free-icon-download/medium_1.svg)
+  url: https://medium.com/@buser.andre
 
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
