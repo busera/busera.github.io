@@ -80,7 +80,7 @@ content:
         #link: novartis.com
         #link_text: boringcompany.com
         sub_title: Senior Manager
-        caption: April 2010 - Present
+        caption: Apr 2010 - Present
         quote: >
           Bridging the gap between innovation and responsible governance in the AI and data science landscape.
 
@@ -93,7 +93,7 @@ content:
       - layout: left
         title: Exploring the Power of ChatGPT
         sub_title: A Comprehensive Introduction
-        caption: June 2024
+        caption: Jun 2024
         link: "360incontrol.ch/2024/06/28/artificial-intelligence-a-comprehensive-view-🤖/"
         #https://tinyurl.com/33j2ds6r
         link_text: 360incontrol.ch
@@ -109,7 +109,7 @@ content:
     content:
       - layout: left
         title: University of Michigan
-        caption: 2021 - 2023
+        caption: Jan 2021 - Dec 2023
         sub_title: MSc Applied Data Science
         link: https://www.si.umich.edu/programs/master-applied-data-science
         link_text: umich.edu
