@@ -79,8 +79,8 @@ content:
         quote: >
           Bridging the gap between innovation and responsible governance in the AI and data science landscape.
 
-description: |
-  At Novartis, I spearhead data analytics initiatives and provide crucial support to our in-house Open Source Intelligence (OSINT) and investigation teams. My role involves leveraging advanced data science techniques to enhance our global security strategies, improve risk assessment, and safeguard the company's digital assets.
+        description: |
+          At Novartis, I spearhead data analytics initiatives and provide crucial support to our in-house Open Source Intelligence (OSINT) and investigation teams. My role involves leveraging advanced data science techniques to enhance our global security strategies, improve risk assessment, and safeguard the company's digital assets.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
