@@ -91,9 +91,9 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Certified Fraud Investigator (CFE), AFCE
-        #sub_title: A Comprehensive Introduction
-        caption: Jan 2024
+        title: Certified Fraud Investigator (CFE)
+        sub_title: Association of Certified Fraud Examiners (ACFE)
+        caption: Issued Feb 2024
         #link: "360incontrol.ch/2024/06/28/artificial-intelligence-a-comprehensive-view-🤖/"
         #link_text: 360incontrol.ch
 
