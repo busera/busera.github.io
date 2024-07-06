@@ -72,15 +72,15 @@ content:
           Key findings indicate that TBIs, especially those involving loss of consciousness, alongside the presence of the APOE ε4 allele and male gender, significantly increase dementia risk, while higher education levels seem to offer some protective effects.
         description: | # this will include new lines to allow paragraphs
           This project was designed to enhance our understanding of the outcomes following traumatic brain injuries, focusing on their determinants and consequences. We used causal inference to investigate the complex relationships between TBI and the subsequent risk of dementia, considering a range of demographic and clinical factors.
-
+      
       - layout: left
-        order: weak
+        border: weak
         title: Predicting Text Difficulty
         caption: Oct 2022 - Dec 2022
         link: github.com/busera/mads__predicting_text_difficulty
         link_text: github.com
         quote: >
-          Our analysis found that the fine-tuned Random Forest model demonstrated the highest accuracy score of 0.7544. Nevertheless, further data cleansing measures failed to yield the anticipated enhancements despite our diligent attempts. Furthermore, we were surprised to discover that the RFECV method identified 125 features, out of the original 151, as the optimal combination for the model. We initially expected that fewer features would be relevant.
+          Our analysis found that the fine-tuned Random Forest model demonstrated the highest accuracy score of 0.7544. Nevertheless, further data cleansing measures failed to yield the anticipated enhancements despite our diligent attempts.
         description: | # this will include new lines to allow paragraphs
           This project aimed to classify sentences from articles in the "Simple English Wikipedia" to determine whether they require simplification to enhance their accessibility and comprehensibility for audiences with low reading proficiency, including students, children, and non-native English speakers. The project employed supervised and unsupervised learning techniques to extract and create features for sentence classification.
       
