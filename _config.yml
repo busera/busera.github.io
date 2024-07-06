@@ -54,12 +54,12 @@ content:
     content:
       - layout: top-left
         title: Decode Dementia
-        #link: github.com/busera/mads__decode_dementia
-        # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/busera/mads__decode_dementia
+        link: github.com/busera/mads__decode_dementia
+        link_text: GitHub
+        #additional_links:
+        #  - title:  sproogen/modern-resume-theme
+        #    icon: fab fa-github
+        #    url: github.com/busera/mads__decode_dementia
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
