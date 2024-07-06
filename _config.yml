@@ -57,6 +57,7 @@ content:
     content:
       - layout: left
         title: Decode Dementia
+        caption: Oct 2023 - Dec 2023
         link: github.com/busera/mads__decode_dementia
         link_text: GitHub
         #additional_links:
@@ -91,7 +92,8 @@ content:
     content:
       - layout: left
         title: Exploring the Power of ChatGPT
-        caption: A Comprehensive Introduction
+        sub_title: A Comprehensive Introduction
+        caption: June 2024
         link: "360incontrol.ch/2024/06/28/artificial-intelligence-a-comprehensive-view-🤖/"
         #https://tinyurl.com/33j2ds6r
         link_text: 360incontrol.ch
