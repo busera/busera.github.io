@@ -73,7 +73,7 @@ content:
     content:
       - layout: top-left
         title: Novartis
-        link: novartis.com
+        #link: novartis.com
         # link_text: boringcompany.com
         sub_title: Senior Manager
         caption: April 2010 - Present
