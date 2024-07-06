@@ -94,9 +94,9 @@ content:
         title: Certified Fraud Investigator (CFE)
         sub_title: Association of Certified Fraud Examiners (ACFE)
         caption: Issued Feb 2024
-        
+
         description: |
-        Holder of specialized credential demonstrating expertise in fraud detection, prevention, and investigation. Proficient in analyzing financial transactions, legal aspects of fraud, and advanced investigation techniques. Skilled in implementing anti-fraud controls and conducting internal investigations. Globally recognized for maintaining high standards of fraud examination knowledge and ethical conduct.
+          Holder of specialized credential demonstrating expertise in fraud detection, prevention, and investigation. Proficient in analyzing financial transactions, legal aspects of fraud, and advanced investigation techniques. Skilled in implementing anti-fraud controls and conducting internal investigations. Globally recognized for maintaining high standards of fraud examination knowledge and ethical conduct.
 
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
