@@ -56,6 +56,7 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        border: weak
         title: Decode Dementia
         caption: Oct 2023 - Dec 2023
         link: github.com/busera/mads__decode_dementia
@@ -116,12 +117,9 @@ content:
         sub_title: A Comprehensive Introduction
         caption: Jun 2024
         link: "360incontrol.ch/2024/06/28/artificial-intelligence-a-comprehensive-view-🤖/"
-        #https://tinyurl.com/33j2ds6r
         link_text: 360incontrol.ch
-        #sub_title: MSc Applied Data Science
         #quote: >
         #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
-
         description: |
           An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
 
@@ -136,7 +134,6 @@ content:
         link_text: umich.edu
         quote: >
           The University of Michigan, founded in 1817, is a top-tier public research institution known for its innovative programs and commitment to academic excellence.
-
         description: |
           At the University of Michigan's School of Information, I completed the Master of Applied Data Science (MADS) program, graduating in December 2023. This comprehensive program provided me with a solid foundation in key areas of data science, including machine learning, data mining, and big data analytics.
 
