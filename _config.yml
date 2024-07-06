@@ -74,7 +74,7 @@ content:
       - layout: top-left
         title: Novartis
         #link: novartis.com
-        # link_text: boringcompany.com
+        #link_text: boringcompany.com
         sub_title: Senior Manager
         caption: April 2010 - Present
         quote: >
@@ -89,7 +89,7 @@ content:
       - layout: top-left
         title: Exploring the Power of ChatGPT
         caption: A Comprehensive Introduction
-        link: "360incontrol.ch/2024/06/28/artificial-intelligence-a-comprehensive-view-🤖/"
+        #link: "360incontrol.ch/2024/06/28/artificial-intelligence-a-comprehensive-view-🤖/"
         link_text: 360incontrol.ch
         #sub_title: MSc Applied Data Science
         #quote: >
