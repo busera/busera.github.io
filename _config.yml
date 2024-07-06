@@ -109,12 +109,26 @@ content:
         description: |
           Holder of specialized credential demonstrating expertise in fraud detection, prevention, and investigation. Proficient in analyzing financial transactions, legal aspects of fraud, and advanced investigation techniques. Skilled in implementing anti-fraud controls and conducting internal investigations. Globally recognized for maintaining high standards of fraud examination knowledge and ethical conduct.
       - layout: left
-        #border: weak
+        border: weak
         title: Certified Data Protection Officer (CDPO)
         sub_title: PECB
         caption: Feb 2019
         description: |
           Holder of specialized certification demonstrating expertise in data protection and privacy regulations. Proficient in developing and implementing data protection strategies, policies, and procedures. Skilled in conducting data protection impact assessments, managing data breaches, and ensuring organizational compliance with relevant laws such as GDPR. Recognized for ability to act as a key advisor on data protection matters and liaison between the organization, data subjects, and supervisory authorities.
+      - layout: left
+        border: weak
+        title: Certified Information Systems Security Professional (CISSP)
+        sub_title: ISC2
+        caption: Jan 2016
+        description: |
+          Holder of advanced certification demonstrating comprehensive knowledge and expertise in information security. Proficient in designing, implementing, and managing cybersecurity programs across all eight domains of the Common Body of Knowledge (CBK). Skilled in risk management, asset security, security architecture, network security, identity and access management, security assessment, security operations, and software development security. Recognized globally for maintaining high ethical standards and continuously updating information security knowledge to address emerging threats and technologies.
+      - layout: left
+        #border: weak
+        title: Certified Information Systems Auditor (CISA)
+        sub_title: ISACA
+        caption: Aug 2011
+        description: |
+          Holder of globally recognized certification demonstrating expertise in information systems auditing, control, and security. Proficient in conducting comprehensive IT audits, assessing vulnerabilities, and ensuring compliance with industry standards and regulations. Skilled in evaluating information systems operations, governance, and cybersecurity practices. Adept at developing and implementing risk-based IT audit strategies, reporting on audit findings, and providing valuable insights to improve organizational IT controls and processes. Committed to maintaining high professional standards and staying current with evolving technology and audit practices.
 
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
