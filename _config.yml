@@ -90,6 +90,7 @@ content:
         title: Exploring the Power of ChatGPT
         caption: A Comprehensive Introduction
         link: "360incontrol.ch/2024/06/28/artificial-intelligence-a-comprehensive-view-🤖/"
+        #https://tinyurl.com/33j2ds6r
         link_text: 360incontrol.ch
         #sub_title: MSc Applied Data Science
         #quote: >
@@ -105,6 +106,8 @@ content:
         title: University of Michigan
         caption: 2021 - 2023
         sub_title: MSc Applied Data Science
+        link: https://www.si.umich.edu/programs/master-applied-data-science
+        link_text: umich.edu
         quote: >
           The University of Michigan, founded in 1817, is a top-tier public research institution known for its innovative programs and commitment to academic excellence.
 
