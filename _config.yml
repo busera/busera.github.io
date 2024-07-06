@@ -53,7 +53,7 @@ content:
     content:
       - layout: top-middle
         title: Decode Dementia
-        link: github.com/busera/mads__decode_dementia
+        #link: github.com/busera/mads__decode_dementia
         # link_text: Project Website
         additional_links:
           - title:  sproogen/modern-resume-theme
