@@ -28,12 +28,12 @@ linkedin_username: buserandre
 youtube_username: "@data-and-science"
 # googleplus_username: +jekyll
 # orcid_username: 0000-0000-0000-0000
-medium_username: "@buser.andre"
+# medium_username: "@buser.andre"
 
 # Additional icon links
 additional_links:
 - title: Medium
-  icon: Medium (https://seekicon.com/free-icon-download/medium_1.svg)
+  icon: https://seekicon.com/free-icon-download/medium_1.svg
   url: https://medium.com/@buser.andre
 
 # Google Analytics and Tag Manager
