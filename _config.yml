@@ -33,7 +33,7 @@ youtube_username: "@data-and-science"
 # Additional icon links
 additional_links:
 - title: Medium
-  icon: https://seekicon.com/free-icon-download/medium_1.svg
+  icon: images/medium_1.svg
   url: https://medium.com/@buser.andre
 
 # Google Analytics and Tag Manager
