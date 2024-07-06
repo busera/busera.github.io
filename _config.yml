@@ -103,7 +103,7 @@ content:
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: left
+      - layout: top-right
         title: University of Michigan
         caption: 2021 - 2023
         sub_title: MSc Applied Data Science
