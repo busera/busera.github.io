@@ -52,7 +52,7 @@ content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: top-middle
+      - layout: top-left
         title: Decode Dementia
         #link: github.com/busera/mads__decode_dementia
         # link_text: Project Website
