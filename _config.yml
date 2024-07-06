@@ -80,7 +80,7 @@ content:
         #link: github.com/busera/mads__analyze_gdpr_fines
         #link_text: github.com
         quote: >
-          We believe our research has given us more insight into what it takes to identify a sentence that needs to be simplified. We ran a continuous cycle of data exploration, feature engineering, unsupervised learning, supervised learning, deep learning, and continually iterated to improve our accuracy step by step. We achieved a 77.6% accuracy score on the test data which is a good result. However, we feel that with more time and resources, we could do better.
+          We believe our research has given us more insight into what it takes to identify a sentence that needs to be simplified. We ran a continuous cycle of data exploration, feature engineering, unsupervised learning, supervised learning, deep learning, and continually iterated to improve our accuracy step by step. We achieved a 77.6% accuracy score on the test data which is a good result.
         description: | # this will include new lines to allow paragraphs
           This work aims to classify the textual complexity of sentences from the Simple English Wikipedia edition. We built a machine learning pipeline that used an evolving set of supervised models aided by processes of feature engineering and unsupervised learning to classify sentences into whether or not they require simplification. Such a task is useful in domains such as Simple Wikipedia that aims to present simplified articles that are easier to understand, especially for those who have “limited abilities”1 in comprehension of the English language.
 
