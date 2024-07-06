@@ -81,7 +81,7 @@ content:
 
 description: |
   At Novartis, I spearhead data analytics initiatives and provide crucial support to our in-house Open Source Intelligence (OSINT) and investigation teams. My role involves leveraging advanced data science techniques to enhance our global security strategies, improve risk assessment, and safeguard the company's digital assets.
-  
+
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -112,7 +112,7 @@ description: |
 #      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
 
 # Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 # Build settings
