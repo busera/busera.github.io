@@ -35,6 +35,9 @@ additional_links:
 - title: Medium
   icon: fab fa-medium
   url: https://medium.com/@buser.andre
+- title: Kaggle
+  icon: fab fa-kaggle
+  url: https://www.kaggle.com/busera
 
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
