@@ -97,8 +97,8 @@ content:
             # - title:  Github page for project (eg. sproogen/modern-resume-theme)
             #   icon: fab fa-github
             #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-          #quote: >
-          #  Key findings indicate that TBIs, especially those involving loss of consciousness, alongside the presence of the APOE ε4 allele and male gender, significantly increase dementia risk, while higher education levels seem to offer some protective effects.
+          quote: >
+            Key findings indicate that TBIs, especially those involving loss of consciousness, alongside the presence of the APOE ε4 allele and male gender, significantly increase dementia risk, while higher education levels seem to offer some protective effects.
           description: | # this will include new lines to allow paragraphs
             An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
 
