@@ -80,7 +80,7 @@ content:
         link: github.com/busera/mads__predicting_text_difficulty
         link_text: github.com
         quote: >
-          Our analysis found that the fine-tuned Random Forest model demonstrated the highest accuracy score of 0.7544. Nevertheless, further data cleansing measures failed to yield the anticipated enhancements despite our diligent attempts.
+          Our analysis found that the fine-tuned Random Forest model demonstrated the highest accuracy score of 0.7544.
         description: | # this will include new lines to allow paragraphs
           This project aimed to classify sentences from articles in the "Simple English Wikipedia" to determine whether they require simplification to enhance their accessibility and comprehensibility for audiences with low reading proficiency, including students, children, and non-native English speakers. The project employed supervised and unsupervised learning techniques to extract and create features for sentence classification.
       
