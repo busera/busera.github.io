@@ -102,12 +102,19 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        border: weak
         title: Certified Fraud Investigator (CFE)
         sub_title: Association of Certified Fraud Examiners (ACFE)
         caption: Feb 2024
-
         description: |
           Holder of specialized credential demonstrating expertise in fraud detection, prevention, and investigation. Proficient in analyzing financial transactions, legal aspects of fraud, and advanced investigation techniques. Skilled in implementing anti-fraud controls and conducting internal investigations. Globally recognized for maintaining high standards of fraud examination knowledge and ethical conduct.
+      - layout: left
+        #border: weak
+        title: Certified Data Protection Officer (CDPO)
+        sub_title: PECB
+        caption: Feb 2019
+        description: |
+          Holder of specialized certification demonstrating expertise in data protection and privacy regulations. Proficient in developing and implementing data protection strategies, policies, and procedures. Skilled in conducting data protection impact assessments, managing data breaches, and ensuring organizational compliance with relevant laws such as GDPR. Recognized for ability to act as a key advisor on data protection matters and liaison between the organization, data subjects, and supervisory authorities.
 
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
