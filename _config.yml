@@ -86,19 +86,15 @@ content:
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: left
-        title: University of Michigan
-        caption: 2021 - 2023
-        sub_title: MSc Applied Data Science
-        quote: >
-          The University of Michigan, founded in 1817, is a top-tier public research institution known for its innovative programs and commitment to academic excellence.
+      - layout: top-left
+        title: Exploring the Power of ChatGPT
+        caption: A Comprehensive Introduction by André Buser
+        #sub_title: MSc Applied Data Science
+        #quote: >
+        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
 
         description: |
-          At the University of Michigan's School of Information, I completed the Master of Applied Data Science (MADS) program, graduating in December 2023. This comprehensive program provided me with a solid foundation in key areas of data science, including machine learning, data mining, and big data analytics.
-
-          The curriculum emphasized practical application, allowing me to work on real-world projects and develop problem-solving skills applicable to complex datasets. I also participated in extracurricular activities like hackathons, which enhanced my teamwork and leadership abilities in data-driven environments.
-
-          This experience equipped me with both the technical skills and ethical understanding necessary to navigate the challenges of modern data science, preparing me for impactful contributions in my professional role.
+          An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
