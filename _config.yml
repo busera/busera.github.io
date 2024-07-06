@@ -59,7 +59,7 @@ content:
         title: Decode Dementia
         caption: Oct 2023 - Dec 2023
         link: github.com/busera/mads__decode_dementia
-        link_text: GitHub Repository
+        link_text: github.com
         #additional_links:
         #  - title:  sproogen/modern-resume-theme
         #    icon: fab fa-github
@@ -71,6 +71,16 @@ content:
           Key findings indicate that TBIs, especially those involving loss of consciousness, alongside the presence of the APOE ε4 allele and male gender, significantly increase dementia risk, while higher education levels seem to offer some protective effects.
         description: | # this will include new lines to allow paragraphs
           This project was designed to enhance our understanding of the outcomes following traumatic brain injuries, focusing on their determinants and consequences. We used causal inference to investigate the complex relationships between TBI and the subsequent risk of dementia, considering a range of demographic and clinical factors.
+     
+      - layout: left
+        title: Analyze GDPR Fines
+        caption: Oct 2021 - Dec 2021
+        link: github.com/busera/mads__analyze_gdpr_fines
+        link_text: github.com
+        quote: >
+          Our analysis of GDPR fines from 2018 to 2021 has revealed crucial insights for data protection practices, particularly in the healthcare sector.
+        description: | # this will include new lines to allow paragraphs
+          Analyzing GDPR fines imposed by the European data protection authorities could reveal the main reasons and focus areas of the authorities for non-compliance and could allow our organization to timely address similar gaps in their data privacy strategy.
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
