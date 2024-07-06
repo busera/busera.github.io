@@ -87,6 +87,16 @@ content:
         description: |
           In my current role at Novartis, I support and implement data analytics initiatives and provide support to our in-house Open Source Intelligence (OSINT) and investigation teams. My role involves leveraging advanced data science techniques to enhance our global security strategies, improve risk assessment, and safeguard the company's digital assets.
 
+  - title: Certifications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Certified Fraud Investigator (CFE), AFCE
+        #sub_title: A Comprehensive Introduction
+        caption: Jan 2024
+        #link: "360incontrol.ch/2024/06/28/artificial-intelligence-a-comprehensive-view-🤖/"
+        #link_text: 360incontrol.ch
+
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
     content:
