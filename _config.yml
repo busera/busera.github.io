@@ -8,8 +8,8 @@ version: 2
 # Personal info
 name: Andre Buser
 title: Senior Manager Global Security
-email: https://www.linkedin.com/in/buserandre/
-website: www.github.com/sproogen/resume-theme
+# email: https://www.linkedin.com/in/buserandre/
+# website: www.github.com/sproogen/resume-theme
 
 # Dark Mode (true/false/never)
 darkmode: false
@@ -43,7 +43,7 @@ additional_links:
 
 # About Section
 # about_title: About Me
-about_profile_image: images/profile.jpg
+about_profile_image: images/profile1.jpg
 about_content: | # this will include new lines to allow paragraphs
   Leveraging 14 years of extensive experience in Information Systems Auditing, Information Security and Data Protection, coupled with a Master of Applied Data Science from the University of Michigan, I aim to help businesses navigate risks in emerging technology and data. My focus is on responsibly implementing AI and data science within GRC frameworks, emphasizing Data Ethics and Responsible AI. I am passionate about harmonizing innovation with conscientious governance in the evolving AI landscape.
 
