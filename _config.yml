@@ -55,11 +55,11 @@ content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: left
+    - layout: left
         border: weak
-        title: Decode Dementia
-        caption: Oct 2023 - Dec 2023
-        link: github.com/busera/mads__decode_dementia
+        title: DReadability Optimiser
+        caption: Mar 2021 - Present
+        link: github.com/busera/proto__readability_optimizer
         link_text: github.com
         #additional_links:
         #  - title:  sproogen/modern-resume-theme
@@ -68,6 +68,23 @@ content:
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        #quote: >
+        #  Key findings indicate that TBIs, especially those involving loss of consciousness, alongside the presence of the APOE ε4 allele and male gender, significantly increase dementia risk, while higher education levels seem to offer some protective effects.
+        description: | # this will include new lines to allow paragraphs
+          Originally developed in my free time to practice Python, Readability Optimizer is a prototype tool designed to help authors improve the readability of their texts. This project marked one of my first endeavors in preparation for my upcoming Master's in Applied Data Science (MADS) at the University of Michigan.
+
+The prototype created here later served as the foundation for an in-house solution, particularly for internal audit reports. This solution was expanded to import the audit report template and analyze all observation paragraphs for readability.
+
+The tool employs various readability tests and analyses to provide insights and suggestions for enhancing text clarity and comprehension, thereby improving written communication in professional settings.
+
+As part of the quick prototyping approach, the solution utilizes Streamlit, a popular Python library for building interactive web applications. It's worth noting that at the time of development in 2021, Streamlit did not support multipage navigation. Consequently, a custom workaround was implemented to achieve a multipage-like navigation experience within the application.
+
+      - layout: left
+        border: weak
+        title: Decode Dementia
+        caption: Oct 2023 - Dec 2023
+        link: github.com/busera/mads__decode_dementia
+        link_text: github.com
         quote: >
           Key findings indicate that TBIs, especially those involving loss of consciousness, alongside the presence of the APOE ε4 allele and male gender, significantly increase dementia risk, while higher education levels seem to offer some protective effects.
         description: | # this will include new lines to allow paragraphs
