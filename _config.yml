@@ -55,7 +55,7 @@ content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
-    - layout: left
+      - layout: left
         border: weak
         title: DReadability Optimiser
         caption: Mar 2021 - Present
