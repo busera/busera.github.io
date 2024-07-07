@@ -49,7 +49,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile1.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Leveraging 14 years of extensive experience in Information Systems Auditing, Information Security and Data Protection, coupled with a Master of Applied Data Science from the University of Michigan, I aim to help businesses navigate risks in emerging technology and data. My focus is on responsibly implementing AI and data science within GRC frameworks, emphasizing Data Ethics and Responsible AI. I am passionate about harmonizing innovation with conscientious governance in the evolving AI landscape.
+  Leveraging 14 years of extensive experience in Information Systems Auditing, Information Security, Investigation, and Data Protection, coupled with a Master of Applied Data Science from the University of Michigan, I aim to help businesses navigate risks in emerging technology and data. My focus is on responsibly implementing AI and data science within GRC frameworks, emphasizing Data Ethics and Responsible AI. I am passionate about harmonizing innovation with conscientious governance in the evolving AI landscape.
 
 content:
   - title: Projects # Title for the section
