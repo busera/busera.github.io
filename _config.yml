@@ -57,7 +57,7 @@ content:
     content:
       - layout: left
         border: weak
-        title: Readability Optimiser
+        title: Readability Optimizer
         caption: May 2020 - Present
         link: github.com/busera/proto__readability_optimizer
         link_text: github.com
