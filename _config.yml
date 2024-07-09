@@ -113,6 +113,18 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        border: weak
+        title: Understanding AI System Classification and Risk Assessment in AI Governance
+        sub_title: Explaining these concepts and how they relate to each other
+        caption: Jul 2024
+        link: https://medium.com/@buser.andre/understanding-ai-system-classification-and-risk-assessment-in-ai-images-tables-a5da2c1eb510?sk=bce834d52700f6741d57f27f4faf6c36
+        link_text: medium.com
+        #quote: >
+        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+        description: |
+          In the evolving field of artificial intelligence (AI) governance, two important concepts can get mixed up: AI System Classification and AI System Risk Assessment. This confusion can lead to problems in managing the related AI risks. This article aims to explain these concepts and how they relate to each other, using insights from major AI governance frameworks.
+          
+      - layout: left
         title: Exploring the Power of ChatGPT
         sub_title: A Comprehensive Introduction
         caption: Jun 2024
