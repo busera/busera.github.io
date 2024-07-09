@@ -109,6 +109,20 @@ content:
         description: | # this will include new lines to allow paragraphs
           Analyzing GDPR fines imposed by the European data protection authorities could reveal the main reasons and focus areas of the authorities for non-compliance and could allow our organization to timely address similar gaps in their data privacy strategy.
 
+  - title: Publications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Exploring the Power of ChatGPT
+        sub_title: A Comprehensive Introduction
+        caption: Jun 2024
+        link: "360incontrol.ch/2024/06/28/artificial-intelligence-a-comprehensive-view-🤖/"
+        link_text: 360incontrol.ch
+        #quote: >
+        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+        description: |
+          An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -155,20 +169,6 @@ content:
         caption: Aug 2011
         description: |
           Holder of globally recognized certification demonstrating expertise in information systems auditing, control, and security. Proficient in conducting comprehensive IT audits, assessing vulnerabilities, and ensuring compliance with industry standards and regulations. Skilled in evaluating information systems operations, governance, and cybersecurity practices. Adept at developing and implementing risk-based IT audit strategies, reporting on audit findings, and providing valuable insights to improve organizational IT controls and processes. Committed to maintaining high professional standards and staying current with evolving technology and audit practices.
-
-  - title: Publications # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: Exploring the Power of ChatGPT
-        sub_title: A Comprehensive Introduction
-        caption: Jun 2024
-        link: "360incontrol.ch/2024/06/28/artificial-intelligence-a-comprehensive-view-🤖/"
-        link_text: 360incontrol.ch
-        #quote: >
-        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
-        description: |
-          An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
