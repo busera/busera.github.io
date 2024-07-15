@@ -55,9 +55,30 @@ content:
   - title: DS and ML Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
+
+      - layout: left
+        border: weak
+        title: Exploring Microsoft Responsible AI Toolkit with Diabetes Dataset
+        sub_title: In Progress
+        caption: Jul 2024 - Present
+        link: github.com/busera/rai__diabetes_analysis
+        link_text: github.com
+        #additional_links:
+        #  - title:  sproogen/modern-resume-theme
+        #    icon: fab fa-github
+        #    url: github.com/busera/mads__decode_dementia
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Originally developed in my free time to practice Python, Readability Optimizer is a prototype tool designed to help authors improve the readability of their texts.
+        description: | # this will include new lines to allow paragraphs
+          This project applies the Microsoft Responsible AI toolkit to the scikit-learn Diabetes dataset, focusing on gaining practical experience with the toolkit and understanding its metrics in a real-world machine learning context. Key components explored include fairness assessment, interpretability techniques, and error analysis. The project aims to demonstrate responsible AI practices in healthcare-related machine learning, potentially improving model transparency and reducing bias in medical predictions.
+
       - layout: left
         border: weak
         title: Readability Optimizer
+        sub_title: In Progress
         caption: May 2020 - Present
         link: github.com/busera/proto__readability_optimizer
         link_text: github.com
