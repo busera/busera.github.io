@@ -116,6 +116,22 @@ content:
     content:
       - layout: left
         border: weak
+        title: Algorithm Ossification: The Feedback Loop Between Algorithms and the Real World
+        #sub_title: Explaining these concepts and how they relate to each other
+        caption: Jul 2024
+        link: https://medium.com/@buser.andre/algorithm-ossification-the-feedback-loop-between-algorithms-and-fe52ecfbf218?source=friends_link&sk=a7da82f03950e839491d34bc6aaa17b1
+        link_text: medium.com
+        #quote: >
+        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+        description: |
+          In today’s world, algorithms are a big part of our daily lives. They suggest what we should watch and help decide if we can get a loan. These computer programs make many decisions that affect us all.
+          
+          But what happens when these algorithms start to change the very world they are supposed to describe?
+          
+          This is what we call algorithm ossification, and it’s important phenomenon to understand.
+      
+      - layout: left
+        border: weak
         title: Understanding AI System Classification and Risk Assessment
         #sub_title: Explaining these concepts and how they relate to each other
         caption: Jul 2024
