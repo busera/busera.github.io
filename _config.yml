@@ -206,10 +206,11 @@ content:
         caption: Jul 2021
         link: github.com/busera/mads__data_science_ethics_checklist/blob/main/reports/Data%20Ethics%20Checklist.pdf
         link_text: github.com
-        quote: >
-          Originally developed in April 2021 as part of the University of Michigan's Master of Applied Data Science program, SIADS501 - Being a Data Scientist course. This manifesto continues to guide my practice and is regularly updated to reflect new insights and evolving best practices in the field.
+        #quote: >
+        #  Originally developed in April 2021 as part of the University of Michigan's Master of Applied Data Science program, SIADS501 - Being a Data Scientist course. This manifesto continues to guide my practice and is regularly updated to reflect new insights and evolving best practices in the field.
         description: |
           This use case involves the development of a Data Ethics Checklist for data science projects, created as part of a university ethics course (MADS SIADS593). The checklist is designed to guide data scientists through ethical considerations at various stages of a project, from initial organization to final deployment. It incorporates key ethical principles such as transparency, accountability, fairness, and explainability, drawing from established frameworks and guidelines in the field of data ethics. The checklist is structured around the CRISP-DM model, providing specific, actionable questions at each project phase to ensure ethical practices are maintained throughout the data science workflow.
+      
       - layout: left
         border: weak
         title: Data Science Compass
@@ -217,9 +218,11 @@ content:
         caption: Apr 2021
         link: github.com/busera/mads__ds_manifesto
         link_text: github.com
-        quote: >
-          Originally developed in April 2021 as part of the University of Michigan's Master of Applied Data Science program, SIADS501 - Being a Data Scientist course. This manifesto continues to guide my practice and is regularly updated to reflect new insights and evolving best practices in the field.
+        #quote: >
+        #  Originally developed in April 2021 as part of the University of Michigan's Master of Applied Data Science program, SIADS501 - Being a Data Scientist course. This manifesto continues to guide my practice and is regularly updated to reflect new insights and evolving best practices in the field.
         description: |
+          Originally developed in April 2021 as part of the University of Michigan's Master of Applied Data Science program, SIADS501 - Being a Data Scientist course. This manifesto continues to guide my practice and is regularly updated to reflect new insights and evolving best practices in the field.
+        
           This document outlines my core principles, methodologies, and ethical commitments as a data scientist. It serves as a personal guide for navigating the complex landscape of data-driven decision making, ensuring that I consistently deliver high-quality, ethical, and impactful work.
       
       - layout: left
