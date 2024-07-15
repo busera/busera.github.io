@@ -139,8 +139,8 @@ content:
 
       - layout: left
         #border: weak
-        title: Communicating Data Science Results - Chicken Kitchen Expansion
-        sub_title: A Case Study
+        title: Case Study - Chicken Kitchen Expansion
+        sub_title: Communicating Data Science Results
         caption: Aug 2021
         link: github.com/busera/mads__communicating_data_science_results/tree/main
         link_text: github.com
