@@ -58,7 +58,7 @@ content:
 
       - layout: left
         border: weak
-        title: Exploring Microsoft Responsible AI Toolkit with Diabetes Dataset
+        title: Exploring Microsoft Responsible AI Toolkit
         sub_title: In Progress
         caption: Jul 2024 - Present
         link: github.com/busera/rai__diabetes_analysis
