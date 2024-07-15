@@ -204,7 +204,7 @@ content:
         title: Data Ethics Checklist 
         sub_title: Case Study
         caption: Jul 2021
-        link: github.com/busera/mads__data_science_ethics_checklist/blob/main/reports/Data%20Ethics%20Checklist.pdf
+        link: github.com/busera/mads__data_science_ethics_checklist
         link_text: github.com
         #quote: >
         #  Originally developed in April 2021 as part of the University of Michigan's Master of Applied Data Science program, SIADS501 - Being a Data Scientist course. This manifesto continues to guide my practice and is regularly updated to reflect new insights and evolving best practices in the field.
