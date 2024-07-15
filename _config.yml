@@ -201,8 +201,8 @@ content:
 
       - layout: left
         border: weak
-        title: Personal Data Science Manifesto
-        sub_title: A Comprehensive Introduction
+        title: Data Science Compass
+        sub_title: A Personal Manifesto
         caption: Apr 2021
         link: https://github.com/busera/mads__ds_manifesto
         link_text: github.com
