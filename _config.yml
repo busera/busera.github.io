@@ -93,7 +93,7 @@ content:
       - layout: left
         border: weak
         title: Predicting Text Difficulty
-        caption: Oct 2022 - Dec 2022
+        caption: Nov 2022 - Dec 2022
         link: github.com/busera/mads__predicting_text_difficulty
         link_text: github.com
         quote: >
@@ -103,7 +103,7 @@ content:
       
       - layout: left
         title: Analyze GDPR Fines
-        caption: Oct 2021 - Dec 2021
+        caption: Nov 2021 - Dec 2021
         link: github.com/busera/mads__analyze_gdpr_fines
         link_text: github.com
         quote: >
