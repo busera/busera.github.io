@@ -49,7 +49,11 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile1.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Leveraging extensive experience in Internal Audit, Information Systems Auditing, Security, and Investigation, coupled with a Master of Applied Data Science from the University of Michigan, I aim to enhance organizational risk management and control processes while serving as a trusted advisor to the business. My focus is on applying advanced analytics and AI within Internal Audit and GRC frameworks, emphasizing Data Ethics and Responsible AI. I am passionate about driving digital transformation in audit practices, ensuring robust governance in the evolving technology landscape, and supporting strategic business decisions through insightful audit findings and recommendations.
+  With a foundation in Internal Audit, Information Systems Auditing, and Security, complemented by a Master of Applied Data Science from the University of Michigan, I aim to leverage data analytics to drive informed decision-making within organizations. My goal is to uncover valuable insights from complex datasets, focusing on areas such as stakeholder perceptions, industry dynamics, and emerging trends. I'm committed to upholding strong data governance principles, with a particular emphasis on ethical considerations and responsible use of artificial intelligence.
+  
+  By integrating advanced analytical techniques into existing processes, I seek to transform raw data into strategic assets that can guide business strategy and risk mitigation efforts. I aim to serve as a bridge between technical analysis and practical application, working collaboratively with diverse teams to ensure that data-driven insights translate into tangible business value. My approach is rooted in continuous learning, adapting to evolving technologies and methodologies to maintain relevance in a rapidly changing landscape.
+  
+  Throughout my work, I maintain a strong focus on supporting overarching organizational objectives, ensuring that analytical initiatives align with and contribute to the company's strategic goals and long-term success.
 
 content:
   - title: DS and ML Projects # Title for the section
