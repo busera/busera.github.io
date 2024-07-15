@@ -116,8 +116,8 @@ content:
     content:
       - layout: left
         border: weak
-        title: Algorithm Ossification - The Feedback Loop Between Algorithms and the Real World
-        #sub_title: Explaining these concepts and how they relate to each other
+        title: Algorithm Ossification
+        sub_title: The Feedback Loop Between Algorithms and the Real World
         caption: Jul 2024
         link: https://medium.com/@buser.andre/algorithm-ossification-the-feedback-loop-between-algorithms-and-fe52ecfbf218?source=friends_link&sk=a7da82f03950e839491d34bc6aaa17b1
         link_text: medium.com
@@ -145,7 +145,7 @@ content:
       - layout: left
         border: weak
         title: Exploring the Power of ChatGPT
-        #sub_title: A Comprehensive Introduction
+        sub_title: A Comprehensive Introduction
         caption: Jun 2024
         link: "360incontrol.ch/2024/06/28/artificial-intelligence-a-comprehensive-view-🤖/"
         link_text: 360incontrol.ch
