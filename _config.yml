@@ -292,24 +292,24 @@ content:
         sub_title: PECB
         caption: Feb 2019
         description: |
-          Holder of specialized certification demonstrating expertise in data protection and privacy regulations. Proficient in developing and implementing data protection strategies, policies, and procedures. Skilled in conducting data protection impact assessments, managing data breaches, and ensuring organizational compliance with relevant laws such as GDPR. Recognized for ability to act as a key advisor on data protection matters and liaison between the organization, data subjects, and supervisory authorities.
-     
+          Certified data protection professional with specialized expertise in privacy regulations and compliance. Demonstrated proficiency in developing and implementing comprehensive data protection strategies, policies, and procedures. Adept at conducting thorough data protection impact assessments, efficiently managing data breaches, and ensuring organizational adherence to key regulations such as GDPR. Recognized for serving as a pivotal advisor on data protection matters and effectively liaising between the organization, data subjects, and supervisory authorities. Combines technical knowledge with strong communication skills to translate complex privacy requirements into actionable business practices, fostering a culture of data protection across the organization.
+      
       - layout: left
         border: weak
         title: Certified Information Systems Security Professional (CISSP)
         sub_title: ISC2
         caption: Jan 2016
         description: |
-          Holder of advanced certification demonstrating comprehensive knowledge and expertise in information security. Proficient in designing, implementing, and managing cybersecurity programs across all eight domains of the Common Body of Knowledge (CBK). Skilled in risk management, asset security, security architecture, network security, identity and access management, security assessment, security operations, and software development security. Recognized globally for maintaining high ethical standards and continuously updating information security knowledge to address emerging threats and technologies.
-     
+          Advanced information security certified professional with comprehensive expertise across the Common Body of Knowledge (CBK) domains. Skilled in designing and managing cybersecurity programs, encompassing risk management, asset security, network protection, and security operations. Proficient in identity management, security assessment, and secure software development.
+      
       - layout: left
         #border: weak
         title: Certified Information Systems Auditor (CISA)
         sub_title: ISACA
         caption: Aug 2011
         description: |
-          Holder of globally recognized certification demonstrating expertise in information systems auditing, control, and security. Proficient in conducting comprehensive IT audits, assessing vulnerabilities, and ensuring compliance with industry standards and regulations. Skilled in evaluating information systems operations, governance, and cybersecurity practices. Adept at developing and implementing risk-based IT audit strategies, reporting on audit findings, and providing valuable insights to improve organizational IT controls and processes. Committed to maintaining high professional standards and staying current with evolving technology and audit practices.
-
+          Globally certified information systems auditor with expertise in IT control and security. Proficient in conducting comprehensive IT audits, assessing vulnerabilities, and ensuring compliance with industry standards. Skilled in evaluating information systems operations, governance, and cybersecurity practices. Develops and implements risk-based IT audit strategies, providing valuable insights to enhance organizational IT controls and processes. Committed to maintaining high professional standards and staying current with evolving technology and audit methodologies.
+  
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
