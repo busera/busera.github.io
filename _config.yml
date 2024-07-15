@@ -116,7 +116,7 @@ content:
     content:
       - layout: left
         border: weak
-        title: Algorithm Ossification: The Feedback Loop Between Algorithms and the Real World
+        title: Algorithm Ossification - The Feedback Loop Between Algorithms and the Real World
         #sub_title: Explaining these concepts and how they relate to each other
         caption: Jul 2024
         link: https://medium.com/@buser.andre/algorithm-ossification-the-feedback-loop-between-algorithms-and-fe52ecfbf218?source=friends_link&sk=a7da82f03950e839491d34bc6aaa17b1
