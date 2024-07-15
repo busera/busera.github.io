@@ -275,7 +275,7 @@ content:
         description: |
           In my current role as Senior Manager Global Security at Novartis, I support and implement data analytics initiatives and provide support to our in-house Open Source Intelligence (OSINT) and investigation teams. My role involves leveraging advanced data science techniques to enhance our global security strategies, improve risk assessment, and safeguard the company's digital assets.
 
-  - title: Certifications # Title for the section
+  - title: Key Certifications # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
