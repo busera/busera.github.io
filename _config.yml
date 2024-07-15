@@ -79,7 +79,7 @@ content:
         #quote: >
         #  Originally developed in my free time to practice Python, Readability Optimizer is a prototype tool designed to help authors improve the readability of their texts.
         description: | # this will include new lines to allow paragraphs
-          This project applies the Microsoft Responsible AI toolkit to the scikit-learn Diabetes dataset, focusing on gaining practical experience with the toolkit and understanding its metrics in a real-world machine learning context. Key components explored include fairness assessment, interpretability techniques, and error analysis. The project aims to demonstrate responsible AI practices in healthcare-related machine learning, potentially improving model transparency and reducing bias in medical predictions.
+          In this project I plan to apply the Microsoft Responsible AI toolkit to the scikit-learn Diabetes dataset, focusing on gaining practical experience with the toolkit and understanding its metrics in a real-world machine learning context. Key components explored include fairness assessment, interpretability techniques, and error analysis. The project aims to demonstrate responsible AI practices in healthcare-related machine learning, potentially improving model transparency and reducing bias in medical predictions.
 
       - layout: left
         border: weak
