@@ -155,9 +155,10 @@ content:
           An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
 
       - layout: left
-        title: Decomposing the term “Information Security Risk”
+        border: weak
+        title: Decomposing the Term “Information Security Risk”
         #sub_title: A Comprehensive Introduction
-        caption: Jun 2024
+        caption: Apr 2017
         link: https://www.linkedin.com/pulse/decomposing-term-information-security-risk-andr%2525C3%2525A9-buser-cisa-cissp/
         link_text: linkedin.com
         #quote: >
@@ -166,6 +167,21 @@ content:
           This article addresses the frequently asked question "What is an (information security) risk?" from the perspective of an IS Auditor and Information Security Risk Manager. It presents three tailored explanations to accommodate varying levels of audience interest and time constraints. 
           
           The first is a concise formula, the second a comprehensive definition based on industry standards, and the third a detailed exploration using ISO 31000:2009 as a foundation. This multi-tiered approach offers flexibility in explaining information security risk across different professional contexts and audience needs.
+  
+      - layout: left
+        #border: weak
+        title: How to Write (Better) Information Security Risks
+        #sub_title: A Comprehensive Introduction
+        caption: Oct 2016
+        link: https://www.linkedin.com/pulse/how-write-better-information-security-risks-simplified-andr%25C3%25A9-buser/?trackingId=fiWEJHVvRv8bgyNzcwoHNg
+        link_text: linkedin.com
+        #quote: >
+        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+        description: |
+          During the process of risk assessment it can be challenging to differentiate between risks, threats and vulnerabilities. This is important, because based on the threats and vulnerabilities – as well as on the impacted assets – the mitigation controls and risk levels can be different.
+
+          In now-a-days processes many of the risk assessment steps are starting with – or including – the term “risk”, although the “real risk” is the results of all those steps and activities. This small, but important difference, will be explained in the following sections.
+
   
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
