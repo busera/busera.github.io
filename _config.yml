@@ -49,7 +49,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile1.jpg
 about_content: | # this will include new lines to allow paragraphs
-  With a foundation in Internal Audit, Information Security, and Investigation, complemented by a Master of Applied Data Science from the University of Michigan, I aim to leverage advanced analytics and AI to drive informed decision-making and discussions. My goal is to uncover valuable insights from complex datasets, focusing on hidden patterns and emerging trends, while emphasizing Data Ethics and Responsible AI throughout the process.
+  Drawing upon 14 years of experience in Internal Audit, Information Security, and Investigation, coupled with a Master of Applied Data Science from the University of Michigan, I aim to leverage advanced analytics and AI to drive informed decision-making and discussions. My objective is to extract valuable insights from complex datasets, with a focus on uncovering hidden patterns and identifying emerging trends. Throughout this process, I maintain a strong commitment to Data Ethics and Responsible AI practices.
 
   I'm committed to upholding strong data governance principles and integrating advanced analytical techniques into existing audit and GRC (Governance, Risk, and Compliance) frameworks. By doing so, I seek to transform data into strategic assets that can guide business strategy, support risk mitigation efforts, and enhance control processes. My approach involves serving as a bridge between technical analysis and practical application, working collaboratively with diverse teams to ensure that data-driven insights translate into tangible business value.
 
@@ -284,7 +284,8 @@ content:
         sub_title: Association of Certified Fraud Examiners (ACFE)
         caption: Feb 2024
         description: |
-          Holder of specialized credential demonstrating expertise in fraud detection, prevention, and investigation. Proficient in analyzing financial transactions, legal aspects of fraud, and advanced investigation techniques. Skilled in implementing anti-fraud controls and conducting internal investigations. Globally recognized for maintaining high standards of fraud examination knowledge and ethical conduct.
+          This specialized certification demonstrates expertise in fraud detection, prevention, and investigation, including proficiency in financial transaction analysis, fraud law, and advanced investigative techniques. Skilled in implementing anti-fraud controls and managing internal investigations. The globally recognized CFE certification reflects a high level of fraud examination knowledge and adherence to ethical standards in the field.
+     
       - layout: left
         border: weak
         title: Certified Data Protection Officer (CDPO)
@@ -292,6 +293,7 @@ content:
         caption: Feb 2019
         description: |
           Holder of specialized certification demonstrating expertise in data protection and privacy regulations. Proficient in developing and implementing data protection strategies, policies, and procedures. Skilled in conducting data protection impact assessments, managing data breaches, and ensuring organizational compliance with relevant laws such as GDPR. Recognized for ability to act as a key advisor on data protection matters and liaison between the organization, data subjects, and supervisory authorities.
+     
       - layout: left
         border: weak
         title: Certified Information Systems Security Professional (CISSP)
@@ -299,6 +301,7 @@ content:
         caption: Jan 2016
         description: |
           Holder of advanced certification demonstrating comprehensive knowledge and expertise in information security. Proficient in designing, implementing, and managing cybersecurity programs across all eight domains of the Common Body of Knowledge (CBK). Skilled in risk management, asset security, security architecture, network security, identity and access management, security assessment, security operations, and software development security. Recognized globally for maintaining high ethical standards and continuously updating information security knowledge to address emerging threats and technologies.
+     
       - layout: left
         #border: weak
         title: Certified Information Systems Auditor (CISA)
