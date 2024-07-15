@@ -143,8 +143,9 @@ content:
           In the evolving field of artificial intelligence (AI) governance, two important concepts can get mixed up: AI System Classification and AI System Risk Assessment. This confusion can lead to problems in managing the related AI risks. This article aims to explain these concepts and how they relate to each other, using insights from major AI governance frameworks.
 
       - layout: left
+        border: weak
         title: Exploring the Power of ChatGPT
-        sub_title: A Comprehensive Introduction
+        #sub_title: A Comprehensive Introduction
         caption: Jun 2024
         link: "360incontrol.ch/2024/06/28/artificial-intelligence-a-comprehensive-view-🤖/"
         link_text: 360incontrol.ch
@@ -153,6 +154,19 @@ content:
         description: |
           An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
 
+      - layout: left
+        title: Decomposing the term “Information Security Risk”
+        #sub_title: A Comprehensive Introduction
+        caption: Jun 2024
+        link: https://www.linkedin.com/pulse/decomposing-term-information-security-risk-andr%2525C3%2525A9-buser-cisa-cissp/
+        link_text: linkedin.com
+        #quote: >
+        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+        description: |
+          This article addresses the frequently asked question "What is an (information security) risk?" from the perspective of an IS Auditor and Information Security Risk Manager. It presents three tailored explanations to accommodate varying levels of audience interest and time constraints. 
+          
+          The first is a concise formula, the second a comprehensive definition based on industry standards, and the third a detailed exploration using ISO 31000:2009 as a foundation. This multi-tiered approach offers flexibility in explaining information security risk across different professional contexts and audience needs.
+  
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -160,7 +174,7 @@ content:
         title: Novartis
         #link: novartis.com
         #link_text: boringcompany.com
-        sub_title: Senior Manager
+        sub_title: Director | Senior Manager
         caption: Apr 2010 - Present
         quote: >
           Bridging the gap between innovation and responsible governance in the AI and data science landscape.
