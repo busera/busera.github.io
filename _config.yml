@@ -122,8 +122,13 @@ content:
         description: | # this will include new lines to allow paragraphs
           This project aimed to classify sentences from articles in the "Simple English Wikipedia" to determine whether they require simplification to enhance their accessibility and comprehensibility for audiences with low reading proficiency, including students, children, and non-native English speakers. The project employed supervised and unsupervised learning techniques to extract and create features for sentence classification.
       
+
+  - title: Visualization Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
       - layout: left
         title: Analyze GDPR Fines
+        border: weak
         caption: Nov 2021 - Dec 2021
         link: github.com/busera/mads__analyze_gdpr_fines
         link_text: github.com
@@ -131,6 +136,25 @@ content:
           Our analysis of GDPR fines from 2018 to 2021 has revealed crucial insights for data protection practices, particularly in the healthcare sector.
         description: | # this will include new lines to allow paragraphs
           Analyzing GDPR fines imposed by the European data protection authorities could reveal the main reasons and focus areas of the authorities for non-compliance and could allow our organization to timely address similar gaps in their data privacy strategy.
+
+      - layout: left
+        #border: weak
+        title: Communicating Data Science Results - Chicken Kitchen Expansion
+        sub_title: A Case Study
+        caption: Aug 2021
+        link: github.com/busera/mads__communicating_data_science_results/tree/main
+        link_text: github.com
+        #additional_links:
+        #  - title:  sproogen/modern-resume-theme
+        #    icon: fab fa-github
+        #    url: github.com/busera/mads__decode_dementia
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        #quote: >
+        #  Originally developed in my free time to practice Python, Readability Optimizer is a prototype tool designed to help authors improve the readability of their texts.
+        description: | # this will include new lines to allow paragraphs
+          The case study centered around a data-driven decision-making case study for Chicken Kitchen, a premium fast-casual restaurant chain. As a data scientist, I was tasked with analyzing potential expansion locations for the franchise.
 
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
