@@ -128,6 +128,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           This project aimed to classify sentences from articles in the "Simple English Wikipedia" to determine whether they require simplification to enhance their accessibility and comprehensibility for audiences with low reading proficiency, including students, children, and non-native English speakers. The project employed supervised and unsupervised learning techniques to extract and create features for sentence classification.
       
+          The complete report can be accessed here: [Predicting Text Difficulty Report](https://github.com/busera/mads__predicting_text_difficulty/blob/main/reports/Predicting_Text_Difficulty-Final_Report.pdf)
 
   - title: Visualization Projects # Title for the section
     layout: list # Type of content section (list/text)
