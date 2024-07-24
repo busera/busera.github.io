@@ -143,6 +143,8 @@ content:
         description: | # this will include new lines to allow paragraphs
           Analyzing GDPR fines imposed by the European data protection authorities could reveal the main reasons and focus areas of the authorities for non-compliance and could allow our organization to timely address similar gaps in their data privacy strategy.
 
+          The complete presentation can be accessed here: [Analyze GDPR Fines](https://github.com/busera/mads__analyze_gdpr_fines/blob/main/reports/Analyze_GDPR_Fines-Final_Report.pdf)
+
       - layout: left
         #border: weak
         title: Chicken Kitchen Expansion Evaluation 
@@ -161,6 +163,10 @@ content:
           The focus was on developing effective communication skills for data scientists, emphasizing the importance of tailoring content for different audiences and utilizing various communication formats.
         description: | # this will include new lines to allow paragraphs
           The case study centered around a data-driven decision-making case study for Chicken Kitchen, a premium fast-casual restaurant chain. As a data scientist, I was tasked with analyzing potential expansion locations for the franchise.
+
+          Final presentations are available here: 
+          - [SIADS523 Executive Summary](https://github.com/busera/mads__communicating_data_science_results/blob/main/reports/SIADS523%2001%20Executive%20Summary.pdf)
+          - [SIADS523 Detailed Presentation](https://github.com/busera/mads__communicating_data_science_results/blob/main/reports/SIADS523%2002%20Detailed%20Presentation.pdf)
 
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
