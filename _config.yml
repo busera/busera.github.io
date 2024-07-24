@@ -115,6 +115,8 @@ content:
         description: | # this will include new lines to allow paragraphs
           This project was designed to enhance our understanding of the outcomes following traumatic brain injuries, focusing on their determinants and consequences. We used causal inference to investigate the complex relationships between TBI and the subsequent risk of dementia, considering a range of demographic and clinical factors.
       
+          The complete report can be accessed here: [Decode Dementia Report](https://github.com/busera/MADS__SIADS699__Decode_Dementia/blob/main/docs/Decoding%20Dementia%20-%20Report.pdf)
+
       - layout: left
         #border: weak
         title: Predicting Text Difficulty
