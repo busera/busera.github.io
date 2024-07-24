@@ -165,9 +165,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           The case study centered around a data-driven decision-making case study for Chicken Kitchen, a premium fast-casual restaurant chain. As a data scientist, I was tasked with analyzing potential expansion locations for the franchise.
 
-          Final presentations are available here: 
-          - [SIADS523 Executive Summary](https://github.com/busera/mads__communicating_data_science_results/blob/main/reports/SIADS523%2001%20Executive%20Summary.pdf)
-          - [SIADS523 Detailed Presentation](https://github.com/busera/mads__communicating_data_science_results/blob/main/reports/SIADS523%2002%20Detailed%20Presentation.pdf)
+          Final presentations are available here [Executive Summary](https://github.com/busera/mads__communicating_data_science_results/blob/main/reports/SIADS523%2001%20Executive%20Summary.pdf) and here [Detailed Presentation](https://github.com/busera/mads__communicating_data_science_results/blob/main/reports/SIADS523%2002%20Detailed%20Presentation.pdf)
 
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
