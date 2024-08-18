@@ -60,6 +60,25 @@ content:
     layout: list # Type of content section (list/text)
     content:
 
+     - layout: left
+        border: weak
+        title: Applying Data Analysis in Internal Audit
+        sub_title: In Progress
+        caption: Aug 2024 - Present
+        link: github.com/busera/applying_data_analysis_in_internal_audit
+        link_text: github.com
+        #additional_links:
+        #  - title:  sproogen/modern-resume-theme
+        #    icon: fab fa-github
+        #    url: github.com/busera/mads__decode_dementia
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        #quote: >
+        #  This repository contains resources and examples for applying data analysis techniques in internal auditing. It aims to bridge the gap between data analysis theory and practical application in the field of internal audit.
+        description: | # this will include new lines to allow paragraphs
+          This repository contains resources and examples for applying data analysis techniques in internal auditing. It aims to bridge the gap between data analysis theory and practical application in the field of internal audit.
+
       - layout: left
         border: weak
         title: Exploring Microsoft Responsible AI Toolkit
