@@ -102,7 +102,7 @@ content:
 
           The tool employs various readability tests and analyses to provide insights and suggestions for enhancing text clarity and comprehension, thereby improving written communication in professional settings.
 
-          **Next step is to implement a local LLM to provide more text improvements recommendations.**
+          Next step is to implement a local LLM to provide more text improvements recommendations.
 
       - layout: left
         border: weak
