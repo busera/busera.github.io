@@ -192,18 +192,18 @@ content:
     content:
 
       - layout: left
-      border: weak
-      title: The Importance of AI Use Cases in System Classification and Risk Assessment
-      #sub_title: The Feedback Loop Between Algorithms and the Real World
-      caption: Nov 2024
-      link: https://medium.com/@buser.andre/the-importance-of-ai-use-cases-in-system-classification-and-risk-assessment-97795efbd11e
-      link_text: medium.com
-      #quote: >
-      #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
-      description: |
-        As organizations increasingly deploy artificial intelligence, a critical challenge emerges in how to classify and assess AI systems.
-        In practice, the same AI system could serve vastly different purposes and carry different risks depending on its application. Consider a ML model trained on financial data. When used for internal discussions, it operates in a controlled environment with limited potential for harm. The same model, when deployed for preparing public financial statements, enters a domain with significant regulatory oversight and potential for substantial impact on stakeholders.
-      
+        border: weak
+        title: The Importance of AI Use Cases in System Classification and Risk Assessment
+        #sub_title: The Feedback Loop Between Algorithms and the Real World
+        caption: Nov 2024
+        link: https://medium.com/@buser.andre/the-importance-of-ai-use-cases-in-system-classification-and-risk-assessment-97795efbd11e
+        link_text: medium.com
+        #quote: >
+        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+        description: |
+          As organizations increasingly deploy artificial intelligence, a critical challenge emerges in how to classify and assess AI systems.
+          In practice, the same AI system could serve vastly different purposes and carry different risks depending on its application. Consider a ML model trained on financial data. When used for internal discussions, it operates in a controlled environment with limited potential for harm. The same model, when deployed for preparing public financial statements, enters a domain with significant regulatory oversight and potential for substantial impact on stakeholders.
+        
       - layout: left
         border: weak
         title: Applying Data Analysis in Internal Audit
