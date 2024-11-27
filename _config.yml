@@ -55,7 +55,7 @@ about_content: | # this will include new lines to allow paragraphs
 
   This integrated expertise, I enable organizations to harness advanced data analytics capabilities while maintaining stringent ethical standards and regulatory compliance, ultimately supporting sustainable digital transformation initiatives.
 
-  Throughout my career, I remain committed to continuous learning, adapting to evolving technologies and methodologies to maintain effectiveness in navigating the complex intersection of data science, auditing, and ethical considerations in AI implementation.
+  Throughout my career, I remain committed to continuous learning, adapting to evolving technologies and methodologies to maintain effectiveness in navigating the complex intersection of data science, auditing, and [ethical considerations in AI implementation](https://github.com/busera/mads__ds_manifesto).
 
 content:
   - title: Data Science and Machine Learning Projects # Title for the section
