@@ -53,7 +53,7 @@ about_content: | # this will include new lines to allow paragraphs
 
   I lead AI risk assessments and governance audits at one of the world's largest pharmaceutical companies, working with executive leadership to build AI risk frameworks aligned with the EU AI Act. Beyond Novartis, I contribute to AI governance at an industry level: Advisory Board Member at CISS LTD, Industry Advisor at the FHNW Digital Trust Competence Center, and member of Plateforme Tripartite — collaborating with industry, academia, and policymakers on AI ethics and responsible innovation.
 
-  I also contributed as a Beta Tester to ISACA's AI Auditing Certification, helping shape the global standard for AI audit assurance.
+  I hold the ISACA Advanced in AI Audit™ (AAIA™) certification — the global standard for AI audit assurance.
 
   My work sits at the intersection of audit rigor and technical fluency — building governance frameworks that hold up under scrutiny, not just on paper. See my [Data Science Compass](https://github.com/busera/mads__ds_manifesto) for the principles that guide this work.
 
@@ -325,6 +325,14 @@ content:
         caption: Jul 2025
         description: |
           ISACA's Advanced in AI Audit certification — the global standard for AI audit assurance. Covers AI risk assessment, AI governance frameworks, and audit procedures for AI systems in regulated environments. Credential ID: 252865917.
+
+      - layout: left
+        border: weak
+        title: AI in Health Care — From Strategies to Implementation
+        sub_title: Harvard Medical School Professional Education
+        caption: Oct 2025
+        description: |
+          Executive program covering AI strategy, implementation frameworks, and governance in health care settings. Credential ID: 164056593.
 
       - layout: left
         border: weak
