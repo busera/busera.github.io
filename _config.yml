@@ -173,26 +173,6 @@ content:
 
           The complete presentation can be accessed here: [Analyze GDPR Fines](https://github.com/busera/mads__analyze_gdpr_fines/blob/main/reports/Analyze_GDPR_Fines-Final_Report.pdf)
 
-      - layout: left
-        #border: weak
-        title: Chicken Kitchen Expansion Evaluation 
-        sub_title: Case Study for Communicating Data Science Results
-        caption: Aug 2021
-        link: github.com/busera/mads__communicating_data_science_results/tree/main
-        link_text: github.com
-        #additional_links:
-        #  - title:  sproogen/modern-resume-theme
-        #    icon: fab fa-github
-        #    url: github.com/busera/mads__decode_dementia
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        #quote: >
-        #  The focus was on developing effective communication skills for data scientists, emphasizing the importance of tailoring content for different audiences and utilizing various communication formats.
-        description: | # this will include new lines to allow paragraphs
-          The case study centered around a data-driven decision-making case study for Chicken Kitchen, a premium fast-casual restaurant chain. As a data scientist, I was tasked with analyzing potential expansion locations for the franchise.
-
-          Final presentations are available here [Executive Summary](https://github.com/busera/mads__communicating_data_science_results/blob/main/reports/SIADS523%2001%20Executive%20Summary.pdf) and here [Detailed Presentation](https://github.com/busera/mads__communicating_data_science_results/blob/main/reports/SIADS523%2002%20Detailed%20Presentation.pdf)
 
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
@@ -340,11 +320,11 @@ content:
     content:
       - layout: left
         border: weak
-        title: AI Auditing Certification (Beta Tester)
+        title: Advanced in AI Audit™ (AAIA™)
         sub_title: ISACA
-        caption: 2025
+        caption: Jul 2025
         description: |
-          Selected as Beta Tester for ISACA's AI Auditing Certification — contributing to the development and validation of the global standard for AI audit assurance. This certification addresses AI risk assessment, AI governance frameworks, and audit procedures for AI systems in regulated environments.
+          ISACA's Advanced in AI Audit certification — the global standard for AI audit assurance. Covers AI risk assessment, AI governance frameworks, and audit procedures for AI systems in regulated environments. Credential ID: 252865917.
 
       - layout: left
         border: weak
