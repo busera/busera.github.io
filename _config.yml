@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Andre B.
-title: Applied Data Science | Audit | Investigation | Information Security | Data Protection
+title: AI Governance & Internal Audit | Applied Data Science | CISA · CISSP · CFE
 # email: https://www.linkedin.com/in/buserandre/
 # website: www.github.com/sproogen/resume-theme
 
@@ -49,13 +49,13 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile1.jpg
 about_content: | # this will include new lines to allow paragraphs
-  As a seasoned professional with specialized expertise in Internal Audit and Information Systems, I leverage technical proficiency and governance experience to advance responsible AI implementation. My Master of Applied Data Science from the University of Michigan strengthens my foundation in Data Privacy and Investigation, enabling me to bridge the critical gap between analytical innovation and enterprise risk management. 
+  Senior Manager in Internal Audit at Novartis with 20+ years of experience, specializing in AI governance, risk management, and analytics-enabled audit. My Master of Applied Data Science (University of Michigan, GPA 3.97) gives me the technical depth to audit what others can only describe.
 
-  I excel in developing and implementing comprehensive AI governance frameworks that align with strategic organizational objectives while upholding rigorous data ethics standards. My collaborative approach ensures AI solutions deliver measurable business value while adhering to robust governance principles, driving both innovation and compliance. 
+  I lead AI risk assessments and governance audits at one of the world's largest pharmaceutical companies, working with executive leadership to build AI risk frameworks aligned with the EU AI Act. Beyond Novartis, I contribute to AI governance at an industry level: Advisory Board Member at CISS LTD, Industry Advisor at the FHNW Digital Trust Competence Center, and member of Plateforme Tripartite — collaborating with industry, academia, and policymakers on AI ethics and responsible innovation.
 
-  This integrated expertise, I enable organizations to harness advanced data analytics capabilities while maintaining stringent ethical standards and regulatory compliance, ultimately supporting sustainable digital transformation initiatives.
+  I also contributed as a Beta Tester to ISACA's AI Auditing Certification, helping shape the global standard for AI audit assurance.
 
-  Throughout my career, I remain committed to continuous learning, adapting to evolving technologies and methodologies to maintain effectiveness in navigating the complex intersection of data science, auditing, and [ethical considerations in AI implementation](https://github.com/busera/mads__ds_manifesto).
+  My work sits at the intersection of audit rigor and technical fluency — building governance frameworks that hold up under scrutiny, not just on paper. See my [Data Science Compass](https://github.com/busera/mads__ds_manifesto) for the principles that guide this work.
 
 content:
   - title: Data Science and Machine Learning Projects # Title for the section
@@ -135,6 +135,16 @@ content:
   - title: Visualization Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
+
+      - layout: left
+        border: weak
+        title: Fake Transaction Data Generator
+        link: github.com/busera/fake_transaction_data_generator
+        link_text: github.com
+        quote: >
+          Realistic synthetic transaction data for audit analytics testing, fraud detection model training, and data science education — without exposing confidential financial records.
+        description: |
+          A Python-based generator that produces realistic fake financial transaction datasets. Useful for testing audit analytics scripts, training anomaly detection and fraud classification models, and data science education — enabling practitioners to work with realistic data structures without confidentiality constraints.
 
       - layout: left
         border: weak
@@ -322,17 +332,25 @@ content:
         title: Novartis
         #link: novartis.com
         #link_text: boringcompany.com
-        sub_title: Director | Senior Manager
+        sub_title: Senior Manager Internal Audit | 16+ Years
         caption: Apr 2010 - Present
         quote: >
           Bridging the gap between innovation and responsible governance in the AI and data science landscape.
 
         description: |
-          In my current role as Senior Manager Global Security at Novartis, I support and implement data analytics initiatives and provide support to our in-house Open Source Intelligence (OSINT) and investigation teams. My role involves leveraging advanced data science techniques to enhance our global security strategies, improve risk assessment, and safeguard the company's digital assets.
+          In my current role as Senior Manager Internal Audit at Novartis, I lead AI risk assessments and governance audits, working with executive leadership to integrate AI risk governance into corporate risk management frameworks. My work covers AI Strategy, EU AI Act compliance, data governance, and analytics-enabled audit — combining deep audit methodology with hands-on data science skills to audit what others can only describe.
 
   - title: Key Certifications # Title for the section
     layout: list # Type of content section (list/text)
     content:
+      - layout: left
+        border: weak
+        title: AI Auditing Certification (Beta Tester)
+        sub_title: ISACA
+        caption: 2025
+        description: |
+          Selected as Beta Tester for ISACA's AI Auditing Certification — contributing to the development and validation of the global standard for AI audit assurance. This certification addresses AI risk assessment, AI governance frameworks, and audit procedures for AI systems in regulated environments.
+
       - layout: left
         border: weak
         title: Certified Fraud Investigator (CFE)
