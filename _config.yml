@@ -51,11 +51,11 @@ about_profile_image: images/profile_andre_buser.jpeg
 about_content: | # this will include new lines to allow paragraphs
   I audit AI systems at Novartis — one of the world's largest pharmaceutical companies. That means reviewing whether governance frameworks actually hold up under scrutiny, whether controls around GenAI deployments are real or just documented, and whether the risk picture management sees matches what's in the system.
 
-  What makes this different from standard IT audit: I have the technical depth to go beyond document review. My Master of Applied Data Science from Michigan (GPA 3.97) means I can read a model card, trace a training pipeline, and find where governance gaps turn into actual risk — not just check a compliance box. I hold CISA, CISSP, CFE, and ISACA's Advanced in AI Audit™ (AAIA™).
+  What makes this different from standard IT audit: I have the technical depth to go beyond document review. My Master of Applied Data Science from Michigan (GPA 3.97) means I can read a model card, trace a training pipeline, and find where governance gaps turn into actual risk, not just check a compliance box. I hold CISA, CISSP, CFE, and ISACA's Advanced in AI Audit™ (AAIA™).
 
-  I also build the tooling. LLM pipelines that generate Audit Planning Memorandums and work programs from source documents — work that used to take days. An interactive risk visualization that turns an AI risk taxonomy into something you can actually explore. A prompt library for audit workflows. Most of it started as personal experiments. A few ended up in production.
+  I also build the tooling. LLM pipelines that generate Audit Planning Memorandums and work programs from source documents; work that used to take days. An interactive risk visualization that turns an AI risk taxonomy into something you can actually explore. A prompt library for audit workflows. Most of it started as personal experiments. A few ended up in production.
 
-  Outside the day job: advisory board at CISS LTD, industry advisor at FHNW Digital Trust Competence Center, and Plateforme Tripartite — industry, academia, and regulators in the same room on the harder AI governance questions. It's worth the time.
+  Outside the day job: advisory board at CISS LTD, industry advisor at FHNW Digital Trust Competence Center, and Plateforme Tripartite, industry, academia, and regulators in the same room on the harder AI governance questions. It's worth the time.
 
 content:
   - title: Data Science and Machine Learning Projects # Title for the section
