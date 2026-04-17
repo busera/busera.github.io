@@ -370,9 +370,13 @@ content:
         link: https://www.si.umich.edu/programs/master-applied-data-science
         link_text: umich.edu
         quote: >
-          The University of Michigan, founded in 1817, is a top-tier public research institution known for its innovative programs and commitment to academic excellence.
+          University of Michigan School of Information — ranked among the top data science programs in the U.S.
         description: |
-          Completed the Master of Applied Data Science (MADS) program at the University of Michigan's School of Information, graduating December 2023 with a 3.97 GPA. Curriculum covered machine learning, statistical inference, data engineering, NLP, and visualization end-to-end. Capstone project: causal inference study on TBI determinants and dementia risk (Decode Dementia).
+          Completed the Master of Applied Data Science (MADS) program, graduating December 2023 with a 3.97 GPA. The curriculum covered machine learning, deep learning, NLP, statistical inference, data engineering, and visualization end-to-end.
+
+          AI-relevant coursework included supervised and unsupervised learning, neural networks, causal inference, and responsible AI (fairness, interpretability, ethics). Capstone project used causal inference to investigate TBI and dementia risk (Decode Dementia). Additional courses in generative AI fundamentals, LLM programming (Llama), and data science ethics taken post-graduation (2024).
+
+          This degree is the technical foundation for my current AI governance audit work — it's one thing to review an AI risk framework on paper, another to actually understand what's happening inside the model.
 
 
 #  - title: Publications
