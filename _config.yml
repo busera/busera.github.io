@@ -6,8 +6,8 @@ favicon: images/favicon.ico
 version: 2
 
 # Personal info
-name: Andre B.
-title: AI Governance & Internal Audit | Applied Data Science | CISA · CISSP · CFE
+name: André Buser
+title: AI Governance & Internal Audit | Applied Data Science | CISA · CISSP · CFE · AAIA™
 # email: https://www.linkedin.com/in/buserandre/
 # website: www.github.com/sproogen/resume-theme
 
@@ -55,7 +55,7 @@ about_content: | # this will include new lines to allow paragraphs
 
   I also build the tooling. LLM pipelines that generate Audit Planning Memorandums and work programs from source documents; work that used to take days. An interactive risk visualization that turns an AI risk taxonomy into something you can actually explore. A prompt library for audit workflows. Most of it started as personal experiments. A few ended up in production.
 
-  Outside the day job: advisory board at CISS LTD, industry advisor at FHNW Digital Trust Competence Center, and Plateforme Tripartite, industry, academia, and regulators in the same room on the harder AI governance questions. It's worth the time.
+  Outside the day job: advisory board at CISS LTD, and Plateforme Tripartite, industry, academia, and regulators in the same room on the harder AI governance questions. It's worth the time.
 
 content:
   - title: Data Science and Machine Learning Projects # Title for the section
@@ -77,9 +77,9 @@ content:
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          The project aims to demonstrate responsible AI practices in healthcare-related machine learning, potentially improving model transparency and reducing bias in medical predictions.
+          Applying Microsoft's Responsible AI toolkit to healthcare ML, focusing on fairness assessment, interpretability, and error analysis.
         description: | # this will include new lines to allow paragraphs
-          In this project I am planning to apply the Microsoft Responsible AI toolkit to the scikit-learn Diabetes dataset, focusing on gaining practical experience with the toolkit and understanding its metrics in a real-world machine learning context. Key components to be explored include fairness assessment, interpretability techniques, and error analysis. 
+          Exploring and evaluating Microsoft's Responsible AI toolkit using the scikit-learn Diabetes dataset. The project covers fairness assessment, interpretability techniques, and error analysis in a real-world machine learning context, demonstrating practical experience with responsible AI practices in healthcare-related predictions.
 
       - layout: left
         border: weak
@@ -104,7 +104,7 @@ content:
 
           The tool employs various readability tests and analyses to provide insights and suggestions for enhancing text clarity and comprehension, thereby improving written communication in professional settings.
 
-          Next step is to implement a local LLM to provide more text improvements recommendations.
+          The tool has since been expanded with LLM-based text improvement recommendations for audit report quality.
 
       - layout: left
         border: weak
@@ -304,16 +304,26 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        border: weak
         title: Novartis
-        #link: novartis.com
-        #link_text: boringcompany.com
         sub_title: Senior Manager Internal Audit | 16+ Years
         caption: Apr 2010 - Present
         quote: >
-          Bridging the gap between innovation and responsible governance in the AI and data science landscape.
+          20+ years across internal audit, information security, and global security in one of the world's largest pharmaceutical companies.
 
         description: |
-          In my current role as Senior Manager Internal Audit at Novartis, I lead AI risk assessments and governance audits, working with executive leadership to integrate AI risk governance into corporate risk management frameworks. My work covers AI Strategy, EU AI Act compliance, data governance, and analytics-enabled audit — combining deep audit methodology with hands-on data science skills to audit what others can only describe.
+          Currently leading AI governance audits, reviewing how AI Strategy, risk frameworks, and GenAI deployment controls work in practice. Built the team's Audit Planning Memorandum (APM) generation system from scratch (Copilot-optimized, YAML-driven), cutting planning document prep from days to hours. Created an interactive AI risk visualization and a prompt library for structured audit workflows.
+
+          Previously served as Senior Manager Global Security (2022-2024), where I built an LLM prototype for automated investigation report drafting (GPT-4, Llama2, in-house model), a sanctions extraction system using fuzzy matching, and automated case management with data quality assurance.
+
+          Earlier roles include Director of Information Security and Risk Management (team of 15, SOX IT compliance, GEMINI EPS vendor transition) and Senior IT Auditor for vendor audits.
+
+      - layout: left
+        title: Advisory & Industry Roles
+        sub_title: AI Governance
+        caption: Ongoing
+        description: |
+          Advisory Board Member at CISS LTD, providing strategic guidance on AI initiatives and technology governance. Member of Plateforme Tripartite, bringing industry, academia, and regulators together on AI ethics and digital innovation questions.
 
   - title: Key Certifications # Title for the section
     layout: list # Type of content section (list/text)
@@ -336,11 +346,19 @@ content:
 
       - layout: left
         border: weak
-        title: Certified Fraud Investigator (CFE)
+        title: Certified SAFe 6 Agilist
+        sub_title: Scaled Agile, Inc.
+        caption: Jun 2025
+        description: |
+          SAFe 6 certification for Lean-Agile leadership at enterprise scale. Covers Lean portfolio management, Agile product delivery, and organizational agility.
+
+      - layout: left
+        border: weak
+        title: Certified Fraud Examiner (CFE)
         sub_title: Association of Certified Fraud Examiners (ACFE)
         caption: Feb 2024
         description: |
-          This specialized certification demonstrates expertise in fraud detection, prevention, and investigation, including proficiency in financial transaction analysis, fraud law, and advanced investigative techniques. Skilled in implementing anti-fraud controls and managing internal investigations. The globally recognized CFE certification reflects a high level of fraud examination knowledge and adherence to ethical standards in the field.
+          Fraud detection, prevention, and investigation. Covers financial transaction analysis, fraud law, investigative techniques, and anti-fraud controls. Applied directly in data theft investigations and DLP work at Novartis Global Security.
      
       - layout: left
         border: weak
@@ -348,7 +366,7 @@ content:
         sub_title: PECB
         caption: Feb 2019
         description: |
-          Demonstrated proficiency in developing and implementing comprehensive data protection strategies, policies, and procedures. Adept at conducting thorough data protection impact assessments, efficiently managing data breaches, and ensuring organizational adherence to key regulations such as GDPR. Recognized for serving as a pivotal advisor on data protection matters and effectively liaising between the organization, data subjects, and supervisory authorities. Combines technical knowledge with strong communication skills to translate complex privacy requirements into actionable business practices, fostering a culture of data protection across the organization.
+          Data protection strategy, GDPR compliance, and privacy impact assessments. Covers breach management, regulatory liaison, and translating privacy requirements into operational practice. Applied in audit and governance roles involving personal data handling across regulated pharma environments.
       
       - layout: left
         border: weak
@@ -356,7 +374,7 @@ content:
         sub_title: ISC2
         caption: Jan 2016
         description: |
-          Advanced information security certified professional with comprehensive expertise across the Common Body of Knowledge (CBK) domains. Skilled in designing and managing cybersecurity programs, encompassing risk management, asset security, network protection, and security operations. Proficient in identity management, security assessment, and secure software development.
+          Information security architecture across all CBK domains: risk management, asset security, network protection, identity management, security operations, and secure development. Applied as Director of Information Security at Novartis (team of 15) and in vendor governance board leadership.
       
       - layout: left
         #border: weak
@@ -364,7 +382,7 @@ content:
         sub_title: ISACA
         caption: Aug 2011
         description: |
-          Globally certified information systems auditor with expertise in IT control and security. Proficient in conducting comprehensive IT audits, assessing vulnerabilities, and ensuring compliance with industry standards. Skilled in evaluating information systems operations, governance, and cybersecurity practices. Develops and implements risk-based IT audit strategies, providing valuable insights to enhance organizational IT controls and processes. Committed to maintaining high professional standards and staying current with evolving technology and audit methodologies.
+          IT audit, control evaluation, and compliance. Foundation certification for all audit work at Novartis since 2011, covering IT governance, security assessment, and risk-based audit strategy. Credential ID: 1193963.
   
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
@@ -378,11 +396,7 @@ content:
         quote: >
           The University of Michigan, founded in 1817, is a top-tier public research institution known for its innovative programs and commitment to academic excellence.
         description: |
-          At the University of Michigan's School of Information, I completed the Master of Applied Data Science (MADS) program, graduating in December 2023. This comprehensive program provided me with a solid foundation in key areas of data science, including machine learning, data mining, and big data analytics.
-
-          The curriculum emphasized practical application, allowing me to work on real-world projects and develop problem-solving skills applicable to complex datasets.
-
-          This experience equipped me with both the technical skills and ethical understanding necessary to navigate the challenges of modern data science, preparing me for impactful contributions in my professional role.
+          Completed the Master of Applied Data Science (MADS) program at the University of Michigan's School of Information, graduating December 2023 with a 3.97 GPA. Curriculum covered machine learning, statistical inference, data engineering, NLP, and visualization end-to-end. Capstone project: causal inference study on TBI determinants and dementia risk (Decode Dementia).
 
 
 #  - title: Publications
