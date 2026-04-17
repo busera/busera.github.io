@@ -79,7 +79,7 @@ content:
         quote: >
           Applying Microsoft's Responsible AI toolkit to healthcare ML, focusing on fairness assessment, interpretability, and error analysis.
         description: | # this will include new lines to allow paragraphs
-          Exploring and evaluating Microsoft's Responsible AI toolkit using the scikit-learn Diabetes dataset. The project covers fairness assessment, interpretability techniques, and error analysis in a real-world machine learning context, demonstrating practical experience with responsible AI practices in healthcare-related predictions.
+          Exploring and evaluating Microsoft's Responsible AI toolkit using the scikit-learn Diabetes dataset. The project covers fairness assessment, interpretability techniques, and error analysis in a healthcare ML context. The goal is hands-on experience with the same responsible AI tooling I evaluate in audit work.
 
       - layout: left
         border: weak
@@ -163,7 +163,7 @@ content:
         link: github.com/busera/applying_data_analysis_in_internal_audit
         link_text: github.com
         description: | # this will include new lines to allow paragraphs
-          This repository contains resources and examples for applying data analysis techniques in internal auditing. It aims to bridge the gap between data analysis theory and practical application in the field of internal audit including code examples, data sets and visualizations.
+          Resources and working examples for applying data analysis in internal audit. Includes code, datasets, and visualizations that go beyond the high-level guidance available from IIA and ISACA.
 
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
@@ -179,8 +179,7 @@ content:
         #quote: >
         #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
         description: |
-          As organizations increasingly deploy artificial intelligence, a critical challenge emerges in how to classify and assess AI systems.
-          In practice, the same AI system could serve vastly different purposes and carry different risks depending on its application. Consider a ML model trained on financial data. When used for internal discussions, it operates in a controlled environment with limited potential for harm. The same model, when deployed for preparing public financial statements, enters a domain with significant regulatory oversight and potential for substantial impact on stakeholders.
+          The same AI system can carry very different risks depending on how it's used. A ML model trained on financial data is low-risk when used for internal discussions but high-risk when preparing public financial statements. This distinction matters for classification under frameworks like the EU AI Act, and most organizations get it wrong by classifying the system rather than the use case.
         
       - layout: left
         border: weak
