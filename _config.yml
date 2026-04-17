@@ -98,13 +98,11 @@ content:
         quote: >
           Originally developed in my free time to practice Python, Readability Optimizer is a prototype tool designed to help authors improve the readability of their texts.
         description: | # this will include new lines to allow paragraphs
-          This project marked one of my first endeavors in preparation for my upcoming Master's in Applied Data Science (MADS) at the University of Michigan.
+          Started as a Python learning project before my MADS at the University of Michigan. Became the foundation for an in-house audit report quality tool at Novartis.
 
-          This prototype served as the foundation for an in-house solution, particularly for internal audit reports. This solution was expanded to import the audit report and analyze all observation paragraphs for readability.
+          The tool imports audit reports, scores each observation paragraph for readability, and flags sections that need rewriting. It runs multiple readability tests (Flesch-Kincaid, Gunning Fog, etc.) and produces actionable suggestions.
 
-          The tool employs various readability tests and analyses to provide insights and suggestions for enhancing text clarity and comprehension, thereby improving written communication in professional settings.
-
-          The tool has since been expanded with LLM-based text improvement recommendations for audit report quality.
+          Since expanded with LLM-based text improvement recommendations for audit report quality.
 
       - layout: left
         border: weak
@@ -115,7 +113,7 @@ content:
         quote: >
           Key findings indicate that TBIs, especially those involving loss of consciousness, alongside the presence of the APOE ε4 allele and male gender, significantly increase dementia risk, while higher education levels seem to offer some protective effects.
         description: | # this will include new lines to allow paragraphs
-          This project was designed to enhance our understanding of the outcomes following traumatic brain injuries, focusing on their determinants and consequences. We used causal inference to investigate the complex relationships between TBI and the subsequent risk of dementia, considering a range of demographic and clinical factors.
+          MADS capstone project investigating what happens after traumatic brain injuries, specifically the link to dementia. We used causal inference methods to trace how TBI severity, genetics (APOE ε4), and demographics interact to affect dementia risk.
       
           The complete report can be accessed here: [Decode Dementia Report](https://github.com/busera/MADS__SIADS699__Decode_Dementia/blob/main/docs/Decoding%20Dementia%20-%20Report.pdf)
 
@@ -128,7 +126,7 @@ content:
         quote: >
           Our analysis found that the fine-tuned Random Forest model demonstrated the highest accuracy score of 0.7544.
         description: | # this will include new lines to allow paragraphs
-          This project aimed to classify sentences from articles in the "Simple English Wikipedia" to determine whether they require simplification to enhance their accessibility and comprehensibility for audiences with low reading proficiency, including students, children, and non-native English speakers. The project employed supervised and unsupervised learning techniques to extract and create features for sentence classification.
+          Classifying sentences from Simple English Wikipedia to determine which ones need simplification for readers with lower reading proficiency (students, children, non-native speakers). Used both supervised and unsupervised learning techniques for feature extraction and sentence classification.
       
           The complete report can be accessed here: [Predicting Text Difficulty Report](https://github.com/busera/mads__predicting_text_difficulty/blob/main/reports/Predicting_Text_Difficulty-Final_Report.pdf)
 
@@ -144,7 +142,7 @@ content:
         quote: >
           Realistic synthetic transaction data for audit analytics testing, fraud detection model training, and data science education — without exposing confidential financial records.
         description: |
-          A Python-based generator that produces realistic fake financial transaction datasets. Useful for testing audit analytics scripts, training anomaly detection and fraud classification models, and data science education — enabling practitioners to work with realistic data structures without confidentiality constraints.
+          A Python-based generator that produces realistic fake financial transaction datasets. Useful for testing audit analytics scripts, training anomaly detection and fraud classification models, and data science education. Lets practitioners work with realistic data structures without confidentiality constraints.
 
       - layout: left
         border: weak
@@ -201,9 +199,9 @@ content:
         #quote: >
         #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
         description: |
-          The application of data analysis in internal audit has been a topic of increasing interest and discussion in my recent months. While numerous knowledge briefs and guides are available from respected organizations like the IIA and ISACA, these resources often present a more high-level and generic approach. As a professional with a background in data science, I’ve found that many existing resources in this area lack some depth and specificity to better bridge the gap between data analysis theory and its practical application in internal audit.
+          Most IIA and ISACA guides on audit analytics stay high-level. As someone with a data science background doing audit work, I kept running into the gap between what those guides describe and what you actually need to do in practice.
 
-          This observation has motivated me to create this comprehensive guide. This guide explores the application of data analysis techniques in internal auditing, adapting key concepts from academic research methodologies[5] to the practical world of internal audit focusing on two distinct concept.
+          This article bridges that gap. It adapts academic research methodology concepts to the practical world of internal audit, with code examples and concrete techniques you can apply to real engagements.
 
       - layout: left
         border: weak
@@ -215,11 +213,7 @@ content:
         #quote: >
         #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
         description: |
-          In today’s world, algorithms are a big part of our daily lives. They suggest what we should watch and help decide if we can get a loan. These computer programs make many decisions that affect us all.
-          
-          But what happens when these algorithms start to change the very world they are supposed to describe?
-          
-          This is what we call algorithm ossification, and it’s important phenomenon to understand.
+          Algorithms recommend what we watch and decide whether we get loans. But what happens when they start reshaping the world they were trained to describe? Algorithm ossification is the feedback loop where algorithmic decisions shape the data that future algorithms learn from, reinforcing existing patterns rather than reflecting reality.
       
       - layout: left
         border: weak
@@ -255,7 +249,7 @@ content:
         #quote: >
         #  Originally developed in April 2021 as part of the University of Michigan's Master of Applied Data Science program, SIADS501 - Being a Data Scientist course. This manifesto continues to guide my practice and is regularly updated to reflect new insights and evolving best practices in the field.
         description: |
-          This use case involved the development of a Data Ethics Checklist for data science projects, created as part of a university ethics course (MADS SIADS593). The checklist is designed to guide data scientists through ethical considerations at various stages of a project, from initial organization to final deployment. It incorporates key ethical principles such as transparency, accountability, fairness, and explainability, drawing from established frameworks and guidelines in the field of data ethics. The checklist is structured around the CRISP-DM model, providing specific, actionable questions at each project phase to ensure ethical practices are maintained throughout the data science workflow.
+          A Data Ethics Checklist for data science projects, built for MADS SIADS593 (Ethics). Structured around the CRISP-DM model, it walks through ethical questions at each project phase: data collection, preparation, modeling, evaluation, and deployment. Covers transparency, accountability, fairness, and explainability.
       
       - layout: left
         border: weak
@@ -267,9 +261,7 @@ content:
         #quote: >
         #  Originally developed in April 2021 as part of the University of Michigan's Master of Applied Data Science program, SIADS501 - Being a Data Scientist course. This manifesto continues to guide my practice and is regularly updated to reflect new insights and evolving best practices in the field.
         description: |
-          Originally developed in April 2021 as part of the University of Michigan's Master of Applied Data Science program, SIADS501 - Being a Data Scientist course. This manifesto continues to guide my practice and is regularly updated to reflect new insights and evolving best practices in the field.
-        
-          This document outlines my core principles, methodologies, and ethical commitments as a data scientist. It serves as a personal guide for navigating the complex landscape of data-driven decision making, ensuring that I consistently deliver high-quality, ethical, and impactful work.
+          Written for MADS SIADS501 (Being a Data Scientist) at the University of Michigan, April 2021. A personal set of principles for how I approach data science work: methodology choices, ethical commitments, and quality standards. Still updated as my practice evolves.
       
       - layout: left
         border: weak
