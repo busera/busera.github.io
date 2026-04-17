@@ -49,7 +49,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile_andre_buser.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  I audit AI systems at Novartis — one of the world's largest pharmaceutical companies. That means reviewing whether governance frameworks actually hold up under scrutiny, whether controls around GenAI deployments are real or just documented, and whether the risk picture management sees matches what's in the system.
+  I audit AI systems at one of the world's largest pharmaceutical companies. That means reviewing whether governance frameworks actually hold up under scrutiny, whether controls around GenAI deployments are real or just documented, and whether the risk picture management sees matches what's in the system.
 
   What makes this different from standard IT audit: I have the technical depth to go beyond document review. My Master of Applied Data Science from Michigan (GPA 3.97) means I can read a model card, trace a training pipeline, and find where governance gaps turn into actual risk, not just check a compliance box. I hold CISA, CISSP, CFE, and ISACA's Advanced in AI Audit™ (AAIA™).
 
@@ -98,7 +98,7 @@ content:
         quote: >
           Originally developed in my free time to practice Python, Readability Optimizer is a prototype tool designed to help authors improve the readability of their texts.
         description: | # this will include new lines to allow paragraphs
-          Started as a Python learning project before my MADS at the University of Michigan. Became the foundation for an in-house audit report quality tool at Novartis.
+          Started as a Python learning project before my MADS at the University of Michigan. Became the foundation for an in-house audit report quality tool.
 
           The tool imports audit reports, scores each observation paragraph for readability, and flags sections that need rewriting. It runs multiple readability tests (Flesch-Kincaid, Gunning Fog, etc.) and produces actionable suggestions.
 
@@ -281,7 +281,7 @@ content:
     content:
       - layout: left
         border: weak
-        title: Novartis
+        title: Major Global Pharmaceutical Company
         sub_title: Senior Manager Internal Audit | 16+ Years
         caption: Apr 2010 - Present
         quote: >
@@ -310,7 +310,7 @@ content:
         sub_title: ISACA
         caption: Jul 2025
         description: |
-          ISACA's credential for AI audit assurance, covering AI risk assessment, AI governance frameworks, and audit procedures for AI systems in regulated environments. The certification validates the ability to evaluate AI controls, assess model risk, and audit AI governance structures against standards like the EU AI Act and ISO 42001. Applied directly in AI governance audits at Novartis. Credential ID: 252865917.
+          ISACA's credential for AI audit assurance, covering AI risk assessment, AI governance frameworks, and audit procedures for AI systems in regulated environments. The certification validates the ability to evaluate AI controls, assess model risk, and audit AI governance structures against standards like the EU AI Act and ISO 42001. Applied directly in AI governance audits in regulated pharma. Credential ID: 252865917.
 
       - layout: left
         border: weak
@@ -326,7 +326,7 @@ content:
         sub_title: Scaled Agile, Inc.
         caption: Jun 2025
         description: |
-          SAFe 6 certification for Lean-Agile leadership at enterprise scale. Covers Lean portfolio management, Agile product delivery, and organizational agility. Applied in audit engagements assessing Agile transformation maturity and DevOps governance at Novartis.
+          SAFe 6 certification for Lean-Agile leadership at enterprise scale. Covers Lean portfolio management, Agile product delivery, and organizational agility. Applied in audit engagements assessing Agile transformation maturity and DevOps governance.
 
       - layout: left
         border: weak
@@ -334,7 +334,7 @@ content:
         sub_title: Association of Certified Fraud Examiners (ACFE)
         caption: Feb 2024
         description: |
-          Fraud detection, prevention, and investigation. Covers financial transaction analysis, fraud law, investigative techniques, and anti-fraud controls. Applied directly in data theft investigations and Data Loss Prevention (DLP) work during my tenure as Senior Manager Global Security at Novartis (2022-2024), where I built automated investigation tools and led forensic data analytics.
+          Fraud detection, prevention, and investigation. Covers financial transaction analysis, fraud law, investigative techniques, and anti-fraud controls. Applied directly in data theft investigations and Data Loss Prevention (DLP) work during my tenure as Senior Manager Global Security (2022-2024), where I built automated investigation tools and led forensic data analytics.
      
       - layout: left
         border: weak
@@ -342,7 +342,7 @@ content:
         sub_title: PECB
         caption: Feb 2019
         description: |
-          Data protection strategy, GDPR compliance, and privacy impact assessments. Covers breach management, regulatory liaison, and translating privacy requirements into operational practice. Applied across audit and governance roles at Novartis, particularly in engagements involving patient data, employee records, and cross-border data transfers in a regulated pharma environment. CDPO bridges the gap between legal privacy requirements and the technical controls that auditors actually test.
+          Data protection strategy, GDPR compliance, and privacy impact assessments. Covers breach management, regulatory liaison, and translating privacy requirements into operational practice. Applied across audit and governance roles in regulated pharma, particularly in engagements involving patient data, employee records, and cross-border data transfers. CDPO bridges the gap between legal privacy requirements and the technical controls that auditors actually test.
       
       - layout: left
         border: weak
@@ -350,7 +350,7 @@ content:
         sub_title: ISC2
         caption: Jan 2016
         description: |
-          Information security architecture across all CBK domains: risk management, asset security, network protection, identity management, security operations, and secure development. Applied as Director of Information Security and Risk Management at Novartis (2014-2017), leading an international team of 15, chairing the vendor governance board, and managing SOX IT compliance. The CISSP provides the security architecture foundation for evaluating AI system security controls in current audit work.
+          Information security architecture across all CBK domains: risk management, asset security, network protection, identity management, security operations, and secure development. Applied as Director of Information Security and Risk Management (2014-2017), leading an international team of 15, chairing the vendor governance board, and managing SOX IT compliance. The CISSP provides the security architecture foundation for evaluating AI system security controls in current audit work.
       
       - layout: left
         #border: weak
@@ -358,7 +358,7 @@ content:
         sub_title: ISACA
         caption: Aug 2011
         description: |
-          IT audit, control evaluation, and compliance. Foundation certification for all audit work at Novartis since 2011, covering IT governance, security assessment, and risk-based audit strategy. Starting with vendor IT audits and SOX testing, now applied to AI governance audits, cloud security assessments, and data governance reviews. The CISA methodology underpins how I structure every audit engagement. Credential ID: 1193963.
+          IT audit, control evaluation, and compliance. Foundation certification for all my audit work since 2011, covering IT governance, security assessment, and risk-based audit strategy. Starting with vendor IT audits and SOX testing, now applied to AI governance audits, cloud security assessments, and data governance reviews. The CISA methodology underpins how I structure every audit engagement. Credential ID: 1193963.
   
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
