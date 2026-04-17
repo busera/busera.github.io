@@ -118,6 +118,17 @@ content:
           The complete report can be accessed here: [Decode Dementia Report](https://github.com/busera/MADS__SIADS699__Decode_Dementia/blob/main/docs/Decoding%20Dementia%20-%20Report.pdf)
 
       - layout: left
+        border: weak
+        title: Analyze GDPR Fines
+        caption: Nov 2021 - Dec 2021
+        link: github.com/busera/mads__analyze_gdpr_fines
+        link_text: github.com
+        description: |
+          Data visualization of GDPR fines imposed by European data protection authorities (2018-2021). Identifies non-compliance focus areas and patterns relevant to healthcare sector data privacy strategy.
+
+          Report: [Analyze GDPR Fines](https://github.com/busera/mads__analyze_gdpr_fines/blob/main/reports/Analyze_GDPR_Fines-Final_Report.pdf)
+
+      - layout: left
         #border: weak
         title: Predicting Text Difficulty
         caption: Nov 2022 - Dec 2022
@@ -153,24 +164,6 @@ content:
         link_text: github.com
         description: | # this will include new lines to allow paragraphs
           This repository contains resources and examples for applying data analysis techniques in internal auditing. It aims to bridge the gap between data analysis theory and practical application in the field of internal audit including code examples, data sets and visualizations.
-
-  - title: Visualization Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-
-      - layout: left
-        title: Analyze GDPR Fines
-        border: weak
-        caption: Nov 2021 - Dec 2021
-        link: github.com/busera/mads__analyze_gdpr_fines
-        link_text: github.com
-        #quote: >
-        #  Our analysis of GDPR fines from 2018 to 2021 has revealed crucial insights for data protection practices, particularly in the healthcare sector.
-        description: | # this will include new lines to allow paragraphs
-          Analyzing GDPR fines imposed by the European data protection authorities could reveal the main reasons and focus areas of the authorities for non-compliance and could allow our organization to timely address similar gaps in their data privacy strategy.
-
-          The complete presentation can be accessed here: [Analyze GDPR Fines](https://github.com/busera/mads__analyze_gdpr_fines/blob/main/reports/Analyze_GDPR_Fines-Final_Report.pdf)
-
 
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
@@ -229,19 +222,16 @@ content:
 
       - layout: left
         border: weak
-        title: Exploring the Power of ChatGPT
-        sub_title: A Comprehensive Introduction
-        caption: Jun 2024
-        link: "360incontrol.ch/2024/06/28/artificial-intelligence-a-comprehensive-view-🤖/"
-        link_text: 360incontrol.ch
-        #quote: >
-        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+        title: Understanding Dataset Splitting in Machine Learning
+        caption: Jul 2024
+        link: https://medium.com/@buser.andre
+        link_text: medium.com
         description: |
-          An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+          Best practices for splitting datasets in machine learning projects. Covers train/validation/test splits, stratification, time-series considerations, and common pitfalls that lead to data leakage.
 
       - layout: left
         border: weak
-        title: Data Ethics Checklist 
+        title: Data Ethics Checklist
         sub_title: Case Study
         caption: Jul 2021
         link: github.com/busera/mads__data_science_ethics_checklist
@@ -263,33 +253,27 @@ content:
         description: |
           Written for MADS SIADS501 (Being a Data Scientist) at the University of Michigan, April 2021. A personal set of principles for how I approach data science work: methodology choices, ethical commitments, and quality standards. Still updated as my practice evolves.
       
+  - title: Earlier Publications (LinkedIn Pulse)
+    layout: list
+    content:
+
       - layout: left
         border: weak
         title: Decomposing the Term Information Security Risk
-        #sub_title: A Comprehensive Introduction
         caption: Apr 2017
         link: https://www.linkedin.com/pulse/decomposing-term-information-security-risk-andr%2525C3%2525A9-buser-cisa-cissp/
         link_text: linkedin.com
-        #quote: >
-        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
         description: |
-          This article addresses the frequently asked question "What is an (information security) risk?" from the perspective of an IS Auditor and Information Security Risk Manager. It presents three tailored explanations to accommodate varying levels of audience interest and time constraints. 
-          
-          The first is a concise formula, the second a comprehensive definition based on industry standards, and the third a detailed exploration using ISO 31000:2009 as a foundation. This multi-tiered approach offers flexibility in explaining information security risk across different professional contexts and audience needs.
-  
+          Three ways to explain “what is an information security risk?” depending on your audience: a one-line formula, a standards-based definition, and a deep dive using ISO 31000:2009. Written from the perspective of an IS Auditor and Information Security Risk Manager.
+
       - layout: left
         #border: weak
         title: How to Write (Better) Information Security Risks
-        #sub_title: A Comprehensive Introduction
         caption: Oct 2016
         link: https://www.linkedin.com/pulse/how-write-better-information-security-risks-simplified-andr%25C3%25A9-buser/?trackingId=fiWEJHVvRv8bgyNzcwoHNg
         link_text: linkedin.com
-        #quote: >
-        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
         description: |
-          During the process of risk assessment it can be challenging to differentiate between risks, threats and vulnerabilities. This is important, because based on the threats and vulnerabilities – as well as on the impacted assets – the mitigation controls and risk levels can be different.
-
-          In now-a-days processes many of the risk assessment steps are starting with – or including – the term “risk”, although the “real risk” is the results of all those steps and activities. This small, but important difference, will be explained in the following sections.
+          Risk assessments often blur the line between risks, threats, and vulnerabilities. This matters because the choice of mitigation controls depends on getting that distinction right. The article walks through how to separate these concepts and write risks that are actually useful for decision-making.
 
   
   - title: Experience # Title for the section
