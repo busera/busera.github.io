@@ -171,6 +171,15 @@ content:
 
       - layout: left
         border: weak
+        title: Building an AI prototype for audit planning, without handing judgment to the machine
+        caption: May 2026
+        link: https://medium.com/@buser.andre/building-an-ai-prototype-for-audit-planning-without-handing-judgment-to-the-machine-d90d0055689b
+        link_text: medium.com
+        description: |
+          A build story about using agentic coding to prototype an AI-assisted audit planning workflow. The article focuses on three audit-planning problems: supporting risk-based planning before fieldwork, creating a stronger draft Audit Work Program for review and refinement, and accelerating planning without handing professional judgment to the machine.
+
+      - layout: left
+        border: weak
         title: The Importance of AI Use Cases in System Classification and Risk Assessment
         #sub_title: The Feedback Loop Between Algorithms and the Real World
         caption: Nov 2024
