@@ -158,16 +158,6 @@ content:
 
       - layout: left
         border: weak
-        title: Fake Transaction Data Generator
-        link: github.com/busera/fake_transaction_data_generator
-        link_text: github.com
-        quote: >
-          Realistic synthetic transaction data for audit analytics testing, fraud detection model training, and data science education — without exposing confidential financial records.
-        description: |
-          A Python-based generator that produces realistic fake financial transaction datasets. Useful for testing audit analytics scripts, training anomaly detection and fraud classification models, and data science education. Lets practitioners work with realistic data structures without confidentiality constraints.
-
-      - layout: left
-        border: weak
         title: Applying Data Analysis in Internal Audit
         sub_title: In Progress
         caption: Aug 2024 - Present
@@ -175,6 +165,20 @@ content:
         link_text: github.com
         description: | # this will include new lines to allow paragraphs
           Resources and working examples for applying data analysis in internal audit. Includes code, datasets, and visualizations that go beyond the high-level guidance available from IIA and ISACA.
+
+  - title: Audit Analytics Utilities / Experiments
+    layout: list
+    content:
+
+      - layout: left
+        border: weak
+        title: Fake Transaction Data Generator
+        link: github.com/busera/fake_transaction_data_generator
+        link_text: github.com
+        quote: >
+          Small educational utility for generating labeled synthetic transaction data for audit analytics exercises.
+        description: |
+          A standard-library Python prototype for creating fictional transaction datasets and an irregularity ledger. Useful for workshops, detector testing, and examples where real financial records cannot be used. Kept here as a utility/experiment rather than a flagship project.
 
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
