@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AEOS is a governed, agentic workspace for AI-augmented internal audit fieldwork. Explore its operating model, workflow, setup routes, privacy boundaries, maturity status, and roadmap.">
+  <meta property="og:title" content="AEOS — AI-Augmented Audit Engagement Operating System">
+  <meta property="og:description" content="Governed AI support for audit fieldwork, with professional authority retained by the auditor.">
+  <meta property="og:image" content="https://busera.github.io/aeos/assets/aeos-cover.png">
+  <meta property="og:type" content="website">
+  <title>AEOS — AI-Augmented Audit Engagement Operating System</title>
+  <meta name="theme-color" content="#10233e">
+  <link rel="icon" href="/images/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="hero">
+    <div class="wrap">
+      <nav class="site-nav" aria-label="AEOS website navigation">
+        <a aria-current="page" href="./">AEOS overview</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#components">Components</a>
+        <a href="#setup">Setup and privacy</a>
+        <a href="#status">Status</a>
+        <a href="https://busera.github.io/">André Buser</a>
+      </nav>
+      <div class="kicker">AI-Augmented Audit Engagement Operating System</div>
+      <h1>AEOS keeps the auditor in control of AI-augmented fieldwork.</h1>
+      <p class="lead">A governed engagement workspace for preparing, testing, documenting, and reviewing audit work after the work program has been approved.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#operating-model">Explore the operating model</a>
+        <a class="button" href="#status">Check current maturity</a>
+      </div>
+      <ul class="hero-points" aria-label="AEOS principles">
+        <li>Traceable</li>
+        <li>Configurable</li>
+        <li>Human-governed</li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="status-banner" aria-labelledby="boundary-title">
+      <div>
+        <span class="status-label">Release-candidate project</span>
+        <h2 id="boundary-title">Product and assurance boundary</h2>
+      </div>
+      <p>AEOS 1.0.0 is a generated release candidate, not a validated release or production-ready product. It supports draft preparation and controlled fieldwork workflows. It does not provide audit assurance, approve evidence, select samples, form conclusions, or send external communications.</p>
+    </section>
+
+    <section class="card intro" id="operating-model">
+      <div class="section-kicker">The product idea</div>
+      <h2>Flexible approved inputs. Controlled draft outputs. Human reliance decisions.</h2>
+      <p>AEOS begins when an auditor-approved audit work program is available. The work program may be a spreadsheet, a narrative document, or another approved structure. The agent interprets that material through a governed auditor role and workflow rather than forcing every engagement into one fixed input schema.</p>
+      <p>The resulting drafts follow controlled locations and states. Source identity, gaps, contradictions, and proposed methodology remain visible. The auditor authorizes every transition from preparation to reliance.</p>
+      <figure>
+        <img src="assets/aeos-operating-model.png" alt="Four-stage AEOS operating model: flexible approved inputs, governed interpretation, controlled draft outputs, and human review gates.">
+        <figcaption>Human authorization controls the move from draft assistance to professional reliance.</figcaption>
+      </figure>
+    </section>
+
+    <section class="split-grid" aria-label="AEOS problem and response">
+      <article class="card">
+        <div class="section-kicker">The problem</div>
+        <h2>A fluent workpaper can still contain a weak audit chain.</h2>
+        <p>Unsupported facts can enter a template because a model tries to fill every field. Source identity can disappear during conversion or summarization. Meeting statements can be treated as documentary evidence. Conflicts can be smoothed over. A polished conclusion can hide weak work performed several stages earlier.</p>
+      </article>
+      <article class="card">
+        <div class="section-kicker">The response</div>
+        <h2>Govern the route, evidence state, and authority—not only the prompt.</h2>
+        <p>AEOS makes source roles, context limits, output routes, stop conditions, evidence gaps, and review decisions part of the workspace. A blank or unresolved field is valid when approved material does not support an answer.</p>
+      </article>
+    </section>
+
+    <section class="card" id="workflow">
+      <div class="section-kicker">Lifecycle</div>
+      <h2>One connected route from approved procedure to reviewed reporting draft</h2>
+      <p class="section-lead">The default route separates preparation, design testing, operating-effectiveness testing, quality review, reporting, and closure. The sequence is configurable, but source authority and auditor approval remain fixed principles.</p>
+      <ol class="step-grid">
+        <li>
+          <span class="step-number">1</span>
+          <h3>Set the engagement boundary</h3>
+          <p>Record engagement context, approved criteria, source roles, AI read/write limits, and the approved work program.</p>
+        </li>
+        <li>
+          <span class="step-number">2</span>
+          <h3>Prepare draft scaffolds</h3>
+          <p>Preserve source wording and identifiers. Keep missing population, sampling, ownership, or evidence details unresolved.</p>
+        </li>
+        <li>
+          <span class="step-number">3</span>
+          <h3>Conduct TOD</h3>
+          <p>Assess whether the control exists, is implemented, and can mitigate the risk if it operates as intended.</p>
+        </li>
+        <li>
+          <span class="step-number">4</span>
+          <h3>Conduct TOE</h3>
+          <p>Test whether the design-confirmed control operated consistently over the relevant period using the approved population and sample.</p>
+        </li>
+        <li>
+          <span class="step-number">5</span>
+          <h3>Review and correct</h3>
+          <p>Run separate quality review for TOD and TOE, retain correction records, and verify source support before merge.</p>
+        </li>
+        <li>
+          <span class="step-number">6</span>
+          <h3>Report and close</h3>
+          <p>Draft reporting only from reviewed inputs. Keep external communication human-approved and lessons separate from evidence.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="card example">
+      <div class="section-kicker">Synthetic walkthrough</div>
+      <h2>GenAI change governance shows why unresolved work must remain visible.</h2>
+      <div class="example-grid">
+        <div>
+          <p>A synthetic IT audit procedure assesses whether production changes to a generative AI service—model versions, prompts, retrieval configuration, evaluation results, and safety controls—are evaluated, approved, deployed, and monitored.</p>
+          <p>At intake, AEOS preserves the approved procedure and prepares draft TOD and TOE workpapers. If the change population, sampling basis, or evidence owner is absent, those fields stay unresolved for the auditor.</p>
+        </div>
+        <div class="evidence-chain" aria-label="Synthetic evidence chain">
+          <span>Approved procedure</span>
+          <span>Design walkthrough</span>
+          <span>Population and sample approval</span>
+          <span>Item-by-item testing</span>
+          <span>Independent QC</span>
+        </div>
+      </div>
+      <p>The agent can organize evidence and retain contradictions. It cannot decide whether a conflict is a control deficiency, a data-quality problem, or a scope matter. That decision remains with the auditor.</p>
+    </section>
+
+    <section class="card" id="components">
+      <div class="section-kicker">Product layers</div>
+      <h2>The parts have different jobs and different authority.</h2>
+      <div class="component-grid">
+        <article>
+          <h3>Engagement workspace</h3>
+          <p>Lifecycle folders keep planning, evidence, meetings, requests, workpapers, reviews, reporting, and closure records in defined routes.</p>
+        </article>
+        <article>
+          <h3>Auditor roles</h3>
+          <p>General Auditor, IT Auditor, and QC Reviewer profiles define professional context, evidence boundaries, and review responsibilities.</p>
+        </article>
+        <article>
+          <h3>Skills and commands</h3>
+          <p>Reusable skills hold workflow authority. Thin command wrappers make the skills discoverable without duplicating or weakening the procedure.</p>
+        </article>
+        <article>
+          <h3>Templates and guides</h3>
+          <p>Templates shape drafts. Operating guides connect individual tasks into a controlled end-to-end audit route.</p>
+        </article>
+        <article>
+          <h3>Evidence controls</h3>
+          <p>Originals, derivatives, source roles, review state, and reliance state remain distinct and traceable.</p>
+        </article>
+        <article>
+          <h3>Deterministic checks</h3>
+          <p>Code tests path safety, structure, privacy, package integrity, and other bounded properties. It does not make audit judgments.</p>
+        </article>
+      </div>
+      <figure>
+        <img src="assets/aeos-guardrail-stack.png" alt="Layered AEOS guardrail stack showing approved sources, role instructions, workflow contracts, evidence state, human review, and deterministic checks.">
+        <figcaption>Layered controls address different failure modes without turning the audit into a rigid automated pipeline.</figcaption>
+      </figure>
+    </section>
+
+    <section class="card" id="setup">
+      <div class="section-kicker">Newer unreleased governed source · setup and model routes</div>
+      <h2>A small desktop toolchain, with explicit data-governance choices</h2>
+      <p>The current unreleased AEOS source uses an Obsidian vault opened in Visual Studio Code. GitHub Copilot Chat provides the main interaction surface. Its roles, skill authorities, thin command wrappers, other prompt contracts, templates, guides, and controls remain inspectable Markdown.</p>
+      <div class="setup-grid">
+        <article>
+          <span class="tag">Core workspace</span>
+          <h3>Obsidian + VS Code</h3>
+          <p>Obsidian supports linked navigation and review. VS Code hosts the workspace, chat surface, versioning, and governed file interaction.</p>
+        </article>
+        <article>
+          <span class="tag">Default model access</span>
+          <h3>Enterprise-approved Copilot route</h3>
+          <p>Sensitive work requires approval of the specific provider, tenant boundary, data handling, model, tool permissions, and use case.</p>
+        </article>
+        <article>
+          <span class="tag">Restricted-data option</span>
+          <h3>Local model route</h3>
+          <p>Local inference can keep content on the machine when the selected model and hardware provide sufficient context and operating headroom.</p>
+        </article>
+        <article>
+          <span class="tag">Lower-sensitivity option</span>
+          <h3>Approved hosted model route</h3>
+          <p>Zero Data Retention can reduce retention exposure, but it is not equivalent to local processing, tenant isolation, or private tenancy.</p>
+        </article>
+      </div>
+      <figure>
+        <img src="assets/aeos-setup-no-outline.png" alt="Newer unreleased AEOS source setup showing Obsidian, Visual Studio Code, nine skill authorities, nine thin command wrappers that route to those skills, evidence controls, and approved model routes.">
+        <figcaption>This setup represents newer unreleased governed source, not the generated AEOS 1.0.0 candidate. The editor is the operating shell; AEOS supplies the governed audit content and workflow structure around it.</figcaption>
+      </figure>
+      <div class="callout">
+        <strong>Runtime evidence matters.</strong>
+        <p>Agent discovery, command visibility, skill application, selected model, and tool permissions must be verified in the supported environment. Static files alone do not prove the route that actually ran.</p>
+      </div>
+    </section>
+
+    <section class="card" id="status">
+      <div class="section-kicker">Current maturity</div>
+      <h2>Separate the generated candidate from newer unreleased source.</h2>
+      <div class="status-grid">
+        <article>
+          <span class="status-dot amber" aria-hidden="true"></span>
+          <h3>Generated AEOS 1.0.0 candidate</h3>
+          <p>A reproducible folder-based core release candidate exists. It is not validated or production-ready and predates later command-packaging improvements.</p>
+        </article>
+        <article>
+          <span class="status-dot blue" aria-hidden="true"></span>
+          <h3>Newer governed source</h3>
+          <p>Current unreleased source contains three auditor roles, nine lowercase skill authorities, and nine thin command wrappers. Source-side checks have passed.</p>
+        </article>
+        <article>
+          <span class="status-dot gray" aria-hidden="true"></span>
+          <h3>Open validation gate</h3>
+          <p>Clean supported Windows evidence for agent discovery, slash-command visibility, wrapper execution, skill application, and no required profile copy remains pending.</p>
+        </article>
+      </div>
+      <p class="maturity-note">The strongest retained runtime evidence is one supervised synthetic Week 1 route through a corrected Week 2 handoff. It demonstrates a controlled path to an approvable result after governed correction. It does not demonstrate clean first-pass operation, supported-runtime TOE, unassisted usability, or measured efficiency improvement.</p>
+    </section>
+
+    <section class="split-grid roadmap" aria-label="AEOS adoption and roadmap">
+      <article class="card">
+        <div class="section-kicker">Adoption sequence</div>
+        <h2>Begin with a bounded pilot.</h2>
+        <ol>
+          <li>Use a synthetic or low-sensitivity scenario.</li>
+          <li>Approve the model and data route.</li>
+          <li>Select a small set of procedures with clear evidence expectations.</li>
+          <li>Require review at intake, evidence, testing, and conclusion gates.</li>
+          <li>Measure corrections, missed evidence, time added or saved, and traceability.</li>
+          <li>Promote only when representative auditors can operate the route without undocumented intervention.</li>
+        </ol>
+      </article>
+      <article class="card">
+        <div class="section-kicker">Roadmap</div>
+        <h2>Evidence before expansion.</h2>
+        <ul class="check-list">
+          <li><strong>Complete:</strong> governed source, reproducible generated candidate, supervised Week 1 route, source-side command packaging.</li>
+          <li><strong>Next:</strong> supported Windows invocation proof and runtime reconciliation.</li>
+          <li><strong>Then:</strong> broader usability, sanitized TOD/TOE workflows, varied-engagement validation, and measured quality/effort evidence.</li>
+          <li><strong>Separate decisions:</strong> validated release, production readiness, broader distribution, and enterprise deployment.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card faq" aria-labelledby="faq-title">
+      <div class="section-kicker">Questions</div>
+      <h2 id="faq-title">Common AEOS boundaries</h2>
+      <details>
+        <summary>Does AEOS create the audit work program?</summary>
+        <p>No. AEOS v1 starts from an auditor-approved audit work program. It may create reviewed fieldwork derivatives, but it does not design or approve the original program.</p>
+      </details>
+      <details>
+        <summary>Does AEOS require one standard input format?</summary>
+        <p>No. Varied approved work programs are interpreted through governed roles and workflows. The control objective is flexible input handling with traceable, controlled outputs.</p>
+      </details>
+      <details>
+        <summary>Can AEOS decide whether evidence is sufficient?</summary>
+        <p>No. The agent can identify support, gaps, and contradictions. The auditor owns evidence sufficiency, sampling, exception evaluation, conclusions, and sign-off.</p>
+      </details>
+      <details>
+        <summary>Is AEOS ready for live enterprise use?</summary>
+        <p>Not as a validated release. The current evidence supports further controlled pilots with mandatory checkpoints and independent review, not broad production adoption.</p>
+      </details>
+      <details>
+        <summary>Is the public website the complete AEOS implementation?</summary>
+        <p>No. This site explains the product model and current maturity without publishing private engagement material, organization-specific overlays, complete implementation recipes, or restricted evidence.</p>
+      </details>
+    </section>
+
+    <section class="card boundary-card">
+      <div class="section-kicker">Public boundary</div>
+      <h2>What this website does not claim</h2>
+      <p>AEOS is personal project work and a release-candidate operating concept. It does not provide legal advice, audit assurance, certified methodology, autonomous audit judgment, validated security, or an endorsement by any employer, client, professional body, or technology provider.</p>
+      <p>The website contains sanitized product information and synthetic examples only. Organization-specific methodology, engagement evidence, private overlays, credentials, and operational deployment material are excluded.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <p><strong>AEOS</strong> — AI-Augmented Audit Engagement Operating System</p>
+      <p>André Buser. Views are my own. This site describes conceptual design patterns and lessons from personal project work.</p>
+      <p><a href="https://busera.github.io/">Portfolio</a> · <a href="https://medium.com/@buser.andre">Medium</a> · <a href="#main">Back to top</a></p>
+    </div>
+  </footer>
+</body>
+</html>

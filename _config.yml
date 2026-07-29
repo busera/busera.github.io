@@ -147,6 +147,18 @@ content:
 
       - layout: left
         border: weak
+        title: AEOS
+        sub_title: AI-Augmented Audit Engagement Operating System
+        caption: Release-candidate project
+        link: https://busera.github.io/aeos/
+        link_text: Explore AEOS
+        quote: >
+          Governed AI support for audit fieldwork, with professional authority retained by the auditor.
+        description: |
+          AEOS is an agentic engagement workspace for post-approved-work-program fieldwork. The public site explains its operating model, controlled audit workflow, setup and privacy routes, current maturity, and validation-led roadmap without publishing private engagement material or claiming production readiness.
+
+      - layout: left
+        border: weak
         title: AIRUM Public Demo
         caption: May 2026
         link: https://busera.github.io/AIRUM-public-demo/
