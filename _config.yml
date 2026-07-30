@@ -155,7 +155,7 @@ content:
         quote: >
           Governed AI support for audit fieldwork, with professional authority retained by the auditor.
         description: |
-          AEOS is an agentic engagement workspace for post-approved-work-program fieldwork. The public site explains its operating model, controlled audit workflow, setup and privacy routes, current maturity, and validation-led roadmap without publishing private engagement material or claiming production readiness.
+          AEOS is an agentic engagement workspace for engagement fieldwork execution. The public site explains its operating model, controlled audit workflow, setup and privacy routes, current maturity, and validation-led roadmap without publishing private engagement material or claiming production readiness.
 
       - layout: left
         border: weak

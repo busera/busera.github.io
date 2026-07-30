@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AEOS is a Markdown workspace for AI-assisted internal audit fieldwork, testing, evidence handling, review and reporting.">
+  <meta name="description" content="AEOS is an agentic engagement workspace for controlled audit fieldwork execution, evidence handling, review and reporting.">
   <meta name="theme-color" content="#f8fbfe">
   <title>AEOS | Product overview</title>
   <link rel="icon" href="/images/favicon.ico" sizes="any">
@@ -18,6 +18,7 @@
         <a href="#features">Features</a>
         <a href="#process">Process</a>
         <a href="#system">System</a>
+        <a href="#configuration">Configuration</a>
         <a href="#requirements">Requirements</a>
       </nav>
       <a class="button small" href="https://busera.github.io/">André Buser</a>
@@ -62,7 +63,7 @@
     <section class="section-wide" id="features">
       <div class="section-heading centered narrow-copy">
         <p class="kicker">What it does</p>
-        <h2>Built for the work after planning.</h2>
+        <h2>Built for engagement fieldwork.</h2>
         <p>AEOS helps the auditor execute the approved program. It does not invent scope, criteria or procedures that are missing from the source.</p>
       </div>
       <div class="value-grid">
@@ -174,6 +175,22 @@
       </figure>
     </section>
 
+    <section class="section-wide configuration-section" id="configuration">
+      <div class="split-heading">
+        <div>
+          <p class="kicker">Configurable by design</p>
+          <h2>Configure the engagement workflow, not the control boundary.</h2>
+        </div>
+        <p>AEOS's agentic and modular design lets an audit function align the workspace to its approved lifecycle, roles, criteria, templates and terminology without forcing every engagement into one fixed format.</p>
+      </div>
+      <div class="requirement-grid">
+        <article class="plain-card"><span class="tag">Core</span><h3>Reusable foundation</h3><p>The lifecycle structure, agent profiles, workflow skills, prompts, templates, evidence controls and operating guides form a readable modular core.</p></article>
+        <article class="plain-card"><span class="tag">Workflow</span><h3>Composable engagement routes</h3><p>Skills can define the required inputs, stage order, human checkpoints, stop conditions and outputs for the organization's approved engagement process.</p></article>
+        <article class="plain-card"><span class="tag">Overlay</span><h3>Local methodology and templates</h3><p>A private overlay can supply approved criteria, playbooks, templates, terminology and restricted examples while keeping engagement material outside the reusable public core.</p></article>
+        <article class="plain-card"><span class="tag">Boundary</span><h3>Controls remain visible</h3><p>Configuration may change the local route, but source authority, provenance, draft state, file boundaries, human approval and independent review stay explicit.</p></article>
+      </div>
+    </section>
+
     <section class="section-wide requirements-section" id="requirements">
       <div class="section-heading centered narrow-copy">
         <p class="kicker">Requirements</p>
@@ -184,18 +201,21 @@
         <article class="plain-card"><span class="tag">Desktop</span><h3>Working environment</h3><ul><li>Visual Studio Code</li><li>GitHub Copilot Chat with an authenticated account</li><li>Obsidian and the AEOS vault</li></ul></article>
         <article class="plain-card"><span class="tag">Format</span><h3>Markdown workspace</h3><ul><li>Markdown for context, registers, plans and workpapers</li><li>Original source documents can remain in their native format</li><li>Spreadsheet conversion only when a readable working copy helps</li></ul></article>
         <article class="plain-card"><span class="tag">Input</span><h3>Approved material</h3><ul><li>An approved audit work program</li><li>A permitted source set</li><li>Defined criteria and file boundaries</li></ul></article>
-        <article class="plain-card"><span class="tag">Runtime</span><h3>Approved model route</h3><ul><li>Copilot-hosted model, local Ollama or Ollama Cloud</li><li>Provider and use case approved for the evidence involved</li><li>Python recommended for deterministic checks and document tooling</li></ul></article>
+        <article class="plain-card"><span class="tag">Runtime</span><h3>Approved model route</h3><ul><li>Enterprise-approved Copilot tenant, local Ollama or Ollama Cloud</li><li>Provider, route and use case approved for the evidence involved</li><li>Python recommended for deterministic checks and document tooling</li></ul></article>
       </div>
 
       <div class="contract-block">
         <div class="contract-intro">
           <p class="kicker">LLM contract</p>
           <h2>Choose the model for the job.</h2>
-          <p>AEOS does not bind the workspace to one model. The auditor chooses the model and provider for each task.</p>
+          <p>AEOS does not bind the workspace to one model. The auditor chooses an approved route for each task based on capability, data sensitivity and organizational authorization.</p>
         </div>
         <dl class="disclosure-list">
           <div><dt>Capability</dt><dd>Read long documents, preserve source links, write structured Markdown and use the tools required by the workflow.</dd></div>
-          <div><dt>Route</dt><dd>Use a Copilot-hosted, local Ollama or Ollama Cloud model through an approved provider.</dd></div>
+          <div><dt>Enterprise tenant</dt><dd>Copilot-hosted models may support sensitive work only when the specific provider, use case, tenant isolation or private tenancy, data handling and tool permissions are approved.</dd></div>
+          <div><dt>Local inference</dt><dd>Ollama keeps inference on the auditor's machine and can support restricted work when the hardware can run the selected model with sufficient context and operating headroom.</dd></div>
+          <div><dt>Remote cloud</dt><dd>Ollama Cloud provides access to larger hosted models and may suit lower-sensitivity data after provider and use-case approval. It remains remote processing.</dd></div>
+          <div><dt>ZDR boundary</dt><dd>Zero Data Retention reduces retention exposure. It is not equivalent to local processing, tenant isolation or private tenancy, and does not itself authorize restricted evidence to leave the enterprise boundary.</dd></div>
           <div><dt>Data boundary</dt><dd>Restricted evidence stays off remote services unless that provider and use case are approved.</dd></div>
           <div><dt>Runtime record</dt><dd>Record the agent, model ID, provider, source set and output location for each AEOS task.</dd></div>
           <div><dt>Output rules</dt><dd>Cite sources, show gaps and contradictions, leave unsupported fields blank and route every output to the auditor.</dd></div>
@@ -212,7 +232,7 @@
     <section class="section-narrow faq-section" aria-labelledby="faq-title">
       <div class="section-heading centered">
         <p class="kicker">Common questions</p>
-        <h2 id="faq-title">How the product is meant to be used.</h2>
+        <h2 id="faq-title">How AEOS is meant to be used.</h2>
       </div>
       <dl class="faq-list">
         <div><dt>Where does AEOS start?</dt><dd>With an approved audit work program. Planning decisions that are missing from the source remain open for the auditor.</dd></div>
