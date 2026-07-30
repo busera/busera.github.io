@@ -6,33 +6,34 @@
 
 ## Objective
 
-Complete and locally commit the bounded cross-page terminology alignment so the Process, Requirements, LLM contract and FAQs express the same source-format and model-provider contracts. Stop before push or publication.
+Complete and locally commit the bounded cross-page terminology alignment so the Process, Requirements, LLM contract and FAQs express the same source-format and model-provider contracts. Stop before any further push or publication.
 
 ## Repository / project
 
 - Discover the portable repository root with `git rev-parse --show-toplevel` and run all commands from that root.
 - Branch: `main`.
-- Publication boundary: no push, deployment, tag or other external mutation without Andrew's explicit approval.
+- Published baseline: `0136ef1757095bf8eb4c8359b090fba5d902dc2a`.
+- Publication boundary: no further push, deployment, tag or other external mutation without Andrew's explicit approval.
 
 ## Start here
 
 1. Run `git status --short --branch --untracked-files=all`.
-2. Run `git log --oneline origin/main..HEAD`.
+2. Run `git log --oneline origin/main..HEAD` and `git rev-parse origin/main`.
 3. Read, in order:
    1. `aeos/README.md`
    2. `aeos/PROJECT_STATE.md`
    3. `aeos/ROADMAP.md`
    4. `aeos/index.html`
 4. Search `aeos/index.html` for `approved model`, `role + model + skill`, `approved model route`, `Original source documents can remain`, `Choose the model for the job`, and `does not bind the workspace to one model`.
-5. Fetch `https://busera.github.io/aeos/` only as current external-state evidence; do not treat it as the source authority.
+5. Fetch a cache-busted `https://busera.github.io/aeos/` only as external-state evidence; do not treat it as the source authority.
 
 ## Current state
 
-- Local content commits `9f9230f`, `53fc63d` and `3430143` clarify source working representations, supported model providers and compatibility with existing fieldwork processes/templates.
-- Each completed correction passed focused ad-hoc source verification; the fieldwork-flexibility paragraph also passed desktop visual inspection.
-- A complete-page consistency sweep found adjacent copy that can reintroduce the corrected ambiguities; therefore the current tree is not yet ready for publication review.
-- On 2026-07-30 the live page returned HTTP 200 but still served the superseded FAQ copy and lacked the new fieldwork-flexibility paragraph.
-- The handoff refresh is governance-only and follows the three content commits; inspect `git log` rather than assuming a self-referential current hash.
+- GitHub Pages reported `status: built` for exact commit `0136ef1757095bf8eb4c8359b090fba5d902dc2a`.
+- A cache-busted live request returned HTTP 200, contained the corrected source-format FAQ, model-provider FAQ and fieldwork-flexibility paragraph, and omitted the two superseded FAQ strings.
+- The published commits `9f9230f`, `53fc63d` and `3430143` clarify source working representations, supported model providers and compatibility with existing fieldwork processes/templates.
+- A complete-page consistency sweep found adjacent copy that can reintroduce those corrected ambiguities; therefore the published page is not yet contract-consistent across all surfaces.
+- This post-publication handoff refresh is governance-only and follows the published baseline; inspect `git log` rather than assuming a self-referential current hash.
 
 ## Required interpretation
 
@@ -45,7 +46,7 @@ Complete and locally commit the bounded cross-page terminology alignment so the 
 ## Gates and prohibited scope
 
 - Do not push, publish, deploy, tag, amend, squash or reorder existing commits.
-- Do not request publication approval until the bounded alignment is implemented, visually reviewed, verified and committed locally.
+- Do not treat the published FAQ corrections as proof that the complete page is contract-consistent.
 - Do not expose private overlays, evidence, credentials, restricted methodology, machine-local paths or private implementation details.
 - Do not start unrelated redesign, product implementation or model-evaluation work.
 
@@ -78,8 +79,8 @@ The focused verifier must additionally prove that the superseded native-format-o
 
 ## Documentation closeout
 
-After the content commit, update project state, roadmap and this handoff to identify owner publication review as the sole active outcome. Commit that governance refresh locally. Any push remains separately approval-gated.
+After the content commit, update project state, roadmap and this handoff to identify owner publication review for the aligned page as the sole active outcome. Commit that governance refresh locally. Any further push remains separately approval-gated.
 
 ## Next-session completion condition
 
-The session is complete when the complete page consistently states the source working-representation and provider-route contracts, focused source and responsive visual verification pass, the bounded content correction is committed locally, the three governance documents are reconciled and committed locally, and the repository is clean and ready for Andrew's separate publication decision without any push or deployment.
+The session is complete when the complete page consistently states the source working-representation and provider-route contracts, focused source and responsive visual verification pass, the bounded content correction is committed locally, the three governance documents are reconciled and committed locally, and the repository is clean and ready for Andrew's separate publication decision without any further push or deployment.
