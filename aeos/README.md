@@ -1,6 +1,6 @@
 # AEOS public website
 
-This directory contains the sanitized public product website for the **AI-Augmented Audit Engagement Operating System (AEOS)**.
+This directory contains the sanitized public product website for the **AI-Augmented Engagement Operating System (AEOS)**.
 
 ## Public URL
 
@@ -10,15 +10,15 @@ This directory contains the sanitized public product website for the **AI-Augmen
 
 The site explains:
 
-- the AEOS operating model;
-- the post-approved-work-program workflow;
-- product components and control layers;
-- setup and data-governance routes;
-- current maturity and release boundaries;
-- a synthetic fieldwork example; and
-- the validation-led roadmap.
+- the AEOS product proposition and operating model;
+- supported fieldwork, Test of Design and Test of Operating Effectiveness capabilities;
+- the process from an approved work program to a reviewed workpaper;
+- product components and auditor roles;
+- desktop, Markdown, source and model-route requirements;
+- the LLM operating contract; and
+- a synthetic fieldwork workspace.
 
-It deliberately excludes organization-specific overlays, engagement evidence, credentials, restricted methodology, private implementation material, and any claim that AEOS is a validated release or production-ready.
+It excludes organization-specific overlays, engagement evidence, credentials, restricted methodology, and private implementation material.
 
 ## Local preview
 
