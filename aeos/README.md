@@ -14,7 +14,7 @@ The site explains:
 - supported fieldwork, Test of Design and Test of Operating Effectiveness capabilities;
 - the process from an approved work program to a reviewed workpaper;
 - product components and auditor roles;
-- desktop, Markdown, source and model-route requirements;
+- desktop, text-readable source and provider-route requirements;
 - the LLM operating contract; and
 - a synthetic fieldwork workspace.
 
@@ -36,5 +36,11 @@ Open <http://127.0.0.1:8000/aeos/>.
 - Website styles: `aeos/styles.css`
 - Public visual copies: `aeos/assets/`
 - Canonical editable visual sources: the AEOS writing project, not this website directory
+
+## Project continuation
+
+- Current state: [`PROJECT_STATE.md`](PROJECT_STATE.md)
+- Roadmap and lifecycle status: [`ROADMAP.md`](ROADMAP.md)
+- Executable continuation: [`DO_NEXT_SESSION.md`](DO_NEXT_SESSION.md)
 
 Publication or push remains a separate approval action.
