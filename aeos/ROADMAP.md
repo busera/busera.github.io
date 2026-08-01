@@ -12,7 +12,7 @@ One active outcome at a time. External publication remains approval-gated.
 | Clarify supported model-provider routes | Published and verified | Commit `53fc63d`; live in Pages build `0136ef1` |
 | State compatibility with existing fieldwork models | Published and verified | Commit `3430143`; live in Pages build `0136ef1` |
 | RC2 maturity, terminology and visual reconciliation | **Local candidate verified GREEN** | Deterministic, semantic, asset-parity, desktop and 390 px mobile checks passed; independent rereview P0/P1/P2 `0/0/0` |
-| Owner publication decision for the verified candidate | **Active — approval required** | Present exact local content commit `b171a3c`; do not push or publish without separate approval |
+| Owner publication decision for the verified candidate | **Active — approval required** | Present exact local content through FAQ correction commit `c2f1151`; do not push or publish without separate approval |
 | Publish and verify the candidate | Planned — approval required | Explicit push approval, successful Pages build for the exact pushed commit, and cache-busted live verification |
 
 ## Local-candidate acceptance
