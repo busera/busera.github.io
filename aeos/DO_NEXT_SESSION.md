@@ -15,6 +15,7 @@ Present the exact independently verified local RC2 website candidate to Andrew f
 - Published baseline: `0136ef1757095bf8eb4c8359b090fba5d902dc2a`.
 - Verified local content commit: `b171a3c`.
 - Source-format FAQ correction commit: `c2f1151`.
+- Provider-route correction commit: `f681d2f`.
 - Governance handoff commit: `2416fbd`.
 - The live site remains on that published baseline until a later approved push.
 - Publication boundary: no push, deployment, tag, amend, squash or reorder without Andrew's explicit approval.
@@ -39,7 +40,7 @@ The local candidate:
 - adds the evidence-to-conclusion gate with matching prose, alt text and caption;
 - adds the typical AWP lifecycle with the AEOS-061 close-out/observation extension visibly marked as planned and not in RC2;
 - passed focused semantic, HTML, asset-parity, desktop and 390 px mobile checks;
-- passed independent exact-candidate rereview GREEN at P0/P1/P2 `0/0/0`, bound to `index.html` SHA-256 `6169e34a37faa7b5801dff39860c11e740571e5a71ee491273b608d2e5bd15b7` and article SHA-256 `cc78fb31e7b710dbf8d1e7d34a382bb0d508d926f57f12e5bba651c172b108cf`;
+- passed independent exact-candidate rereview GREEN at P0/P1/P2 `0/0/0`, bound to `index.html` SHA-256 `9abb71b7b2b37003bedadac254965a33743b26cb92687322ca65b2d8903e7333` and article SHA-256 `0c1a928deb1fe3c56b2860f498d6117fa35800249041a3e32bc7d05f489f5cd6`;
 - remains unpushed and unpublished.
 
 ## Approval boundary

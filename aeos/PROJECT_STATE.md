@@ -5,7 +5,7 @@
 - **Lifecycle:** Exact local RC2 publication candidate independently verified GREEN; owner publication review required.
 - **Branch:** `main`.
 - **Published baseline:** GitHub Pages successfully built commit `0136ef1757095bf8eb4c8359b090fba5d902dc2a` on 2026-07-30. The live site remains on that baseline.
-- **Local candidate:** base content committed locally as `b171a3c`; source-format FAQ correction committed as `c2f1151`; `index.html` SHA-256 `6169e34a37faa7b5801dff39860c11e740571e5a71ee491273b608d2e5bd15b7`.
+- **Local candidate:** base content committed locally as `b171a3c`; source-format FAQ correction committed as `c2f1151`; provider-route correction committed as `f681d2f`; `index.html` SHA-256 `9abb71b7b2b37003bedadac254965a33743b26cb92687322ca65b2d8903e7333`.
 - **Publication boundary:** Any push or GitHub Pages deployment requires Andrew's separate explicit approval.
 
 ## Completed local outcome
@@ -32,7 +32,7 @@ The 2026-08-01 candidate closes the bounded publication blockers:
 - Local HTTP preview: page, CSS, favicon and all five images returned HTTP 200/304 without browser-console errors.
 - Desktop visual QA: PASS; status cards, diagrams, provider/source-format copy and navigation render without clipping or horizontal overflow.
 - Mobile visual QA at 390 px: PASS; `scrollWidth = clientWidth = 390`, no overflow offenders, and the status cards stack cleanly.
-- Independent exact-candidate rereview: GREEN, P0/P1/P2 `0/0/0`, bound to article SHA-256 `cc78fb31e7b710dbf8d1e7d34a382bb0d508d926f57f12e5bba651c172b108cf` and website SHA-256 `6169e34a37faa7b5801dff39860c11e740571e5a71ee491273b608d2e5bd15b7`.
+- Independent exact-candidate rereview: GREEN, P0/P1/P2 `0/0/0`, bound to article SHA-256 `0c1a928deb1fe3c56b2860f498d6117fa35800249041a3e32bc7d05f489f5cd6` and website SHA-256 `9abb71b7b2b37003bedadac254965a33743b26cb92687322ca65b2d8903e7333`.
 
 ## Boundaries
 
