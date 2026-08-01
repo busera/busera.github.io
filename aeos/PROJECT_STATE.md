@@ -5,7 +5,7 @@
 - **Lifecycle:** Exact local RC2 publication candidate independently verified GREEN; owner publication review required.
 - **Branch:** `main`.
 - **Published baseline:** GitHub Pages successfully built commit `0136ef1757095bf8eb4c8359b090fba5d902dc2a` on 2026-07-30. The live site remains on that baseline.
-- **Local candidate:** `index.html` SHA-256 `5e52c6025e6fa2891f8e35d6c0e19a0902d952ac6cec04236419e1b2cb2f8680` before local commit closeout.
+- **Local candidate:** content committed locally as `b171a3c`; `index.html` SHA-256 `5e52c6025e6fa2891f8e35d6c0e19a0902d952ac6cec04236419e1b2cb2f8680`. Governance handoff followed in `2416fbd`.
 - **Publication boundary:** Any push or GitHub Pages deployment requires Andrew's separate explicit approval.
 
 ## Completed local outcome

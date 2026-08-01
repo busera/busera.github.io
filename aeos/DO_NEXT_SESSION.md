@@ -13,6 +13,8 @@ Present the exact independently verified local RC2 website candidate to Andrew f
 - Discover the repository root with `git rev-parse --show-toplevel`.
 - Branch: `main`.
 - Published baseline: `0136ef1757095bf8eb4c8359b090fba5d902dc2a`.
+- Verified local content commit: `b171a3c`.
+- Governance handoff commit: `2416fbd`.
 - The live site remains on that published baseline until a later approved push.
 - Publication boundary: no push, deployment, tag, amend, squash or reorder without Andrew's explicit approval.
 
