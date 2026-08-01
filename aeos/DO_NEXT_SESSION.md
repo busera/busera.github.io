@@ -16,6 +16,7 @@ Present the exact independently verified local RC2 website candidate to Andrew f
 - Verified local content commit: `b171a3c`.
 - Source-format FAQ correction commit: `c2f1151`.
 - Provider-route correction commit: `f681d2f`.
+- Website-aligned body-visual asset commit: `b7cadf2`.
 - Governance handoff commit: `2416fbd`.
 - The live site remains on that published baseline until a later approved push.
 - Publication boundary: no push, deployment, tag, amend, squash or reorder without Andrew's explicit approval.
@@ -39,8 +40,10 @@ The local candidate:
 - uses corrected article-authority renders for core interactions, route matrix and the synthetic TOE workspace;
 - adds the evidence-to-conclusion gate with matching prose, alt text and caption;
 - adds the typical AWP lifecycle with the AEOS-061 close-out/observation extension visibly marked as planned and not in RC2;
+- aligns all five website figures to the exact article-authority website-style renders while leaving the article cover unchanged;
 - passed focused semantic, HTML, asset-parity, desktop and 390 px mobile checks;
 - passed independent exact-candidate rereview GREEN at P0/P1/P2 `0/0/0`, bound to `index.html` SHA-256 `9abb71b7b2b37003bedadac254965a33743b26cb92687322ca65b2d8903e7333` and article SHA-256 `0c1a928deb1fe3c56b2860f498d6117fa35800249041a3e32bc7d05f489f5cd6`;
+- passed independent exact body-visual style review with no material P0/P1/P2 defect;
 - remains unpushed and unpublished.
 
 ## Approval boundary
