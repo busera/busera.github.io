@@ -2,85 +2,69 @@
 
 ## Starting prompt
 
-> Read and execute this `DO_NEXT_SESSION.md` as the continuation instruction for this project. Verify live state first, then follow its read order, gates, prohibitions, next actions, and completion condition. Continue autonomously until a genuine blocker or explicit approval boundary.
+> Read and execute this `DO_NEXT_SESSION.md` as the continuation instruction for this project. Verify live and local state first. Do not push or deploy unless Andrew explicitly approves the exact local candidate.
 
 ## Objective
 
-Complete and locally commit the bounded cross-page terminology alignment so the Process, Requirements, LLM contract and FAQs express the same source-format and model-provider contracts. Stop before any further push or publication.
+Present the exact independently verified local RC2 website candidate to Andrew for a publication decision. Do not push, deploy, tag or publish without a separate explicit approval.
 
 ## Repository / project
 
-- Discover the portable repository root with `git rev-parse --show-toplevel` and run all commands from that root.
+- Discover the repository root with `git rev-parse --show-toplevel`.
 - Branch: `main`.
 - Published baseline: `0136ef1757095bf8eb4c8359b090fba5d902dc2a`.
-- Publication boundary: no further push, deployment, tag or other external mutation without Andrew's explicit approval.
+- The live site remains on that published baseline until a later approved push.
+- Publication boundary: no push, deployment, tag, amend, squash or reorder without Andrew's explicit approval.
 
 ## Start here
 
 1. Run `git status --short --branch --untracked-files=all`.
 2. Run `git log --oneline origin/main..HEAD` and `git rev-parse origin/main`.
-3. Read, in order:
-   1. `aeos/README.md`
-   2. `aeos/PROJECT_STATE.md`
-   3. `aeos/ROADMAP.md`
-   4. `aeos/index.html`
-4. Search `aeos/index.html` for `approved model`, `role + model + skill`, `approved model route`, `Original source documents can remain`, `Choose the model for the job`, and `does not bind the workspace to one model`.
-5. Fetch a cache-busted `https://busera.github.io/aeos/` only as external-state evidence; do not treat it as the source authority.
+3. Read `README.md`, `PROJECT_STATE.md`, `ROADMAP.md`, `index.html` and the independent exact-candidate review.
+4. Rehash `index.html`, `styles.css` and the five article-authority asset copies.
+5. If any reviewed hash differs, stop and reconcile the change before relying on the review.
 
-## Current state
+## Current candidate
 
-- GitHub Pages reported `status: built` for exact commit `0136ef1757095bf8eb4c8359b090fba5d902dc2a`.
-- A cache-busted live request returned HTTP 200, contained the corrected source-format FAQ, model-provider FAQ and fieldwork-flexibility paragraph, and omitted the two superseded FAQ strings.
-- The published commits `9f9230f`, `53fc63d` and `3430143` clarify source working representations, supported model providers and compatibility with existing fieldwork processes/templates.
-- A complete-page consistency sweep found adjacent copy that can reintroduce those corrected ambiguities; therefore the published page is not yet contract-consistent across all surfaces.
-- This post-publication handoff refresh is governance-only and follows the published baseline; inspect `git log` rather than assuming a self-referential current hash.
+The local candidate:
 
-## Required interpretation
+- adds a visible RC2 maturity/status section;
+- states that RC2 is local, package-reviewed, not a validated release or production-ready, and still lacks clean supported Windows invocation evidence;
+- completes provider-route and source-working-format terminology alignment;
+- presents three agent profiles and nine governed skills without exposing implementation alternatives as product components;
+- uses corrected article-authority renders for core interactions, route matrix and the synthetic TOE workspace;
+- adds the evidence-to-conclusion gate with matching prose, alt text and caption;
+- adds the typical AWP lifecycle with the AEOS-061 close-out/observation extension visibly marked as planned and not in RC2;
+- passed focused semantic, HTML, asset-parity, desktop and 390 px mobile checks;
+- passed independent exact-candidate rereview GREEN at P0/P1/P2 `0/0/0`, bound to `index.html` SHA-256 `5e52c6025e6fa2891f8e35d6c0e19a0902d952ac6cec04236419e1b2cb2f8680` and article SHA-256 `9f1df95659e8fb91e77417570d7e3dc1876229db0f1e2763fa9d77ea06c48672`;
+- remains unpushed and unpublished.
 
-- AEOS retains original source files and their native formats, but is most efficient when every source is also available as a Markdown, plain-text or HTML working representation.
-- AEOS does not require one specific provider. Supported routes include private infrastructure or enterprise tenant, Ollama Cloud and local Ollama.
-- The operative compatibility requirement is that the provider is supported by the GitHub Copilot extension for VS Code.
-- Model selection can still vary by task inside an approved provider route; do not erase that distinction.
-- “One system across fieldwork” means one configurable operating layer over existing processes, structures, work programs, templates and review routes—not one imposed methodology.
+## Approval boundary
 
-## Gates and prohibited scope
+- Owner review of the local candidate is not approval to push.
+- If Andrew requests changes, preserve the current bytes, apply only the approved scope, and rerun the affected deterministic, visual and independent checks.
+- If Andrew explicitly approves publication, confirm the exact local commit first, then push only that commit and verify the resulting Pages build and cache-busted live page.
+- Do not infer Medium packaging or publication approval from a website decision.
 
-- Do not push, publish, deploy, tag, amend, squash or reorder existing commits.
-- Do not treat the published FAQ corrections as proof that the complete page is contract-consistent.
-- Do not expose private overlays, evidence, credentials, restricted methodology, machine-local paths or private implementation details.
-- Do not start unrelated redesign, product implementation or model-evaluation work.
-
-## Immediate next actions
-
-1. Update only the affected copy in `aeos/index.html`:
-   - Process route: add the approved provider route while retaining task-level model selection.
-   - Requirements introduction and runtime card: use provider-route-led terminology and state GitHub Copilot extension support.
-   - Format card: pair retention of original files with the Markdown/plain-text/HTML working representation.
-   - LLM-contract heading/body: lead with provider route, then explain model selection inside that route.
-2. Confirm private infrastructure or enterprise tenant, Ollama Cloud and local Ollama remain represented consistently.
-3. Render and inspect the changed sections at desktop and mobile widths.
-4. Run a focused `hermes-verify-*` script covering exact copy, absence/qualification of stale phrases, HTML parsing, internal links, responsive overflow and one-file implementation scope; label it ad hoc.
-5. Re-read the complete page for cross-section consistency.
-6. Commit the bounded copy correction locally with a scoped message. Do not push.
-7. Reconcile `aeos/PROJECT_STATE.md`, `aeos/ROADMAP.md` and this handoff in a separate governance-only local commit if their lifecycle wording becomes stale after the content commit.
-
-## Required verification
-
-Run these source checks from the repository root before committing:
+## Required checks before any approved push
 
 ```bash
 git status --short --branch --untracked-files=all
 git log --oneline origin/main..HEAD
 git diff --check
-python3 -c 'from pathlib import Path; s=Path("aeos/index.html").read_text(); required=("Markdown, plain text or HTML", "private infrastructure or an enterprise tenant", "Ollama Cloud", "local Ollama", "GitHub Copilot extension for VS Code", "AEOS adapts to the fieldwork model already in place."); assert all(x in s for x in required)'
+python3 -m http.server 8000
 ```
 
-The focused verifier must additionally prove that the superseded native-format-only and model-independent formulations are absent or explicitly qualified. Execute all handoff commands independently when a failure is expected so one result cannot suppress later evidence.
+Reconfirm:
 
-## Documentation closeout
+- all internal anchors and image targets resolve;
+- no obsolete model-led/native-format-only wording has returned;
+- status and maturity claims still match live AEOS authority;
+- the five website asset hashes match their article-authority renders;
+- desktop and 390 px mobile layouts have no clipping or horizontal overflow;
+- browser console is clean;
+- no local path, credential, restricted identifier or private material is public.
 
-After the content commit, update project state, roadmap and this handoff to identify owner publication review for the aligned page as the sole active outcome. Commit that governance refresh locally. Any further push remains separately approval-gated.
+## Completion condition
 
-## Next-session completion condition
-
-The session is complete when the complete page consistently states the source working-representation and provider-route contracts, focused source and responsive visual verification pass, the bounded content correction is committed locally, the three governance documents are reconciled and committed locally, and the repository is clean and ready for Andrew's separate publication decision without any further push or deployment.
+Complete when Andrew either rejects/changes the local candidate or explicitly approves the exact local commit for push. Without that explicit push approval, stop with the verified candidate local and unchanged on the live site.
