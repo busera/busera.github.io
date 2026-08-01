@@ -15,6 +15,7 @@
     <div class="nav-wrap">
       <a class="wordmark" href="#main" aria-label="AEOS home">AEOS</a>
       <nav aria-label="Page navigation">
+        <a href="#status">Status</a>
         <a href="#features">Features</a>
         <a href="#process">Process</a>
         <a href="#system">System</a>
@@ -34,6 +35,21 @@
       <div class="actions">
         <a class="button primary" href="#features">Explore the product</a>
         <a class="button secondary" href="#requirements">View requirements</a>
+      </div>
+    </section>
+
+    <section class="section-wide status-section" id="status" aria-labelledby="status-title">
+      <div class="split-heading">
+        <div>
+          <p class="kicker">Current status</p>
+          <h2 id="status-title">AEOS 1.0.0 RC2 is a local release candidate.</h2>
+        </div>
+        <p>RC2 packages the current governed product source. It has passed exact package review, but it is not a validated release or production-ready.</p>
+      </div>
+      <div class="status-grid">
+        <article class="status-card"><span class="tag">Reviewed</span><h3>Package and source boundary</h3><p>The reproducible package contains three agent profiles and nine governed skills.</p></article>
+        <article class="status-card"><span class="tag">Open gate</span><h3>Supported invocation</h3><p>Clean supported Windows evidence must still demonstrate agent and skill discovery, skill invocation and correct skill application.</p></article>
+        <article class="status-card"><span class="tag">Use boundary</span><h3>Controlled pilot only</h3><p>Use requires an approved provider and data route, auditor checkpoints and independent quality review. RC2 has not been released externally.</p></article>
       </div>
     </section>
 
@@ -122,8 +138,8 @@
         </article>
         <article class="plain-card">
           <span class="tag">Finish</span>
-          <h3>Reporting, closure and learning</h3>
-          <ul><li>Merge reviewed TOD and TOE into the final workpaper.</li><li>Prepare progress, reporting and closure drafts.</li><li>Record reusable engagement learning after auditor approval.</li></ul>
+          <h3>Reporting and lessons review</h3>
+          <ul><li>Merge reviewed TOD and TOE into the final workpaper.</li><li>Prepare progress and reporting drafts.</li><li>Prompt review of separate reusable and engagement-specific lesson records; enforcement remains open.</li></ul>
         </article>
       </div>
     </section>
@@ -135,12 +151,30 @@
       </div>
       <ol class="process-list">
         <li><span>01</span><div><h3>Set the engagement context</h3><p>Register the work program, criteria, source set and file boundaries.</p></div><code>context/engagement.md</code></li>
-        <li><span>02</span><div><h3>Choose the route</h3><p>Select the auditor role, approved model and workflow for the task.</p></div><code>role + model + skill</code></li>
+        <li><span>02</span><div><h3>Choose the route</h3><p>Select the auditor role, approved provider route, model within that route and workflow for the task.</p></div><code>role + provider + model + workflow</code></li>
         <li><span>03</span><div><h3>Prepare the work</h3><p>Create the workpaper structure, meeting plan, evidence request or test record.</p></div><code>draft → review</code></li>
         <li><span>04</span><div><h3>Execute the procedure</h3><p>Use only authorized evidence and record the work performed, result, gaps and contradictions.</p></div><code>source → procedure</code></li>
         <li><span>05</span><div><h3>Review independently</h3><p>Challenge source support, corrections, exceptions and the proposed conclusion.</p></div><code>QC → auditor</code></li>
-        <li><span>06</span><div><h3>Merge and communicate</h3><p>Move reviewed work into the final workpaper, reporting and closure route.</p></div><code>approved changes only</code></li>
+        <li><span>06</span><div><h3>Review, merge and report</h3><p>Move reviewed work into the final workpaper and reporting route. The final observation close-out extension remains planned.</p></div><code>approved changes only</code></li>
       </ol>
+      <figure class="product-figure">
+        <img src="assets/aeos-typical-awp-lifecycle.png" alt="Typical AEOS per-AWP lifecycle showing the current RC2 path from an approved AWP through separate TOD and TOE workpapers, Week 1 and Week 2 plans, evidence review, testing and progress updates. A grey dashed extension marks final close-out planning, observation discussion and root-cause analysis, and final observation drafting as planned and not in RC2.">
+        <figcaption>Solid blue stages describe the current RC2 operating path. The grey dashed close-out extension is planned under AEOS-061 and is not an implemented RC2 capability.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section-wide reliance-section" aria-labelledby="reliance-title">
+      <div class="split-heading">
+        <div>
+          <p class="kicker">Reliance boundary</p>
+          <h2 id="reliance-title">Evidence moves forward only through human decisions.</h2>
+        </div>
+        <p>AEOS can structure sources, evidence and draft results. The auditor decides whether the support is sufficient, whether the conclusion is defensible and whether a reporting draft may be communicated.</p>
+      </div>
+      <figure class="product-figure">
+        <img src="assets/aeos-guardrail-stack.png" alt="AEOS evidence-to-conclusion gate showing authorized sources, reviewed evidence, a draft result, auditor reliance, independent quality review, auditor sign-off and a reporting draft. Missing, inaccessible, contradictory, partial, verbal-only or agent-only support stops or qualifies the route.">
+        <figcaption>Deterministic checks can test structure and paths. They do not decide evidence sufficiency, reliance or conclusions.</figcaption>
+      </figure>
     </section>
 
     <section class="section-wide" id="system">
@@ -152,11 +186,11 @@
         <p>AEOS runs in the auditor's normal desktop tools. Its operating logic remains visible in Markdown files, role profiles, workflows, templates and source records.</p>
       </div>
       <div class="system-tags" aria-label="AEOS components">
-        <span>Engagement workspace</span><span>Auditor profiles</span><span>Workflow skills</span><span>Prompts and commands</span><span>Templates</span><span>Operating guides</span><span>Evidence Vault</span><span>Source Register</span><span>Python checks</span>
+        <span>Engagement workspace</span><span>Auditor profiles</span><span>Nine governed skills</span><span>QC prompts</span><span>Templates</span><span>Operating guides</span><span>Evidence Vault</span><span>Source Register</span><span>Python checks</span>
       </div>
       <figure class="product-figure">
-        <img src="assets/aeos-core-component-interactions.png" alt="AEOS system diagram connecting approved context, auditor role, workflows, evidence, workpaper templates, review and draft output.">
-        <figcaption>The system combines readable context with a selected role and workflow. Evidence and QC remain separate inputs to the draft.</figcaption>
+        <img src="assets/aeos-core-component-interactions.png" alt="AEOS system diagram connecting approved context, an auditor profile, a governed skill, evidence, a workpaper template, independent review and draft output.">
+        <figcaption>The profile sets the professional role, the selected skill owns the workflow, and the auditor authorizes reliance.</figcaption>
       </figure>
     </section>
 
@@ -172,7 +206,7 @@
         <article class="role-card featured"><span class="role-mark">QC</span><h3>QC Reviewer</h3><p>Independent review of the current workpaper stage.</p><ul><li>Source and citation challenge</li><li>Correction verification</li><li>Merge-readiness recommendation</li></ul></article>
       </div>
       <figure class="product-figure compact-figure">
-        <img src="assets/aeos-profile-skill-prompt-matrix.png" alt="Matrix connecting AEOS auditor profiles to workflows, outputs and auditor checkpoints.">
+        <img src="assets/aeos-profile-skill-prompt-matrix.png" alt="Matrix connecting the General and IT Auditor profiles to governed TOD and TOE skills, with the QC Reviewer following a separate review and verification sequence before the auditor checkpoint.">
       </figure>
     </section>
 
@@ -196,20 +230,20 @@
       <div class="section-heading centered narrow-copy">
         <p class="kicker">Requirements</p>
         <h2>What AEOS needs.</h2>
-        <p>There is no separate AEOS backend. The product is the configured workspace, its files and the approved model route.</p>
+        <p>There is no separate AEOS backend. The product is the configured workspace, its files and an approved provider route, with task-level model selection inside that route.</p>
       </div>
       <div class="requirement-grid">
         <article class="plain-card"><span class="tag">Desktop</span><h3>Working environment</h3><ul><li>Visual Studio Code</li><li>GitHub Copilot Chat with an authenticated account</li><li>Obsidian and the AEOS vault</li></ul></article>
-        <article class="plain-card"><span class="tag">Format</span><h3>Markdown workspace</h3><ul><li>Markdown for context, registers, plans and workpapers</li><li>Original source documents can remain in their native format</li><li>Spreadsheet conversion only when a readable working copy helps</li></ul></article>
+        <article class="plain-card"><span class="tag">Format</span><h3>Markdown workspace</h3><ul><li>Markdown for context, registers, plans and workpapers</li><li>Retain original source files in their native format</li><li>Provide a reviewed Markdown, plain-text or HTML working representation for efficient model use</li></ul></article>
         <article class="plain-card"><span class="tag">Input</span><h3>Approved material</h3><ul><li>An approved audit work program</li><li>A permitted source set</li><li>Defined criteria and file boundaries</li></ul></article>
-        <article class="plain-card"><span class="tag">Runtime</span><h3>Approved model route</h3><ul><li>Enterprise-approved Copilot tenant, local Ollama or Ollama Cloud</li><li>Provider, route and use case approved for the evidence involved</li><li>Python recommended for deterministic checks and document tooling</li></ul></article>
+        <article class="plain-card"><span class="tag">Runtime</span><h3>Approved provider route</h3><ul><li>Private infrastructure or an enterprise tenant, Ollama Cloud or local Ollama</li><li>Provider support through the GitHub Copilot extension for VS Code</li><li>Provider, route and use case approved for the evidence involved</li></ul></article>
       </div>
 
       <div class="contract-block">
         <div class="contract-intro">
           <p class="kicker">LLM contract</p>
-          <h2>Choose the model for the job.</h2>
-          <p>AEOS does not bind the workspace to one model. The auditor chooses an approved route for each task based on capability, data sensitivity and organizational authorization.</p>
+          <h2>Choose the provider route, then the model.</h2>
+          <p>AEOS supports defined provider routes rather than generic model independence. The auditor selects an approved provider route, then chooses a suitable model within that route based on capability, data sensitivity and organizational authorization.</p>
         </div>
         <dl class="disclosure-list">
           <div><dt>Capability</dt><dd>Read long documents, preserve source links, write structured Markdown and use the tools required by the workflow.</dd></div>
@@ -225,7 +259,7 @@
       </div>
 
       <figure class="product-figure workspace-figure">
-        <img src="assets/aeos-vscode-workspace-example.png" alt="Synthetic AEOS workspace in Visual Studio Code showing engagement folders and a draft Test of Design workpaper.">
+        <img src="assets/aeos-vscode-workspace-example.png" alt="Synthetic AEOS workspace in Visual Studio Code showing engagement folders and a draft Test of Operating Effectiveness workpaper.">
         <figcaption>A synthetic workspace showing the engagement folders beside the current draft workpaper.</figcaption>
       </figure>
     </section>
