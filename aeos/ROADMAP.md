@@ -8,14 +8,15 @@ One active outcome at a time. External publication remains approval-gated.
 
 | Outcome | State | Evidence / gate |
 |---|---|---|
-| Published RC2 product page | Published baseline | GitHub Pages commit `0136ef1` |
+| Previous RC2 product page | Preserved rollback baseline | GitHub Pages commit `0136ef1`; byte-verified snapshot retained under `aeos/_snapshots/2026-08-11-live-before-clarity-publish/` |
 | RC2 terminology and visual reconciliation | Local committed baseline | Local base `cbfc777`; prior deterministic and independent reviews retained as historical evidence |
-| Reader-clarity redesign | **Corrected local candidate — deterministic review GREEN** | Purpose/scope/benefit opening, early RC2 boundary, component relationship map, scope boundary and Andrew Blue 1.1 implementation complete |
+| Reader-clarity redesign | **Published — GREEN** | Commit `a577d30`; successful Pages rebuild; cache-busted page/CSS/favicon/image bytes match local source |
 | Prior independent first-time-reader and public-boundary review | Historical — GREEN on predecessor bytes | No P0/P1/P2 blocker after outcome claims were qualified and internal review evidence was removed from public copy |
 | Paired-surface Yellow remediation | Completed locally | Clarified separate QC, pre-TOE readiness, early release-candidate status and frozen-RC2 source-state wording; focused checks Green |
 | Final exact dependency-complete review | **Completed — GREEN** | 33 manifest-bound files matched at opening and closing; complete HTML/CSS dependency coverage; no material, documentation, privacy or IP finding |
-| Owner content decision | **Active — approval required** | Present the exact local article and website candidate; content approval is not commit or push approval |
-| Commit and publish | Planned — separate approval required | Exact approved files, local commit, explicit push approval, successful Pages build and cache-busted live verification |
+| Owner content decision | Completed for published clarity baseline | Andrew authorized clean, commit and push; exact content commit retained |
+| Commit and publish | **Completed** | Commit `a577d30` pushed to `origin/main`; Pages built; live resources verified |
+| AEOS-033 reader-first introduction | **Proposed — not active** | Product backlog owns an appealing introduction that explains AEOS before architecture/components; implementation and later deployment remain separate gates |
 
 ## Clarity-candidate acceptance
 
@@ -37,4 +38,4 @@ Publication is complete only after Andrew separately approves the exact local co
 
 ## Not queued
 
-No AEOS product implementation, private methodology disclosure, new visual asset programme or quantified benefit claim is part of this website slice.
+AEOS-033 is not queued. No product-runtime change, private methodology disclosure, automatic visual-asset programme or quantified benefit claim is authorized by the backlog refinement.
