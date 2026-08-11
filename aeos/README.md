@@ -6,7 +6,7 @@ This directory contains the sanitized public product website for the **AI-Augmen
 
 <https://busera.github.io/aeos/>
 
-The published reader-clarity baseline remains live from content commit `a577d3082aebeb0562d2e58c53b788c3c1e386e7`. The working tree now contains a newer local candidate; it has not been committed, pushed or deployed.
+The published pre-media baseline remains live from content commit `8bd1634ea58aafc2abe049bb80125f67105bc0e0`. The repository contains a newer screenshot-integrated local candidate; it has not been pushed or deployed.
 
 ## Reader purpose
 
@@ -16,6 +16,8 @@ The local candidate explains:
 - where the audit-fieldwork scope starts and ends;
 - the intended practical benefits;
 - the supported route from an audit work program (AWP) into fieldwork, review and reporting drafts;
+- the requirement to provide reviewed Markdown working copies while retaining and linking native originals;
+- one four-frame synthetic demonstration across Obsidian and Visual Studio Code;
 - the core components and their relationships; and
 - the decisions and communications that remain with the auditor.
 
@@ -31,7 +33,7 @@ The site explains the product at operating-model level. It excludes organization
 
 ## Design authority
 
-The page applies **Andrew Blue Design System 1.1** using the approved light/dark palette, spacing, typography, flat containers, button radii and responsive rules.
+The page applies **Andrew Blue Design System 1.1** using the approved light/dark palette, spacing, typography, flat containers, button radii and responsive rules. The demonstration frames use this system without recolouring or annotating the captured application pixels.
 
 ## Local preview
 
@@ -47,7 +49,9 @@ Open <http://127.0.0.1:8000/aeos/>.
 
 - Website copy and layout: `aeos/index.html`
 - Website styles: `aeos/styles.css`
+- Full-size gallery behavior: `aeos/demo-gallery.js`
 - Public visual copies: `aeos/assets/`
+- Reviewed screenshot copies: `aeos/assets/demo/`
 - Canonical editable visual sources: the AEOS writing project
 - Actual previous live-site rollback snapshot: `aeos/_snapshots/2026-08-11-live-before-clarity-publish/`
 
@@ -57,4 +61,4 @@ Open <http://127.0.0.1:8000/aeos/>.
 - Roadmap and lifecycle status: [`ROADMAP.md`](ROADMAP.md)
 - Executable continuation: [`DO_NEXT_SESSION.md`](DO_NEXT_SESSION.md)
 
-The local candidate is not authority to commit, push or deploy. Those remain separate explicit approvals.
+Andrew authorized a local commit once validation and external exact review pass. Push and deployment remain separate explicit approvals.

@@ -11,9 +11,9 @@ One publication outcome at a time. External publication remains approval-gated.
 | Previous product page | Preserved rollback baseline | GitHub Pages commit `0136ef1`; byte-verified snapshot retained under `aeos/_snapshots/2026-08-11-live-before-clarity-publish/` |
 | Reader-clarity redesign | **Published — GREEN** | Content commit `a577d30`; successful Pages rebuild and cache-busted resource parity |
 | AWP/Humanizer publication refresh | **Published baseline** | Commit `8bd1634`; Pages run `31492930176` passed; cache-busted HTML and both visual assets match source bytes |
-| Concrete product demonstration | **Required before new freeze** | Add public-safe synthetic VS Code and Obsidian screenshots plus the approved demo-video entry point so the product is visible in use |
-| Owner content decision | Pending | Andrew reviews a newly frozen website candidate separately from the article after media integration |
-| Next media-candidate commit | Not approved | Requires Andrew’s explicit approval of the future exact reviewed bytes |
+| Concrete product demonstration | **Static sequence integrated locally** | Four approved public-safe synthetic VS Code and Obsidian captures are integrated; exact review is an external pre-commit gate and the video package remains open |
+| Owner publication decision | Pending | Publication remains a separate decision after the local commit |
+| Static media-integration commit | **Owner-authorized, review-gated** | Andrew authorized clean and commit once validation and external exact review pass; this does not approve push or deployment |
 | Next push and Pages deployment | Not approved | Requires separate explicit approval, successful Pages build and cache-busted live parity |
 
 ## Local-candidate acceptance

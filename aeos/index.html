@@ -8,6 +8,7 @@
   <title>AEOS | Audit fieldwork operating system</title>
   <link rel="icon" href="/images/favicon.ico" sizes="any">
   <link rel="stylesheet" href="styles.css">
+  <script src="demo-gallery.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -18,6 +19,7 @@
       <nav aria-label="Page navigation">
         <a href="#overview">Overview</a>
         <a href="#how-it-works">How it works</a>
+        <a href="#demo">Demo</a>
         <a href="#components">Components</a>
         <a href="#scope">Scope</a>
         <a href="#requirements">Requirements</a>
@@ -223,6 +225,99 @@
       </ol>
     </section>
 
+    <section class="section-wide demo-section" id="demo" aria-labelledby="demo-title">
+      <div class="split-heading">
+        <div>
+          <p class="kicker">See AEOS in action</p>
+          <h2 id="demo-title">One synthetic procedure, shown across the working environment.</h2>
+        </div>
+        <p>These four public-safe captures follow the same GenAI change-governance scenario in Obsidian and Visual Studio Code. The application interfaces remain unchanged; the surrounding frame belongs to the AEOS website. Select any image to open it at full size.</p>
+      </div>
+
+      <div class="demo-sequence">
+        <figure class="demo-figure">
+          <div class="demo-figure-heading">
+            <span class="demo-step">01</span>
+            <div>
+              <p class="demo-app">Obsidian</p>
+              <h3>Orient to the engagement and its source boundary.</h3>
+            </div>
+          </div>
+          <a class="demo-image-link" href="assets/demo/01-obsidian-engagement-overview.png" data-dialog="demo-dialog-1" aria-label="Open the Obsidian engagement overview at full size">
+            <img src="assets/demo/01-obsidian-engagement-overview.png" width="1600" height="900" loading="lazy" decoding="async" alt="Obsidian showing the fully synthetic AEOS vault with canonical lifecycle folders and an engagement-context note for AI-04, post-AWP fieldwork, auditor ownership and no audit conclusion.">
+          </a>
+          <figcaption>The canonical folder structure keeps engagement context, planning, fieldwork, evidence and review records in the same visible system.</figcaption>
+        </figure>
+
+        <figure class="demo-figure">
+          <div class="demo-figure-heading">
+            <span class="demo-step">02</span>
+            <div>
+              <p class="demo-app">Visual Studio Code</p>
+              <h3>Review the AWP procedure and decision boundary.</h3>
+            </div>
+          </div>
+          <a class="demo-image-link" href="assets/demo/02-vscode-awp-fieldwork.png" data-dialog="demo-dialog-2" aria-label="Open the Visual Studio Code AWP fieldwork view at full size">
+            <img src="assets/demo/02-vscode-awp-fieldwork.png" width="1600" height="900" loading="lazy" decoding="async" alt="Visual Studio Code showing the synthetic AEOS lifecycle folders, the AI-04 AWP procedure and a warning that sample selection and evidence reliance require an auditor decision.">
+          </a>
+          <figcaption>The auditor works from AI-04 and keeps sample selection and evidence reliance as explicit decisions.</figcaption>
+        </figure>
+
+        <figure class="demo-figure">
+          <div class="demo-figure-heading">
+            <span class="demo-step">03</span>
+            <div>
+              <p class="demo-app">Visual Studio Code</p>
+              <h3>Set the task boundary before the agent runs.</h3>
+            </div>
+          </div>
+          <a class="demo-image-link" href="assets/demo/04-vscode-agent-chat-capabilities.png" data-dialog="demo-dialog-3" aria-label="Open the Visual Studio Code Agent Chat and capability view at full size">
+            <img src="assets/demo/04-vscode-agent-chat-capabilities.png" width="1600" height="900" loading="lazy" decoding="async" alt="Visual Studio Code showing the synthetic dot-github agents and skills folders, a public-safe capability catalog and an unsent AI-04 request limited to AWP-001 and E-001 through E-003 with an auditor checkpoint.">
+          </a>
+          <figcaption>The IT Auditor request is limited to named sources and stops at the auditor checkpoint. It is staged and unsent; no model output is shown.</figcaption>
+        </figure>
+
+        <figure class="demo-figure">
+          <div class="demo-figure-heading">
+            <span class="demo-step">04</span>
+            <div>
+              <p class="demo-app">Obsidian</p>
+              <h3>Inspect the source-linked Draft TOD workpaper.</h3>
+            </div>
+          </div>
+          <a class="demo-image-link" href="assets/demo/03-obsidian-draft-tod-workpaper.png" data-dialog="demo-dialog-4" aria-label="Open the Obsidian Draft TOD workpaper at full size">
+            <img src="assets/demo/03-obsidian-draft-tod-workpaper.png" width="1600" height="900" loading="lazy" decoding="async" alt="Obsidian showing the synthetic Draft TOD workpaper with links to E-001 through E-004, E-004 marked as a source gap, reliability pending, reconciliation not concluded and the conclusion blank.">
+          </a>
+          <figcaption>The draft links statements to registered sources, flags E-004 as missing, and leaves reliability and the conclusion with the auditor.</figcaption>
+        </figure>
+      </div>
+
+      <dialog class="demo-dialog" id="demo-dialog-1" aria-labelledby="demo-dialog-title-1">
+        <div class="demo-dialog-inner">
+          <div class="demo-dialog-header"><p id="demo-dialog-title-1">Obsidian engagement overview</p><button type="button" class="demo-dialog-close">Close</button></div>
+          <img src="assets/demo/01-obsidian-engagement-overview.png" width="1600" height="900" loading="lazy" alt="Obsidian showing the fully synthetic AEOS vault with canonical lifecycle folders and an engagement-context note for AI-04, post-AWP fieldwork, auditor ownership and no audit conclusion.">
+        </div>
+      </dialog>
+      <dialog class="demo-dialog" id="demo-dialog-2" aria-labelledby="demo-dialog-title-2">
+        <div class="demo-dialog-inner">
+          <div class="demo-dialog-header"><p id="demo-dialog-title-2">Visual Studio Code AWP fieldwork view</p><button type="button" class="demo-dialog-close">Close</button></div>
+          <img src="assets/demo/02-vscode-awp-fieldwork.png" width="1600" height="900" loading="lazy" alt="Visual Studio Code showing the synthetic AEOS lifecycle folders, the AI-04 AWP procedure and a warning that sample selection and evidence reliance require an auditor decision.">
+        </div>
+      </dialog>
+      <dialog class="demo-dialog" id="demo-dialog-3" aria-labelledby="demo-dialog-title-3">
+        <div class="demo-dialog-inner">
+          <div class="demo-dialog-header"><p id="demo-dialog-title-3">Visual Studio Code Agent Chat and capability view</p><button type="button" class="demo-dialog-close">Close</button></div>
+          <img src="assets/demo/04-vscode-agent-chat-capabilities.png" width="1600" height="900" loading="lazy" alt="Visual Studio Code showing the synthetic dot-github agents and skills folders, a public-safe capability catalog and an unsent AI-04 request limited to AWP-001 and E-001 through E-003 with an auditor checkpoint.">
+        </div>
+      </dialog>
+      <dialog class="demo-dialog" id="demo-dialog-4" aria-labelledby="demo-dialog-title-4">
+        <div class="demo-dialog-inner">
+          <div class="demo-dialog-header"><p id="demo-dialog-title-4">Obsidian Draft TOD workpaper</p><button type="button" class="demo-dialog-close">Close</button></div>
+          <img src="assets/demo/03-obsidian-draft-tod-workpaper.png" width="1600" height="900" loading="lazy" alt="Obsidian showing the synthetic Draft TOD workpaper with links to E-001 through E-004, E-004 marked as a source gap, reliability pending, reconciliation not concluded and the conclusion blank.">
+        </div>
+      </dialog>
+    </section>
+
     <section class="section-wide components-section" id="components" aria-labelledby="components-title">
       <div class="split-heading">
         <div>
@@ -331,7 +426,7 @@
       <div class="section-heading centered narrow-copy">
         <p class="kicker">Requirements</p>
         <h2 id="requirements-title">What a team needs to run AEOS.</h2>
-        <p>The workspace remains readable and portable. Original source files may stay in their native format; AEOS uses controlled text-readable working artifacts for context, registers, plans, workpapers and reviews.</p>
+        <p>The workspace remains readable and portable. Native originals stay linked and authoritative, while information used by AEOS agents and workflows is provided in reviewed Markdown working copies.</p>
       </div>
 
       <div class="requirement-grid">
@@ -347,8 +442,8 @@
         </article>
         <article>
           <span class="tag">Working format</span>
-          <h3>Readable audit files</h3>
-          <ul><li>Markdown for governed working artifacts</li><li>Native originals retained as evidence</li><li>Reviewed Markdown, plain-text or HTML derivatives where useful</li></ul>
+          <h3>Markdown working copies</h3>
+          <ul><li>Reviewed Markdown required for information used by AEOS agents and workflows</li><li>Native originals retained and linked as authoritative evidence</li><li>User-supplied conversion or the separate file-converter product</li></ul>
         </article>
         <article>
           <span class="tag">Runtime</span>
@@ -391,7 +486,7 @@
       <dl class="faq-list">
         <div><dt>Where does AEOS start?</dt><dd>After the audit work program (AWP) has been reviewed and authorized under the internal audit function's methodology. Missing planning decisions remain open for the auditor.</dd></div>
         <div><dt>Does AEOS replace the auditor?</dt><dd>No. It supports preparation, evidence analysis, testing and drafting. The auditor owns professional judgment and approval.</dd></div>
-        <div><dt>Do all source documents need to be Markdown?</dt><dd>No. AEOS retains native originals and uses reviewed text-readable derivatives where they improve model processing and review.</dd></div>
+        <div><dt>Do all source documents need to be Markdown?</dt><dd>Native originals do not. AEOS retains and links them as the authoritative evidence. However, information used by AEOS agents and workflows must be available in reviewed Markdown. The user must provide that Markdown working copy, either by converting the information themselves or by using the separate file-converter product.</dd></div>
         <div><dt>Does AEOS require one model?</dt><dd>No. It requires an approved provider route and a model capable of the selected workflow.</dd></div>
         <div><dt>Can AEOS send audit communication?</dt><dd>No. It may prepare a draft. Only an authorized person can send or publish it.</dd></div>
       </dl>
