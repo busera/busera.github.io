@@ -2,48 +2,56 @@
 
 ## Status
 
-- **Lifecycle:** Exact local RC2 publication candidate independently verified GREEN; owner publication review required.
+- **Lifecycle:** Reader-clarity redesign is an uncommitted, independently Green local candidate; owner content/design decision remains required.
 - **Branch:** `main`.
-- **Published baseline:** GitHub Pages successfully built commit `0136ef1757095bf8eb4c8359b090fba5d902dc2a` on 2026-07-30. The live site remains on that baseline.
-- **Local candidate:** base content committed locally as `b171a3c`; source-format FAQ correction committed as `c2f1151`; provider-route correction committed as `f681d2f`; website-aligned article-authority assets committed as `b7cadf2`; `index.html` SHA-256 remains `9abb71b7b2b37003bedadac254965a33743b26cb92687322ca65b2d8903e7333`.
-- **Publication boundary:** Any push or GitHub Pages deployment requires Andrew's separate explicit approval.
+- **Published baseline:** `0136ef1757095bf8eb4c8359b090fba5d902dc2a`. The live GitHub Pages site remains on this baseline.
+- **Local base:** `cbfc77701b5d0022aa8b7c13e03535a7970f3fbf`, ten commits ahead of `origin/main` before the redesign.
+- **Current page SHA-256:** `b298a9867938737eff8fac1c125af3e7ba268ff57636093bdb9db54032601e13`.
+- **Current CSS SHA-256:** `e2286e9b53493f22e1d1676a417b09d3d5ad68ad9b8b59e62d76ef7b7f2ebb4e`.
+- **Current component-visual SHA-256:** `a2a045fe0bda61f248cb39889bd72932af2266ebe4d01734b2c3c0e5e57c7bf1`.
+- **Current workspace-visual SHA-256:** `797070e0f133b8e8c4ae8ea0a7ef10349d1bcb5b725bac75f9baaecd85bc837d`.
+- **Publication boundary:** Any commit, push or GitHub Pages deployment requires Andrew's separate explicit approval.
 
-## Completed local outcome
+## 2026-08-11 clarity redesign
 
-The 2026-08-01 candidate closes the bounded publication blockers:
+The previous page was accurate but too abstract for a first-time reader. The new local candidate changes the reader journey:
 
-1. Process, Requirements, Runtime and LLM-contract copy now lead with the approved provider route while preserving task-level model selection.
-2. The source-format contract retains native originals and requires a reviewed Markdown, plain-text or HTML working representation for efficient model use.
-3. A visible maturity section states that AEOS 1.0.0 RC2 is a local release candidate, has passed exact package review, is not a validated release or production-ready, and still lacks clean supported Windows invocation evidence.
-4. Public inventory and visuals present three agent profiles and nine governed skills; the VS Code implementation workaround is not presented as a product component.
-5. The live-page asset candidates for core interactions, route matrix and synthetic workspace are exact copies of their corrected article-authority renders.
-6. The evidence-to-conclusion figure makes auditor reliance, independent QC, sign-off, stop/qualify conditions and draft-only reporting explicit.
-7. The new typical-lifecycle figure shows the implemented AWP → Week 1 TOD → Week 2 TOE route in solid blue and marks final close-out planning, observation discussion/root-cause analysis and final observation drafting as planned under AEOS-061 and not in RC2.
-8. The workspace alt text identifies a Test of Operating Effectiveness workpaper.
-9. All five website figures now use byte-identical article-authority renders aligned to the website palette, flat-card/hairline grammar, typography and connector system; the article's cover remains separate and unchanged.
+1. The hero defines AEOS in one sentence and states its start and end boundary.
+2. A 30-second overview separates purpose, scope and benefit.
+3. A four-stage relationship map shows approved inputs → AEOS operating core → draft audit work → human decisions.
+4. Practical benefits are stated as designed outcomes rather than unsupported measured claims.
+5. Supported audit work is separated from the component inventory.
+6. A component table explains the job and relationship of the workspace, profiles, skills, prompts, templates, controls and Python checks.
+7. Scope is explicit across three columns: AEOS supports, the auditor owns, and current exclusions.
+8. A concise RC2/not-validated/not-production-ready boundary appears in the hero; the detailed status section pins the three-profile/nine-skill inventory to the frozen RC2 source snapshot rather than current governed source.
+9. The page applies Andrew Blue Design System 1.1 from the PA Standards wiki.
+10. Desktop and mobile navigation, the relationship map and component inventory remain usable without JavaScript.
 
 ## Verification evidence
 
-- Writing-project validator: PASS, including the shared article-authority assets.
-- Focused cross-surface semantic verifier: PASS for required RC2, lessons, provider-route, source-format, TOD/TOE, image, anchor and privacy assertions.
-- Draw.io semantic check: PASS; the evidence-to-conclusion source has eight source/target-bound connectors.
-- Public asset parity: PASS for all five website/article render pairs.
-- HTML parsing, internal anchors, image targets and alt text: PASS.
+- Canonical `DESIGN.md` lint: PASS with 0 errors and 0 warnings.
+- HTML parsing, duplicate IDs, internal anchors, image targets and alt text: PASS.
+- Standards-based HTML validation and CSS syntax validation: PASS.
+- Native table semantics for the component inventory: PASS.
+- Lifecycle-state semantics: draft TOD/TOE outputs precede the separate review gate; the reviewed workpaper follows it.
+- WCAG 2.0/2.1 A/AA axe-core scan at desktop and mobile viewports: PASS with zero violations.
+- Manual step-badge contrast check: PASS at 8.70:1.
+- Required purpose/scope/benefit/component/relationship copy: PASS.
+- Public-boundary scan for local paths, credentials and private-overlay wording: PASS.
+- CSS brace and Andrew Blue token reconciliation: PASS.
 - `git diff --check`: PASS.
-- Local HTTP preview: page, CSS, favicon and all five images returned HTTP 200/304 without browser-console errors.
-- Desktop visual QA: PASS; status cards, diagrams, provider/source-format copy and navigation render without clipping or horizontal overflow.
-- Mobile visual QA at 390 px: PASS; `scrollWidth = clientWidth = 390`, no overflow offenders, and the status cards stack cleanly.
-- Restyled-figure mobile QA at 390 px: PASS; all five images loaded at 324 px within x=33..357 and introduced no overflow offender.
-- Independent exact-candidate rereview: GREEN, P0/P1/P2 `0/0/0`, bound to article SHA-256 `0c1a928deb1fe3c56b2860f498d6117fa35800249041a3e32bc7d05f489f5cd6` and website SHA-256 `9abb71b7b2b37003bedadac254965a33743b26cb92687322ca65b2d8903e7333`.
-- Independent exact body-visual style review: PASS with no material P0/P1/P2 defect.
+- Local HTTP preview: page, CSS and both retained images return HTTP 200; browser console and failed-request checks are clean.
+- Desktop full-page render at 1440 × 1000 viewport: PASS; no material clipping or overlap observed.
+- Mobile full-page render at 390 × 844 viewport: PASS after two header refinements; all five navigation links are visible and the layout has no observed horizontal overflow.
+- Final exact review: GREEN. Editorial review found no material issue. Governance closure verified all 33 manifest-bound article, website, dependency and authority files at opening and closing; local HTML/CSS dependency coverage is complete in both directions, with no documentation, privacy or IP concern. Article/page hashes remain `60b6465…` / `b298a986…`.
 
-## Boundaries
+## Public boundaries
 
-- Do not push, publish, deploy, tag, amend or reorder existing commits without explicit owner approval.
-- Do not treat exact package review as supported Windows invocation, validated-release or production-readiness evidence.
 - Do not expose private overlays, engagement evidence, credentials, restricted methodology, machine-local paths or private implementation material.
-- Further redesign and AEOS product implementation are outside this publication slice.
+- Do not treat exact package review as supported Windows invocation, validated-release or production-readiness evidence.
+- Do not turn designed benefits into quantified outcome claims without evidence.
+- Do not push, publish, deploy, tag, amend or reorder existing commits without explicit owner approval.
 
 ## Next decision
 
-After the independent exact-candidate review is Green, present the local candidate to Andrew for the separate publication decision. A publication approval must identify the intended local commit; only then may it be pushed and verified through GitHub Pages.
+Present the exact local candidate to Andrew for content/design review. Content approval is not commit or push approval; publication requires separate approval of the exact commit followed by a successful Pages build and cache-busted live verification.

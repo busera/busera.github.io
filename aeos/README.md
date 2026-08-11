@@ -6,19 +6,28 @@ This directory contains the sanitized public product website for the **AI-Augmen
 
 <https://busera.github.io/aeos/>
 
-## Scope
+The live site remains unchanged until Andrew explicitly approves a push.
 
-The site explains:
+## Reader purpose
 
-- the AEOS product proposition and operating model;
-- supported fieldwork, Test of Design and Test of Operating Effectiveness capabilities;
-- the process from an approved work program to a reviewed workpaper;
-- product components and auditor roles;
-- desktop, text-readable source and provider-route requirements;
-- the LLM operating contract; and
-- a synthetic fieldwork workspace.
+The page is structured so a first-time reader can quickly answer:
 
-It excludes organization-specific overlays, engagement evidence, credentials, restricted methodology, and private implementation material.
+- what AEOS is and why it exists;
+- where its scope starts and ends;
+- what practical benefits it is designed to provide;
+- what audit work it supports;
+- which components it contains and how they relate;
+- what remains under auditor authority;
+- the current release-candidate and validation boundary; and
+- what software, working formats and provider routes are required.
+
+## Public boundary
+
+The site explains the product at operating-model level. It excludes organization-specific overlays, engagement evidence, credentials, restricted methodology, machine-local paths and private implementation material.
+
+## Design authority
+
+The page applies **Andrew Blue Design System 1.1**, the canonical standard maintained in the PA Standards wiki. The implementation uses the approved light/dark palette, spacing, typography, flat containers, button radii and responsive rules. The design system remains authoritative; this directory contains only the website implementation.
 
 ## Local preview
 
@@ -36,6 +45,7 @@ Open <http://127.0.0.1:8000/aeos/>.
 - Website styles: `aeos/styles.css`
 - Public visual copies: `aeos/assets/`
 - Canonical editable visual sources: the AEOS writing project, not this website directory
+- Pre-redesign local rollback snapshot: ignored local path `aeos/_snapshots/2026-08-11-pre-clarity-redesign/`
 
 ## Project continuation
 

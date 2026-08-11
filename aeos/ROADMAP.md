@@ -8,32 +8,33 @@ One active outcome at a time. External publication remains approval-gated.
 
 | Outcome | State | Evidence / gate |
 |---|---|---|
-| Clarify source working-format requirement | Published and verified | Commit `9f9230f`; live in Pages build `0136ef1` |
-| Clarify supported model-provider routes | Published and verified | Commit `53fc63d`; live in Pages build `0136ef1` |
-| State compatibility with existing fieldwork models | Published and verified | Commit `3430143`; live in Pages build `0136ef1` |
-| RC2 maturity, terminology and visual reconciliation | **Local candidate verified GREEN** | Deterministic, semantic, asset-parity, desktop and 390 px mobile checks passed; independent rereview P0/P1/P2 `0/0/0` |
-| Website-aligned body-visual system | **Local candidate verified** | Eight article authorities restyled; five byte-identical website copies committed as `b7cadf2`; full-size, desktop, mobile and independent exact-set review passed |
-| Owner publication decision for the verified candidate | **Active — approval required** | Present exact local content through body-visual asset commit `b7cadf2`; do not push or publish without separate approval |
-| Publish and verify the candidate | Planned — approval required | Explicit push approval, successful Pages build for the exact pushed commit, and cache-busted live verification |
+| Published RC2 product page | Published baseline | GitHub Pages commit `0136ef1` |
+| RC2 terminology and visual reconciliation | Local committed baseline | Local base `cbfc777`; prior deterministic and independent reviews retained as historical evidence |
+| Reader-clarity redesign | **Corrected local candidate — deterministic review GREEN** | Purpose/scope/benefit opening, early RC2 boundary, component relationship map, scope boundary and Andrew Blue 1.1 implementation complete |
+| Prior independent first-time-reader and public-boundary review | Historical — GREEN on predecessor bytes | No P0/P1/P2 blocker after outcome claims were qualified and internal review evidence was removed from public copy |
+| Paired-surface Yellow remediation | Completed locally | Clarified separate QC, pre-TOE readiness, early release-candidate status and frozen-RC2 source-state wording; focused checks Green |
+| Final exact dependency-complete review | **Completed — GREEN** | 33 manifest-bound files matched at opening and closing; complete HTML/CSS dependency coverage; no material, documentation, privacy or IP finding |
+| Owner content decision | **Active — approval required** | Present the exact local article and website candidate; content approval is not commit or push approval |
+| Commit and publish | Planned — separate approval required | Exact approved files, local commit, explicit push approval, successful Pages build and cache-busted live verification |
 
-## Local-candidate acceptance
+## Clarity-candidate acceptance
 
-The local candidate is complete only when:
+The redesign is complete only when:
 
-1. Process routing names the approved provider route as well as task-level model selection;
-2. Requirements retain original files alongside reviewed Markdown, plain-text or HTML working representations;
-3. Requirements and LLM-contract copy distinguish Copilot-hosted service boundaries from the official Ollama provider extension and any other explicitly approved configured route;
-4. the current-status section states the RC2 package evidence and the remaining supported-Windows, validated-release and production-readiness boundaries;
-5. the corrected core, route-matrix and TOE-workspace diagrams match their article authorities, and the evidence-to-conclusion and typical-lifecycle visuals have matching prose, alt text and captions;
-6. old ambiguous and obsolete phrases are absent;
-7. structural, semantic, privacy, render, desktop and mobile checks pass;
-8. independent exact-candidate review is Green; and
-9. content and governance changes are committed locally without pushing.
+1. the first screen defines AEOS and its approved-program-to-reviewed-draft boundary;
+2. purpose, scope and benefit are separately visible within the opening reader path;
+3. the component relationship map distinguishes inputs, operating core, outputs and human decisions;
+4. supported work and product components are not conflated;
+5. auditor authority, current exclusions, maturity and requirements remain explicit;
+6. the page applies Andrew Blue Design System 1.1 without gradients, decorative effects or competing palettes;
+7. HTML, links, assets, privacy, desktop and mobile checks pass;
+8. independent review finds no P0/P1/P2 content, public-boundary, accessibility or layout blocker; and
+9. project-state documents match the exact local candidate.
 
 ## Publication acceptance
 
-Publication is complete only after Andrew separately approves the exact local commit, that commit is pushed to `origin/main`, GitHub Pages builds it successfully, and a cache-busted live check confirms the complete corrected contract and assets.
+Publication is complete only after Andrew separately approves the exact local commit, that commit is pushed to `origin/main`, GitHub Pages builds it successfully, and a cache-busted live check confirms the complete revised page and assets.
 
-## Unqueued
+## Not queued
 
-No further body-visual redesign, cover redesign, model-evaluation evidence or AEOS product implementation is queued by this handoff.
+No AEOS product implementation, private methodology disclosure, new visual asset programme or quantified benefit claim is part of this website slice.
