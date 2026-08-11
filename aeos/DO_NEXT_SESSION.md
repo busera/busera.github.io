@@ -6,13 +6,13 @@ Read this file, `README.md`, `PROJECT_STATE.md`, `ROADMAP.md` and AEOS-033 befor
 
 ## Current state
 
-- Live site remains the published predecessor at content commit `a577d3082aebeb0562d2e58c53b788c3c1e386e7`.
-- Local AWP/Humanizer working draft is uncommitted and unpushed.
+- Live site is the published AWP/auditor-benefit baseline at content commit `8bd1634ea58aafc2abe049bb80125f67105bc0e0`.
+- GitHub Pages run `31492930176` succeeded; cache-busted HTML and both active visual assets are byte-identical to the pushed source.
 - Page SHA-256: `f384ea08beb624636dde82f367cc9380a60c0222782211ba3f0df6a3add9bace`
 - CSS SHA-256: `baa7ede54279523fe797935d75a954ce48828e7580ac12582bccf9827415c741`
 - Component visual SHA-256: `bb013ecd3d94257f932adaa2988d23ee4838f8b740033420f917052b3e8bbc33`
 - Workspace visual SHA-256: `eeed564f3e26bc6bda9221f11cb052ff89617fde22213dd38ce59c2347acff05`
-- Exact review is deferred until the requested public-safe VS Code/Obsidian screenshots and demo-media package are integrated.
+- The next exact review is deferred until the requested public-safe VS Code/Obsidian screenshots and demo-media package are integrated.
 
 ## Candidate contract
 
@@ -36,4 +36,4 @@ Read this file, `README.md`, `PROJECT_STATE.md`, `ROADMAP.md` and AEOS-033 befor
 
 ## Approval boundary
 
-A reviewed local result is not approval to commit or push. Commit and Pages deployment require separate explicit instructions. If any publication byte changes, rerun affected Humanizer and exact-candidate checks before relying on prior review.
+The current baseline was committed, pushed and deployed under Andrew's explicit instruction. Any future publication-byte change requires affected Humanizer, validation and exact-candidate checks plus a new explicit commit/deployment decision.

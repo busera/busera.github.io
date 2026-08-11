@@ -2,12 +2,12 @@
 
 ## Status
 
-- **Live site:** published reader-clarity baseline at content commit `a577d3082aebeb0562d2e58c53b788c3c1e386e7`.
-- **Local working draft:** AWP terminology, Humanizer Lite pass, current-state-copy removal, a seven-authority publication union (six Medium visuals plus one website-only workspace visual), and explicit auditor-support/quality/consistency/efficiency copy.
-- **Branch:** `main`; local candidate is uncommitted and unpushed.
+- **Live site:** published AWP/auditor-benefit baseline at content commit `8bd1634ea58aafc2abe049bb80125f67105bc0e0`.
+- **Next local outcome:** AEOS-079 will add the jointly produced public-safe VS Code/Obsidian screenshots and short demo package before a future exact freeze.
+- **Branch:** `main`; synchronized with `origin/main` after successful Pages deployment.
 - **Publication boundary:** commit, push and Pages deployment each require Andrew’s separate explicit approval.
 
-## Current local draft
+## Published baseline
 
 - Page SHA-256: `f384ea08beb624636dde82f367cc9380a60c0222782211ba3f0df6a3add9bace`
 - CSS SHA-256: `baa7ede54279523fe797935d75a954ce48828e7580ac12582bccf9827415c741`
@@ -34,7 +34,9 @@
 - Axe WCAG A/AA scan at both viewports: PASS with zero violations.
 - Humanizer/terminology/state scan: PASS; zero EWP, Engagement Work Program, approved-work-program, public current-state, watched AI-vocabulary, chat-artifact or prose em-dash findings.
 - Final visual inspection: PASS; no material clipping, overlap, truncation or connector damage.
-- The earlier exact manifest and review evidence are superseded by later benefit-copy changes and Andrew's request for real VS Code/Obsidian screenshots and demo media.
+- GitHub Pages run `31492930176`: PASS; build, deploy and report jobs succeeded.
+- Cache-busted live parity: PASS for HTML and both active visual assets; live SHA-256 values match the source bytes listed above.
+- The earlier pre-media exact manifest and review evidence remain superseded; they do not certify the future AEOS-079 media candidate.
 
 ## Public boundaries
 
@@ -45,4 +47,4 @@
 
 ## Next decision
 
-Prepare and review the synthetic screenshot/demo-media package, integrate the approved assets, rerun Humanizer and validation, then freeze a new exact candidate. A Green local result is not approval to commit or deploy.
+Run the joint AEOS-079 kickoff, prepare and approve the synthetic screenshot/demo-media package, integrate the selected assets, rerun Humanizer and validation, then freeze a new exact candidate. Future commit and deployment decisions remain separately approval-gated.
