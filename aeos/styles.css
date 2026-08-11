@@ -178,17 +178,6 @@ h3 { margin: 0; font-size: 20px; font-weight: 650; line-height: 1.35; }
   align-items: end;
 }
 .hero-copy { max-width: 760px; margin: 26px 0 0; color: var(--body); font-size: 18px; line-height: 1.65; }
-.hero-status {
-  max-width: 760px;
-  margin: 18px 0 0;
-  padding: 12px 16px;
-  border-left: 3px solid var(--accent-medium);
-  background: var(--surface-soft);
-  color: var(--body);
-  font-size: 14px;
-  line-height: 1.5;
-}
-.hero-status strong { color: var(--ink); }
 .actions { margin-top: 30px; display: flex; gap: 10px; flex-wrap: wrap; }
 .hero-boundary {
   padding: 28px;
@@ -354,19 +343,6 @@ h3 { margin: 0; font-size: 20px; font-weight: 650; line-height: 1.35; }
 .scope-grid li { position: relative; margin: 13px 0; padding-left: 18px; color: var(--body); font-size: 14px; }
 .scope-grid li::before { content: ""; position: absolute; top: .7em; left: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--accent-medium); }
 
-.status-section {
-  margin-bottom: 32px;
-  padding: 40px;
-  display: grid;
-  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
-  gap: 60px;
-  border: 1px solid var(--hairline-strong);
-  border-radius: var(--radius-lg);
-  background: var(--surface-soft);
-}
-.status-section h2 { font-size: clamp(28px, 3.5vw, 36px); }
-.status-copy p { margin: 0; color: var(--body); }
-.status-copy p + p { margin-top: 14px; }
 
 .requirements-section { border-top: 1px solid var(--hairline); }
 .requirement-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
@@ -462,7 +438,7 @@ footer { border-top: 1px solid var(--hairline); }
   .overview-grid, .scope-grid { grid-template-columns: 1fr; }
   .overview-card { min-height: 0; }
   .overview-card p { margin-top: 26px; }
-  .split-heading, .status-section, .contract-content { grid-template-columns: 1fr; gap: 30px; }
+  .split-heading, .contract-content { grid-template-columns: 1fr; gap: 30px; }
   .benefit-list > div { grid-template-columns: 180px 1fr; }
   .component-table { border-top: 0; table-layout: auto; }
   .component-table thead { display: none; }

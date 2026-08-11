@@ -2,60 +2,47 @@
 
 ## Status
 
-- **Lifecycle:** Reader-clarity redesign is published and live. The next presentation outcome is Proposed under product-backlog item AEOS-033; it is not active.
-- **Branch:** `main`.
-- **Published content commit:** `a577d3082aebeb0562d2e58c53b788c3c1e386e7`.
-- **Previous published baseline:** `0136ef1757095bf8eb4c8359b090fba5d902dc2a`, preserved byte-for-byte under `aeos/_snapshots/2026-08-11-live-before-clarity-publish/`.
-- **Pre-redesign local base:** `cbfc77701b5d0022aa8b7c13e03535a7970f3fbf`.
-- **Current page SHA-256:** `b298a9867938737eff8fac1c125af3e7ba268ff57636093bdb9db54032601e13`.
-- **Current CSS SHA-256:** `e2286e9b53493f22e1d1676a417b09d3d5ad68ad9b8b59e62d76ef7b7f2ebb4e`.
-- **Current component-visual SHA-256:** `a2a045fe0bda61f248cb39889bd72932af2266ebe4d01734b2c3c0e5e57c7bf1`.
-- **Current workspace-visual SHA-256:** `797070e0f133b8e8c4ae8ea0a7ef10349d1bcb5b725bac75f9baaecd85bc837d`.
-- **Publication boundary:** Any further implementation, commit, push or GitHub Pages deployment requires Andrew's separate explicit approval.
+- **Live site:** published reader-clarity baseline at content commit `a577d3082aebeb0562d2e58c53b788c3c1e386e7`.
+- **Local working draft:** AWP terminology, Humanizer Lite pass, current-state-copy removal, a seven-authority publication union (six Medium visuals plus one website-only workspace visual), and explicit auditor-support/quality/consistency/efficiency copy.
+- **Branch:** `main`; local candidate is uncommitted and unpushed.
+- **Publication boundary:** commit, push and Pages deployment each require Andrew’s separate explicit approval.
 
-## 2026-08-11 clarity redesign
+## Current local draft
 
-The previous page was accurate but too abstract for a first-time reader. The published clarity baseline changes the reader journey:
+- Page SHA-256: `f384ea08beb624636dde82f367cc9380a60c0222782211ba3f0df6a3add9bace`
+- CSS SHA-256: `baa7ede54279523fe797935d75a954ce48828e7580ac12582bccf9827415c741`
+- Component visual SHA-256: `bb013ecd3d94257f932adaa2988d23ee4838f8b740033420f917052b3e8bbc33`
+- Workspace visual SHA-256: `eeed564f3e26bc6bda9221f11cb052ff89617fde22213dd38ce59c2347acff05`
 
-1. The hero defines AEOS in one sentence and states its start and end boundary.
-2. A 30-second overview separates purpose, scope and benefit.
-3. A four-stage relationship map shows approved inputs → AEOS operating core → draft audit work → human decisions.
-4. Practical benefits are stated as designed outcomes rather than unsupported measured claims.
-5. Supported audit work is separated from the component inventory.
-6. A component table explains the job and relationship of the workspace, profiles, skills, prompts, templates, controls and Python checks.
-7. Scope is explicit across three columns: AEOS supports, the auditor owns, and current exclusions.
-8. A concise RC2/not-validated/not-production-ready boundary appears in the hero; the detailed status section pins the three-profile/nine-skill inventory to the frozen RC2 source snapshot rather than current governed source.
-9. The page applies Andrew Blue Design System 1.1 from the PA Standards wiki.
-10. Desktop and mobile navigation, the relationship map and component inventory remain usable without JavaScript.
+## Local candidate changes
+
+1. The hero leads with “From AWP to traceable fieldwork and reviewed workpapers.”
+2. AWP is expanded as **Audit Work Program** near first use.
+3. “Approved” is not repeated as an AWP modifier; authorization remains explicit through the auditor-owned scope and reliance boundary.
+4. EWP/Engagement Work Program is absent because AEOS v1 evidence remains audit-fieldwork focused; broader advisory/review support is not claimed.
+5. The public RC2/current-product-state block and wording are removed.
+6. Reader-facing prose received Humanizer Lite after substantive edits.
+7. The component and synthetic workspace visuals are synchronized with their editable article authorities and use AWP terminology.
+8. The page now states which tasks AEOS performs for the auditor and separately explains the intended quality, consistency and efficiency benefits.
 
 ## Verification evidence
 
-- Canonical `DESIGN.md` lint: PASS with 0 errors and 0 warnings.
-- HTML parsing, duplicate IDs, internal anchors, image targets and alt text: PASS.
-- Standards-based HTML validation and CSS syntax validation: PASS.
-- Native table semantics for the component inventory: PASS.
-- Lifecycle-state semantics: draft TOD/TOE outputs precede the separate review gate; the reviewed workpaper follows it.
-- WCAG 2.0/2.1 A/AA axe-core scan at desktop and mobile viewports: PASS with zero violations.
-- Manual step-badge contrast check: PASS at 8.70:1.
-- Required purpose/scope/benefit/component/relationship copy: PASS.
-- Public-boundary scan for local paths, credentials and private-overlay wording: PASS.
-- CSS brace and Andrew Blue token reconciliation: PASS.
+- HTML and CSS validators: PASS.
 - `git diff --check`: PASS.
-- Local HTTP preview: page, CSS and both retained images return HTTP 200; browser console and failed-request checks are clean.
-- Desktop full-page render at 1440 × 1000 viewport: PASS; no material clipping or overlap observed.
-- Mobile full-page render at 390 × 844 viewport: PASS after two header refinements; all five navigation links are visible and the layout has no observed horizontal overflow.
-- Final exact review: GREEN. Editorial review found no material issue. Governance closure verified all 33 manifest-bound article, website, dependency and authority files at opening and closing; local HTML/CSS dependency coverage is complete in both directions, with no documentation, privacy or IP concern. Article/page hashes remain `60b6465…` / `b298a986…`.
-- Publication: PASS after one failed generated legacy Pages run and a successful API-requested rebuild of unchanged commit `a577d30`; failure occurred before source checkout/build and required no source fix.
-- Cache-busted live verification: PASS. Homepage link, AEOS page, stylesheet, favicon and both active images return HTTP 200; all AEOS resource bytes match the local published files.
-- Follow-up feedback: the published hero is accurate but does not yet provide the stronger appealing introductory experience Andrew wants before details. AEOS-033 owns that change.
+- Desktop browser audit at 1440 px: PASS; no overflow, broken anchors or failed images.
+- Mobile browser audit at 390 px: PASS; all five navigation links visible and no horizontal overflow.
+- Axe WCAG A/AA scan at both viewports: PASS with zero violations.
+- Humanizer/terminology/state scan: PASS; zero EWP, Engagement Work Program, approved-work-program, public current-state, watched AI-vocabulary, chat-artifact or prose em-dash findings.
+- Final visual inspection: PASS; no material clipping, overlap, truncation or connector damage.
+- The earlier exact manifest and review evidence are superseded by later benefit-copy changes and Andrew's request for real VS Code/Obsidian screenshots and demo media.
 
 ## Public boundaries
 
 - Do not expose private overlays, engagement evidence, credentials, restricted methodology, machine-local paths or private implementation material.
-- Do not treat exact package review as supported Windows invocation, validated-release or production-readiness evidence.
-- Do not turn designed benefits into quantified outcome claims without evidence.
-- Do not push, publish, deploy, tag, amend or reorder existing commits without explicit owner approval.
+- Do not imply broad non-assurance support from terminology alone.
+- Do not turn intended benefits into measured outcome claims without evidence.
+- Do not commit, push, deploy or publish without explicit owner approval.
 
 ## Next decision
 
-Keep AEOS-033 Proposed until Andrew activates it through the product backlog. When activated, implement a reader-first introduction locally, preserve this published baseline, and repeat review plus explicit commit/push approval before replacing the live page.
+Prepare and review the synthetic screenshot/demo-media package, integrate the approved assets, rerun Humanizer and validation, then freeze a new exact candidate. A Green local result is not approval to commit or deploy.

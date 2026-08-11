@@ -2,40 +2,38 @@
 
 ## WIP policy
 
-One active outcome at a time. External publication remains approval-gated.
+One publication outcome at a time. External publication remains approval-gated.
 
 ## Lifecycle
 
 | Outcome | State | Evidence / gate |
 |---|---|---|
-| Previous RC2 product page | Preserved rollback baseline | GitHub Pages commit `0136ef1`; byte-verified snapshot retained under `aeos/_snapshots/2026-08-11-live-before-clarity-publish/` |
-| RC2 terminology and visual reconciliation | Local committed baseline | Local base `cbfc777`; prior deterministic and independent reviews retained as historical evidence |
-| Reader-clarity redesign | **Published — GREEN** | Commit `a577d30`; successful Pages rebuild; cache-busted page/CSS/favicon/image bytes match local source |
-| Prior independent first-time-reader and public-boundary review | Historical — GREEN on predecessor bytes | No P0/P1/P2 blocker after outcome claims were qualified and internal review evidence was removed from public copy |
-| Paired-surface Yellow remediation | Completed locally | Clarified separate QC, pre-TOE readiness, early release-candidate status and frozen-RC2 source-state wording; focused checks Green |
-| Final exact dependency-complete review | **Completed — GREEN** | 33 manifest-bound files matched at opening and closing; complete HTML/CSS dependency coverage; no material, documentation, privacy or IP finding |
-| Owner content decision | Completed for published clarity baseline | Andrew authorized clean, commit and push; exact content commit retained |
-| Commit and publish | **Completed** | Commit `a577d30` pushed to `origin/main`; Pages built; live resources verified |
-| AEOS-033 reader-first introduction | **Proposed — not active** | Product backlog owns an appealing introduction that explains AEOS before architecture/components; implementation and later deployment remain separate gates |
+| Previous product page | Preserved rollback baseline | GitHub Pages commit `0136ef1`; byte-verified snapshot retained under `aeos/_snapshots/2026-08-11-live-before-clarity-publish/` |
+| Reader-clarity redesign | **Published — GREEN** | Content commit `a577d30`; successful Pages rebuild and cache-busted resource parity |
+| AWP/Humanizer publication refresh | **Local working draft** | Terminology, public-state removal and explicit auditor-support/quality/consistency/efficiency copy pass focused validation; earlier exact manifest is superseded |
+| Concrete product demonstration | **Required before new freeze** | Add public-safe synthetic VS Code and Obsidian screenshots plus the approved demo-video entry point so the product is visible in use |
+| Owner content decision | Pending | Andrew reviews a newly frozen website candidate separately from the article after media integration |
+| Commit | Not approved | Requires Andrew’s explicit approval of exact reviewed bytes |
+| Push and Pages deployment | Not approved | Requires separate explicit approval, successful Pages build and cache-busted live parity |
 
-## Clarity-candidate acceptance
+## Local-candidate acceptance
 
-The redesign is complete only when:
+The candidate is ready for owner review only when:
 
-1. the first screen defines AEOS and its approved-program-to-reviewed-draft boundary;
-2. purpose, scope and benefit are separately visible within the opening reader path;
-3. the component relationship map distinguishes inputs, operating core, outputs and human decisions;
-4. supported work and product components are not conflated;
-5. auditor authority, current exclusions, maturity and requirements remain explicit;
-6. the page applies Andrew Blue Design System 1.1 without gradients, decorative effects or competing palettes;
-7. HTML, links, assets, privacy, desktop and mobile checks pass;
-8. independent review finds no P0/P1/P2 content, public-boundary, accessibility or layout blocker; and
-9. project-state documents match the exact local candidate.
+1. the first screen defines AEOS and leads from AWP to reviewed workpapers;
+2. AWP is expanded as Audit Work Program near first use;
+3. EWP/Engagement Work Program, approved-work-program repetition and public current-product-state copy are absent;
+4. purpose, scope, practical auditor support, intended quality/consistency/efficiency benefits and auditor authority are clear before component detail;
+5. Humanizer Lite has been applied to final reader-facing prose;
+6. HTML, CSS, links, assets, privacy, desktop/mobile and accessibility checks pass;
+7. the approved synthetic screenshot/demo-media package is integrated and public-safe;
+8. independent exact-candidate review finds no material blocker; and
+9. project-state and handoff documents match the exact local bytes.
 
 ## Publication acceptance
 
-Publication is complete only after Andrew separately approves the exact local commit, that commit is pushed to `origin/main`, GitHub Pages builds it successfully, and a cache-busted live check confirms the complete revised page and assets.
+Publication is complete only after Andrew separately approves the exact reviewed candidate for commit and then for push/deployment, GitHub Pages builds successfully, and a cache-busted live check confirms the page and all active resources.
 
-## Not queued
+## Scope guard
 
-AEOS-033 is not queued. No product-runtime change, private methodology disclosure, automatic visual-asset programme or quantified benefit claim is authorized by the backlog refinement.
+AWP terminology reflects the evidenced v1 audit-fieldwork scope. It does not establish broad advisory/review engagement support. No product-runtime change, private methodology disclosure or quantified benefit claim is authorized by this publication refresh.

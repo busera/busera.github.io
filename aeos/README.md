@@ -6,22 +6,24 @@ This directory contains the sanitized public product website for the **AI-Augmen
 
 <https://busera.github.io/aeos/>
 
-The reader-clarity baseline is live from content commit `a577d3082aebeb0562d2e58c53b788c3c1e386e7`. GitHub Pages built that exact commit, and cache-busted checks confirmed byte parity for the page, stylesheet, favicon and both active images.
+The published reader-clarity baseline remains live from content commit `a577d3082aebeb0562d2e58c53b788c3c1e386e7`. The working tree now contains a newer local candidate; it has not been committed, pushed or deployed.
 
 ## Reader purpose
 
-The published page contains the following product information:
+The local candidate explains:
 
 - what AEOS is and why it exists;
-- where its scope starts and ends;
-- what practical benefits it is designed to provide;
-- what audit work it supports;
-- which components it contains and how they relate;
-- what remains under auditor authority;
-- the current release-candidate and validation boundary; and
-- what software, working formats and provider routes are required.
+- where the audit-fieldwork scope starts and ends;
+- the intended practical benefits;
+- the supported route from an audit work program (AWP) into fieldwork, review and reporting drafts;
+- the core components and their relationships; and
+- the decisions and communications that remain with the auditor.
 
-AEOS-033 in the canonical AEOS product backlog now owns the next presentation outcome: a more appealing, reader-first introduction that makes AEOS understandable before architecture, components and inner workings. That outcome is Proposed, not active.
+The public copy does not claim broad advisory-engagement support. AEOS v1 evidence remains centred on AWP intake, TOD and TOE fieldwork.
+
+## Publication prose gate
+
+Every publication-bound website copy change must receive a targeted Humanizer Lite pass through `pa/humanizer` after factual and structural editing but before exact-candidate review and publication approval. Public copy uses **AWP = Audit Work Program**, expands it near first use, and does not repeat “approved” as a work-program modifier. EWP/Engagement Work Program and public RC2/current-product-state copy are excluded from this candidate. Humanizer Lite must preserve audit meaning, formal names, technical labels, citations and authority boundaries, and must not invent anecdotes, evidence or benefit claims. Any later prose change requires an affected rerun.
 
 ## Public boundary
 
@@ -29,7 +31,7 @@ The site explains the product at operating-model level. It excludes organization
 
 ## Design authority
 
-The page applies **Andrew Blue Design System 1.1**, the canonical standard maintained in the PA Standards wiki. The implementation uses the approved light/dark palette, spacing, typography, flat containers, button radii and responsive rules. The design system remains authoritative; this directory contains only the website implementation.
+The page applies **Andrew Blue Design System 1.1** using the approved light/dark palette, spacing, typography, flat containers, button radii and responsive rules.
 
 ## Local preview
 
@@ -46,9 +48,8 @@ Open <http://127.0.0.1:8000/aeos/>.
 - Website copy and layout: `aeos/index.html`
 - Website styles: `aeos/styles.css`
 - Public visual copies: `aeos/assets/`
-- Canonical editable visual sources: the AEOS writing project, not this website directory
-- Pre-redesign local rollback snapshot: ignored local path `aeos/_snapshots/2026-08-11-pre-clarity-redesign/`
-- Actual previous live-site rollback snapshot: tracked path `aeos/_snapshots/2026-08-11-live-before-clarity-publish/`, with source URLs, response metadata and SHA-256 hashes in `LIVE_BACKUP.json`
+- Canonical editable visual sources: the AEOS writing project
+- Actual previous live-site rollback snapshot: `aeos/_snapshots/2026-08-11-live-before-clarity-publish/`
 
 ## Project continuation
 
@@ -56,4 +57,4 @@ Open <http://127.0.0.1:8000/aeos/>.
 - Roadmap and lifecycle status: [`ROADMAP.md`](ROADMAP.md)
 - Executable continuation: [`DO_NEXT_SESSION.md`](DO_NEXT_SESSION.md)
 
-Any future implementation, commit or push remains separately approval-gated. Reader-first changes must be executed through AEOS-033 rather than edited ad hoc.
+The local candidate is not authority to commit, push or deploy. Those remain separate explicit approvals.
