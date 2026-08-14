@@ -155,6 +155,43 @@ test('conceptual diagram sources contain no decorative background-grid cells', (
   }
 });
 
+test('conceptual diagrams use fixed text baselines and balanced canvas geometry', () => {
+  const operatingSources = [
+    'assets/source/aeos-operating-model.drawio',
+    'assets/source/aeos-operating-model-dark.drawio',
+  ];
+  const componentSources = [
+    'assets/source/aeos-core-component-interactions.drawio',
+    'assets/source/aeos-core-component-interactions-dark.drawio',
+  ];
+
+  for (const source of [...operatingSources, ...componentSources]) {
+    const xml = read(source);
+    assert.match(xml, /id="canvas-bounds"[\s\S]*?<mxGeometry x="0" y="0" width="1600" height="900"/);
+    assert.doesNotMatch(xml, /id="(?:input|core|draft|human|engagement|task|workflow|template|draft-work)"[^>]+value="[^\"]+"/);
+  }
+
+  for (const source of operatingSources) {
+    const xml = read(source);
+    for (const id of ['input', 'core', 'draft', 'human']) {
+      assert.match(xml, new RegExp(`id="${id}-kicker"[\\s\\S]*?<mxGeometry x="[^"]+" y="282"`));
+      assert.match(xml, new RegExp(`id="${id}-title"[\\s\\S]*?<mxGeometry x="[^"]+" y="328"`));
+      assert.match(xml, new RegExp(`id="${id}-body"[\\s\\S]*?<mxGeometry x="[^"]+" y="405"`));
+      assert.match(xml, new RegExp(`id="${id}-status"[\\s\\S]*?<mxGeometry x="[^"]+" y="500"`));
+    }
+  }
+
+  for (const source of componentSources) {
+    const xml = read(source);
+    for (const id of ['engagement', 'task', 'workflow', 'template', 'draft-work']) {
+      assert.match(xml, new RegExp(`id="${id}"[\\s\\S]*?<mxGeometry x="[^"]+" y="285" width="260" height="220"`));
+      assert.match(xml, new RegExp(`id="${id}-kicker"[\\s\\S]*?<mxGeometry x="[^"]+" y="307"`));
+      assert.match(xml, new RegExp(`id="${id}-title"[\\s\\S]*?<mxGeometry x="[^"]+" y="350"`));
+      assert.match(xml, new RegExp(`id="${id}-body"[\\s\\S]*?<mxGeometry x="[^"]+" y="410"`));
+    }
+  }
+});
+
 test('retired trust-readiness section is absent from the page', () => {
   const html = read('index.html');
   const retiredCopy = [
@@ -172,13 +209,23 @@ test('retired trust-readiness section is absent from the page', () => {
   assert.match(html, /<section class="section-wide scope-section" id="scope"/);
 });
 
-test('closing position describes AEOS support and preserves human authority', () => {
+test('closing position is concise and product-specific', () => {
   const html = read('index.html');
-  const replacement = 'AEOS helps auditors use AI across an engagement while keeping professional judgment and approval in human hands.';
-  const retired = 'AI-supported audit work is useful only when the reasoning and evidence remain reviewable.';
+  const replacement = 'AEOS helps auditors use AI across an engagement.';
+  const retired = [
+    'AEOS helps auditors use AI across an engagement while keeping professional judgment and approval in human hands.',
+    'AI-supported audit work is useful only when the reasoning and evidence remain reviewable.',
+  ];
 
-  assert.match(html, new RegExp(`<section class="section-wide final-cta">[\\s\\S]*?<h2>${replacement}</h2>`));
-  assert.ok(!html.includes(retired), 'retired generic closing claim must be absent');
+  const finalCta = html.match(/<section class="section-wide final-cta">([\s\S]*?)<\/section>/);
+  assert.ok(finalCta, 'final CTA section must exist');
+  const heading = finalCta[1].match(/<h2>([^<]+)<\/h2>/);
+  assert.ok(heading, 'final CTA heading must exist');
+  assert.equal(heading[1], replacement, 'final CTA heading must match exactly');
+  assert.equal(html.split(replacement).length - 1, 1, 'final CTA heading must occur exactly once');
+  for (const claim of retired) {
+    assert.ok(!html.includes(claim), `retired closing claim must be absent: ${claim}`);
+  }
 });
 
 test('toggle reflects dark mode and switches to a persisted light choice', () => {
