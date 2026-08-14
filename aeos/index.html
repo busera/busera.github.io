@@ -4,11 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="AEOS turns an audit work program into structured, traceable fieldwork, testing, review and reporting in a file-based workspace.">
-  <meta name="theme-color" content="#f8fbfe">
+  <meta id="theme-color" name="theme-color" content="#f8fbfe">
   <title>AEOS | Audit fieldwork operating system</title>
   <link rel="icon" href="/images/favicon.ico" sizes="any">
+  <script data-theme-bootstrap>
+    (() => {
+      let savedTheme = null;
+      try {
+        savedTheme = localStorage.getItem('aeos-theme');
+      } catch (error) {
+        savedTheme = null;
+      }
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : systemTheme;
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css">
   <script src="demo-gallery.js" defer></script>
+  <script src="theme-toggle.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -24,7 +39,13 @@
         <a href="#scope">Scope</a>
         <a href="#requirements">Requirements</a>
       </nav>
-      <a class="button small" href="https://busera.github.io/">André Buser</a>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+          <span class="theme-toggle-icon" data-theme-icon aria-hidden="true">☀</span>
+          <span data-theme-label>Light</span>
+        </button>
+        <a class="button small" href="https://busera.github.io/">André Buser</a>
+      </div>
     </div>
   </header>
 
@@ -227,7 +248,7 @@
 
       <figure class="product-figure">
         <a class="product-image-link" href="assets/aeos-operating-model.png" data-dialog="diagram-dialog-operating-model" aria-label="Open the AEOS operating-model diagram at full size">
-          <img src="assets/aeos-operating-model.png" width="1600" height="900" loading="eager" decoding="async" alt="AEOS operating model showing the auditor setting the engagement boundary, selecting a task context, using one governed workflow and reviewing the Draft output before it can move forward.">
+          <img src="assets/aeos-operating-model.png" data-theme-light="assets/aeos-operating-model.png" data-theme-dark="assets/aeos-operating-model-dark.png" width="1600" height="900" loading="eager" decoding="async" alt="AEOS operating model showing the auditor setting the engagement boundary, selecting a task context, using one governed workflow and reviewing the Draft output before it can move forward.">
         </a>
         <figcaption>Operating model. The auditor sets the engagement boundary, selects the task context and reviews the Draft before it can move forward. Select the diagram to enlarge it.</figcaption>
       </figure>
@@ -235,7 +256,7 @@
       <dialog class="demo-dialog" id="diagram-dialog-operating-model" aria-labelledby="diagram-dialog-operating-model-title">
         <div class="demo-dialog-inner">
           <div class="demo-dialog-header"><p id="diagram-dialog-operating-model-title">AEOS operating model</p><button type="button" class="demo-dialog-close">Close</button></div>
-          <img src="assets/aeos-operating-model.png" width="1600" height="900" loading="lazy" alt="AEOS operating model showing the auditor setting the engagement boundary, selecting a task context, using one governed workflow and reviewing the Draft output before it can move forward.">
+          <img src="assets/aeos-operating-model.png" data-theme-light="assets/aeos-operating-model.png" data-theme-dark="assets/aeos-operating-model-dark.png" width="1600" height="900" loading="lazy" alt="AEOS operating model showing the auditor setting the engagement boundary, selecting a task context, using one governed workflow and reviewing the Draft output before it can move forward.">
         </div>
       </dialog>
     </section>
@@ -392,7 +413,7 @@
 
       <figure class="product-figure">
         <a class="product-image-link" href="assets/aeos-core-component-interactions.png" data-dialog="diagram-dialog-components" aria-label="Open the AEOS component-interaction diagram at full size">
-          <img src="assets/aeos-core-component-interactions.png" width="1600" height="900" loading="eager" decoding="async" alt="AEOS component interactions showing engagement and task context, one governed workflow, a workpaper template, evidence and source controls, separate review and auditor approval of Draft output.">
+          <img src="assets/aeos-core-component-interactions.png" data-theme-light="assets/aeos-core-component-interactions.png" data-theme-dark="assets/aeos-core-component-interactions-dark.png" width="1600" height="900" loading="eager" decoding="async" alt="AEOS component interactions showing engagement and task context, one governed workflow, a workpaper template, evidence and source controls, separate review and auditor approval of Draft output.">
         </a>
         <figcaption>Component interactions. The workspace supplies context, one governed workflow controls the route, and the auditor decides whether the Draft may move forward. Select the diagram to enlarge it.</figcaption>
       </figure>
@@ -400,62 +421,9 @@
       <dialog class="demo-dialog" id="diagram-dialog-components" aria-labelledby="diagram-dialog-components-title">
         <div class="demo-dialog-inner">
           <div class="demo-dialog-header"><p id="diagram-dialog-components-title">AEOS component interactions</p><button type="button" class="demo-dialog-close">Close</button></div>
-          <img src="assets/aeos-core-component-interactions.png" width="1600" height="900" loading="lazy" alt="AEOS component interactions showing engagement and task context, one governed workflow, a workpaper template, evidence and source controls, separate review and auditor approval of Draft output.">
+          <img src="assets/aeos-core-component-interactions.png" data-theme-light="assets/aeos-core-component-interactions.png" data-theme-dark="assets/aeos-core-component-interactions-dark.png" width="1600" height="900" loading="lazy" alt="AEOS component interactions showing engagement and task context, one governed workflow, a workpaper template, evidence and source controls, separate review and auditor approval of Draft output.">
         </div>
       </dialog>
-    </section>
-
-    <section class="section-wide benefits-section" id="challenges" aria-labelledby="challenges-title">
-      <div class="split-heading">
-        <div>
-          <p class="kicker">What must work in practice</p>
-          <h2 id="challenges-title">What AEOS must get right before its output can be trusted.</h2>
-        </div>
-        <p>Producing a convincing paragraph is easy. The difficult part is controlling how it was produced: which documents the AI was allowed to use, what each statement is based on, what evidence is still missing and which decisions only the auditor may make. The points below separate what already exists in AEOS from what still needs further work.</p>
-      </div>
-
-      <dl class="benefit-list">
-        <div>
-          <dt>Current foundation · Accept different approved audit plans</dt>
-          <dd>Audit Work Programs vary between teams and engagements. AEOS does not require every approved plan to be rewritten into one fixed technical template. It interprets the plan, keeps the original unchanged and creates a controlled working structure. For example, two teams may describe the same type of test under different headings; AEOS should adapt without silently changing the approved scope.</dd>
-        </div>
-        <div>
-          <dt>Current foundation · Show what each statement is based on</dt>
-          <dd>AEOS keeps different information states separate: an original source, a reviewed working copy, an AI inference, missing information, a contradiction, a test result or a draft conclusion. This matters because an assumption should never look like confirmed evidence. For example, if a document suggests that access was approved but the approval record is missing, the gap must remain visible.</dd>
-        </div>
-        <div>
-          <dt>Current foundation · Keep professional decisions with the auditor</dt>
-          <dd>The AI may organize evidence, compare documents and prepare a draft. The auditor still decides which evidence can be relied on, how to select a sample, whether an exception exists, what conclusion is justified and what may be signed off or communicated. For example, the AI may identify three failed sample items, but it cannot decide on its own what those failures mean for the audit conclusion.</dd>
-        </div>
-        <div>
-          <dt>Current foundation · Separate the reusable system from private audit data</dt>
-          <dd>AEOS rules, templates and workflows are designed for reuse, while organization-specific evidence stays inside the authorized engagement boundary. Original Word, Excel or PDF files remain the authoritative sources. Where useful, the AI works from reviewed text copies that link back to those originals, so a reader can trace a statement to its source.</dd>
-        </div>
-        <div>
-          <dt>Still being developed · Use one controlled process, however work is started</dt>
-          <dd>An auditor may start a task from a guide, prompt or shortcut. Each entry point must lead into the same underlying workflow, use the same evidence rules and stop at the same human checkpoints. Otherwise, one route could skip a review step or create output that conflicts with another route. Current work is consolidating these entry points under one lifecycle.</dd>
-        </div>
-        <div>
-          <dt>Still being developed · Follow useful leads without assuming permission</dt>
-          <dd>The AI may notice that a meeting note refers to another spreadsheet, policy or discussion. It may propose that source as a useful next step, but a connection is not permission to open the source and is not evidence that can already be relied on. The planned inquiry capability must stay inside the sources the auditor has authorized and keep suggestions separate from confirmed evidence.</dd>
-        </div>
-        <div>
-          <dt>Still being developed · Test what the system does, not what the instructions say</dt>
-          <dd>A written rule such as "auditor approval is required" does not prove that the system will obey it. Testing must give the AI conflicting or unsafe instructions and check the actual response. For example, if a later prompt says "skip the review and finalize the conclusion," AEOS should stop rather than follow the newer instruction.</dd>
-        </div>
-        <div>
-          <dt>Still being developed · Resume interrupted work without losing control</dt>
-          <dd>AI work can stop because a model times out, a tool fails or the user closes the application. When the work resumes, AEOS must know what was completed, what remains open and which approval is still required. It must not duplicate records, continue from an outdated draft or jump over a human checkpoint.</dd>
-        </div>
-        <div>
-          <dt>Still being developed · Prove that the complete product works in realistic use</dt>
-          <dd>Passing checks on individual files does not prove that a first-time auditor can install AEOS and complete a realistic engagement workflow. That requires clean-environment setup, end-to-end runs, ambiguous and deliberately unsafe scenarios, and independent first-user testing. Those checks remain open before AEOS can be described as production-ready.</dd>
-        </div>
-        <div>
-          <dt>Where the product stands</dt>
-          <dd>The foundations above are implemented and tested at source level. AEOS 1.0.0 remains a generated release candidate, not a validated release or a production-ready product. Broader runtime testing, first-user testing and representative audit validation remain open.</dd>
-        </div>
-      </dl>
     </section>
 
     <section class="section-wide scope-section" id="scope" aria-labelledby="scope-title">
