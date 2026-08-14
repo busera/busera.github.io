@@ -432,7 +432,9 @@ h3 { margin: 0; font-size: 20px; font-weight: 650; line-height: 1.35; }
 .component-table thead th { border-left: 1px solid rgba(255,255,255,.24); }
 .component-table thead th:first-child { padding-left: 18px; border-left: 0; }
 .product-figure { margin: 42px 0 0; padding: 18px; border: 1px solid var(--hairline); border-radius: var(--radius-lg); background: var(--card); }
-.product-figure img { width: 100%; border-radius: var(--radius-sm); }
+.product-image-link { display: block; border-radius: var(--radius-sm); cursor: zoom-in; }
+.product-image-link:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.product-figure img { width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: var(--radius-sm); object-fit: contain; }
 .product-figure figcaption { margin-top: 14px; color: var(--mute); font-size: 13px; }
 
 .scope-section { border-top: 1px solid var(--hairline); }
