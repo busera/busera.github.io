@@ -141,6 +141,20 @@ test('both conceptual diagrams declare existing light and dark assets', () => {
   }
 });
 
+test('conceptual diagram sources contain no decorative background-grid cells', () => {
+  const sources = [
+    'assets/source/aeos-operating-model.drawio',
+    'assets/source/aeos-operating-model-dark.drawio',
+    'assets/source/aeos-core-component-interactions.drawio',
+    'assets/source/aeos-core-component-interactions-dark.drawio',
+  ];
+
+  for (const source of sources) {
+    const xml = read(source);
+    assert.doesNotMatch(xml, /<mxCell\s+id="grid-[^"]+"/, `${source} must not embed a decorative grid`);
+  }
+});
+
 test('retired trust-readiness section is absent from the page', () => {
   const html = read('index.html');
   const retiredCopy = [
@@ -156,6 +170,15 @@ test('retired trust-readiness section is absent from the page', () => {
     assert.ok(!html.includes(phrase), `retired section residue: ${phrase}`);
   }
   assert.match(html, /<section class="section-wide scope-section" id="scope"/);
+});
+
+test('closing position describes AEOS support and preserves human authority', () => {
+  const html = read('index.html');
+  const replacement = 'AEOS helps auditors use AI across an engagement while keeping professional judgment and approval in human hands.';
+  const retired = 'AI-supported audit work is useful only when the reasoning and evidence remain reviewable.';
+
+  assert.match(html, new RegExp(`<section class="section-wide final-cta">[\\s\\S]*?<h2>${replacement}</h2>`));
+  assert.ok(!html.includes(retired), 'retired generic closing claim must be absent');
 });
 
 test('toggle reflects dark mode and switches to a persisted light choice', () => {
