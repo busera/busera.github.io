@@ -49,13 +49,13 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile_andre_buser.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  Auditing AI systems at one of the world's largest pharmaceutical companies — reviewing whether governance frameworks actually hold up under scrutiny, whether controls around GenAI deployments are real or just documented, and whether the risk picture management sees matches what's in the system.
+  Auditing AI systems at one of the world's largest pharmaceutical companies. Reviewing whether governance frameworks hold up under scrutiny, whether controls around GenAI deployments are real or just documented, and whether the risk picture management sees matches what is in the system.
 
-  What makes this different from standard IT audit: the technical depth to go beyond document review. A Master of Applied Data Science from Michigan (GPA 3.97) means reading a model card, tracing a training pipeline, and finding where governance gaps turn into actual risk — not just checking a compliance box. Credentials include CISA, CISSP, CFE, ISACA's Advanced in AI Audit™ (AAIA™), and an executive program in AI in Health Care from Harvard Medical School.
+  What sets this apart from standard IT audit: the technical depth to go beyond document review. A Master of Applied Data Science from Michigan (GPA 3.97) means reading a model card, tracing a training pipeline, and finding where governance gaps turn into real risk, not just checking a compliance box. Credentials include CISA, CISSP, CFE, ISACA's Advanced in AI Audit™ (AAIA™), and an executive program in AI in Health Care from Harvard Medical School.
 
-  Building the tooling, too. LLM pipelines that generate Audit Planning Memorandums and work programs from source documents; work that used to take days. An interactive risk visualization that turns an AI risk taxonomy into something you can actually explore. A prompt library for audit workflows. Most of it started as personal experiments. A few ended up in production.
+  Building the tooling, too. LLM pipelines that generate Audit Planning Memorandums and work programs from source documents, work that used to take days. An interactive risk visualization that turns an AI risk taxonomy into something you can explore. A prompt library for audit workflows. Most of it started as personal experiments. A few ended up in production.
 
-  Outside the day job: advisory board at CISS LTD, and Plateforme Tripartite — industry, academia, and regulators in the same room on the harder AI governance questions.
+  Outside the day job: advisory board at CISS LTD, and Plateforme Tripartite, where industry, academia, and regulators work on the harder AI governance questions.
 
 content:
   - title: AI and Audit
