@@ -331,19 +331,19 @@ content:
     content:
       - layout: left
         border: weak
-        title: Advanced in AI Audit™ (AAIA™)
-        sub_title: ISACA
-        caption: Jul 2025
-        description: |
-          ISACA's credential for AI audit assurance, covering AI risk assessment, AI governance frameworks, and audit procedures for AI systems in regulated environments. The certification validates the ability to evaluate AI controls, assess model risk, and audit AI governance structures against standards like the EU AI Act and ISO 42001. Applied directly in AI governance audits in regulated pharma. Credential ID: 252865917.
-
-      - layout: left
-        border: weak
         title: AI in Health Care — From Strategies to Implementation
         sub_title: Harvard Medical School Professional Education
         caption: Oct 2025
         description: |
           Executive program at Harvard Medical School covering AI strategy, clinical implementation frameworks, and governance in health care. Topics include ML model validation in clinical settings, regulatory considerations for health AI, and building organizational readiness for AI adoption. Relevant to pharma audit work where AI systems touch patient data and clinical workflows. Credential ID: 164056593.
+
+      - layout: left
+        border: weak
+        title: Advanced in AI Audit™ (AAIA™)
+        sub_title: ISACA
+        caption: Jul 2025
+        description: |
+          ISACA's credential for AI audit assurance, covering AI risk assessment, AI governance frameworks, and audit procedures for AI systems in regulated environments. The certification validates the ability to evaluate AI controls, assess model risk, and audit AI governance structures against standards like the EU AI Act and ISO 42001. Applied directly in AI governance audits in regulated pharma. Credential ID: 252865917.
 
       - layout: left
         border: weak
