@@ -58,90 +58,7 @@ about_content: | # this will include new lines to allow paragraphs
   Outside the day job: advisory board at CISS LTD, and Plateforme Tripartite, industry, academia, and regulators in the same room on the harder AI governance questions. It's worth the time.
 
 content:
-  - title: Data Science and Machine Learning Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-
-      - layout: left
-        border: weak
-        title: Exploring Microsoft Responsible AI Toolkit
-        sub_title: In Progress
-        caption: Jul 2024 - Present
-        link: github.com/busera/rai__diabetes_analysis
-        link_text: github.com
-        #additional_links:
-        #  - title:  sproogen/modern-resume-theme
-        #    icon: fab fa-github
-        #    url: github.com/busera/mads__decode_dementia
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          Applying Microsoft's Responsible AI toolkit to healthcare ML, focusing on fairness assessment, interpretability, and error analysis.
-        description: | # this will include new lines to allow paragraphs
-          Exploring and evaluating Microsoft's Responsible AI toolkit using the scikit-learn Diabetes dataset. The project covers fairness assessment, interpretability techniques, and error analysis in a healthcare ML context. The goal is hands-on experience with the same responsible AI tooling I evaluate in audit work.
-
-      - layout: left
-        border: weak
-        title: Readability Optimizer
-        sub_title: In Progress
-        caption: May 2020 - Present
-        link: github.com/busera/proto__readability_optimizer
-        link_text: github.com
-        #additional_links:
-        #  - title:  sproogen/modern-resume-theme
-        #    icon: fab fa-github
-        #    url: github.com/busera/mads__decode_dementia
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          Originally developed in my free time to practice Python, Readability Optimizer is a prototype tool designed to help authors improve the readability of their texts.
-        description: | # this will include new lines to allow paragraphs
-          Started as a Python learning project before my MADS at the University of Michigan. Became the foundation for an in-house audit report quality tool.
-
-          The tool imports audit reports, scores each observation paragraph for readability, and flags sections that need rewriting. It runs multiple readability tests (Flesch-Kincaid, Gunning Fog, etc.) and produces actionable suggestions.
-
-          Since expanded with LLM-based text improvement recommendations for audit report quality.
-
-      - layout: left
-        border: weak
-        title: Decode Dementia
-        caption: Oct 2023 - Dec 2023
-        link: github.com/busera/mads__decode_dementia
-        link_text: github.com
-        quote: >
-          Key findings indicate that TBIs, especially those involving loss of consciousness, alongside the presence of the APOE ε4 allele and male gender, significantly increase dementia risk, while higher education levels seem to offer some protective effects.
-        description: | # this will include new lines to allow paragraphs
-          MADS capstone project investigating what happens after traumatic brain injuries, specifically the link to dementia. We used causal inference methods to trace how TBI severity, genetics (APOE ε4), and demographics interact to affect dementia risk.
-      
-          The complete report can be accessed here: [Decode Dementia Report](https://github.com/busera/MADS__SIADS699__Decode_Dementia/blob/main/docs/Decoding%20Dementia%20-%20Report.pdf)
-
-      - layout: left
-        border: weak
-        title: Analyze GDPR Fines
-        caption: Nov 2021 - Dec 2021
-        link: github.com/busera/mads__analyze_gdpr_fines
-        link_text: github.com
-        description: |
-          Data visualization of GDPR fines imposed by European data protection authorities (2018-2021). Identifies non-compliance focus areas and patterns relevant to healthcare sector data privacy strategy.
-
-          Report: [Analyze GDPR Fines](https://github.com/busera/mads__analyze_gdpr_fines/blob/main/reports/Analyze_GDPR_Fines-Final_Report.pdf)
-
-      - layout: left
-        #border: weak
-        title: Predicting Text Difficulty
-        caption: Nov 2022 - Dec 2022
-        link: github.com/busera/mads__predicting_text_difficulty
-        link_text: github.com
-        quote: >
-          Our analysis found that the fine-tuned Random Forest model demonstrated the highest accuracy score of 0.7544.
-        description: | # this will include new lines to allow paragraphs
-          Classifying sentences from Simple English Wikipedia to determine which ones need simplification for readers with lower reading proficiency (students, children, non-native speakers). Used both supervised and unsupervised learning techniques for feature extraction and sentence classification.
-      
-          The complete report can be accessed here: [Predicting Text Difficulty Report](https://github.com/busera/mads__predicting_text_difficulty/blob/main/reports/Predicting_Text_Difficulty-Final_Report.pdf)
-
-  - title: Audit Analytics Tools
+  - title: AI and Audit
     layout: list # Type of content section (list/text)
     content:
 
@@ -167,16 +84,6 @@ content:
           A public AI risk universe and selection demo for exploring how audit teams can move from broad AI risk taxonomies to reviewable planning inputs.
         description: |
           AIRUM turns an AI risk universe into an explorable interface: a honeycomb risk landscape, source-backed example risks, guided filters, and a reduced example export. The public demo shows the concept without publishing the complete AIRUM data core or detailed methodology.
-
-      - layout: left
-        border: weak
-        title: Applying Data Analysis in Internal Audit
-        sub_title: Practical methodology guide
-        caption: Aug 2024 - Present
-        link: https://busera.github.io/applying_data_analysis_in_internal_audit/
-        link_text: View guide
-        description: | # this will include new lines to allow paragraphs
-          A practical guide for applying data analysis in internal audit, focused on turning audit objectives into answerable analytical questions, assessing evidence strength, and keeping analysis reproducible. Includes methodology notes, templates, a synthetic dataset, and a worked transaction-approval example.
 
   - title: Audit Analytics Utilities / Experiments
     layout: list
@@ -311,6 +218,89 @@ content:
           Risk assessments often blur the line between risks, threats, and vulnerabilities. This matters because the choice of mitigation controls depends on getting that distinction right. The article walks through how to separate these concepts and write risks that are actually useful for decision-making.
 
   
+  - title: Data Science and Machine Learning Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+
+      - layout: left
+        border: weak
+        title: Exploring Microsoft Responsible AI Toolkit
+        sub_title: In Progress
+        caption: Jul 2024 - Present
+        link: github.com/busera/rai__diabetes_analysis
+        link_text: github.com
+        #additional_links:
+        #  - title:  sproogen/modern-resume-theme
+        #    icon: fab fa-github
+        #    url: github.com/busera/mads__decode_dementia
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Applying Microsoft's Responsible AI toolkit to healthcare ML, focusing on fairness assessment, interpretability, and error analysis.
+        description: | # this will include new lines to allow paragraphs
+          Exploring and evaluating Microsoft's Responsible AI toolkit using the scikit-learn Diabetes dataset. The project covers fairness assessment, interpretability techniques, and error analysis in a healthcare ML context. The goal is hands-on experience with the same responsible AI tooling I evaluate in audit work.
+
+      - layout: left
+        border: weak
+        title: Readability Optimizer
+        sub_title: In Progress
+        caption: May 2020 - Present
+        link: github.com/busera/proto__readability_optimizer
+        link_text: github.com
+        #additional_links:
+        #  - title:  sproogen/modern-resume-theme
+        #    icon: fab fa-github
+        #    url: github.com/busera/mads__decode_dementia
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Originally developed in my free time to practice Python, Readability Optimizer is a prototype tool designed to help authors improve the readability of their texts.
+        description: | # this will include new lines to allow paragraphs
+          Started as a Python learning project before my MADS at the University of Michigan. Became the foundation for an in-house audit report quality tool.
+
+          The tool imports audit reports, scores each observation paragraph for readability, and flags sections that need rewriting. It runs multiple readability tests (Flesch-Kincaid, Gunning Fog, etc.) and produces actionable suggestions.
+
+          Since expanded with LLM-based text improvement recommendations for audit report quality.
+
+      - layout: left
+        border: weak
+        title: Decode Dementia
+        caption: Oct 2023 - Dec 2023
+        link: github.com/busera/mads__decode_dementia
+        link_text: github.com
+        quote: >
+          Key findings indicate that TBIs, especially those involving loss of consciousness, alongside the presence of the APOE ε4 allele and male gender, significantly increase dementia risk, while higher education levels seem to offer some protective effects.
+        description: | # this will include new lines to allow paragraphs
+          MADS capstone project investigating what happens after traumatic brain injuries, specifically the link to dementia. We used causal inference methods to trace how TBI severity, genetics (APOE ε4), and demographics interact to affect dementia risk.
+      
+          The complete report can be accessed here: [Decode Dementia Report](https://github.com/busera/MADS__SIADS699__Decode_Dementia/blob/main/docs/Decoding%20Dementia%20-%20Report.pdf)
+
+      - layout: left
+        border: weak
+        title: Analyze GDPR Fines
+        caption: Nov 2021 - Dec 2021
+        link: github.com/busera/mads__analyze_gdpr_fines
+        link_text: github.com
+        description: |
+          Data visualization of GDPR fines imposed by European data protection authorities (2018-2021). Identifies non-compliance focus areas and patterns relevant to healthcare sector data privacy strategy.
+
+          Report: [Analyze GDPR Fines](https://github.com/busera/mads__analyze_gdpr_fines/blob/main/reports/Analyze_GDPR_Fines-Final_Report.pdf)
+
+      - layout: left
+        #border: weak
+        title: Predicting Text Difficulty
+        caption: Nov 2022 - Dec 2022
+        link: github.com/busera/mads__predicting_text_difficulty
+        link_text: github.com
+        quote: >
+          Our analysis found that the fine-tuned Random Forest model demonstrated the highest accuracy score of 0.7544.
+        description: | # this will include new lines to allow paragraphs
+          Classifying sentences from Simple English Wikipedia to determine which ones need simplification for readers with lower reading proficiency (students, children, non-native speakers). Used both supervised and unsupervised learning techniques for feature extraction and sentence classification.
+      
+          The complete report can be accessed here: [Predicting Text Difficulty Report](https://github.com/busera/mads__predicting_text_difficulty/blob/main/reports/Predicting_Text_Difficulty-Final_Report.pdf)
+
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
