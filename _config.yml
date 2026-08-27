@@ -66,13 +66,13 @@ content:
         border: weak
         title: AEOS
         sub_title: AI-Augmented Engagement Operating System
-        caption: Release-candidate project
+        caption: Used and tested in audit fieldwork
         link: https://busera.github.io/aeos/
         link_text: Explore AEOS
         quote: >
           Governed AI support for audit fieldwork, with professional authority retained by the auditor.
         description: |
-          AEOS is an agentic engagement workspace for engagement fieldwork execution. The public site explains its operating model, controlled audit workflow, setup and privacy routes, current maturity, and validation-led roadmap without publishing private engagement material or claiming production readiness.
+          AEOS is an agentic engagement workspace for audit fieldwork execution. The public site sets out the problem it addresses, the operating model, a walkthrough of one procedure in the real working environment, the engagement lifecycle, the authority controls, and the setup and provider routes, without publishing private engagement material.
 
       - layout: left
         border: weak
@@ -422,6 +422,12 @@ footer_show_references: false
 
 # Build settings
 remote_theme: sproogen/resume-theme
+
+# Repository files that should not be published to the site
+exclude:
+  - CLAUDE.md
+  - tests
+  - Gemfile
 
 sass:
   sass_dir: _sass
