@@ -32,11 +32,11 @@
     <div class="nav-wrap">
       <a class="wordmark" href="#main" aria-label="AEOS home">AEOS</a>
       <nav aria-label="Page navigation">
-        <a href="#overview">Overview</a>
-        <a href="#how-it-works">How it works</a>
-        <a href="#demo">Demo</a>
-        <a href="#components">Components</a>
-        <a href="#scope">Scope</a>
+        <a href="#what-it-is">What it is</a>
+        <a href="#walkthrough">Walkthrough</a>
+        <a href="#lifecycle">Lifecycle</a>
+        <a href="#controls">Controls</a>
+        <a href="#setup">Setup</a>
         <a href="#requirements">Requirements</a>
       </nav>
       <div class="nav-actions">
@@ -53,11 +53,11 @@
     <section class="hero section-wide" aria-labelledby="hero-title">
       <div class="hero-copy-block">
         <p class="product-label">AI-Augmented Engagement Operating System</p>
-        <h1 id="hero-title">From AWP to traceable fieldwork and reviewed workpapers.</h1>
-        <p class="hero-copy">AEOS is a file-based operating system for auditors working with AI. It turns an audit work program (AWP) into a controlled route for evidence, testing, workpapers and reporting drafts without losing the audit trail. It is independently developed, and actively used and tested in audit fieldwork.</p>
+        <h1 id="hero-title">Examine more of the evidence, without losing the audit trail.</h1>
+        <p class="hero-copy">AEOS is a file-based operating system for auditors working with AI. It turns an audit work program (AWP) into a controlled route for evidence, testing, workpapers and reporting drafts. It is independently developed, and actively used and tested in audit fieldwork.</p>
         <div class="actions">
-          <a class="button primary" href="#overview">Understand AEOS</a>
-          <a class="button secondary" href="#how-it-works">See the operating model</a>
+          <a class="button primary" href="#walkthrough">See it on one procedure</a>
+          <a class="button secondary" href="#what-it-is">How it works</a>
         </div>
       </div>
 
@@ -78,42 +78,45 @@
       </aside>
     </section>
 
-    <section class="section-wide overview-section" id="overview" aria-labelledby="overview-title">
-      <div class="section-heading centered narrow-copy">
-        <p class="kicker">AEOS in 30 seconds</p>
-        <h2 id="overview-title">Purpose, scope and practical benefit.</h2>
+    <section class="section-narrow support-section" id="support" aria-labelledby="support-title">
+      <div class="section-heading">
+        <p class="kicker">Where AEOS works</p>
+        <h2 id="support-title">Support across fieldwork: evidence review, testing, reporting.</h2>
       </div>
 
-      <div class="overview-grid">
-        <article class="overview-card">
-          <span class="card-index">01 · Purpose</span>
-          <h3>Give the engagement a shared operating structure.</h3>
-          <p>AEOS gives the auditor and AI one visible place for context, source boundaries, procedures, evidence, draft outputs and review decisions.</p>
-        </article>
-        <article class="overview-card featured">
-          <span class="card-index">02 · Scope</span>
-          <h3>Support fieldwork from the audit work program onward.</h3>
-          <p>It covers fieldwork preparation, meetings, evidence handling, assessment of control design and implementation, operating-effectiveness testing where applicable, quality review and reporting drafts.</p>
-        </article>
-        <article class="overview-card">
-          <span class="card-index">03 · Benefit</span>
-          <h3>Spend less time rebuilding the process and more time reviewing the evidence.</h3>
-          <p>AEOS prepares structured drafts, keeps source links and open gaps visible, and applies consistent routes and review points across comparable work.</p>
-        </article>
-      </div>
-      <p class="relationship-note">The professional concepts draw on public audit guidance. The workflow stages, labels and workspace structure shown here are AEOS design choices, not an IIA-prescribed methodology.</p>
+      <p>AEOS picks up after the audit work program is authorized and stays with the engagement until the reporting draft. Three kinds of work happen in that span, and it supports each of them differently.</p>
+
+      <ol class="support-beats">
+        <li>
+          <h3>Evidence review</h3>
+          <p>Sources are registered before anything relies on them, under a declared source mode: either an exact named file set, or approved roots with bounded link traversal. Provenance is recorded, and where an expected record was never provided, that becomes a named absence on the workpaper rather than a quiet omission. An optional evidence wiki gives the registered set a navigation layer, which is not itself evidence.</p>
+        </li>
+        <li>
+          <h3>Testing</h3>
+          <p>Test of design first, in week one. Test of operating effectiveness after, in week two, and only once the auditor has approved the design conclusion, the population, the completeness basis and the sampling method. Execution records are written to a separate working area and stop at an auditor checkpoint before any workpaper is updated.</p>
+        </li>
+        <li>
+          <h3>Reporting</h3>
+          <p>Per-procedure progress updates are drafted from reviewed workpapers at the end of each week, with interim observations kept explicitly non-final. They are review-only drafts. AEOS never transmits one, and only an authorized person can send anything.</p>
+        </li>
+      </ol>
+
+      <p class="section-note">There is also an engagement buddy. When the work gets away from you, one read-only route ranks what is open right now into NOW, NEXT, WAITING and BLOCKED, with a source locator against each item. It changes nothing and decides nothing.</p>
+
+      <p class="problem-requirement">The point is not a faster first draft. It is getting through more of the evidence, at more depth, and still being able to show a reviewer how every statement got there.</p>
     </section>
 
-    <section class="section-wide relationship-section" id="how-it-works" aria-labelledby="relationship-title">
-      <div class="split-heading light-on-dark">
+    <section class="section-wide overview-section" id="what-it-is" aria-labelledby="overview-title">
+      <div class="split-heading">
         <div>
-          <p class="kicker">How it works</p>
-          <h2 id="relationship-title">Inputs pass through a governed operating core before they become audit outputs.</h2>
+          <p class="kicker">What AEOS is</p>
+          <h2 id="overview-title">One governed workspace for the engagement, not a folder of prompts.</h2>
         </div>
-        <p>The components have distinct jobs. The workspace holds the engagement, the task context sets the professional and file boundaries, the governed workflow controls the task, and the auditor authorizes each reliance decision.</p>
+        <p>AEOS is a second reader for the engagement, built as a workspace rather than a chat window. It brings the engagement context, the AWP, criteria, evidence, workpapers, workflow instructions and review decisions into one place. It starts after the work program is authorized. From there it covers fieldwork preparation, meetings, evidence handling, design and implementation assessment, operating-effectiveness testing where applicable, review, progress updates and reporting drafts.</p>
       </div>
 
       <p class="sr-only" id="relationship-summary">Engagement inputs flow through the governed operating core into draft audit work, while human decisions retain reliance and communication authority.</p>
+      <div class="model-panel light-on-dark">
       <div class="relationship-map" aria-describedby="relationship-summary">
         <article class="relationship-node">
           <span class="node-step">1</span>
@@ -170,81 +173,8 @@
         </article>
       </div>
 
-      <p class="relationship-note">The model can interpret, compare, test and draft within the authorized boundary. It cannot expand scope, approve reliance or communicate a result on its own.</p>
-    </section>
-
-    <section class="section-wide benefits-section" aria-labelledby="benefits-title">
-      <div class="split-heading">
-        <div>
-          <p class="kicker">How AEOS supports the auditor</p>
-          <h2 id="benefits-title">Reduce manual preparation without outsourcing audit judgment.</h2>
-        </div>
-        <p>AEOS takes on repeatable preparation, organization, comparison and drafting tasks. This is intended to improve quality, consistency and efficiency. The auditor still decides what the evidence means and whether the work may move forward.</p>
+      <p class="relationship-note">What separates this from a collection of audit prompts is where the controls live. Evidence state, workflow authority and approval are built into the product rather than added as reminders inside a prompt. The professional concepts draw on public audit guidance; the workflow stages, labels and workspace structure are AEOS design choices, not an IIA-prescribed methodology.</p>
       </div>
-
-      <dl class="benefit-list">
-        <div>
-          <dt>Practical fieldwork support</dt>
-          <dd>For each AWP procedure, AEOS can prepare workpaper scaffolds for design-and-implementation assessment and operating-effectiveness testing, fieldwork plans, walkthrough topics, evidence-request candidates, testing records, progress updates and reporting drafts for auditor review.</dd>
-        </div>
-        <div>
-          <dt>Quality</dt>
-          <dd>Procedure wording, source identity, evidence, gaps, contradictions, testing and proposed conclusions remain connected. This makes unsupported claims and incomplete work easier to identify before reliance.</dd>
-        </div>
-        <div>
-          <dt>Consistency</dt>
-          <dd>Comparable work follows the same minimum inputs, workflow stages, templates, stop conditions and review checkpoints, while the auditor retains professional judgment.</dd>
-        </div>
-        <div>
-          <dt>Efficiency</dt>
-          <dd>AEOS is designed to reduce repeated workspace setup, manual copying, source hunting, formatting and status drafting, leaving more auditor time for evidence sufficiency, exceptions and conclusions.</dd>
-        </div>
-        <div>
-          <dt>Visible control</dt>
-          <dd>The system leaves missing information unresolved, records the next decision and stops at defined review gates. The auditor approves scope, population, sampling, reliance, conclusions and communication.</dd>
-        </div>
-      </dl>
-    </section>
-
-    <section class="section-wide work-section" id="work" aria-labelledby="work-title">
-      <div class="section-heading narrow-copy">
-        <p class="kicker">What AEOS supports</p>
-        <h2 id="work-title">One route across fieldwork, testing and review.</h2>
-        <p>Capabilities describe the work the auditor can perform. They are different from the files and components that make the work possible.</p>
-      </div>
-
-      <ol class="lifecycle-list">
-        <li>
-          <span class="lifecycle-index">01</span>
-          <div><h3>Set up the engagement</h3><p>Register the AWP, criteria, source set, file boundaries and working folders.</p></div>
-          <span class="lifecycle-output">Context + source register</span>
-        </li>
-        <li>
-          <span class="lifecycle-index">02</span>
-          <div><h3>Prepare fieldwork</h3><p>Create workpaper scaffolds, walkthrough agendas, evidence requests and a fieldwork plan.</p></div>
-          <span class="lifecycle-output">Draft plan + workpapers</span>
-        </li>
-        <li>
-          <span class="lifecycle-index">03</span>
-          <div><h3>Assess design and implementation</h3><p>Perform the planned procedure against authorized evidence and record gaps or contradictions.</p></div>
-          <span class="lifecycle-output">Draft design workpaper</span>
-        </li>
-        <li>
-          <span class="lifecycle-index">04</span>
-          <div><h3>Assess operating effectiveness</h3><p>Prepare the population and sample for approval, then test each item and attribute against the expected evidence.</p></div>
-          <span class="lifecycle-output">Draft operating-effectiveness workpaper</span>
-        </li>
-        <li>
-          <span class="lifecycle-index">05</span>
-          <div><h3>Review and reconcile</h3><p>Review design-and-implementation work and operating-effectiveness work separately, verify corrections and merge only approved changes.</p></div>
-          <span class="lifecycle-output">Reviewed workpaper</span>
-        </li>
-        <li>
-          <span class="lifecycle-index">06</span>
-          <div><h3>Prepare reporting</h3><p>Draft progress and reporting material, then review reusable and engagement-specific lessons.</p></div>
-          <span class="lifecycle-output">Draft reporting</span>
-        </li>
-      </ol>
 
       <figure class="product-figure">
         <a class="product-image-link" href="assets/aeos-operating-model.png" data-dialog="diagram-dialog-operating-model" aria-label="Open the AEOS operating-model diagram at full size">
@@ -261,14 +191,16 @@
       </dialog>
     </section>
 
-    <section class="section-wide demo-section" id="demo" aria-labelledby="demo-title">
+    <section class="section-wide demo-section" id="walkthrough" aria-labelledby="demo-title">
       <div class="split-heading">
         <div>
-          <p class="kicker">See AEOS in action</p>
-          <h2 id="demo-title">One procedure, shown across the working environment.</h2>
+          <p class="kicker">A walkthrough</p>
+          <h2 id="demo-title">One procedure, four sources, and one attribute with nothing behind it.</h2>
         </div>
-        <p>These four screenshots are literal captures of the AEOS demonstration workspace open in Obsidian and Visual Studio Code. They show the product's real operating environment without reproducing employer, client or operational implementation material. Select any image to open it at full size.</p>
+        <p>Procedure AI-04 in a fictional GenAI change-governance engagement: assess whether production changes to a generative AI service are evaluated, authorized, deployed and monitored through change management. The auditor scoped it to the first half of 2026 and listed the evidence the assessment would need. A change register, deployment records, a model registry, evaluation records and authorization records. Five kinds of record. Watch what happens to the fifth.</p>
       </div>
+
+      <p class="story-lead">The four captures below are literal screenshots of the demonstration workspace open in Obsidian and Visual Studio Code. The workspace and every record in it are synthetic and were built for publication. Select any image to open it at full size.</p>
 
       <div class="demo-sequence">
         <figure class="demo-figure">
@@ -276,13 +208,13 @@
             <span class="demo-step">01</span>
             <div>
               <p class="demo-app">Obsidian</p>
-              <h3>Orient to the engagement and its source boundary.</h3>
+              <h3>The engagement is a folder, not a chat history.</h3>
             </div>
           </div>
           <a class="demo-image-link" href="assets/demo/01-engagement-overview.png" data-dialog="demo-dialog-1" aria-label="Open the Obsidian engagement screenshot at full size">
             <img src="assets/demo/01-engagement-overview.png" width="1600" height="900" loading="lazy" decoding="async" alt="Obsidian application window showing the AEOS demonstration workspace, lifecycle folders and an engagement-context note establishing post-AWP fieldwork, auditor ownership and no audit conclusion.">
           </a>
-          <figcaption>The Obsidian capture shows the demonstration engagement context and lifecycle folders in the same working environment.</figcaption>
+          <figcaption>Context, planning, fieldwork, evidence and review records sit where the auditor and the agent both work from the same files. The source boundary for AI-04 is set here, before anything runs.</figcaption>
         </figure>
 
         <figure class="demo-figure">
@@ -290,13 +222,13 @@
             <span class="demo-step">02</span>
             <div>
               <p class="demo-app">Visual Studio Code</p>
-              <h3>Review the AWP procedure and decision boundary.</h3>
+              <h3>The work program stays the authority.</h3>
             </div>
           </div>
           <a class="demo-image-link" href="assets/demo/02-fieldwork-boundary.png" data-dialog="demo-dialog-2" aria-label="Open the Visual Studio Code fieldwork-boundary screenshot at full size">
             <img src="assets/demo/02-fieldwork-boundary.png" width="1600" height="900" loading="lazy" decoding="async" alt="Visual Studio Code application window showing the AEOS demonstration workspace, an authorized AWP procedure and a warning that sample selection and evidence reliance require an auditor decision.">
           </a>
-          <figcaption>The auditor works from the planned procedure and keeps sample selection and evidence reliance as explicit decisions.</figcaption>
+          <figcaption>AI-04 carries its own scope: period, population, expected evidence, and a testing route that puts design assessment before operating-effectiveness testing. The decision boundary is written into the procedure. AEOS may organize the work, prepare drafts and identify missing evidence. It may not select the sample, approve reliance, resolve exceptions or conclude.</figcaption>
         </figure>
 
         <figure class="demo-figure">
@@ -304,13 +236,13 @@
             <span class="demo-step">03</span>
             <div>
               <p class="demo-app">Visual Studio Code</p>
-              <h3>Set the task boundary before the agent runs.</h3>
+              <h3>The task is bounded before the model sees anything.</h3>
             </div>
           </div>
           <a class="demo-image-link" href="assets/demo/03-bounded-agent-request.png" data-dialog="demo-dialog-3" aria-label="Open the Visual Studio Code bounded Agent Chat screenshot at full size">
             <img src="assets/demo/03-bounded-agent-request.png" width="1600" height="900" loading="lazy" decoding="async" alt="Visual Studio Code application window showing the AEOS demonstration workspace, a public-safe agent and skill catalog, and an unsent AI-04 request limited to named sources with an auditor checkpoint.">
           </a>
-          <figcaption>The request is limited to named demonstration sources and stops at the auditor checkpoint. It is staged and unsent; no model output is shown.</figcaption>
+          <figcaption>The request names the procedure, restricts the run to four files (AWP-001, E-001, E-002 and E-003), asks for gaps and contradictions, and forbids sampling, reliance, workpaper updates and conclusions. It stops at the auditor checkpoint. The request shown is staged and unsent.</figcaption>
         </figure>
 
         <figure class="demo-figure">
@@ -318,14 +250,21 @@
             <span class="demo-step">04</span>
             <div>
               <p class="demo-app">Obsidian</p>
-              <h3>Inspect the source-linked design-assessment draft.</h3>
+              <h3>Every attribute is traced back to a file.</h3>
             </div>
           </div>
           <a class="demo-image-link" href="assets/demo/04-design-assessment-draft.png" data-dialog="demo-dialog-4" aria-label="Open the Obsidian design-assessment screenshot at full size">
             <img src="assets/demo/04-design-assessment-draft.png" width="1600" height="900" loading="lazy" decoding="async" alt="Obsidian application window showing a demonstration draft design-assessment workpaper with registered sources, one source gap, reliability pending, reconciliation not concluded and the conclusion blank.">
           </a>
-          <figcaption>The draft links statements to registered sources, flags one source as missing, and leaves reliability and the conclusion with the auditor.</figcaption>
+          <figcaption>Four attributes, each linked to the source behind it. Change recorded: available, reliability review pending. Deployment authorized: available, auditor review required. Version reconciled: comparison prepared, not concluded. And then the fourth.</figcaption>
         </figure>
+      </div>
+
+      <div class="story-outcome">
+        <p class="kicker">What happened</p>
+        <p>The fifth kind of evidence never arrived. The attribute that needed it, evaluation approved before deployment, points at E-004. E-004 was not among the four files the auditor authorized, and no approval record was provided. So the draft records exactly that, against that attribute: source gap.</p>
+        <p>That is the part worth having. Not a summary that quietly drops an attribute it had nothing for, and not an inference that the evaluation probably happened. A named attribute, pointing at a missing record, sitting on the workpaper where a reviewer will see it.</p>
+        <p>Nothing else moved either. Testing: not performed. Conclusion: blank, auditor-owned. The version comparison is prepared but left unconcluded, because finding an identifier in two sources is not the same as deciding they agree. Item-level testing waits until the auditor approves the population, sample, attributes and evidence route.</p>
       </div>
 
       <dialog class="demo-dialog" id="demo-dialog-1" aria-labelledby="demo-dialog-title-1">
@@ -354,83 +293,129 @@
       </dialog>
     </section>
 
-    <section class="section-wide components-section" id="components" aria-labelledby="components-title">
+    <section class="section-wide work-section" id="lifecycle" aria-labelledby="work-title">
       <div class="split-heading">
         <div>
-          <p class="kicker">What AEOS includes</p>
-          <h2 id="components-title">A readable system of files, workflows and controls.</h2>
+          <p class="kicker">The engagement lifecycle</p>
+          <h2 id="work-title">Six stages, each with an output and a decision the auditor keeps.</h2>
         </div>
-        <p>AEOS runs in Visual Studio Code and Obsidian. There is no separate backend. The product is the configured workspace and the governed routes inside it.</p>
+        <p>AEOS begins after the work program has been reviewed and authorized under the internal audit function's methodology. It does not require one fixed work-program layout: a wide spreadsheet and a narrative document can both enter through governed interpretation.</p>
       </div>
 
-      <table class="component-table">
-        <caption class="sr-only">AEOS components, their jobs and their relationships</caption>
+      <table class="component-table lifecycle-table">
+        <caption class="sr-only">AEOS engagement stages, what each produces and the decision the auditor retains</caption>
         <thead>
           <tr>
-            <th scope="col">Component</th>
-            <th scope="col">Job</th>
-            <th scope="col">Relationship</th>
+            <th scope="col">Stage</th>
+            <th scope="col">What it produces</th>
+            <th scope="col">Auditor decision</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Engagement workspace</th>
-            <td data-label="Job">Holds context, plans, evidence references, workpapers, reviews and reporting drafts.</td>
-            <td data-label="Relationship">The shared environment used by every other component.</td>
+            <th scope="row">1. Set up the engagement</th>
+            <td data-label="What it produces">A registered engagement context, applicable criteria, AWP, source set, and AI read and write boundaries.</td>
+            <td data-label="Auditor decision">Resolve missing identifiers, inaccessible criteria and conflicting source versions.</td>
           </tr>
           <tr>
-            <th scope="row">Task contexts</th>
-            <td data-label="Job">Set the professional perspective and operating boundaries for the selected task.</td>
-            <td data-label="Relationship">A person selects the context before invoking a workflow.</td>
+            <th scope="row">2. Prepare fieldwork</th>
+            <td data-label="What it produces">Interpreted procedures, workpaper scaffolds, walkthrough topics, evidence-request candidates, source-linked meeting and evidence records, and a fieldwork plan.</td>
+            <td data-label="Auditor decision">Review that interpretation before execution.</td>
           </tr>
           <tr>
-            <th scope="row">Governed workflows</th>
-            <td data-label="Job">Define the inputs, sequence, checks, stop conditions and output for a specific audit task.</td>
-            <td data-label="Relationship">The selected context runs one workflow against the authorized source set.</td>
+            <th scope="row">3. Assess design and implementation</th>
+            <td data-label="What it produces">An assessment of whether the control exists, has been implemented, and is capable of mitigating the identified risk if it operates as intended.</td>
+            <td data-label="Auditor decision">Decide whether the work performed supports the design conclusion.</td>
           </tr>
           <tr>
-            <th scope="row">Workflow launch controls</th>
-            <td data-label="Job">Give the auditor a repeatable way to start each supported route.</td>
-            <td data-label="Relationship">They call the owning workflow; they do not create a competing process.</td>
+            <th scope="row">4. Assess operating effectiveness</th>
+            <td data-label="What it produces">Item-level testing, where applicable, of whether a design-confirmed control operated consistently and correctly over the relevant period.</td>
+            <td data-label="Auditor decision">Approve the population, completeness basis, sampling method, selected items, attributes and evidence approach before testing.</td>
           </tr>
           <tr>
-            <th scope="row">Templates and guides</th>
-            <td data-label="Job">Provide readable output structures and operator instructions.</td>
-            <td data-label="Relationship">Workflows use the templates; auditors use the guides and review the result.</td>
+            <th scope="row">5. Review and reconcile</th>
+            <td data-label="What it produces">Separate read-only review that challenges source support, missing evidence, internal consistency, and conclusions exceeding the work performed.</td>
+            <td data-label="Auditor decision">Approve corrections, which are verified before merge.</td>
           </tr>
           <tr>
-            <th scope="row">Evidence and review controls</th>
-            <td data-label="Job">Track sources, provenance, draft state, corrections, gaps and human approvals.</td>
-            <td data-label="Relationship">They sit across every route and prevent draft output from becoming silent authority.</td>
-          </tr>
-          <tr>
-            <th scope="row">Python checks</th>
-            <td data-label="Job">Validate structure, paths, packaging and other deterministic properties.</td>
-            <td data-label="Relationship">They support the workflow but do not decide audit evidence or conclusions.</td>
+            <th scope="row">6. Prepare reporting</th>
+            <td data-label="What it produces">Progress and reporting drafts built from reviewed workpapers and documented exceptions.</td>
+            <td data-label="Auditor decision">Approve and send any external communication.</td>
           </tr>
         </tbody>
       </table>
 
+      <p class="section-note">A walkthrough can support the design-and-implementation assessment, but it does not establish sustained operation. These are AEOS product stages: public professional guidance provides context for work programs, design evaluation, testing, documentation and conclusions, but does not prescribe this six-stage structure.</p>
+
       <figure class="product-figure">
-        <a class="product-image-link" href="assets/aeos-core-component-interactions.png" data-dialog="diagram-dialog-components" aria-label="Open the AEOS component-interaction diagram at full size">
-          <img src="assets/aeos-core-component-interactions.png" data-theme-light="assets/aeos-core-component-interactions.png" data-theme-dark="assets/aeos-core-component-interactions-dark.png" width="1600" height="900" loading="eager" decoding="async" alt="AEOS component interactions showing engagement and task context, one governed workflow, a workpaper template, evidence and source controls, separate review and auditor approval of Draft output.">
+        <a class="product-image-link" href="assets/aeos-typical-awp-lifecycle.png" data-dialog="diagram-dialog-lifecycle" aria-label="Open the AEOS engagement-lifecycle diagram at full size">
+          <img src="assets/aeos-typical-awp-lifecycle.png" data-theme-light="assets/aeos-typical-awp-lifecycle.png" data-theme-dark="assets/aeos-typical-awp-lifecycle-dark.png" width="1600" height="900" loading="lazy" decoding="async" alt="AEOS engagement lifecycle showing six stages from engagement setup through fieldwork preparation, design and implementation assessment, operating-effectiveness testing, review and reporting, each with the decision the auditor retains.">
         </a>
-        <figcaption>Component interactions. The workspace supplies context, one governed workflow controls the route, and the auditor decides whether the Draft may move forward. Select the diagram to enlarge it.</figcaption>
+        <figcaption>Engagement lifecycle. Every stage has an authorized source set, a visible output state and an auditor checkpoint. Select the diagram to enlarge it.</figcaption>
       </figure>
 
-      <dialog class="demo-dialog" id="diagram-dialog-components" aria-labelledby="diagram-dialog-components-title">
+      <dialog class="demo-dialog" id="diagram-dialog-lifecycle" aria-labelledby="diagram-dialog-lifecycle-title">
         <div class="demo-dialog-inner">
-          <div class="demo-dialog-header"><p id="diagram-dialog-components-title">AEOS component interactions</p><button type="button" class="demo-dialog-close">Close</button></div>
-          <img src="assets/aeos-core-component-interactions.png" data-theme-light="assets/aeos-core-component-interactions.png" data-theme-dark="assets/aeos-core-component-interactions-dark.png" width="1600" height="900" loading="lazy" alt="AEOS component interactions showing engagement and task context, one governed workflow, a workpaper template, evidence and source controls, separate review and auditor approval of Draft output.">
+          <div class="demo-dialog-header"><p id="diagram-dialog-lifecycle-title">AEOS engagement lifecycle</p><button type="button" class="demo-dialog-close">Close</button></div>
+          <img src="assets/aeos-typical-awp-lifecycle.png" data-theme-light="assets/aeos-typical-awp-lifecycle.png" data-theme-dark="assets/aeos-typical-awp-lifecycle-dark.png" width="1600" height="900" loading="lazy" alt="AEOS engagement lifecycle showing six stages from engagement setup through fieldwork preparation, design and implementation assessment, operating-effectiveness testing, review and reporting, each with the decision the auditor retains.">
         </div>
       </dialog>
     </section>
 
-    <section class="section-wide scope-section" id="scope" aria-labelledby="scope-title">
+    <section class="section-wide controls-section" id="controls" aria-labelledby="controls-title">
       <div class="section-heading centered narrow-copy">
-        <p class="kicker">Scope and authority</p>
-        <h2 id="scope-title">What AEOS does, what the auditor owns, and where the boundary sits.</h2>
+        <p class="kicker">What keeps the work reviewable</p>
+        <h2 id="controls-title">Five distinctions stay visible from source to reporting.</h2>
+        <p>Internal audit work is a chain of dependent judgments. A workpaper depends on a defined procedure. A test result depends on retained and reviewed evidence. A conclusion depends on the attributes tested and the exceptions identified.</p>
       </div>
+
+      <ul class="distinction-list">
+        <li>Authorized source, as distinct from agent inference.</li>
+        <li>Expected evidence, as distinct from evidence obtained.</li>
+        <li>Design-and-implementation assessment, as distinct from operating-effectiveness testing.</li>
+        <li>Draft result, as distinct from auditor-approved conclusion.</li>
+        <li>Internal draft, as distinct from authorized communication.</li>
+      </ul>
+
+      <p class="eyebrow" style="max-width: var(--narrow); margin: 44px auto 0;">The states a draft can carry</p>
+      <ul class="state-legend">
+        <li>
+          <span class="state-pill is-risk">Source gap</span>
+          <p>An expected record was not provided. It is named against the attribute that needed it, not dropped from the analysis.</p>
+        </li>
+        <li>
+          <span class="state-pill is-warning">Not established</span>
+          <p>The authorized sources do not answer the question. The question stays open and goes to the auditor.</p>
+        </li>
+        <li>
+          <span class="state-pill is-warning">Incomplete record</span>
+          <p>The record exists, but a field the criterion depends on is absent from it.</p>
+        </li>
+        <li>
+          <span class="state-pill is-neutral">Prepared; not concluded</span>
+          <p>A comparison against the criterion is ready. The judgement it supports has not been made.</p>
+        </li>
+        <li>
+          <span class="state-pill is-neutral">Available; review pending</span>
+          <p>The source is registered and readable. Its reliability has not been reviewed yet.</p>
+        </li>
+      </ul>
+
+      <p class="section-note">Human authorization sits at the four points where work changes authority: an AWP procedure becomes a draft workpaper, received material becomes relied-upon evidence, a test result becomes an audit assessment, and a reviewed conclusion becomes external communication.</p>
+
+      <figure class="product-figure">
+        <a class="product-image-link" href="assets/aeos-guardrail-stack.png" data-dialog="diagram-dialog-guardrails" aria-label="Open the AEOS authority-chain diagram at full size">
+          <img src="assets/aeos-guardrail-stack.png" data-theme-light="assets/aeos-guardrail-stack.png" data-theme-dark="assets/aeos-guardrail-stack-dark.png" width="1600" height="900" loading="lazy" decoding="async" alt="AEOS authority chain from authorized source through reviewed evidence, draft result, auditor reliance, separate read-only review and auditor sign-off to a reporting draft, with visible stop conditions and bounded deterministic checks.">
+        </a>
+        <figcaption>The authority chain. Deterministic checks verify bounded structural properties; professional reliance still requires auditor judgment. Select the diagram to enlarge it.</figcaption>
+      </figure>
+
+      <dialog class="demo-dialog" id="diagram-dialog-guardrails" aria-labelledby="diagram-dialog-guardrails-title">
+        <div class="demo-dialog-inner">
+          <div class="demo-dialog-header"><p id="diagram-dialog-guardrails-title">AEOS authority chain</p><button type="button" class="demo-dialog-close">Close</button></div>
+          <img src="assets/aeos-guardrail-stack.png" data-theme-light="assets/aeos-guardrail-stack.png" data-theme-dark="assets/aeos-guardrail-stack-dark.png" width="1600" height="900" loading="lazy" alt="AEOS authority chain from authorized source through reviewed evidence, draft result, auditor reliance, separate read-only review and auditor sign-off to a reporting draft, with visible stop conditions and bounded deterministic checks.">
+        </div>
+      </dialog>
 
       <div class="scope-grid">
         <article>
@@ -466,6 +451,115 @@
       </div>
     </section>
 
+    <section class="section-wide setup-section" id="setup" aria-labelledby="setup-title">
+      <div class="split-heading">
+        <div>
+          <p class="kicker">What you get and how you set it up</p>
+          <h2 id="setup-title">A workspace you can open, read and check.</h2>
+        </div>
+        <p>AEOS runs in Visual Studio Code and Obsidian. There is no separate backend and no service to sign up for. Everything you get is a file you can open, so the system can be inspected the same way the audit work can.</p>
+      </div>
+
+      <table class="component-table">
+        <caption class="sr-only">What is in the AEOS workspace and what each part is used for</caption>
+        <thead>
+          <tr>
+            <th scope="col">What you get</th>
+            <th scope="col">What it is</th>
+            <th scope="col">What you do with it</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Engagement workspace</th>
+            <td data-label="What it is">A folder structure for context, plans, evidence references, workpapers, reviews and reporting drafts.</td>
+            <td data-label="What you do with it">Open it once per engagement. Everything else runs inside it.</td>
+          </tr>
+          <tr>
+            <th scope="row">Task contexts</th>
+            <td data-label="What it is">Definitions that set the professional perspective and the evidence, file and authority boundaries for a task.</td>
+            <td data-label="What you do with it">Pick the one that matches the work before you start a task.</td>
+          </tr>
+          <tr>
+            <th scope="row">Governed workflows</th>
+            <td data-label="What it is">Named routes defining required inputs, stage order, stop conditions and where output goes.</td>
+            <td data-label="What you do with it">Invoke one per task. It runs against the sources you authorized.</td>
+          </tr>
+          <tr>
+            <th scope="row">Templates and guides</th>
+            <td data-label="What it is">Readable output structures for workpapers and records, plus operator instructions.</td>
+            <td data-label="What you do with it">Read the guide, review what the template produced.</td>
+          </tr>
+          <tr>
+            <th scope="row">Evidence and review controls</th>
+            <td data-label="What it is">Source identity, provenance, derivative relationships, gaps, contradictions and draft state.</td>
+            <td data-label="What you do with it">Nothing to configure. They keep draft output from becoming silent authority.</td>
+          </tr>
+          <tr>
+            <th scope="row">Deterministic checks</th>
+            <td data-label="What it is">Optional Python checks for structure, paths, required fields and packaging.</td>
+            <td data-label="What you do with it">Run them when you want a mechanical check. They never decide evidence or conclusions.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <figure class="product-figure">
+        <a class="product-image-link" href="assets/aeos-core-component-interactions.png" data-dialog="diagram-dialog-components" aria-label="Open the AEOS component-interaction diagram at full size">
+          <img src="assets/aeos-core-component-interactions.png" data-theme-light="assets/aeos-core-component-interactions.png" data-theme-dark="assets/aeos-core-component-interactions-dark.png" width="1600" height="900" loading="lazy" decoding="async" alt="AEOS component interactions showing engagement and task context, one governed workflow, a workpaper template, evidence and source controls, separate review and auditor approval of Draft output.">
+        </a>
+        <figcaption>How the parts connect. The workspace supplies context, one governed workflow controls the route, and the auditor decides whether the Draft may move forward. Select the diagram to enlarge it.</figcaption>
+      </figure>
+
+      <dialog class="demo-dialog" id="diagram-dialog-components" aria-labelledby="diagram-dialog-components-title">
+        <div class="demo-dialog-inner">
+          <div class="demo-dialog-header"><p id="diagram-dialog-components-title">AEOS component interactions</p><button type="button" class="demo-dialog-close">Close</button></div>
+          <img src="assets/aeos-core-component-interactions.png" data-theme-light="assets/aeos-core-component-interactions.png" data-theme-dark="assets/aeos-core-component-interactions-dark.png" width="1600" height="900" loading="lazy" alt="AEOS component interactions showing engagement and task context, one governed workflow, a workpaper template, evidence and source controls, separate review and auditor approval of Draft output.">
+        </div>
+      </dialog>
+
+      <div class="setup-path">
+        <p class="kicker">Setting it up</p>
+        <ol class="setup-steps">
+          <li>
+            <span class="lifecycle-index">01</span>
+            <div><h3>Open the workspace</h3><p>Open the AEOS folder as a Visual Studio Code workspace and as an Obsidian vault. Both point at the same files.</p></div>
+          </li>
+          <li>
+            <span class="lifecycle-index">02</span>
+            <div><h3>Confirm discovery</h3><p>Check that Visual Studio Code lists the AEOS task contexts and workflows, so the governed routes are selectable in Copilot Chat.</p></div>
+          </li>
+          <li>
+            <span class="lifecycle-index">03</span>
+            <div><h3>Choose the provider route</h3><p>Select an approved route before selecting a model: a Copilot-hosted model inside an approved service boundary, or local Ollama through the supported provider extension.</p></div>
+          </li>
+          <li>
+            <span class="lifecycle-index">04</span>
+            <div><h3>Run a governed test</h3><p>Run one supported route against a sample engagement and confirm it produces the expected draft in the expected location.</p></div>
+          </li>
+          <li>
+            <span class="lifecycle-index">05</span>
+            <div><h3>Verify the runtime</h3><p>Confirm which task context and model actually ran. Static documentation is not proof of the runtime route.</p></div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="terminal-panel">
+        <p class="kicker">What invoking a governed route looks like</p>
+<pre><b>/tod-analysis-to-workpaper</b>
+  AWP            AWP04        sub-process   rd_ai_change_control
+  Source mode    EXACT_FILES
+  Approved       AWP04, E-001, E-002, E-003, E-004
+  Do not         select a sample · approve reliance
+                 update the workpaper · conclude
+  Stop at        auditor checkpoint</pre>
+      </div>
+
+      <!-- TODO: workspace captures pending. Andrew supplies real screenshots of the workspace
+           and the setup route. Add them here as a <figure class="workspace-figure"> plus a
+           matching <dialog class="demo-dialog"> pair, following the walkthrough figures above.
+           Deliberately no visible placeholder: a "coming soon" box on this page would be an
+           unfinished promise, and the section reads as complete without it. -->
+    </section>
 
     <section class="section-wide requirements-section" id="requirements" aria-labelledby="requirements-title">
       <div class="section-heading centered narrow-copy">
@@ -526,6 +620,8 @@
       </div>
       <dl class="faq-list">
         <div><dt>Where does AEOS start?</dt><dd>After the audit work program (AWP) has been reviewed and authorized under the internal audit function's methodology. Missing planning decisions remain open for the auditor.</dd></div>
+        <div><dt>What do I actually install?</dt><dd>Visual Studio Code, Obsidian, GitHub Copilot Chat and the AEOS workspace folder. There is no AEOS server, backend or hosted service.</dd></div>
+        <div><dt>Does my audit data leave my machine?</dt><dd>That depends on the provider route you approve. A local model keeps processing on your own hardware. A Copilot-hosted or Ollama Cloud route sends content to that provider, so restricted evidence needs the provider and use case approved first.</dd></div>
         <div><dt>Does AEOS replace the auditor?</dt><dd>No. It supports preparation, evidence analysis, testing and drafting. The auditor owns professional judgment and approval.</dd></div>
         <div><dt>Do all source documents need to be Markdown?</dt><dd>Native originals do not. AEOS retains and links them as the authoritative evidence. However, information used by AEOS agents and workflows must be available in reviewed Markdown. The user must provide that Markdown working copy, either by converting the information themselves or by using the separate file-converter product.</dd></div>
         <div><dt>Does AEOS require one model?</dt><dd>No. It requires an approved provider route and a model capable of the selected workflow.</dd></div>
