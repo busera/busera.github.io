@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="Electron" modified="2026-08-26T00:00:00.000Z" agent="Hermes">
+  <diagram id="page-1" name="Page-1">
+    <mxGraphModel dx="1600" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0" background="#F8FBFE">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="canvas-bounds" value="" style="shape=rectangle;fillColor=none;strokeColor=none;opacity=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1600" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="authorization-kicker" value="THE AUTHORITY CHAIN" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#174A7C;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="92" width="800" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="authorization-note" value="The agent may structure, compare and draft. Only the auditor changes what may be relied upon." style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#3F5368;fontSize=17;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="126" width="1100" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="source" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D6E4F0;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="195" width="230" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="source-kicker" value="01" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#174A7C;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="219" width="190" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="source-title" value="&lt;div style=&quot;line-height:1.15;&quot;&gt;Authorized source&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#07111F;fontSize=19;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="249" width="190" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="source-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Named files inside the approved task scope.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#3F5368;fontSize=15;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="305" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="evidence" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D6E4F0;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="304" y="195" width="230" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="evidence-kicker" value="02" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#174A7C;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="324" y="219" width="190" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="evidence-title" value="&lt;div style=&quot;line-height:1.15;&quot;&gt;Reviewed evidence&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#07111F;fontSize=19;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="324" y="249" width="190" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="evidence-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Retained original, provenance and a reviewed working copy.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#3F5368;fontSize=15;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="324" y="305" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="draft-result" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D6E4F0;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="558" y="195" width="230" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="draft-result-kicker" value="03" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#174A7C;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="578" y="219" width="190" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="draft-result-title" value="&lt;div style=&quot;line-height:1.15;&quot;&gt;Draft result&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#07111F;fontSize=19;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="578" y="249" width="190" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="draft-result-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Work performed, evidence links, gaps and contradictions.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#3F5368;fontSize=15;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="578" y="305" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="reliance" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E4F0F9;strokeColor=#AAC5DA;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="812" y="195" width="230" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="reliance-kicker" value="04" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#174A7C;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="832" y="219" width="190" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="reliance-title" value="&lt;div style=&quot;line-height:1.15;&quot;&gt;Auditor reliance&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#07111F;fontSize=19;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="832" y="249" width="190" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="reliance-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Decides whether the support is sufficient to rely on.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#3F5368;fontSize=15;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="832" y="305" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="qc" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EEF5FB;strokeColor=#D6E4F0;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1066" y="195" width="230" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="qc-kicker" value="05" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#174A7C;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1086" y="219" width="190" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="qc-title" value="&lt;div style=&quot;line-height:1.15;&quot;&gt;Separate review&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#07111F;fontSize=19;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1086" y="249" width="190" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="qc-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Read-only challenge to source support and proposed conclusions.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#3F5368;fontSize=15;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1086" y="305" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="signoff" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E4F0F9;strokeColor=#AAC5DA;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="195" width="230" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="signoff-kicker" value="06" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#174A7C;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="219" width="190" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="signoff-title" value="&lt;div style=&quot;line-height:1.15;&quot;&gt;Auditor sign-off&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#07111F;fontSize=19;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="249" width="190" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="signoff-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Owns the conclusion and the reporting decision.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#3F5368;fontSize=15;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="305" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="chain-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2F80C0;strokeWidth=1.8;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="source" target="evidence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="chain-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2F80C0;strokeWidth=1.8;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="evidence" target="draft-result">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="chain-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2F80C0;strokeWidth=1.8;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="draft-result" target="reliance">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="chain-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2F80C0;strokeWidth=1.8;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="reliance" target="qc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="chain-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2F80C0;strokeWidth=1.8;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qc" target="signoff">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stop" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#EEF5FB;strokeColor=#D6E4F0;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="490" width="1220" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="stop-kicker" value="STOP CONDITIONS" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#174A7C;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="76" y="516" width="1168" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="stop-title" value="The route stops rather than inventing support" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#07111F;fontSize=21;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="76" y="546" width="1168" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="stop-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Missing or inaccessible evidence · contradictory sources · an unapproved population or sample · a conclusion that would exceed the work performed&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#3F5368;fontSize=15;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="76" y="592" width="1168" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="reporting" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E4F0F9;strokeColor=#AAC5DA;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="490" width="230" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="reporting-kicker" value="OUTPUT" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#174A7C;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1344" y="516" width="182" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="reporting-title" value="Reporting draft" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#174A7C;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1344" y="546" width="182" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="reporting-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;A draft until the auditor approves communication.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#3F5368;fontSize=14;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1344" y="582" width="182" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="signoff-to-reporting" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2F80C0;strokeWidth=1.8;endArrow=block;endFill=1;startArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="signoff" target="reporting">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="deterministic" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D6E4F0;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="706" width="1500" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="deterministic-body" value="Deterministic checks verify structure, paths and required fields. They do not decide evidence sufficiency or a professional conclusion." style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#3F5368;fontSize=16;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="736" width="1420" height="46" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="Electron" modified="2026-08-26T00:00:00.000Z" agent="Hermes">
+  <diagram id="page-1" name="Page-1">
+    <mxGraphModel dx="1600" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0" background="#07111F">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="canvas-bounds" value="" style="shape=rectangle;fillColor=none;strokeColor=none;opacity=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1600" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="stage-band" value="SIX FUNCTIONAL STAGES · AWP → REVIEWED AUDIT WORK" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="108" width="800" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="setup" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#0E1B2C;strokeColor=#24364D;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="200" width="440" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="setup-kicker" value="01 · SETUP" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="116" y="226" width="388" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="setup-title" value="&lt;div style=&quot;line-height:1.15;&quot;&gt;Set up the engagement&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#F8FAFC;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="116" y="258" width="388" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="setup-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Registered engagement context, applicable criteria, the AWP, the source set and AI read and write boundaries.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=16;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="116" y="328" width="388" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="setup-decision" value="&lt;div style=&quot;line-height:1.3;&quot;&gt;AUDITOR · Resolves missing identifiers and conflicting source versions&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="116" y="400" width="388" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="prepare" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#0E1B2C;strokeColor=#24364D;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="200" width="440" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="prepare-kicker" value="02 · PREPARE" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="606" y="226" width="388" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="prepare-title" value="&lt;div style=&quot;line-height:1.15;&quot;&gt;Prepare fieldwork&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#F8FAFC;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="606" y="258" width="388" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="prepare-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Interpreted procedures, workpaper scaffolds, walkthrough topics, evidence requests and a fieldwork plan.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=16;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="606" y="328" width="388" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="prepare-decision" value="&lt;div style=&quot;line-height:1.3;&quot;&gt;AUDITOR · Reviews that interpretation before execution&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="606" y="400" width="388" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="design" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#0B1726;strokeColor=#24364D;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="200" width="440" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="design-kicker" value="03 · DESIGN" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1096" y="226" width="388" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="design-title" value="&lt;div style=&quot;line-height:1.15;&quot;&gt;Assess design and implementation&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#F8FAFC;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1096" y="258" width="388" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="design-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Whether the control exists, has been implemented and could mitigate the risk if it operates as intended.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=16;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1096" y="328" width="388" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="design-decision" value="&lt;div style=&quot;line-height:1.3;&quot;&gt;AUDITOR · Decides whether the work supports the design conclusion&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1096" y="400" width="388" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="operating" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#0B1726;strokeColor=#24364D;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="510" width="440" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="operating-kicker" value="04 · OPERATION" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1096" y="536" width="388" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="operating-title" value="&lt;div style=&quot;line-height:1.15;&quot;&gt;Assess operating effectiveness&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#F8FAFC;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1096" y="568" width="388" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="operating-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Item-level testing, where applicable, of whether a design-confirmed control operated over the period.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=16;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1096" y="638" width="388" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="operating-decision" value="&lt;div style=&quot;line-height:1.3;&quot;&gt;AUDITOR · Approves population, sampling, attributes and evidence approach&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1096" y="710" width="388" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="review" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#0B1726;strokeColor=#24364D;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="510" width="440" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="review-kicker" value="05 · REVIEW" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="606" y="536" width="388" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="review-title" value="&lt;div style=&quot;line-height:1.15;&quot;&gt;Review and reconcile&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#F8FAFC;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="606" y="568" width="388" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="review-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Separate read-only review that challenges source support, missing evidence and overreaching conclusions.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=16;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="606" y="638" width="388" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="review-decision" value="&lt;div style=&quot;line-height:1.3;&quot;&gt;AUDITOR · Approves corrections, which are verified before merge&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="606" y="710" width="388" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="report" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#12263B;strokeColor=#34516F;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="510" width="440" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="report-kicker" value="06 · REPORTING" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="116" y="536" width="388" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="report-title" value="&lt;div style=&quot;line-height:1.15;&quot;&gt;Prepare reporting&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#F8FAFC;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="116" y="568" width="388" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="report-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Progress and reporting drafts built from reviewed workpapers and documented exceptions.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=16;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="116" y="638" width="388" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="report-decision" value="&lt;div style=&quot;line-height:1.3;&quot;&gt;AUDITOR · Approves and sends any external communication&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="116" y="710" width="388" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2F80C0;strokeWidth=2;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="setup" target="prepare">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2F80C0;strokeWidth=2;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="prepare" target="design">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2F80C0;strokeWidth=2;endArrow=block;endFill=1;startArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="design" target="operating">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2F80C0;strokeWidth=2;endArrow=block;endFill=1;startArrow=none;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="operating" target="review">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2F80C0;strokeWidth=2;endArrow=block;endFill=1;startArrow=none;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="review" target="report">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="closing-note" value="Every stage has an authorized source set, a visible output state and an auditor checkpoint." style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=16;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="800" width="1000" height="52" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
