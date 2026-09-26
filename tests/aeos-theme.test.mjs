@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import test from 'node:test';
@@ -8,6 +9,52 @@ import { fileURLToPath } from 'node:url';
 const here = path.dirname(fileURLToPath(import.meta.url));
 const site = path.resolve(here, '../aeos');
 const read = (name) => fs.readFileSync(path.join(site, name), 'utf8');
+const normalizeSpace = (value) => value.replace(/\s+/g, ' ').trim();
+const attribute = (tag, name) => tag.match(new RegExp(`${name}="([^"]*)"`))?.[1];
+const sha256 = (bytes) => crypto.createHash('sha256').update(bytes).digest('hex');
+
+const visualContracts = [
+  {
+    id: 'current-scope',
+    dialogId: 'diagram-dialog-current-scope',
+    light: 'assets/aeos-current-future-scope.png',
+    dark: 'assets/aeos-current-future-scope-dark.png',
+    alt: 'AEOS scope diagram showing EWP and test-procedure creation as a future release outside the current boundary, with the current version starting from an available EWP or AWP and supporting fieldwork planning, execution, Draft work and review under auditor authority.',
+    caption: 'Current and future scope. The current version starts with an available EWP or AWP; creating the EWP and its test procedures remains under development. Select the diagram to enlarge it.',
+  },
+  {
+    id: 'operating-model',
+    dialogId: 'diagram-dialog-operating-model',
+    light: 'assets/aeos-operating-model.png',
+    dark: 'assets/aeos-operating-model-dark.png',
+    alt: 'An available EWP or AWP enters a bounded core made up of the workspace, selected audit agent, task skill, prompt and template, knowledge, memory and guardrails. The route produces a source-linked Draft that returns to auditor checkpoints.',
+    caption: 'Operating model. The bounded core combines the workspace, selected audit agent, task skill, prompt and template, knowledge, memory and guardrails. The auditor owns scope, testing basis, reliance, conclusions, sign-off and communication. Select the diagram to enlarge it.',
+  },
+  {
+    id: 'lifecycle',
+    dialogId: 'diagram-dialog-lifecycle',
+    light: 'assets/aeos-typical-awp-lifecycle.png',
+    dark: 'assets/aeos-typical-awp-lifecycle-dark.png',
+    alt: 'A six-stage Audit route from the available EWP or AWP through engagement setup, testing, separate read-only review, controlled correction, verification and reporting. The reviewed output remains Draft until the auditor completes the required decisions and approvals.',
+    caption: 'Detailed Audit route. The diagram adds engagement setup, then expands the testing stage into design and implementation work followed by operating-effectiveness work. Each stage has a permitted source set and an auditor checkpoint; outputs remain Draft. Select the diagram to enlarge it.',
+  },
+  {
+    id: 'guardrails',
+    dialogId: 'diagram-dialog-guardrails',
+    light: 'assets/aeos-guardrail-stack.png',
+    dark: 'assets/aeos-guardrail-stack-dark.png',
+    alt: 'AEOS authority chain from authorized source through an evidence candidate, Draft result, auditor reliance, separate read-only quality review, controlled correction and auditor sign-off to a reporting Draft. The auditor owns the testing basis, exception evaluation, conclusions, sign-off and communication.',
+    caption: 'The authority chain. Received material remains an evidence candidate until the auditor decides reliance. Deterministic checks verify bounded structural properties; approved corrections are applied separately and verified. The auditor retains the testing basis, exception evaluation, conclusions, sign-off and communication. Select the diagram to enlarge it.',
+  },
+  {
+    id: 'components',
+    dialogId: 'diagram-dialog-components',
+    light: 'assets/aeos-core-component-interactions.png',
+    dark: 'assets/aeos-core-component-interactions-dark.png',
+    alt: 'The governed operating core groups the selected audit agent, task skill, workpaper template and supporting layer inside the human-owned boundary. Engagement inputs enter the core and only Draft work leaves it. Guardrails, source controls and separate review constrain the route, while the auditor owns scope, the applicable testing basis, reliance, conclusions, sign-off and communication.',
+    caption: 'How the parts connect. The governed operating core groups the selected audit agent, task skill, workpaper template and supporting layer inside the human-owned boundary. That layer provides prompts, operating guides, knowledge and memory. Engagement inputs enter the core and only Draft work leaves it; the auditor retains the professional decisions. Select the diagram to enlarge it.',
+  },
+];
 
 function makeHarness({ initialTheme = 'dark', storedTheme = null } = {}) {
   const buttonListeners = new Map();
@@ -127,7 +174,7 @@ test('dark theme uses the approved Andrew Blue dark surface tokens', () => {
   assert.match(css, /\.theme-toggle/);
 });
 
-test('both conceptual diagrams declare existing light and dark assets', () => {
+test('legacy conceptual diagrams remain available in light and dark variants', () => {
   const html = read('index.html');
   const pairs = [
     ['assets/aeos-operating-model.png', 'assets/aeos-operating-model-dark.png'],
@@ -183,7 +230,8 @@ test('conceptual diagrams use fixed text baselines and balanced canvas geometry'
       assert.match(xml, new RegExp(`id="${id}-kicker"[\\s\\S]*?<mxGeometry x="[^"]+" y="282"`));
       assert.match(xml, new RegExp(`id="${id}-title"[\\s\\S]*?<mxGeometry x="[^"]+" y="328"`));
       assert.match(xml, new RegExp(`id="${id}-body"[\\s\\S]*?<mxGeometry x="[^"]+" y="405"`));
-      assert.match(xml, new RegExp(`id="${id}-status"[\\s\\S]*?<mxGeometry x="[^"]+" y="500"`));
+      const statusY = id === 'human' ? '510' : '500';
+      assert.match(xml, new RegExp(`id="${id}-status"[\\s\\S]*?<mxGeometry x="[^"]+" y="${statusY}"`));
     }
   }
 
@@ -217,7 +265,7 @@ test('retired trust-readiness section is absent from the page', () => {
 
 test('closing position is concise and product-specific', () => {
   const html = read('index.html');
-  const replacement = 'AEOS helps auditors use AI across an engagement.';
+  const replacement = 'AEOS supports supervised fieldwork while the auditor retains the professional decisions.';
   const retired = [
     'AEOS helps auditors use AI across an engagement while keeping professional judgment and approval in human hands.',
     'AI-supported audit work is useful only when the reasoning and evidence remain reviewable.',
@@ -321,36 +369,21 @@ test('the page names the fieldwork span before it describes the product', () => 
   assert.ok(support > 0, 'the support section must exist');
   assert.ok(support < product, 'the fieldwork span comes before the product definition');
   assert.ok(product < walkthrough, 'the definition must precede the walkthrough');
-  for (const beat of ['Evidence review', 'Testing', 'Reporting']) {
+  for (const beat of ['Meetings and evidence', 'Testing and documentation', 'Reporting and continuity']) {
     assert.ok(html.includes(`<h3>${beat}</h3>`), `missing fieldwork beat: ${beat}`);
   }
 });
 
-test('the walkthrough carries an outcome, not just captions', () => {
+test('the practice section keeps the synthetic example bounded and unconcluded', () => {
   const html = read('index.html');
 
   assert.match(html, /<div class="story-outcome">/);
-  // The outcome must describe what the 04 capture actually shows: a source gap,
-  // an unconcluded version comparison and a pending reliability review.
-  assert.ok(
-    html.includes('no approval record was provided'),
-    'the walkthrough must report the missing evaluation record',
-  );
-  assert.ok(
-    html.includes('source gap'),
-    'the walkthrough must name the gap state the capture shows',
-  );
-  assert.ok(
-    html.includes('prepared but left unconcluded'),
-    'the walkthrough must report the unconcluded version comparison',
-  );
-  assert.ok(
-    html.includes('Conclusion: blank, auditor-owned'),
-    'the walkthrough must state that the conclusion stays with the auditor',
-  );
-  // Claims the capture does not support must stay off the page.
-  for (const unsupported of ['timing mismatch', 'model-version conflict', 'different model versions']) {
-    assert.ok(!html.includes(unsupported), `unsupported demo claim: ${unsupported}`);
+  assert.ok(html.includes('The records and engagement are synthetic.'));
+  assert.ok(html.includes('routes it for follow-up'));
+  assert.ok(html.includes('It does not turn the issue into a tested exception'));
+  assert.ok(html.includes('the auditor evaluates exceptions and owns the conclusion'));
+  for (const staleScreenshot of ['assets/demo/01-', 'assets/demo/02-', 'assets/demo/03-', 'assets/demo/04-']) {
+    assert.ok(!html.includes(staleScreenshot), `stale synthetic screenshot must not be active: ${staleScreenshot}`);
   }
 });
 
@@ -391,5 +424,285 @@ test('no maturity or lifecycle-status claim reappears on the page', () => {
       `retired maturity claim must stay off the page: ${claim}`,
     );
   }
-  assert.ok(html.includes('actively used and tested in audit fieldwork'));
+  assert.ok(html.includes('Its current focus is fieldwork planning and execution.'));
+  assert.ok(html.includes('EWP creation, including its test procedures, is a future capability under development.'));
+});
+
+test('the public scope contract matches the available-EWP current boundary', () => {
+  const html = read('index.html');
+  const banned = [
+    /approved\s+(?:EWP|AWP|audit work program|engagement work program)/i,
+    /authorized\s+(?:EWP|AWP|audit work program|engagement work program)/i,
+    /starts?\s+after\s+(?:the\s+)?(?:EWP|AWP|audit work program|engagement work program)/i,
+    /post[- ](?:EWP|AWP|authorization)/i,
+  ];
+
+  assert.ok(html.includes('Available EWP / AWP'));
+  assert.ok(html.includes('Its current focus is fieldwork planning and execution.'));
+  assert.ok(html.includes('Creating the EWP and its test procedures (future release)'));
+  for (const pattern of banned) assert.doesNotMatch(html, pattern);
+});
+
+test('Git and Python remain optional extensions rather than AEOS core requirements', () => {
+  const html = read('index.html');
+
+  assert.ok(html.includes('Python for repeatable processing and Git for background versioning and recovery.'));
+  assert.ok(html.includes('Neither is required for the default AEOS core'));
+  assert.ok(html.includes('AEOS does not require a separate application backend, database, Python environment or Git repository for its default core.'));
+  assert.doesNotMatch(html, /\/tod-analysis-to-workpaper/);
+});
+
+test('the active operating-model visual uses the available-work-program boundary', () => {
+  const sources = [
+    'assets/source/aeos-operating-model.drawio',
+    'assets/source/aeos-operating-model-dark.drawio',
+  ];
+
+  for (const source of sources) {
+    const xml = read(source);
+    assert.match(xml, /id="input-status" value="AVAILABLE INPUT"/);
+    assert.doesNotMatch(xml, /AUTHORIZED INPUT/);
+  }
+});
+
+test('the retained website visuals use the current AEOS public ontology', () => {
+  const operatingSources = [
+    'assets/source/aeos-operating-model.drawio',
+    'assets/source/aeos-operating-model-dark.drawio',
+  ];
+  const lifecycleSources = [
+    'assets/source/aeos-typical-awp-lifecycle.drawio',
+    'assets/source/aeos-typical-awp-lifecycle-dark.drawio',
+  ];
+  const guardrailSources = [
+    'assets/source/aeos-guardrail-stack.drawio',
+    'assets/source/aeos-guardrail-stack-dark.drawio',
+  ];
+  const componentSources = [
+    'assets/source/aeos-core-component-interactions.drawio',
+    'assets/source/aeos-core-component-interactions-dark.drawio',
+  ];
+
+  for (const source of operatingSources) {
+    const xml = read(source);
+    for (const label of [
+      'Available EWP / AWP',
+      'Workspace · selected agent',
+      'skill · prompt/template',
+      'knowledge · memory · guardrails',
+      'Scope · testing basis',
+      'Sampling · reliance',
+      'Exceptions · conclusions',
+      'Sign-off · communication',
+      'scope, testing basis, reliance, conclusions and communication remain human-owned',
+    ]) {
+      assert.ok(xml.includes(label), `${source} must include ${label}`);
+    }
+    assert.doesNotMatch(xml, /Workspace · task context|workflow · template|reliance changes only through human decision/);
+  }
+
+  for (const source of lifecycleSources) {
+    const xml = read(source);
+    for (const label of [
+      'AVAILABLE EWP / AWP → REVIEWED DRAFT AUDIT WORK',
+      'the available EWP / AWP',
+      'Approved controlled corrections are applied separately and verified before finalization',
+      'outputs remain Draft',
+    ]) {
+      assert.ok(xml.includes(label), `${source} must include ${label}`);
+    }
+    assert.doesNotMatch(xml, /verified before merge|REVIEWED AUDIT WORK/);
+  }
+
+  for (const source of guardrailSources) {
+    const xml = read(source);
+    for (const label of [
+      'Evidence candidate',
+      'Reliance pending',
+      'Quality review + correction',
+      'Approved corrections are applied separately and verified',
+      'Approves testing basis and exceptions',
+      'owns conclusions, sign-off and communication',
+      'The auditor owns testing basis, reliance, exceptions, conclusions, sign-off and communication',
+    ]) {
+      assert.ok(xml.includes(label), `${source} must include ${label}`);
+    }
+    assert.doesNotMatch(xml, /Reviewed evidence/);
+  }
+
+  for (const source of componentSources) {
+    const xml = read(source);
+    for (const label of [
+      'GOVERNED OPERATING CORE',
+      'Available EWP / AWP',
+      'criteria · permitted evidence',
+      '02 · AGENT',
+      'Selected audit agent',
+      'Role · perspective ·',
+      'handoff boundary',
+      '03 · SKILL',
+      'Task skill',
+      'Procedure · checks · stop ·',
+      'SUPPORTING LAYER',
+      'Prompts · operating guides · knowledge · memory',
+      'GUARDRAILS + SOURCE CONTROLS',
+      'Auditor-owned decisions',
+      'Scope · applicable testing basis · reliance',
+      'conclusions · sign-off · communication',
+      'Draft work',
+    ]) {
+      assert.ok(xml.includes(label), `${source} must include ${label}`);
+    }
+    assert.doesNotMatch(xml, /02 · BOUNDARY|Task context|03 · ROUTE|id="workflow-title" value="Workflow"|OPERATING GUIDES|id="draft-work-title" value="Audit work"/);
+  }
+
+  const html = read('index.html');
+  assert.ok(html.includes('An available EWP or AWP enters a bounded core made up of the workspace, selected audit agent, task skill, prompt and template, knowledge, memory and guardrails.'));
+  assert.ok(html.includes('The reviewed output remains Draft until the auditor completes the required decisions and approvals.'));
+  assert.ok(html.includes('Received material remains an evidence candidate until the auditor decides reliance.'));
+  assert.ok(html.includes('The governed operating core groups the selected audit agent, task skill, workpaper template and supporting layer inside the human-owned boundary.'));
+});
+
+test('each active diagram independently binds its figure alt, dialog alt and caption', () => {
+  const html = read('index.html');
+  const figures = [...html.matchAll(/<figure class="product-figure">[\s\S]*?<\/figure>/g)].map((match) => match[0]);
+
+  for (const contract of visualContracts) {
+    const matchingFigures = figures.filter((figure) => figure.includes(`data-dialog="${contract.dialogId}"`));
+    assert.equal(matchingFigures.length, 1, `${contract.id} must have exactly one active figure`);
+
+    const figure = matchingFigures[0];
+    const anchor = figure.match(/<a\b[^>]*class="product-image-link"[^>]*>/)?.[0];
+    const figureImages = figure.match(/<img\b[^>]*>/g) ?? [];
+    const caption = figure.match(/<figcaption>([\s\S]*?)<\/figcaption>/)?.[1];
+    assert.ok(anchor, `${contract.id} figure must have an enlargement link`);
+    assert.equal(figureImages.length, 1, `${contract.id} figure must have exactly one image`);
+    assert.ok(caption, `${contract.id} figure must have a caption`);
+    assert.equal(attribute(anchor, 'href'), contract.light, `${contract.id} enlargement must open the light render by default`);
+    assert.equal(attribute(anchor, 'data-dialog'), contract.dialogId, `${contract.id} enlargement must target its own dialog`);
+    assert.equal(attribute(figureImages[0], 'src'), contract.light, `${contract.id} figure src`);
+    assert.equal(attribute(figureImages[0], 'data-theme-light'), contract.light, `${contract.id} figure light render`);
+    assert.equal(attribute(figureImages[0], 'data-theme-dark'), contract.dark, `${contract.id} figure dark render`);
+    assert.equal(attribute(figureImages[0], 'alt'), contract.alt, `${contract.id} figure alt`);
+    assert.equal(normalizeSpace(caption), contract.caption, `${contract.id} figcaption`);
+
+    const dialogPattern = new RegExp(`<dialog\\b[^>]*\\bid="${contract.dialogId}"[\\s\\S]*?<\\/dialog>`, 'g');
+    const dialogs = [...html.matchAll(dialogPattern)].map((match) => match[0]);
+    assert.equal(dialogs.length, 1, `${contract.id} must have exactly one matching dialog`);
+    const dialogImages = dialogs[0].match(/<img\b[^>]*>/g) ?? [];
+    assert.equal(dialogImages.length, 1, `${contract.id} dialog must have exactly one image`);
+    assert.equal(attribute(dialogImages[0], 'src'), contract.light, `${contract.id} dialog src`);
+    assert.equal(attribute(dialogImages[0], 'data-theme-light'), contract.light, `${contract.id} dialog light render`);
+    assert.equal(attribute(dialogImages[0], 'data-theme-dark'), contract.dark, `${contract.id} dialog dark render`);
+    assert.equal(attribute(dialogImages[0], 'alt'), contract.alt, `${contract.id} dialog alt`);
+  }
+});
+
+test('the visual-chain manifest freezes every reviewed Draw.io source and active PNG render', () => {
+  const manifestPath = path.join(here, 'fixtures/aeos-visual-chain-manifest.json');
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+
+  assert.equal(manifest.schema_version, 1);
+  assert.equal(manifest.authority, 'AEOS Intro 0.9.0');
+  assert.deepEqual(
+    manifest.diagrams.map((diagram) => diagram.id),
+    visualContracts.map((contract) => contract.id),
+    'the manifest must cover every active diagram exactly once and in page order',
+  );
+
+  for (const [index, diagram] of manifest.diagrams.entries()) {
+    const contract = visualContracts[index];
+    for (const variant of ['light', 'dark']) {
+      const source = diagram.sources[variant];
+      const render = diagram.renders[variant];
+      const sourceBytes = fs.readFileSync(path.join(site, source.path));
+      const renderBytes = fs.readFileSync(path.join(site, render.path));
+
+      assert.equal(sha256(sourceBytes), source.sha256, `${diagram.id} ${variant} Draw.io source hash`);
+      assert.equal(sha256(renderBytes), render.sha256, `${diagram.id} ${variant} PNG render hash`);
+      assert.equal(render.path, contract[variant], `${diagram.id} ${variant} manifest-to-page render binding`);
+      assert.equal(renderBytes.toString('ascii', 1, 4), 'PNG', `${diagram.id} ${variant} render signature`);
+      assert.equal(renderBytes.readUInt32BE(16), 1600, `${diagram.id} ${variant} render width`);
+      assert.equal(renderBytes.readUInt32BE(20), 900, `${diagram.id} ${variant} render height`);
+    }
+  }
+});
+
+test('the provider installation route is explicit across setup, requirements and FAQ', () => {
+  const html = read('index.html');
+  const extension = 'official <code>Ollama.ollama</code> provider extension';
+  const runtime = 'Ollama installed and running';
+  const model = 'at least one local or cloud model available';
+  const signIn = 'Ollama Cloud also requires Ollama sign-in';
+  const setup = html.slice(
+    html.indexOf('<section class="section-wide setup-section" id="setup"'),
+    html.indexOf('<section class="section-wide requirements-section" id="requirements"'),
+  );
+  const requirements = html.slice(
+    html.indexOf('<section class="section-wide requirements-section" id="requirements"'),
+    html.indexOf('<section class="section-narrow faq-section"'),
+  );
+  const setupRoute = setup.match(/<h3>Choose the provider route<\/h3><p>([\s\S]*?)<\/p>/)?.[1];
+  const desktop = requirements.match(/<article>\s*<span class="tag">Desktop<\/span>([\s\S]*?)<\/article>/)?.[1];
+  const provider = requirements.match(/<article>\s*<span class="tag">Runtime<\/span>([\s\S]*?)<\/article>/)?.[1];
+  const faq = html.match(/<dt>What do I actually install\?<\/dt><dd>([\s\S]*?)<\/dd>/)?.[1];
+
+  for (const [name, scope] of [['setup route', setupRoute], ['Desktop requirements', desktop], ['Runtime requirements', provider], ['installation FAQ', faq]]) {
+    assert.ok(scope, `${name} must exist`);
+    for (const phrase of [extension, runtime, model, signIn]) {
+      assert.ok(scope.includes(phrase), `${name} must include: ${phrase}`);
+    }
+  }
+  assert.ok(desktop.includes('Visual Studio Code 1.127 or newer'));
+  assert.ok(faq.includes('Visual Studio Code 1.127 or newer'));
+  assert.ok(setupRoute.includes('Copilot-hosted models use an approved service boundary'));
+  assert.ok(desktop.includes('For local Ollama or Ollama Cloud: Ollama installed and running'));
+  assert.ok(provider.includes('Local Ollama and Ollama Cloud require Ollama installed and running'));
+});
+
+test('the current-versus-future scope visual is present, source-backed and semantically bound', () => {
+  const html = read('index.html');
+  const sourcePath = path.join(site, 'assets/source/aeos-current-future-scope.drawio');
+  const darkSourcePath = path.join(site, 'assets/source/aeos-current-future-scope-dark.drawio');
+  const pngPath = path.join(site, 'assets/aeos-current-future-scope.png');
+  const darkPngPath = path.join(site, 'assets/aeos-current-future-scope-dark.png');
+  const svgPath = path.join(site, 'assets/aeos-current-future-scope.svg');
+  const darkSvgPath = path.join(site, 'assets/aeos-current-future-scope-dark.svg');
+
+  assert.ok(fs.existsSync(sourcePath));
+  assert.ok(fs.existsSync(darkSourcePath));
+  assert.ok(fs.existsSync(pngPath));
+  assert.ok(fs.existsSync(darkPngPath));
+  assert.ok(fs.existsSync(svgPath));
+  assert.ok(fs.existsSync(darkSvgPath));
+  assert.match(html, /src="assets\/aeos-current-future-scope\.png"[^>]+data-theme-light="assets\/aeos-current-future-scope\.png"[^>]+data-theme-dark="assets\/aeos-current-future-scope-dark\.png"/);
+  assert.match(html, /future release outside the current boundary/);
+
+  const xml = fs.readFileSync(sourcePath, 'utf8');
+  const darkXml = fs.readFileSync(darkSourcePath, 'utf8');
+  for (const label of ['FUTURE RELEASE', 'EWP creation + test procedures', 'AVAILABLE EWP / AWP', 'FIELDWORK PLANNING', 'FIELDWORK EXECUTION', 'DRAFT WORK + REVIEW', 'AUDITOR AUTHORITY']) {
+    assert.ok(xml.includes(label), `scope source must include ${label}`);
+    assert.ok(darkXml.includes(label), `dark scope source must include ${label}`);
+  }
+  for (const [source, target] of [['future', 'input'], ['input', 'planning'], ['planning', 'execution'], ['execution', 'draft-review']]) {
+    assert.match(xml, new RegExp(`edge="1" source="${source}" target="${target}"`));
+    assert.match(darkXml, new RegExp(`edge="1" source="${source}" target="${target}"`));
+  }
+
+  for (const renderPath of [pngPath, darkPngPath]) {
+    const png = fs.readFileSync(renderPath);
+    assert.equal(png.toString('ascii', 1, 4), 'PNG');
+    assert.equal(png.readUInt32BE(16), 1600);
+    assert.equal(png.readUInt32BE(20), 900);
+  }
+});
+
+test('all active image references resolve inside the site', () => {
+  const html = read('index.html');
+  const refs = [...html.matchAll(/(?:src|data-theme-light|data-theme-dark)="(assets\/[^"]+)"/g)].map((match) => match[1]);
+
+  assert.ok(refs.length > 0);
+  for (const ref of new Set(refs)) {
+    assert.ok(fs.existsSync(path.join(site, ref)), `active asset must exist: ${ref}`);
+  }
 });

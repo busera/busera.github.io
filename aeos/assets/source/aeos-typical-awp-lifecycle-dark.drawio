@@ -8,7 +8,7 @@
         <mxCell id="canvas-bounds" value="" style="shape=rectangle;fillColor=none;strokeColor=none;opacity=0;html=1;" vertex="1" parent="1">
           <mxGeometry x="0" y="0" width="1600" height="900" as="geometry" />
         </mxCell>
-        <mxCell id="stage-band" value="SIX FUNCTIONAL STAGES · AWP → REVIEWED AUDIT WORK" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="stage-band" value="SIX FUNCTIONAL STAGES · AVAILABLE EWP / AWP → REVIEWED DRAFT AUDIT WORK" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=16;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="108" width="800" height="30" as="geometry" />
         </mxCell>
         <mxCell id="setup" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#0E1B2C;strokeColor=#24364D;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
@@ -20,7 +20,7 @@
         <mxCell id="setup-title" value="&lt;div style=&quot;line-height:1.15;&quot;&gt;Set up the engagement&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#F8FAFC;fontSize=22;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="116" y="258" width="388" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="setup-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Registered engagement context, applicable criteria, the AWP, the source set and AI read and write boundaries.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=16;fontStyle=0;" vertex="1" parent="1">
+        <mxCell id="setup-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Registered engagement context, applicable criteria, the available EWP / AWP, the source set and AI read and write boundaries.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=16;fontStyle=0;" vertex="1" parent="1">
           <mxGeometry x="116" y="328" width="388" height="66" as="geometry" />
         </mxCell>
         <mxCell id="setup-decision" value="&lt;div style=&quot;line-height:1.3;&quot;&gt;AUDITOR · Resolves missing identifiers and conflicting source versions&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=13;fontStyle=1;" vertex="1" parent="1">
@@ -83,7 +83,7 @@
         <mxCell id="review-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Separate read-only review that challenges source support, missing evidence and overreaching conclusions.&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=16;fontStyle=0;" vertex="1" parent="1">
           <mxGeometry x="606" y="638" width="388" height="66" as="geometry" />
         </mxCell>
-        <mxCell id="review-decision" value="&lt;div style=&quot;line-height:1.3;&quot;&gt;AUDITOR · Approves corrections, which are verified before merge&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="review-decision" value="&lt;div style=&quot;line-height:1.3;&quot;&gt;AUDITOR · Approved controlled corrections are applied separately and verified before finalization&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=13;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="606" y="710" width="388" height="44" as="geometry" />
         </mxCell>
         <mxCell id="report" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#12263B;strokeColor=#34516F;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
@@ -116,7 +116,7 @@
         <mxCell id="flow-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2F80C0;strokeWidth=2;endArrow=block;endFill=1;startArrow=none;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="review" target="report">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="closing-note" value="Every stage has an authorized source set, a visible output state and an auditor checkpoint." style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=16;fontStyle=0;" vertex="1" parent="1">
+        <mxCell id="closing-note" value="Every stage has a permitted source set and an auditor checkpoint; outputs remain Draft." style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=16;fontStyle=0;" vertex="1" parent="1">
           <mxGeometry x="300" y="800" width="1000" height="52" as="geometry" />
         </mxCell>
       </root>

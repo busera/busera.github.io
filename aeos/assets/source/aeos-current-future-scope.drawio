@@ -1,0 +1,54 @@
+<mxfile host="app.diagrams.net" agent="hermes-pa" version="31.0.2" type="device">
+  <diagram name="aeos-current-future-scope" id="aeoscurrentscope">
+    <mxGraphModel dx="1600" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0" background="#F8FBFE">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="background" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8FBFE;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1600" height="900" as="geometry" />
+        </mxCell>
+
+        <mxCell id="future" value="&lt;font color=&quot;#2F80C0&quot;&gt;&lt;b&gt;FUTURE RELEASE&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size: 25px;&quot;&gt;&lt;b&gt;EWP creation + test procedures&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Under development. Outside the current AEOS operating boundary." style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#EEF5FB;strokeColor=#94C4DF;strokeWidth=2;dashed=1;dashPattern=8 4;verticalAlign=middle;align=left;fontSize=20;fontColor=#3F5368;fontFamily=Helvetica;spacingTop=24;spacingBottom=24;spacingLeft=28;spacingRight=28;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="235" width="350" height="270" as="geometry" />
+        </mxCell>
+
+        <mxCell id="current-boundary" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#EEF5FB;strokeColor=#AAC5DA;strokeWidth=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="505" y="70" width="1025" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="current-label" value="CURRENT VERSION: FIELDWORK PLANNING AND EXECUTION" style="text;html=1;align=left;verticalAlign=middle;fontSize=19;fontColor=#174A7C;fontStyle=1;fontFamily=Helvetica;letterSpacing=1;" vertex="1" parent="1">
+          <mxGeometry x="575" y="98" width="880" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="input" value="&lt;b&gt;AVAILABLE EWP / AWP&lt;/b&gt;&lt;br&gt;&lt;br&gt;Existing engagement context, procedures and expected evidence" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#D6E4F0;strokeWidth=1;verticalAlign=middle;align=left;fontSize=21;fontColor=#07111F;fontFamily=Helvetica;spacingTop=20;spacingBottom=20;spacingLeft=24;spacingRight=24;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="575" y="175" width="380" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="planning" value="&lt;b&gt;FIELDWORK PLANNING&lt;/b&gt;&lt;br&gt;&lt;br&gt;Plan evidence, requests, meetings, dependencies and open decisions" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#D6E4F0;strokeWidth=1;verticalAlign=middle;align=left;fontSize=21;fontColor=#07111F;fontFamily=Helvetica;spacingTop=20;spacingBottom=20;spacingLeft=24;spacingRight=24;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="175" width="380" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="execution" value="&lt;b&gt;FIELDWORK EXECUTION&lt;/b&gt;&lt;br&gt;&lt;br&gt;Register evidence, document testing, and surface gaps or contradictions" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#D6E4F0;strokeWidth=1;verticalAlign=middle;align=left;fontSize=21;fontColor=#07111F;fontFamily=Helvetica;spacingTop=20;spacingBottom=20;spacingLeft=24;spacingRight=24;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="410" width="380" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="draft-review" value="&lt;b&gt;DRAFT WORK + REVIEW&lt;/b&gt;&lt;br&gt;&lt;br&gt;Prepare workpapers and progress updates; run separate review" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#D9E8F5;strokeColor=#AAC5DA;strokeWidth=1;verticalAlign=middle;align=left;fontSize=21;fontColor=#07111F;fontFamily=Helvetica;spacingTop=20;spacingBottom=20;spacingLeft=24;spacingRight=24;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="575" y="410" width="380" height="175" as="geometry" />
+        </mxCell>
+
+        <mxCell id="future-to-input" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#94C4DF;strokeWidth=2.5;dashed=1;dashPattern=8 4;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" source="future" target="input" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="input-to-planning" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F80C0;strokeWidth=3;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" source="input" target="planning" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="planning-to-execution" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F80C0;strokeWidth=3;endArrow=block;endFill=1;startArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" source="planning" target="execution" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="execution-to-draft" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F80C0;strokeWidth=3;endArrow=block;endFill=1;startArrow=none;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" source="execution" target="draft-review" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="authority" value="&lt;b&gt;AUDITOR AUTHORITY&lt;/b&gt;&lt;br&gt;Confirms scope and testing basis • owns reliance, conclusions and communication" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#174A7C;strokeColor=none;verticalAlign=middle;align=center;fontSize=22;fontColor=#F8FAFC;fontFamily=Helvetica;spacingTop=18;spacingBottom=18;spacingLeft=30;spacingRight=30;" vertex="1" parent="1">
+          <mxGeometry x="575" y="655" width="880" height="105" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

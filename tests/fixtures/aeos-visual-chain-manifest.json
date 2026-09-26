@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "authority": "AEOS Intro 0.9.0",
+  "purpose": "Freeze the reviewed Draw.io source and active light/dark PNG render bytes for every AEOS website diagram.",
+  "render_contract": {
+    "format": "PNG",
+    "width": 1600,
+    "height": 900
+  },
+  "diagrams": [
+    {
+      "id": "current-scope",
+      "sources": {
+        "light": {
+          "path": "assets/source/aeos-current-future-scope.drawio",
+          "sha256": "41e1693948cda10fcee8807610f0783477928a1279e629d842b8468b464a6b4c"
+        },
+        "dark": {
+          "path": "assets/source/aeos-current-future-scope-dark.drawio",
+          "sha256": "a3145f7fc3f46c4b906ead20d56b8040e9fd2d9195f5899d2989f9b1a5b3fe9c"
+        }
+      },
+      "renders": {
+        "light": {
+          "path": "assets/aeos-current-future-scope.png",
+          "sha256": "7aa75d861d9417fe8695a8f0ffbfa1edfecef6dd97043ec1a3cf6ec2506dbe0f"
+        },
+        "dark": {
+          "path": "assets/aeos-current-future-scope-dark.png",
+          "sha256": "d6c25d7d6290f4d9cbabd1d4b913096e2c30bb5172c892d7809a63e9fef7693a"
+        }
+      }
+    },
+    {
+      "id": "operating-model",
+      "sources": {
+        "light": {
+          "path": "assets/source/aeos-operating-model.drawio",
+          "sha256": "b5bef7838b5e2d8fc0ca28d2d7c65fa5c37cb5daa544cd6d32e45969765efcc7"
+        },
+        "dark": {
+          "path": "assets/source/aeos-operating-model-dark.drawio",
+          "sha256": "9a5624393adc2af1d003c2d9453079355b547c75bf1fb806ca4b12751c63d03a"
+        }
+      },
+      "renders": {
+        "light": {
+          "path": "assets/aeos-operating-model.png",
+          "sha256": "5a0f123f2a4d5a626eaa4046d97be407d0ae91d79a7c929b58a93deea7fadf6b"
+        },
+        "dark": {
+          "path": "assets/aeos-operating-model-dark.png",
+          "sha256": "8a7e95350c3ad646a1e0e44e65d2b8c2095d8ecd4493373112148b5662eb7773"
+        }
+      }
+    },
+    {
+      "id": "lifecycle",
+      "sources": {
+        "light": {
+          "path": "assets/source/aeos-typical-awp-lifecycle.drawio",
+          "sha256": "1c471ae90ba0f2f4d6804782461eed78b3bcfa29465b1f40e44fd37038bf1430"
+        },
+        "dark": {
+          "path": "assets/source/aeos-typical-awp-lifecycle-dark.drawio",
+          "sha256": "1f24fd9dbe0ba1761acca9e08c5ed4c6db2e71c6605697384fddad2dadda6ec5"
+        }
+      },
+      "renders": {
+        "light": {
+          "path": "assets/aeos-typical-awp-lifecycle.png",
+          "sha256": "b220c14770759ce4a0959316b4a39ab25fb011f86712309fdadcbd630a07a6a6"
+        },
+        "dark": {
+          "path": "assets/aeos-typical-awp-lifecycle-dark.png",
+          "sha256": "91f871deb86a739cfd500256f72ce6d7945b1646a1694d258a52699b1a0a4c8f"
+        }
+      }
+    },
+    {
+      "id": "guardrails",
+      "sources": {
+        "light": {
+          "path": "assets/source/aeos-guardrail-stack.drawio",
+          "sha256": "3edcdbda5318025f3a09e7b7533549cd8a6c5118dc4d92f463ebae0f7d2016bf"
+        },
+        "dark": {
+          "path": "assets/source/aeos-guardrail-stack-dark.drawio",
+          "sha256": "ea5a11685c6d92a6994f1a946c85be33cd13a9ed2af467bdef92d9676c2d3aac"
+        }
+      },
+      "renders": {
+        "light": {
+          "path": "assets/aeos-guardrail-stack.png",
+          "sha256": "1181018b8e05d290ec6dea797c46ffd29176988a9d69f25c4b7621c22310f1e6"
+        },
+        "dark": {
+          "path": "assets/aeos-guardrail-stack-dark.png",
+          "sha256": "0803b758e5d5849dff6d526c9741b1f13dcafecf45079f84c1becba5182eeddc"
+        }
+      }
+    },
+    {
+      "id": "components",
+      "sources": {
+        "light": {
+          "path": "assets/source/aeos-core-component-interactions.drawio",
+          "sha256": "d14b2748932584bd20731f29f1abc98bd8a767a28f475dc839d122b782728eca"
+        },
+        "dark": {
+          "path": "assets/source/aeos-core-component-interactions-dark.drawio",
+          "sha256": "854260ce656da2e3f6f02906ecd3456a8401fb3375ccb6b799744ea4ac408ea5"
+        }
+      },
+      "renders": {
+        "light": {
+          "path": "assets/aeos-core-component-interactions.png",
+          "sha256": "9e1e83fd9052b221a15f0f4d0c74dae9e232078bfc28ee5004b90041e416ac11"
+        },
+        "dark": {
+          "path": "assets/aeos-core-component-interactions-dark.png",
+          "sha256": "2b49540fca9c0c34b83a98d61c3d69897a452b843d66445bc06ae3cd8371fb12"
+        }
+      }
+    }
+  ]
+}

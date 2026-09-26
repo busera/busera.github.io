@@ -14,13 +14,13 @@
         <mxCell id="input-kicker" value="01 · INPUT" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=14;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="114" y="282" width="237" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="input-title" value="Audit work program" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#F8FAFC;fontSize=24;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="input-title" value="Available EWP / AWP" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#F8FAFC;fontSize=24;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="114" y="328" width="237" height="58" as="geometry" />
         </mxCell>
         <mxCell id="input-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Criteria · permitted evidence ·&lt;br&gt;engagement context&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=17;fontStyle=0;" vertex="1" parent="1">
           <mxGeometry x="114" y="405" width="237" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="input-status" value="AUTHORIZED INPUT" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#94A3B8;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="input-status" value="AVAILABLE INPUT" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#94A3B8;fontSize=13;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="114" y="500" width="237" height="22" as="geometry" />
         </mxCell>
         <mxCell id="core" value="" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#0B1726;strokeColor=#24364D;strokeWidth=1.4;shadow=0;" vertex="1" parent="1">
@@ -32,7 +32,7 @@
         <mxCell id="core-title" value="Bounded task route" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#F8FAFC;fontSize=24;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="489" y="328" width="237" height="58" as="geometry" />
         </mxCell>
-        <mxCell id="core-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Workspace · task context ·&lt;br&gt;workflow · template&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=17;fontStyle=0;" vertex="1" parent="1">
+        <mxCell id="core-body" value="&lt;div style=&quot;line-height:1.3;&quot;&gt;Workspace · selected agent&lt;br&gt;skill · prompt/template&lt;br&gt;knowledge · memory · guardrails&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=16;fontStyle=0;" vertex="1" parent="1">
           <mxGeometry x="489" y="405" width="237" height="74" as="geometry" />
         </mxCell>
         <mxCell id="core-status" value="CONTROLLED INTERPRETATION" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#94A3B8;fontSize=13;fontStyle=1;" vertex="1" parent="1">
@@ -62,11 +62,11 @@
         <mxCell id="human-title" value="Auditor authority" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=24;fontStyle=1;" vertex="1" parent="1">
           <mxGeometry x="1239" y="328" width="237" height="58" as="geometry" />
         </mxCell>
-        <mxCell id="human-body" value="&lt;div style=&quot;line-height:1.35;&quot;&gt;Reliance · sampling ·&lt;br&gt;exceptions · sign-off ·&lt;br&gt;communication&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=17;fontStyle=0;" vertex="1" parent="1">
-          <mxGeometry x="1239" y="405" width="237" height="74" as="geometry" />
+        <mxCell id="human-body" value="&lt;div style=&quot;line-height:1.2;&quot;&gt;Scope · testing basis&lt;br&gt;Sampling · reliance&lt;br&gt;Exceptions · conclusions&lt;br&gt;Sign-off · communication&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#C6DCE8;fontSize=15;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1239" y="405" width="237" height="80" as="geometry" />
         </mxCell>
         <mxCell id="human-status" value="HUMAN-OWNED" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=none;spacing=0;spacingTop=0;spacingBottom=0;spacingLeft=0;spacingRight=0;align=left;verticalAlign=top;fontFamily=Helvetica;fontColor=#94A3B8;fontSize=13;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="1239" y="500" width="237" height="22" as="geometry" />
+          <mxGeometry x="1239" y="510" width="237" height="22" as="geometry" />
         </mxCell>
         <mxCell id="flow-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2F80C0;strokeWidth=2;endArrow=block;endFill=1;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="input" target="core">
           <mxGeometry relative="1" as="geometry" />
@@ -86,8 +86,8 @@
             <mxPoint x="1500" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rail-label" value="AUDITOR CHECKPOINTS · reliance changes only through human decision" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=18;fontStyle=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="405" y="712" width="780" height="46" as="geometry" />
+        <mxCell id="rail-label" value="AUDITOR CHECKPOINTS · scope, testing basis, reliance, conclusions and communication remain human-owned" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#5AA7E8;fontSize=17;fontStyle=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="712" width="1080" height="46" as="geometry" />
         </mxCell>
         <mxCell id="rail-anchor" value="" style="ellipse;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
           <mxGeometry x="1398" y="686" width="4" height="4" as="geometry" />
