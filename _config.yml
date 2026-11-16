@@ -76,7 +76,8 @@ content:
 
       - layout: left
         border: weak
-        title: AIRUM Public Demo
+        title: AIRUM
+        sub_title: AI Risk Universe Matrix
         caption: May 2026
         link: https://busera.github.io/AIRUM-public-demo/
         link_text: View public demo

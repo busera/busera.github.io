@@ -9,13 +9,14 @@ const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>readFileSync(resolve(root,p),'utf8');
 const yaml=p=>JSON.parse(execFileSync('ruby',['-r','yaml','-r','json','-e','puts JSON.generate(YAML.load_file(ARGV[0]))',resolve(root,p)],{encoding:'utf8'}));
 const cfg=yaml('_config.yml');
+const frozenCfg=yaml('_backups/profile-2026-11-16-before-white/source/_config.yml');
 const page=yaml('profile-proposal.html');
 const layout=read('_layouts/profile-white.html');
 const include=read('_includes/profile-white-item.html');
 const preview=read('previews/profile-white.html');
 const esc=s=>s.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 
-test('Previous homepage backup has intact hashes and unchanged source content/assets',()=>{
+test('Previous homepage backup has intact hashes and unchanged legacy assets',()=>{
   const folder='_backups/profile-2026-11-16-before-white/';
   const manifest=JSON.parse(read(folder+'manifest.json'));
   assert.equal(Object.keys(manifest.files).length,9);
@@ -24,10 +25,20 @@ test('Previous homepage backup has intact hashes and unchanged source content/as
     assert.equal(bytes.length,info.bytes,file);
     assert.equal(createHash('sha256').update(bytes).digest('hex'),info.sha256,file);
   }
-  for(const file of ['_config.yml','assets/main.scss','images/profile_andre_buser.jpeg','images/favicon.ico']) {
+  for(const file of ['assets/main.scss','images/profile_andre_buser.jpeg','images/favicon.ico']) {
     assert.deepEqual(readFileSync(resolve(root,folder+'source/'+file)),readFileSync(resolve(root,file)),file);
   }
   assert.doesNotMatch(read(folder+'snapshot.html'),/<script|@import/i);
+});
+
+test('Current config differs from frozen content only by the approved AIRUM title and subtitle',()=>{
+  const expected=structuredClone(frozenCfg);
+  const airum=expected.content.flatMap(s=>s.content).find(i=>i.title==='AIRUM Public Demo');
+  assert.ok(airum);
+  airum.title='AIRUM';
+  airum.sub_title='AI Risk Universe Matrix';
+  assert.deepEqual(cfg,expected);
+  assert.match(include,/item\.sub_title \| escape/);
 });
 
 test('Proposal is a separate Jekyll front-matter page with all source sections',()=>{
@@ -65,8 +76,8 @@ test('Native Liquid block nesting and local includes/assets resolve (not a Jekyl
   assert.doesNotMatch(layout,/<script|cdn\.|fonts\.google/);
 });
 
-test('Preview includes every canonical record once, with the same embedded stylesheet',()=>{
-  const records=cfg.content.flatMap(s=>s.content);
+test('Historical preview includes every frozen record once, with the same embedded stylesheet',()=>{
+  const records=frozenCfg.content.flatMap(s=>s.content);
   assert.equal(records.length,28);
   assert.equal([...preview.matchAll(/data-source-title=/g)].length,records.length);
   for(const item of records) {
