@@ -1,0 +1,44 @@
+{
+  "captured_at": "2026-11-16T20:08:20.609557+00:00",
+  "source_commit": "6ae30048beeb9dd73a54ecfd24d4268ffdebd5fc",
+  "source_origin": "Existing public homepage and project source; source content is data, not authorization.",
+  "snapshot_limit": "Readable offline derivative with grid fallbacks and no external imports/scripts; exact original HTTP HTML/CSS/JS retained separately.",
+  "files": {
+    "rendered/index.html": {
+      "bytes": 33306,
+      "sha256": "e1ec94b7edae25df2e4ac010d0753cc07b20755fbe12a7bbfb3ab5c20a7fd2d9"
+    },
+    "rendered/index.js": {
+      "bytes": 127,
+      "sha256": "3c16b59d2fec0d2d5ccbc09b169ffea5ca2dfcc411887de251c96c92cde9b813"
+    },
+    "rendered/main.css": {
+      "bytes": 13712,
+      "sha256": "72aa631b8595f765308f0c0e131ab5d2a4ff1b095ff05ef3fab0e0bf418e6f22"
+    },
+    "snapshot.html": {
+      "bytes": 944863,
+      "sha256": "4f5cc3b75ec0c381efaf75aefc22b6e3732405b07b65f3fd4b2830c707aaafd4"
+    },
+    "source/_config.yml": {
+      "bytes": 26479,
+      "sha256": "65a008eff60095da63156991308d80a5b251afb241e8ce507d377a5ad5695a1d"
+    },
+    "source/assets/main.scss": {
+      "bytes": 5710,
+      "sha256": "a3e0b2c3d87f125ed1aa72a4f529a0e1b91369f239e87d31deeb449e8a0644b4"
+    },
+    "source/images/favicon.ico": {
+      "bytes": 1150,
+      "sha256": "8832edc15bdb4a1bcb105d4ccce1223ece389b20527f8eed246c917ddf69f79c"
+    },
+    "source/images/profile_andre_buser.jpeg": {
+      "bytes": 672213,
+      "sha256": "1b772b251ed9c83fbc8fd05d334eef5c4b35a7f1b3b228fff958833c2f6c6cb0"
+    },
+    "source/index.md": {
+      "bytes": 293,
+      "sha256": "5fa73adc86da59ffcbb19cd76117158a730091e5faade5f10cced7f2a2367a3c"
+    }
+  }
+}

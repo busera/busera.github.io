@@ -1,10 +1,20 @@
 # White portfolio proposal
 
-## Current handoff
+## Current publication handoff
 
-Prepared an **unpublished** white-background portfolio proposal in the repository's existing GitHub Pages/Jekyll format. The live homepage, its content configuration and styling, and AEOS are unchanged. Review `previews/profile-white.html` locally; the intended native review route is `/profile-proposal/` if a subsequent push is explicitly approved.
+The owner approved backing up the previous homepage and publishing the white layout on 2026-11-16. The prior source and exact rendered HTTP bodies are retained at `_backups/profile-2026-11-16-before-white/`, with a separately derived readable offline `snapshot.html` and a SHA-256 manifest. The five source files were byte-verified before root promotion; ongoing tests verify all nine retained file hashes.
 
-**Remaining gate:** the native Liquid/Jekyll page has not been compiled. No local Jekyll, Liquid or Kramdown gems were installed, and no dependency installation or remote build/publication was authorized. Static native-source checks and a real browser-tested visual preview are complete; they do not prove a GitHub Pages build. One next action: review the preview's hero, selected work and expandable background, then decide whether to stage/publish the native review route or revise the design.
+Root `index.md` now selects `profile-white`, the accepted positioning and section order, with `permalink: /` and `draft_preview: false`. `_config.yml`, the old stylesheet and all AEOS files are unchanged. The review route remains `/profile-proposal/` and retains its draft noindex marker. This is layout publication, not a new factual qualification of the copied biography, credentials, statuses or tenure wording.
+
+Native build path: no suitable local Jekyll gems/container were present, so no install or image pull was performed. Use the existing owner-authorized GitHub Pages `main`/root route for the real compile and deployment; require exact-head success and read back the live records/links/styles. If it fails, diagnose one bounded correction; do not introduce dependencies or keep a broken public entry point without reporting the blocker. Publication verification will be recorded here only after observation.
+
+Implementation and follow-on test routes: parent-owned bounded front-matter/static-site change and focused source/backup tests, no new builder/provider route. Acceptance: retained backup verified, native Pages build successful, live root uses the white layout with all 28 records and source links, no mobile overflow, working disclosures, AEOS unchanged. Recommended owner review: the live root's introduction, selected-work ordering and disclosure density; source review of `index.md` is optional.
+
+## Historical proposal handoff — before publication approval
+
+Prepared an **unpublished** white-background portfolio proposal in the repository's existing GitHub Pages/Jekyll format. The live homepage, its content configuration and styling, and AEOS were unchanged at that stage. Review `previews/profile-white.html` locally; the intended native review route was `/profile-proposal/` pending approval.
+
+The original proposal stage did not compile the native template because no local Jekyll, Liquid or Kramdown gems were installed. That limitation is historical evidence, not a claim about the subsequently observed Pages build. Static native-source checks and the browser-tested visual preview did not themselves prove a GitHub Pages build.
 
 ## Goal and boundary
 

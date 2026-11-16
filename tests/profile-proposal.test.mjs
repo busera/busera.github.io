@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
 import {resolve,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
@@ -14,6 +15,21 @@ const include=read('_includes/profile-white-item.html');
 const preview=read('previews/profile-white.html');
 const esc=s=>s.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 
+test('Previous homepage backup has intact hashes and unchanged source content/assets',()=>{
+  const folder='_backups/profile-2026-11-16-before-white/';
+  const manifest=JSON.parse(read(folder+'manifest.json'));
+  assert.equal(Object.keys(manifest.files).length,9);
+  for(const [file,info] of Object.entries(manifest.files)) {
+    const bytes=readFileSync(resolve(root,folder,file));
+    assert.equal(bytes.length,info.bytes,file);
+    assert.equal(createHash('sha256').update(bytes).digest('hex'),info.sha256,file);
+  }
+  for(const file of ['_config.yml','assets/main.scss','images/profile_andre_buser.jpeg','images/favicon.ico']) {
+    assert.deepEqual(readFileSync(resolve(root,folder+'source/'+file)),readFileSync(resolve(root,file)),file);
+  }
+  assert.doesNotMatch(read(folder+'snapshot.html'),/<script|@import/i);
+});
+
 test('Proposal is a separate Jekyll front-matter page with all source sections',()=>{
   assert.equal(page.layout,'profile-white');
   assert.equal(page.permalink,'/profile-proposal/');
@@ -24,7 +40,13 @@ test('Proposal is a separate Jekyll front-matter page with all source sections',
   assert.match(layout,/site\.about_content \| markdownify/);
   assert.match(layout,/include profile-white-item\.html item=item/);
   assert.match(layout,/noindex,nofollow/);
-  assert.match(read('index.md'),/layout: default/);
+  const home=yaml('index.md');
+  assert.equal(home.layout,'profile-white');
+  assert.equal(home.permalink,'/');
+  assert.equal(home.draft_preview,false);
+  assert.deepEqual(home.section_order,page.section_order);
+  assert.equal(home.positioning,page.positioning);
+  assert.equal(yaml('_backups/profile-2026-11-16-before-white/source/index.md').layout,'default');
 });
 
 test('Native Liquid block nesting and local includes/assets resolve (not a Jekyll compilation)',()=>{

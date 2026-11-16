@@ -1,9 +1,16 @@
 ---
-#
-# By default, content added below the "---" mark will appear in the home page
-# between the top bar and the list of recent posts.
-# To change the home page layout, edit the _layouts/home.html file.
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
-layout: default
+layout: profile-white
+title: Professional portfolio
+permalink: /
+positioning: AI governance, internal audit and applied data science.
+draft_preview: false
+section_order:
+  - AI and Audit
+  - Publications
+  - Experience
+  - Education
+  - Key Certifications
+  - Audit Analytics Utilities / Experiments
+  - Data Science and Machine Learning Projects
+  - Earlier Publications (LinkedIn Pulse)
 ---
