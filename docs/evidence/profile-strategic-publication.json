@@ -1,0 +1,100 @@
+{
+  "source_commit": "91044ebc1bff4b63f3d6817f78bd98c2fef8e1bb",
+  "pages_run": 43960471110,
+  "live_url": "https://busera.github.io/",
+  "native_state": {
+    "positioning": "AI governance, risk and independent assurance.",
+    "records": 30,
+    "sections": [
+      "experience",
+      "publications",
+      "ai-and-audit",
+      "videos",
+      "education",
+      "key-certifications",
+      "audit-analytics-utilities-experiments",
+      "data-science-and-machine-learning-projects",
+      "earlier-publications-linkedin-pulse"
+    ],
+    "archive_closed": true,
+    "archive_sections": 3,
+    "h1": 1,
+    "root_noindex": false,
+    "missing_anchors": [],
+    "image": {
+      "complete": true,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "all_30_item_bodies_match_accepted_preview": true,
+  "width_checks": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0,
+      "smallTargets": 0
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0,
+      "smallTargets": 0
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0,
+      "smallTargets": 0
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0,
+      "smallTargets": 0
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0,
+      "smallTargets": 0
+    }
+  ],
+  "disclosure_results": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "previous_absolute_http_destinations": 28,
+  "current_absolute_http_destinations": 29,
+  "missing_previous_destinations": [],
+  "video_links": [
+    "https://youtu.be/r2bWqIfu64E",
+    "https://youtu.be/r2bWqIfu64E"
+  ],
+  "remote_media_requests": 0,
+  "asset_byte_matches": [
+    "assets/profile-white.css",
+    "images/profile_andre_buser.jpeg",
+    "images/videos/r2bWqIfu64E.jpg",
+    "aeos/index.html"
+  ],
+  "verification_diagnostics": "Text extraction initially omitted separators between block elements; exact diff showed nine spaces only, then all 30 item bodies matched with block separators preserved and whitespace/apostrophe typography normalized. Lazy image required activation of hidden test tab; loaded naturally thereafter. Destination comparison corrected to use the same absolute-HTTP class on both sides (including own-domain project links). No production fix was needed.",
+  "limits": "Emulated viewports, not physical devices; retained career claims not independently requalified.",
+  "passed": true
+}
