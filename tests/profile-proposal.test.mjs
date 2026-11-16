@@ -44,8 +44,11 @@ test('Current config retains frozen content with only approved project edits and
     link:'https://www.youtube.com/channel/UCeylEhSPTmVaLhWg3xsfbXg',
     link_text:'View YouTube channel',
     content:[{layout:'left',border:'weak',title:'API-CLI-MCP',
+      thumbnail:'/images/videos/yngNlZ7N0Jc.jpg',
+      thumbnail_alt:'Video thumbnail comparing API, CLI and MCP definitions.',
+      thumbnail_width:1280,thumbnail_height:720,
       link:'https://youtu.be/yngNlZ7N0Jc',link_text:'Watch on YouTube',
-      quote:'A short introduction to the differences between APIs, CLIs and MCP.\n'}]
+      quote:'What’s the difference between an API, a CLI, and MCP (Model Context Protocol)? This short introduction explains the basics and how each helps people, software, and AI tools interact with other systems.\n'}]
   });
   assert.deepEqual(cfg,expected);
   assert.match(include,/item\.sub_title \| escape/);
@@ -94,7 +97,19 @@ test('Native Liquid block nesting and local includes/assets resolve (not a Jekyl
   assert.doesNotMatch(layout,/<script|cdn\.|fonts\.google/);
 });
 
-test('Historical preview includes every frozen record once, with the same embedded stylesheet',()=>{
+test('Video thumbnail is a local image with intrinsic sizing, alt text and a linked lazy-loading template',()=>{
+  const video=cfg.content.find(s=>s.title==='Videos').content[0];
+  const bytes=readFileSync(resolve(root,video.thumbnail.slice(1)));
+  assert.equal(createHash('sha256').update(bytes).digest('hex'),'43723548272e3872ce8e1474734f1585464bb3bd772832c4c72dd31fe5d56df4');
+  assert.match(include,/class="video-thumbnail" href="{{ item_href \| escape }}"/);
+  assert.match(include,/item\.thumbnail_alt \| escape/);
+  assert.match(include,/loading="lazy" decoding="async"/);
+  assert.match(include,/item\.thumbnail_width/);
+  assert.match(include,/item\.thumbnail_height/);
+  assert.match(read('assets/profile-white.css'),/\.video-thumbnail img\s*{/);
+});
+
+test('Historical preview retains frozen records/styles except the scoped live-only thumbnail rules',()=>{
   const records=frozenCfg.content.flatMap(s=>s.content);
   assert.equal(records.length,28);
   assert.equal([...preview.matchAll(/data-source-title=/g)].length,records.length);
@@ -106,7 +121,8 @@ test('Historical preview includes every frozen record once, with the same embedd
       assert.ok(preview.includes('href="'+esc(url)+'"'),url);
     }
   }
-  assert.equal(preview.match(/<style>([\s\S]*?)<\/style>/)[1],read('assets/profile-white.css'));
+  const cssWithoutNewThumbnailRules=read('assets/profile-white.css').replace(/\/\* Video thumbnail: start \*\/[\s\S]*?\/\* Video thumbnail: end \*\/\n/,'');
+  assert.equal(preview.match(/<style>([\s\S]*?)<\/style>/)[1],cssWithoutNewThumbnailRules);
   assert.equal([...preview.matchAll(/<h1\b/g)].length,1);
   assert.doesNotMatch(preview,/<script|<link[^>]+stylesheet/);
   const ids=[...preview.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);

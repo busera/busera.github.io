@@ -252,6 +252,18 @@ details[open]>summary>span[aria-hidden] {
   color:var(--muted);
   margin-top:11px
 }
+/* Video thumbnail: start */
+.video-thumbnail {
+  display:block;
+  margin:14px 0 4px;
+  border:1px solid var(--line)
+}
+.video-thumbnail img {
+  display:block;
+  width:100%;
+  height:auto
+}
+/* Video thumbnail: end */
 .item-link {
   font-size:13px;
   min-height:44px;

@@ -8,6 +8,7 @@
       {% assign item_href = item.link %}
       {% assign first_two = item_href | slice: 0, 2 %}
       {% unless item_href contains '://' or first_two == '//' %}{% assign item_href = item_href | prepend: 'https://' %}{% endunless %}
+      {% if item.thumbnail %}<a class="video-thumbnail" href="{{ item_href | escape }}" aria-label="Watch {{ item.title | escape }}"><img src="{{ item.thumbnail | relative_url }}" alt="{{ item.thumbnail_alt | escape }}" width="{{ item.thumbnail_width }}" height="{{ item.thumbnail_height }}" loading="lazy" decoding="async"></a>{% endif %}
       <a class="item-link" href="{{ item_href | escape }}">{{ item.link_text | default: 'View source' | escape }} <span aria-hidden="true">↗</span></a>
     {% endif %}
   </div>
