@@ -8,7 +8,9 @@ import { fileURLToPath } from 'node:url';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const site = path.resolve(here, '../aeos');
-const read = (name) => fs.readFileSync(path.join(site, name), 'utf8');
+// The original theme-switching edition is retained at original.html.
+// Published white-edition content parity and resource wiring have their own tests.
+const read = (name) => fs.readFileSync(path.join(site, name === 'index.html' ? 'original.html' : name), 'utf8');
 const normalizeSpace = (value) => value.replace(/\s+/g, ' ').trim();
 const attribute = (tag, name) => tag.match(new RegExp(`${name}="([^"]*)"`))?.[1];
 const sha256 = (bytes) => crypto.createHash('sha256').update(bytes).digest('hex');

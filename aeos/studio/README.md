@@ -1,6 +1,6 @@
 # AEOS — Studio edition
 
-A separate visual edition of the AEOS introduction. Open `white.html` for the white-background version requested by the owner, or `index.html` for the retained charcoal comparison. The original remains at `../index.html`; neither edition replaces it or changes its theme preference.
+The owner selected the white edition for publication on 2026-11-16. The main page is now prepared at `../index.html`; the preserved original is `../original.html`. The saved comparison pages are `white.html` (white), `index.html` (refined charcoal) and `initial.html` (initial dark Studio). Current publication authority and deployment evidence: [AEOS website README](../README.md). The design-stage evidence below is historical for its named stage; its earlier no-publication statements are superseded only by the owner's subsequent explicit publication instruction.
 
 ## White-background version — 2026-11-16
 

@@ -5,7 +5,7 @@ import {resolve, dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const original = readFileSync(resolve(root, 'aeos/index.html'), 'utf8');
+const original = readFileSync(resolve(root, 'aeos/original.html'), 'utf8');
 const editionPath = resolve(root, 'aeos/studio/index.html');
 const edition = readFileSync(editionPath, 'utf8');
 const css = readFileSync(resolve(root, 'aeos/studio/studio.css'), 'utf8');
