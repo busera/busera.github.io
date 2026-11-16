@@ -1,0 +1,9 @@
+{
+  "source_config_sha256": "65a008eff60095da63156991308d80a5b251afb241e8ce507d377a5ad5695a1d",
+  "sections": 8,
+  "items": 28,
+  "intro_paragraphs": 4,
+  "content_coverage": "all original rendered item bodies and biography paragraphs retained",
+  "rendering": "Local visual preview uses current public Jekyll-rendered body HTML plus canonical YAML metadata. Native Liquid source supplied; full Jekyll build not executed (gems absent).",
+  "preview": "previews/profile-white.html"
+}

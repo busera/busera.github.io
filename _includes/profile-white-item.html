@@ -1,0 +1,19 @@
+{% assign item = include.item %}
+<article class="portfolio-item" data-source-title="{{ item.title | escape }}">
+  <div class="item-heading">
+    <h3>{{ item.title | escape }}</h3>
+    {% if item.sub_title %}<p class="item-subtitle">{{ item.sub_title | escape }}</p>{% endif %}
+    {% if item.caption %}<p class="item-date">{{ item.caption | escape }}</p>{% endif %}
+    {% if item.link %}
+      {% assign item_href = item.link %}
+      {% assign first_two = item_href | slice: 0, 2 %}
+      {% unless item_href contains '://' or first_two == '//' %}{% assign item_href = item_href | prepend: 'https://' %}{% endunless %}
+      <a class="item-link" href="{{ item_href | escape }}">{{ item.link_text | default: 'View source' | escape }} <span aria-hidden="true">↗</span></a>
+    {% endif %}
+  </div>
+  <div class="item-body">
+    {% if item.quote %}<div class="item-standfirst">{{ item.quote | markdownify }}</div>{% endif %}
+    {{ item.description | markdownify }}
+    {% for extra in item.additional_links %}<p><a href="{{ extra.url | escape }}">{{ extra.title | escape }}</a></p>{% endfor %}
+  </div>
+</article>
