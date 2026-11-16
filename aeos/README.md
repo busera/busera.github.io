@@ -48,3 +48,9 @@ Pre-publication checks:
 - The deployment runner emitted hosted-action Node runtime and Ubuntu-image migration notices; the build/deploy succeeded. No workflow migration or repository configuration change was included.
 
 The website is published; retained alternatives remain directly reachable at the paths above. Subsequent evidence-only commits do not alter the verified HTML/CSS/scripts/assets.
+
+## Published-header cleanup — 2026-11-16
+
+On owner request, removed only the `STUDIO EDITION · WHITE` label and `View original version ↗` link from the main page's header. Saved comparison pages, styles and assets remain unchanged. Parent-owned one-line HTML deletion and focused test update; no delegation or new dependency. The updated parity test failed before removal and passed afterwards; `node --test tests/aeos-publication.test.mjs` passed all three checks. Local browser checks at 1440/390 px found no overflow and retained all seven navigation links.
+
+Source commit `3236137d802e6060ac2105bec79c917630a2461b` deployed successfully in [Pages run 43881572076](https://github.com/busera/busera.github.io/actions/runs/43881572076). Live main HTML matched the committed bytes exactly, and browser readback confirmed both header items absent with the white canvas retained. Recommended owner review: the main-page header only; no additional owner code review is needed for this bounded deletion. This closing record is documentation-only.
