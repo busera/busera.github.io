@@ -9,14 +9,16 @@ const published=read('aeos/index.html');
 const white=read('aeos/studio/white.html');
 const text=s=>s.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
 
-test('Published main is the accepted white edition with only relative paths relocated',()=>{
-  assert.equal(text(published),text(white));
+test('Published main preserves the accepted white edition except for removed comparison chrome',()=>{
+  const withoutComparison = white.replace(/<div class="studio-edition">[\s\S]*?<\/div>/, '');
+  assert.equal(text(published),text(withoutComparison));
   assert.match(published,/data-theme="studio-white"/);
   assert.match(published,/href="styles.css"/);
   assert.match(published,/href="studio\/studio.css"/);
   assert.match(published,/href="studio\/white.css"/);
   assert.match(published,/src="demo-gallery.js"/);
-  assert.match(published,/href="original.html#main"/);
+  assert.doesNotMatch(published,/studio-edition|STUDIO EDITION · WHITE|View original version|href="original.html#main"/);
+  assert.match(white,/class="studio-edition"/); // Comparison edition stays intact.
   assert.doesNotMatch(published,/theme-toggle.js|localStorage/);
 });
 

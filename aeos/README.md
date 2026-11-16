@@ -18,7 +18,7 @@ These are concrete retained files, not only Git history. `original.html` is byte
 
 The main page loads `styles.css` for shared structural rules, then `studio/studio.css` for the refined layout, then `studio/white.css` for the white palette. It loads `demo-gallery.js` for diagram dialogs. It deliberately has no theme toggle; `theme-toggle.js` remains for `original.html`. Existing light/dark images and Draw.io sources remain unchanged.
 
-Keep the selected main and white companion's content aligned. Their relative asset paths differ because they are at different directory depths. No new framework, package, model, analytics, backend or service is introduced. The site uses the existing GitHub Pages branch/root route; no publishing configuration was changed.
+Keep the selected main and white companion's main content aligned. The published main deliberately omits the comparison-only header label/link; the saved companion retains them. Their relative asset paths also differ because they are at different directory depths. No new framework, package, model, analytics, backend or service is introduced. The site uses the existing GitHub Pages branch/root route; no publishing configuration was changed.
 
 ## Acceptance and publication scope — 2026-11-16
 
