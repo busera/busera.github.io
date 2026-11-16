@@ -94,11 +94,11 @@ content:
       - layout: left
         border: weak
         title: API-CLI-MCP
-        thumbnail: /images/videos/yngNlZ7N0Jc.jpg
+        thumbnail: /images/videos/r2bWqIfu64E.jpg
         thumbnail_alt: Video thumbnail comparing API, CLI and MCP definitions.
         thumbnail_width: 1280
         thumbnail_height: 720
-        link: https://youtu.be/yngNlZ7N0Jc
+        link: https://youtu.be/r2bWqIfu64E
         link_text: Watch on YouTube
         quote: >
           What’s the difference between an API, a CLI, and MCP (Model Context Protocol)? This short introduction explains the basics and how each helps people, software, and AI tools interact with other systems.

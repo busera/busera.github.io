@@ -44,10 +44,10 @@ test('Current config retains frozen content with only approved project edits and
     link:'https://www.youtube.com/channel/UCeylEhSPTmVaLhWg3xsfbXg',
     link_text:'View YouTube channel',
     content:[{layout:'left',border:'weak',title:'API-CLI-MCP',
-      thumbnail:'/images/videos/yngNlZ7N0Jc.jpg',
+      thumbnail:'/images/videos/r2bWqIfu64E.jpg',
       thumbnail_alt:'Video thumbnail comparing API, CLI and MCP definitions.',
       thumbnail_width:1280,thumbnail_height:720,
-      link:'https://youtu.be/yngNlZ7N0Jc',link_text:'Watch on YouTube',
+      link:'https://youtu.be/r2bWqIfu64E',link_text:'Watch on YouTube',
       quote:'What’s the difference between an API, a CLI, and MCP (Model Context Protocol)? This short introduction explains the basics and how each helps people, software, and AI tools interact with other systems.\n'}]
   });
   assert.deepEqual(cfg,expected);
@@ -100,7 +100,7 @@ test('Native Liquid block nesting and local includes/assets resolve (not a Jekyl
 test('Video thumbnail is a local image with intrinsic sizing, alt text and a linked lazy-loading template',()=>{
   const video=cfg.content.find(s=>s.title==='Videos').content[0];
   const bytes=readFileSync(resolve(root,video.thumbnail.slice(1)));
-  assert.equal(createHash('sha256').update(bytes).digest('hex'),'43723548272e3872ce8e1474734f1585464bb3bd772832c4c72dd31fe5d56df4');
+  assert.equal(createHash('sha256').update(bytes).digest('hex'),'8dcc25f18c6dd7829fd9f3d6107a96e40b2eb96ff2713afd8fa8f8d4583606b8');
   assert.match(include,/class="video-thumbnail" href="{{ item_href \| escape }}"/);
   assert.match(include,/item\.thumbnail_alt \| escape/);
   assert.match(include,/loading="lazy" decoding="async"/);
