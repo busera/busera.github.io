@@ -32,6 +32,10 @@ Writing used the loaded practitioner-style baseline and the full Workbench style
 
 Route assessment: parent-owned editorial/data/markup work, followed by a parent-owned deterministic adaptation of the existing preview generator and focused test changes. No delegated model route was needed or used; total coordination/qualification overhead would exceed the benefit for this bounded output-only change. Assurance budget was a focused source/parity suite, one desktop/mobile visual pass and one small caption readback—not a new release programme. `git diff --check` and unchanged-surface checks pass.
 
+### Project documentation maintenance
+
+On the owner's follow-up request to keep project documentation current, `CLAUDE.md` was reconciled with the real local Jekyll layout/include, profile content/order/archive authorities, focused tests, derived-preview limitations, retained AEOS editions and publication/recovery boundaries. It is a stable map to this delivery record, not another changing release/status register. Its previous remote-theme-only, AEOS-tests-only, theme-toggle-main and publicly-served-guide assumptions are superseded; prior text remains recoverable at `92a3171`. The AEOS README now makes clear that its original profile-unchanged statement described that AEOS publication, not all later profile changes. This follow-up changes documentation only; accepted profile/AEOS source, assets, tests, previews and backups are unchanged. Future website changes should update their owning delivery record in the same change wave, with historical evidence preserved and pending stages kept separate from observed completion.
+
 **Outcome:** owner-accepted strategic profile is published; no remaining publication gate. Optional owner review is the live opening and experience section. The current published handoff supersedes earlier review/publish-next-action prose below and the draft-time status retained in offline evidence; historical sections preserve the initial white-layout and incremental-publication record.
 
 ## Historical — initial white-layout publication handoff

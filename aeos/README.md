@@ -1,6 +1,6 @@
 # AEOS introduction website
 
-The white-background Studio design is published as the main version at `index.html`, following the owner's explicit publication instruction on 2026-11-16. The personal profile site at the repository root is unchanged. Verified deployment evidence is recorded below.
+The white-background Studio design is published as the main version at `index.html`, following the owner's explicit publication instruction on 2026-11-16. That AEOS publication did not change the personal profile at the repository root; subsequent profile changes are tracked separately in the [profile delivery record](../docs/profile-white-proposal.md). Verified AEOS deployment evidence is recorded below.
 
 ## Saved versions
 
