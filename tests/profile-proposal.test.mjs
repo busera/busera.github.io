@@ -31,8 +31,9 @@ test('Previous homepage backup has intact hashes and unchanged legacy assets',()
   assert.doesNotMatch(read(folder+'snapshot.html'),/<script|@import/i);
 });
 
-test('Current config retains frozen content with only approved AIRUM edits and the Videos section',()=>{
+test('Current config retains frozen content with only approved project edits and the Videos section',()=>{
   const expected=structuredClone(frozenCfg);
+  expected.content.flatMap(s=>s.content).find(i=>i.title==='AEOS').caption='September 2026';
   const airum=expected.content.flatMap(s=>s.content).find(i=>i.title==='AIRUM Public Demo');
   assert.ok(airum);
   airum.title='AIRUM';
