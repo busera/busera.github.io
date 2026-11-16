@@ -13,7 +13,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header shell">
     <a class="wordmark" href="#main">{{ site.name | escape }}</a>
-    <nav aria-label="Main navigation"><a href="#ai-and-audit">Selected work</a><a href="#publications">Writing</a><a href="#experience">Background</a><a href="#connect">Connect</a></nav>
+    <nav aria-label="Main navigation"><a href="#ai-and-audit">Selected work</a><a href="#videos">Videos</a><a href="#publications">Writing</a><a href="#experience">Background</a><a href="#connect">Connect</a></nav>
   </header>
   <main id="main" class="shell">
     <section class="hero" aria-labelledby="profile-title">
@@ -40,12 +40,13 @@
             {% case section.title %}
             {% when 'AI and Audit' %}<p class="eyebrow">Selected work</p><h2 id="heading-{{ section_id }}">AI and audit, in practice.</h2>
             {% when 'Publications' %}<p class="eyebrow">Writing</p><h2 id="heading-{{ section_id }}">Ideas, methods and experience.</h2>
+            {% when 'Videos' %}<p class="eyebrow">On YouTube</p><h2 id="heading-{{ section_id }}">Videos</h2>
             {% when 'Experience' %}<p class="eyebrow">Professional background</p><h2 id="heading-{{ section_id }}">Experience</h2>
             {% when 'Education' %}<p class="eyebrow">Technical foundation</p><h2 id="heading-{{ section_id }}">Education</h2>
             {% when 'Key Certifications' %}<p class="eyebrow">Professional development</p><h2 id="heading-{{ section_id }}">Qualifications and credentials</h2>
             {% else %}<h2 id="heading-{{ section_id }}">{{ section.title | escape }}</h2>
             {% endcase %}
-          </div>{% if section.title == 'AI and Audit' %}<p>Public projects exploring how AI can support audit work while professional decisions remain with people.</p>{% endif %}</div>
+          </div>{% if section.title == 'AI and Audit' %}<p>Public projects exploring how AI can support audit work while professional decisions remain with people.</p>{% endif %}{% if section.link %}<a class="item-link" href="{{ section.link | escape }}">{{ section.link_text | escape }} <span aria-hidden="true">↗</span></a>{% endif %}</div>
           {% for item in section.content %}
             {% if section.title == 'Publications' and forloop.index == 4 %}<details class="collection-disclosure"><summary>More writing <span aria-hidden="true">+</span></summary><div>{% endif %}
             {% if section.title == 'Key Certifications' or section.title == 'Earlier Publications (LinkedIn Pulse)' or section.title == 'Data Science and Machine Learning Projects' or section.title == 'Audit Analytics Utilities / Experiments' %}

@@ -86,6 +86,19 @@ content:
         description: |
           AIRUM turns an AI risk universe into an explorable interface: a honeycomb risk landscape, source-backed example risks, guided filters, and a reduced example export. The public demo shows the concept without publishing the complete AIRUM data core or detailed methodology.
 
+  - title: Videos
+    layout: list
+    link: https://www.youtube.com/channel/UCeylEhSPTmVaLhWg3xsfbXg
+    link_text: View YouTube channel
+    content:
+      - layout: left
+        border: weak
+        title: API-CLI-MCP
+        link: https://youtu.be/yngNlZ7N0Jc
+        link_text: Watch on YouTube
+        quote: >
+          A short introduction to the differences between APIs, CLIs and MCP.
+
   - title: Audit Analytics Utilities / Experiments
     layout: list
     content:

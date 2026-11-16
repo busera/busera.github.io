@@ -31,13 +31,21 @@ test('Previous homepage backup has intact hashes and unchanged legacy assets',()
   assert.doesNotMatch(read(folder+'snapshot.html'),/<script|@import/i);
 });
 
-test('Current config differs from frozen content only by the approved AIRUM heading and summary',()=>{
+test('Current config retains frozen content with only approved AIRUM edits and the Videos section',()=>{
   const expected=structuredClone(frozenCfg);
   const airum=expected.content.flatMap(s=>s.content).find(i=>i.title==='AIRUM Public Demo');
   assert.ok(airum);
   airum.title='AIRUM';
   airum.sub_title='AI Risk Universe Matrix';
   airum.quote='An interactive AI risk universe that helps audit teams explore and select relevant AI risks for audit planning.\n';
+  expected.content.splice(1,0,{
+    title:'Videos',layout:'list',
+    link:'https://www.youtube.com/channel/UCeylEhSPTmVaLhWg3xsfbXg',
+    link_text:'View YouTube channel',
+    content:[{layout:'left',border:'weak',title:'API-CLI-MCP',
+      link:'https://youtu.be/yngNlZ7N0Jc',link_text:'Watch on YouTube',
+      quote:'A short introduction to the differences between APIs, CLIs and MCP.\n'}]
+  });
   assert.deepEqual(cfg,expected);
   assert.match(include,/item\.sub_title \| escape/);
 });
@@ -47,7 +55,7 @@ test('Proposal is a separate Jekyll front-matter page with all source sections',
   assert.equal(page.permalink,'/profile-proposal/');
   assert.equal(page.draft_preview,true);
   assert.deepEqual([...page.section_order].sort(),cfg.content.map(s=>s.title).sort());
-  assert.equal(new Set(page.section_order).size,8);
+  assert.equal(new Set(page.section_order).size,9);
   assert.match(layout,/site\.content \| where:/);
   assert.match(layout,/site\.about_content \| markdownify/);
   assert.match(layout,/include profile-white-item\.html item=item/);
@@ -61,6 +69,14 @@ test('Proposal is a separate Jekyll front-matter page with all source sections',
   assert.deepEqual(home.section_order,page.section_order);
   assert.equal(home.positioning,page.positioning);
   assert.equal(yaml('_backups/profile-2026-11-16-before-white/source/index.md').layout,'default');
+});
+
+test('Videos reuse list markup, have navigation/channel links, and introduce no player embeds',()=>{
+  assert.deepEqual(page.section_order.slice(0,3),['AI and Audit','Videos','Publications']);
+  assert.match(layout,/<a href="#videos">Videos<\/a>/);
+  assert.match(layout,/section\.link \| escape/);
+  assert.match(layout,/section\.link_text \| escape/);
+  assert.doesNotMatch(layout+include,/<iframe|youtube\.com\/embed|youtube-nocookie|<video/i);
 });
 
 test('Native Liquid block nesting and local includes/assets resolve (not a Jekyll compilation)',()=>{
