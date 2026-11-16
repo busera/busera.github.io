@@ -31,12 +31,13 @@ test('Previous homepage backup has intact hashes and unchanged legacy assets',()
   assert.doesNotMatch(read(folder+'snapshot.html'),/<script|@import/i);
 });
 
-test('Current config differs from frozen content only by the approved AIRUM title and subtitle',()=>{
+test('Current config differs from frozen content only by the approved AIRUM heading and summary',()=>{
   const expected=structuredClone(frozenCfg);
   const airum=expected.content.flatMap(s=>s.content).find(i=>i.title==='AIRUM Public Demo');
   assert.ok(airum);
   airum.title='AIRUM';
   airum.sub_title='AI Risk Universe Matrix';
+  airum.quote='An interactive AI risk universe that helps audit teams explore and select relevant AI risks for audit planning.\n';
   assert.deepEqual(cfg,expected);
   assert.match(include,/item\.sub_title \| escape/);
 });

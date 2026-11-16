@@ -82,7 +82,7 @@ content:
         link: https://busera.github.io/AIRUM-public-demo/
         link_text: View public demo
         quote: >
-          A public AI risk universe and selection demo for exploring how audit teams can move from broad AI risk taxonomies to reviewable planning inputs.
+          An interactive AI risk universe that helps audit teams explore and select relevant AI risks for audit planning.
         description: |
           AIRUM turns an AI risk universe into an explorable interface: a honeycomb risk landscape, source-backed example risks, guided filters, and a reduced example export. The public demo shows the concept without publishing the complete AIRUM data core or detailed methodology.
 
