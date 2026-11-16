@@ -75,3 +75,9 @@ At the proposal stage, a native Jekyll/Pages compile and production replacement 
 3. `_backups/profile-2026-11-16-before-white/snapshot.html` — readable previous version. Its exact original HTTP bodies and source files are retained alongside it; the snapshot's grid fallbacks are a documented offline-rendering limit.
 
 The owner-approved publication and native verification are complete. This evidence-only closure changes this document and the compact verification JSON, not the deployed layout, source content, styles, backup or AEOS. No further installation, redesign or claim rewrite is authorized by closing this publication.
+
+## Portfolio label refinement — 2026-11-16
+
+Owner requested the visible eyebrow “Professional portfolio” be renamed to “Portfolio.” The shared native layout now uses that exact label, affecting the root and native review route. The saved rendered previews and previous-site backup remain historical and byte-unchanged. No other suggested copy changes are bundled into this request.
+
+Parent-owned one-line output change with a focused source assertion; no delegation, dependency, data/configuration or style change. `node --test tests/profile-proposal.test.mjs`: **4 passed, 0 failed**, including backup hash checks and the exact new label. `git diff --check` is clean, and diff against `3f2aee5` proves configuration, entry front matter, styles, AEOS, backups and previews unchanged. Publish through the existing owner-approved Pages route and verify the exact live eyebrow after deployment. Recommended owner review: the visible eyebrow only; no additional owner code review is recommended for this wording-only delta.

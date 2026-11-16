@@ -40,6 +40,8 @@ test('Proposal is a separate Jekyll front-matter page with all source sections',
   assert.match(layout,/site\.about_content \| markdownify/);
   assert.match(layout,/include profile-white-item\.html item=item/);
   assert.match(layout,/noindex,nofollow/);
+  assert.match(layout,/<p class="eyebrow">Portfolio<\/p>/);
+  assert.doesNotMatch(layout,/<p class="eyebrow">Professional portfolio<\/p>/);
   const home=yaml('index.md');
   assert.equal(home.layout,'profile-white');
   assert.equal(home.permalink,'/');
