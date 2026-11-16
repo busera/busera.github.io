@@ -1,0 +1,75 @@
+{
+  "preview_kind": "derived offline render, not native Jekyll compilation",
+  "backup": {
+    "records": 29,
+    "remote": 0
+  },
+  "draft": {
+    "sections": [
+      "experience",
+      "publications",
+      "ai-and-audit",
+      "videos",
+      "education",
+      "key-certifications",
+      "audit-analytics-utilities-experiments",
+      "data-science-and-machine-learning-projects",
+      "earlier-publications-linkedin-pulse"
+    ],
+    "records": 30,
+    "h1": 1,
+    "archiveSections": [
+      "audit-analytics-utilities-experiments",
+      "data-science-and-machine-learning-projects",
+      "earlier-publications-linkedin-pulse"
+    ],
+    "archiveClosed": true,
+    "missingAnchors": [],
+    "remote": 0
+  },
+  "width_checks": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": 0,
+      "smallTargets": []
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": 0,
+      "smallTargets": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "brokenImages": 0,
+      "smallTargets": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "brokenImages": 0,
+      "smallTargets": []
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "brokenImages": 0,
+      "smallTargets": []
+    }
+  ],
+  "disclosures_toggled_restored": 18,
+  "publication": "not pushed or published",
+  "final_career_period_check": {
+    "caption": "Roles across functions: Apr 2010 - Present",
+    "overflow": false,
+    "records": 30
+  },
+  "preview_sha256": "264804867e6adfcb7587169e23f0d23d0a0fc18467586ed4c5d654ea1156e312",
+  "external_link_preservation": {
+    "before": 28,
+    "draft": 29,
+    "all_prior_preserved": true
+  }
+}

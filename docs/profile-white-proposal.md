@@ -1,6 +1,36 @@
 # White portfolio proposal
 
-## Current publication handoff
+## Current handoff — strategic profile draft, not published
+
+Owner requested a snapshot of the current version and implementation of the strategic-positioning recommendations. **Implemented locally for review; not pushed, merged or published.** Work is isolated on `review/strategic-profile-2026-11-16`. Public baseline is `966cbd2634b3c870196a35679c2fd00d1956eccf`; the verified backup was committed separately as `6e88ab3` before positioning changes.
+
+**Review artifact:** [strategic offline preview](../previews/profile-strategic.html). **Previous version:** [offline snapshot](../_backups/profile-2026-11-16-before-strategic/snapshot.html). The new backup preserves exact source, exact served HTML/assets and a derived offline copy, with 19 data-file hashes checked. Its README explains restore boundaries. Older backups and the original white preview remain unchanged.
+
+### Implemented draft — owner review pending
+
+- Opening leads with **AI governance, risk and independent assurance**, with a short current-role statement rather than a technical skills inventory.
+- Experience precedes perspectives, projects and videos. Existing leadership responsibilities are visible in the role description; advisory participation is professional context rather than “outside the day job.”
+- Experience copy focuses on governance, responsibilities and evidence. The conflicting tenure totals and unverified days-to-hours claim are omitted; the existing date range is explicitly labelled as roles across functions, not tenure in the current role.
+- AEOS/AIRUM descriptions lead with audit purpose and intended value. Existing auditor-authority and reduced-demonstration boundaries remain; practitioner projects are presented separately from corporate responsibilities.
+- Featured writing leads with use-case risk, algorithmic feedback and the previously verified September AEOS article. The latter is the only added record. Original article titles and destinations are preserved.
+- Education is shorter, with no GPA, unsourced ranking or course inventory in the active narrative. Credentials/issuers/dates are unchanged. All earlier technical projects remain available under one closed technical-background group; their detailed source text is preserved.
+- The latest video description, replacement link, thumbnail, all original record identities and all existing external destinations are retained. No stylesheet, image, include, AEOS product page, third-party player or dependency change is included.
+
+### Evidence, source boundaries and review
+
+`node --test tests/profile-proposal.test.mjs`: **9 passed, 0 failed**. Checks cover both backup manifests, exact retention of all 29 prior records and their non-editorial fields, explicit editable-field limits, one sourced additional article, current-source/preview fingerprints, all 30 item bodies/titles/destinations, template block nesting and local assets. The 28 previous external destinations remain, with one Medium destination added. The same white stylesheet bytes are used. Browser evidence: [offline layout and controls](evidence/profile-strategic-browser.json); source fingerprints: [preview identity](../previews/profile-strategic-evidence.json).
+
+The actual offline preview was exercised at 1440/1024/768/390/320 px: no horizontal overflow, broken images, missing fragment targets or undersized checked navigation/button/disclosure/social controls. All 18 disclosures toggled/restored, the technical archive starts closed and both snapshot and draft made zero external display requests. Desktop/mobile screenshot review found no clipping/overlap and confirmed experience-first positioning. After the small career-period clarification, a focused 390 px readback reconfirmed its exact wording, 30 records and no overflow. These are emulated widths, not physical-device tests.
+
+Native Jekyll/Liquid gems are absent. **The preview is a derived offline render using installed Ruby YAML and Pandoc 3.14, not evidence of a native Jekyll compile.** No package, container or model was installed/downloaded. Rebuild with `python3 scripts/build-strategic-preview.py`; it reads current canonical data and native static chrome, embeds existing assets and records source hashes. Native exact-head Pages compilation/readback remains a publication-stage gate after owner approval; do not push this draft merely to obtain that build.
+
+Writing used the loaded practitioner-style baseline and the full Workbench style profile as unpromoted supporting evidence, not action authority. Voice review: direct, problem-led and restrained; strategic review: priorities, governance, assurance and leadership precede implementation detail. No new title, impact metric, enterprise-adoption claim or employer endorsement was invented. The team size, advisory roles and underlying role history are carried from existing published material, **not independently requalified against private employment records**. Degree labels and certification claims were not revalidated in this editorial task.
+
+Route assessment: parent-owned editorial/data/markup work, followed by a parent-owned deterministic adaptation of the existing preview generator and focused test changes. No delegated model route was needed or used; total coordination/qualification overhead would exceed the benefit for this bounded output-only change. Assurance budget was a focused source/parity suite, one desktop/mobile visual pass and one small caption readback—not a new release programme. `git diff --check` and unchanged-surface checks pass.
+
+**Next action:** owner reviews the opening, experience wording and the separation of corporate responsibilities from practitioner projects. On approval, use the existing governed Pages route and verify the real native page before calling this published. Current draft status supersedes the historical owner-review instructions below; those sections retain the initial white-layout and incremental-publication history.
+
+## Historical — initial white-layout publication handoff
 
 The owner approved backing up the previous homepage and publishing the white layout on 2026-11-16. The prior source and exact rendered HTTP bodies are retained at `_backups/profile-2026-11-16-before-white/`, with a separately derived readable offline `snapshot.html` and a SHA-256 manifest. The five source files were byte-verified before root promotion; ongoing tests verify all nine retained file hashes.
 

@@ -1,0 +1,16 @@
+{
+  "kind": "derived offline preview, not native Jekyll compilation",
+  "source_sha256": {
+    "_config.yml": "43f3d5ce02714aa768a6fbac54d143cc048cb38351e404c492930a8a5b79e2e7",
+    "index.md": "f0df54641d6d8cad5237cfc5e47fbe3fa679656e817dd711cb95786d1b342c7b",
+    "profile-proposal.html": "887720aa430b5a17b16302305acc36373c1c05ba20bbf7cbf2720ad199b494a6",
+    "_layouts/profile-white.html": "d2f8c192399a2a1f64cf2d213e635870b8783cea5d326b23c4927cc8aecf54c2",
+    "_includes/profile-white-item.html": "bd71cf58bb2f0c68479c5517c665d16516019ea5656a404903838c8ee7dacffe",
+    "assets/profile-white.css": "1e6880d7fd5b72d0dc2ba39d82c788d69b444b6dfd8f4623f158e7355c56b27e",
+    "scripts/build-strategic-preview.py": "e96ff02a85d6cccd34dc5a5a792cba59bdbea820427c5a1e72dbeb15ed05c801"
+  },
+  "sections": 9,
+  "records": 30,
+  "preview_sha256": "264804867e6adfcb7587169e23f0d23d0a0fc18467586ed4c5d654ea1156e312",
+  "publication": "not pushed or published; owner review required"
+}

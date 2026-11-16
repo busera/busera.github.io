@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: André Buser
-title: AI Governance & Internal Audit | Applied Data Science | CISA · CISSP · CFE · AAIA™
+title: AI governance, risk and independent assurance
 # email: https://www.linkedin.com/in/buserandre/
 # website: www.github.com/sproogen/resume-theme
 
@@ -49,13 +49,13 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile_andre_buser.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  Auditing AI systems at one of the world's largest pharmaceutical companies. Reviewing whether governance frameworks hold up under scrutiny, whether controls around GenAI deployments are real or just documented, and whether the risk picture management sees matches what is in the system.
+  I lead AI governance audits in a global pharmaceutical organisation, assessing whether accountability, risk frameworks and controls work in practice. My focus is clear evidence, sound professional judgment and priorities for action.
 
-  What sets this apart from standard IT audit: the technical depth to go beyond document review. A Master of Applied Data Science from Michigan (GPA 3.97) means reading a model card, tracing a training pipeline, and finding where governance gaps turn into real risk, not just checking a compliance box. Credentials include CISA, CISSP, CFE, ISACA's Advanced in AI Audit™ (AAIA™), and an executive program in AI in Health Care from Harvard Medical School.
+  My experience spans internal audit, information security and risk management, and global security. Earlier leadership responsibilities included an international team of 15, vendor governance and SOX IT compliance. That experience informs how I assess the relationship between governance, operational practice and assurance.
 
-  Building the tooling, too. LLM pipelines that generate Audit Planning Memorandums and work programs from source documents, work that used to take days. An interactive risk visualization that turns an AI risk taxonomy into something you can explore. A prompt library for audit workflows. Most of it started as personal experiments. A few ended up in production.
+  A Master of Applied Data Science from the University of Michigan supports my ability to examine the evidence behind AI-related decisions. I also develop practitioner projects that explore risk-based audit planning and reviewable AI-supported fieldwork. Technical understanding supports the professional judgment; it does not replace it.
 
-  Outside the day job: advisory board at CISS LTD, and Plateforme Tripartite, where industry, academia, and regulators work on the harder AI governance questions.
+  Alongside my corporate role, I serve on the advisory board at CISS LTD and participate in Plateforme Tripartite, contributing to discussions on AI governance, ethics and digital innovation across industry, academia and regulators.
 
 content:
   - title: AI and Audit
@@ -72,7 +72,7 @@ content:
         quote: >
           Governed AI support for audit fieldwork, with professional authority retained by the auditor.
         description: |
-          AEOS is an agentic engagement workspace for audit fieldwork execution. The public site sets out the problem it addresses, the operating model, a walkthrough of one procedure in the real working environment, the engagement lifecycle, the authority controls, and the setup and provider routes, without publishing private engagement material.
+          AEOS supports audit fieldwork from an existing engagement work program through evidence gathering, testing, workpaper preparation, review and reporting drafts. It keeps the work connected to its sources and open decisions, while professional judgment, conclusions and approval remain with the auditor.
 
       - layout: left
         border: weak
@@ -84,7 +84,7 @@ content:
         quote: >
           An interactive AI risk universe that helps audit teams explore and select relevant AI risks for audit planning.
         description: |
-          AIRUM turns an AI risk universe into an explorable interface: a honeycomb risk landscape, source-backed example risks, guided filters, and a reduced example export. The public demo shows the concept without publishing the complete AIRUM data core or detailed methodology.
+          AIRUM helps translate broad AI risk taxonomies into inputs for risk-based audit planning. Auditors can explore a risk landscape, review source-backed examples and select relevant risks. The linked demonstration uses a reduced example dataset; the complete data core and detailed methodology are not included.
 
   - title: Videos
     layout: list
@@ -123,15 +123,6 @@ content:
 
       - layout: left
         border: weak
-        title: Building an AI prototype for audit planning, without handing judgment to the machine
-        caption: May 2026
-        link: https://medium.com/@buser.andre/building-an-ai-prototype-for-audit-planning-without-handing-judgment-to-the-machine-d90d0055689b
-        link_text: medium.com
-        description: |
-          A build story about using agentic coding to prototype an AI-assisted audit planning workflow. The article focuses on three audit-planning problems: supporting risk-based planning before fieldwork, creating a stronger draft Audit Work Program for review and refinement, and accelerating planning without handing professional judgment to the machine.
-
-      - layout: left
-        border: weak
         title: The Importance of AI Use Cases in System Classification and Risk Assessment
         #sub_title: The Feedback Loop Between Algorithms and the Real World
         caption: Nov 2024
@@ -140,22 +131,8 @@ content:
         #quote: >
         #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
         description: |
-          The same AI system can carry very different risks depending on how it's used. A ML model trained on financial data is low-risk when used for internal discussions but high-risk when preparing public financial statements. This distinction matters for classification under frameworks like the EU AI Act, and most organizations get it wrong by classifying the system rather than the use case.
+          AI risk depends on how a system is used. The article explains why use-case context matters for classification and risk assessment, and what that distinction means for governance and oversight.
         
-      - layout: left
-        border: weak
-        title: Applying Data Analysis in Internal Audit
-        #sub_title: The Feedback Loop Between Algorithms and the Real World
-        caption: Aug 2024
-        link: https://medium.com/@buser.andre/applying-data-analysis-in-internal-audit-77b7a5d6071e
-        link_text: medium.com
-        #quote: >
-        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
-        description: |
-          Most IIA and ISACA guides on audit analytics stay high-level. As someone with a data science background doing audit work, I kept running into the gap between what those guides describe and what you actually need to do in practice.
-
-          This article bridges that gap. It adapts academic research methodology concepts to the practical world of internal audit, with code examples and concrete techniques you can apply to real engagements.
-
       - layout: left
         border: weak
         title: Algorithm Ossification
@@ -167,7 +144,37 @@ content:
         #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
         description: |
           Algorithms recommend what we watch and decide whether we get loans. But what happens when they start reshaping the world they were trained to describe? Algorithm ossification is the feedback loop where algorithmic decisions shape the data that future algorithms learn from, reinforcing existing patterns rather than reflecting reality.
-      
+
+      - layout: left
+        border: weak
+        title: "AEOS: An AI-Augmented Engagement Operating System for Internal Audit"
+        caption: September 2026
+        link: https://medium.com/@buser.andre/aeos-the-ai-augmented-engagement-operating-system-a5dc7ca8b5ad
+        link_text: Read on Medium
+        description: |
+          How an AI-supported engagement workspace can keep fieldwork structured, source-linked and reviewable while professional judgment remains with the auditor.
+
+      - layout: left
+        border: weak
+        title: Building an AI prototype for audit planning, without handing judgment to the machine
+        caption: May 2026
+        link: https://medium.com/@buser.andre/building-an-ai-prototype-for-audit-planning-without-handing-judgment-to-the-machine-d90d0055689b
+        link_text: medium.com
+        description: |
+          A practitioner account of AI-assisted audit planning: how preparation can become more structured while the auditor retains responsibility for the work program and professional judgment.
+
+      - layout: left
+        border: weak
+        title: Applying Data Analysis in Internal Audit
+        #sub_title: The Feedback Loop Between Algorithms and the Real World
+        caption: Aug 2024
+        link: https://medium.com/@buser.andre/applying-data-analysis-in-internal-audit-77b7a5d6071e
+        link_text: medium.com
+        #quote: >
+        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+        description: |
+          An approach to applying data analysis in internal audit, connecting research methodology with the evidence and practical questions of an engagement. Includes worked techniques for practitioners who need the implementation detail.
+
       - layout: left
         border: weak
         title: Understanding AI System Classification and Risk Assessment
@@ -325,17 +332,17 @@ content:
       - layout: left
         border: weak
         title: Major Global Pharmaceutical Company
-        sub_title: Senior Manager Internal Audit | 16+ Years
-        caption: Apr 2010 - Present
+        sub_title: Senior Manager Internal Audit
+        caption: "Roles across functions: Apr 2010 - Present"
         quote: >
-          20+ years across internal audit, information security, and global security in one of the world's largest pharmaceutical companies.
+          Experience across internal audit, information security and global security, with a focus on governance, accountability and reviewable evidence.
 
         description: |
-          Currently leading AI governance audits, reviewing how AI Strategy, risk frameworks, and GenAI deployment controls work in practice. Built the team's Audit Planning Memorandum (APM) generation system from scratch (Copilot-optimized, YAML-driven), cutting planning document prep from days to hours. Created an interactive AI risk visualization and a prompt library for structured audit workflows.
+          Lead AI governance audits, examining AI strategy, risk frameworks and controls around generative AI deployments. The work assesses whether governance arrangements are supported by evidence and effective controls.
 
-          Previously served as Senior Manager Global Security (2022-2024), where I built an LLM prototype for automated investigation report drafting (GPT-4, Llama2, in-house model), a sanctions extraction system using fuzzy matching, and automated case management with data quality assurance.
+          Earlier roles include Director of Information Security and Risk Management, leading an international team of 15, chairing the vendor governance board and managing SOX IT compliance; and Senior IT Auditor for vendor audits.
 
-          Earlier roles include Director of Information Security and Risk Management (team of 15, SOX IT compliance, GEMINI EPS vendor transition) and Senior IT Auditor for vendor audits.
+          As Senior Manager Global Security (2022-2024), worked on investigation reporting, sanctions analysis and case-management data quality. Work on AI-supported audit planning and investigation-reporting tools adds a practical perspective on the governance and review needed when technology enters established workflows.
 
       - layout: left
         title: Advisory & Industry Roles
@@ -413,13 +420,11 @@ content:
         link: https://www.si.umich.edu/programs/master-applied-data-science
         link_text: umich.edu
         quote: >
-          University of Michigan School of Information — ranked among the top data science programs in the U.S.
+          Applied data science as a foundation for informed AI governance and assurance.
         description: |
-          Completed the Master of Applied Data Science (MADS) program, graduating December 2023 with a 3.97 GPA. The curriculum covered machine learning, deep learning, NLP, statistical inference, data engineering, and visualization end-to-end.
+          Completed the Master of Applied Data Science (MADS) program in December 2023. Studies covered machine learning, statistical inference and responsible AI, supporting my ability to assess technical evidence and ask informed governance questions.
 
-          AI-relevant coursework included supervised and unsupervised learning, neural networks, causal inference, and responsible AI (fairness, interpretability, ethics). Capstone project used causal inference to investigate TBI and dementia risk (Decode Dementia). Additional courses in generative AI fundamentals, LLM programming (Llama), and data science ethics taken post-graduation (2024).
-
-          This degree is the technical foundation for my current AI governance audit work — it's one thing to review an AI risk framework on paper, another to actually understand what's happening inside the model.
+          Earlier analytical projects remain available under Technical background and earlier projects.
 
 
 #  - title: Publications
