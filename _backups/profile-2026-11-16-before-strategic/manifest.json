@@ -1,0 +1,82 @@
+{
+  "baseline_commit": "966cbd2634b3c870196a35679c2fd00d1956eccf",
+  "live_url": "https://busera.github.io/",
+  "files": {
+    "served/assets/profile-white.css": {
+      "bytes": 10130,
+      "sha256": "1e6880d7fd5b72d0dc2ba39d82c788d69b444b6dfd8f4623f158e7355c56b27e"
+    },
+    "served/images/favicon.ico": {
+      "bytes": 1150,
+      "sha256": "8832edc15bdb4a1bcb105d4ccce1223ece389b20527f8eed246c917ddf69f79c"
+    },
+    "served/images/profile_andre_buser.jpeg": {
+      "bytes": 672213,
+      "sha256": "1b772b251ed9c83fbc8fd05d334eef5c4b35a7f1b3b228fff958833c2f6c6cb0"
+    },
+    "served/images/videos/r2bWqIfu64E.jpg": {
+      "bytes": 66117,
+      "sha256": "8dcc25f18c6dd7829fd9f3d6107a96e40b2eb96ff2713afd8fa8f8d4583606b8"
+    },
+    "served/index.html": {
+      "bytes": 39822,
+      "sha256": "896920b92a9cc426f6e53d4178821bf45c5840ef8c834cbcae8cc5e10266c223"
+    },
+    "snapshot.html": {
+      "bytes": 1035877,
+      "sha256": "1c9af610999cbf2c311f92f8544d7c095fc2207bb2dcd4d9da3bed19972b1f0b"
+    },
+    "source/_config.yml": {
+      "bytes": 27177,
+      "sha256": "99d3600683e39f734886d93450fdc84e5edde06e029063e83ce6d54d871d5251"
+    },
+    "source/_includes/profile-white-item.html": {
+      "bytes": 1456,
+      "sha256": "bd71cf58bb2f0c68479c5517c665d16516019ea5656a404903838c8ee7dacffe"
+    },
+    "source/_layouts/profile-white.html": {
+      "bytes": 5977,
+      "sha256": "ef0248acab783aa8a8b440cb27f4ad6215e7ceaa9fec5cc5e17b182ed6996ac6"
+    },
+    "source/assets/main.scss": {
+      "bytes": 5710,
+      "sha256": "a3e0b2c3d87f125ed1aa72a4f529a0e1b91369f239e87d31deeb449e8a0644b4"
+    },
+    "source/assets/profile-white.css": {
+      "bytes": 10130,
+      "sha256": "1e6880d7fd5b72d0dc2ba39d82c788d69b444b6dfd8f4623f158e7355c56b27e"
+    },
+    "source/docs/profile-white-proposal.md": {
+      "bytes": 22390,
+      "sha256": "79def7ba0336e048360d108010f09698d736f46bda503f706711b983f6e2dfc6"
+    },
+    "source/images/favicon.ico": {
+      "bytes": 1150,
+      "sha256": "8832edc15bdb4a1bcb105d4ccce1223ece389b20527f8eed246c917ddf69f79c"
+    },
+    "source/images/profile_andre_buser.jpeg": {
+      "bytes": 672213,
+      "sha256": "1b772b251ed9c83fbc8fd05d334eef5c4b35a7f1b3b228fff958833c2f6c6cb0"
+    },
+    "source/images/videos/r2bWqIfu64E.jpg": {
+      "bytes": 66117,
+      "sha256": "8dcc25f18c6dd7829fd9f3d6107a96e40b2eb96ff2713afd8fa8f8d4583606b8"
+    },
+    "source/images/videos/yngNlZ7N0Jc.jpg": {
+      "bytes": 69007,
+      "sha256": "43723548272e3872ce8e1474734f1585464bb3bd772832c4c72dd31fe5d56df4"
+    },
+    "source/index.md": {
+      "bytes": 408,
+      "sha256": "80b8d8c736fb1eb3cf04c8d072f5a529a0a694e6b71fc36dcabc1e721d02f778"
+    },
+    "source/profile-proposal.html": {
+      "bytes": 433,
+      "sha256": "b142ff996a4e2eeece66f44e96bd9c9b55a866a0babb7281041143a8bdbdde7d"
+    },
+    "source/tests/profile-proposal.test.mjs": {
+      "bytes": 7338,
+      "sha256": "9f4776aff6b765d0780c22054383afce328c5e9d22f30deea47e0aa15e25b650"
+    }
+  }
+}

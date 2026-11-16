@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.name | escape }} | {{ page.positioning | escape }}</title>
+  <meta name="description" content="{{ page.positioning | escape }} Professional work, writing and background of {{ site.name | escape }}.">
+  {% if page.draft_preview %}<meta name="robots" content="noindex,nofollow">{% endif %}
+  <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/profile-white.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header shell">
+    <a class="wordmark" href="#main">{{ site.name | escape }}</a>
+    <nav aria-label="Main navigation"><a href="#ai-and-audit">Selected work</a><a href="#videos">Videos</a><a href="#publications">Writing</a><a href="#experience">Background</a><a href="#connect">Connect</a></nav>
+  </header>
+  <main id="main" class="shell">
+    <section class="hero" aria-labelledby="profile-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Portfolio</p>
+        <h1 id="profile-title">{{ site.name | escape }}</h1>
+        <p class="positioning">{{ page.positioning | escape }}</p>
+        {% assign biography = site.about_content | markdownify | split: '</p>' %}
+        <div class="hero-intro">{{ biography.first }}</p></div>
+        <div class="actions"><a class="button primary" href="#ai-and-audit">Explore my work <span aria-hidden="true">↗</span></a><a class="button" href="https://www.linkedin.com/in/{{ site.linkedin_username | escape }}">LinkedIn</a></div>
+      </div>
+      <figure class="portrait"><img src="{{ site.about_profile_image | relative_url }}" alt="Portrait of {{ site.name | escape }}" width="320" height="380"><figcaption>AI governance · Internal audit · Applied practice</figcaption></figure>
+    </section>
+    <details class="about-disclosure">
+      <summary>More about my background <span aria-hidden="true">+</span></summary>
+      <div class="about-body"><p class="source-positioning">{{ site.title | escape }}</p>{% for paragraph in biography offset:1 %}{% assign paragraph_text = paragraph | strip %}{% unless paragraph_text == '' %}{{ paragraph }}</p>{% endunless %}{% endfor %}</div>
+    </details>
+    {% for section_title in page.section_order %}
+      {% assign section = site.content | where: 'title', section_title | first %}
+      {% if section %}
+        {% assign section_id = section.title | slugify %}
+        <section class="portfolio-section" id="{{ section_id }}" aria-labelledby="heading-{{ section_id }}">
+          <div class="section-heading"><div>
+            {% case section.title %}
+            {% when 'AI and Audit' %}<p class="eyebrow">Selected work</p><h2 id="heading-{{ section_id }}">AI and audit, in practice.</h2>
+            {% when 'Publications' %}<p class="eyebrow">Writing</p><h2 id="heading-{{ section_id }}">Ideas, methods and experience.</h2>
+            {% when 'Videos' %}<p class="eyebrow">On YouTube</p><h2 id="heading-{{ section_id }}">Videos</h2>
+            {% when 'Experience' %}<p class="eyebrow">Professional background</p><h2 id="heading-{{ section_id }}">Experience</h2>
+            {% when 'Education' %}<p class="eyebrow">Technical foundation</p><h2 id="heading-{{ section_id }}">Education</h2>
+            {% when 'Key Certifications' %}<p class="eyebrow">Professional development</p><h2 id="heading-{{ section_id }}">Qualifications and credentials</h2>
+            {% else %}<h2 id="heading-{{ section_id }}">{{ section.title | escape }}</h2>
+            {% endcase %}
+          </div>{% if section.title == 'AI and Audit' %}<p>Public projects exploring how AI can support audit work while professional decisions remain with people.</p>{% endif %}{% if section.link %}<a class="item-link" href="{{ section.link | escape }}">{{ section.link_text | escape }} <span aria-hidden="true">↗</span></a>{% endif %}</div>
+          {% for item in section.content %}
+            {% if section.title == 'Publications' and forloop.index == 4 %}<details class="collection-disclosure"><summary>More writing <span aria-hidden="true">+</span></summary><div>{% endif %}
+            {% if section.title == 'Key Certifications' or section.title == 'Earlier Publications (LinkedIn Pulse)' or section.title == 'Data Science and Machine Learning Projects' or section.title == 'Audit Analytics Utilities / Experiments' %}
+              <details class="entry-disclosure"><summary><span><strong>{{ item.title | escape }}</strong>{% if item.sub_title %}<small>{{ item.sub_title | escape }}</small>{% endif %}</span><span class="summary-meta">{{ item.caption | escape }} <i aria-hidden="true">+</i></span></summary><div>{% include profile-white-item.html item=item %}</div></details>
+            {% else %}
+              {% include profile-white-item.html item=item %}
+            {% endif %}
+            {% if section.title == 'Publications' and forloop.last and forloop.length > 3 %}</div></details>{% endif %}
+          {% endfor %}
+        </section>
+      {% endif %}
+    {% endfor %}
+    <section class="connect" id="connect" aria-labelledby="connect-title"><div><p class="eyebrow">Elsewhere</p><h2 id="connect-title">Connect and explore.</h2></div><div class="social-links">
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username | escape }}">LinkedIn ↗</a>
+      <a href="https://github.com/{{ site.github_username | escape }}">GitHub ↗</a>
+      <a href="https://www.youtube.com/{{ site.youtube_username | escape }}">YouTube ↗</a>
+      {% for link in site.additional_links %}<a href="{{ link.url | escape }}">{{ link.title | escape }} ↗</a>{% endfor %}
+    </div></section>
+  </main>
+  <footer class="shell"><span>{{ site.name | escape }}</span><span>AI governance · Internal audit · Applied data science</span><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>

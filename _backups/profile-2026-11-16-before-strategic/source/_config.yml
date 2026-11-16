@@ -1,0 +1,455 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: André Buser
+title: AI Governance & Internal Audit | Applied Data Science | CISA · CISSP · CFE · AAIA™
+# email: https://www.linkedin.com/in/buserandre/
+# website: www.github.com/sproogen/resume-theme
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+#twitter_username: 
+github_username: busera
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+#instagram_username: jameswgrant
+linkedin_username: buserandre
+# xing_username: jekyll
+# pinterest_username: jekyll
+youtube_username: "@data-and-science"
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+# medium_username: "@buser.andre"
+
+# Additional icon links
+additional_links:
+- title: Medium
+  icon: fab fa-medium
+  url: https://medium.com/@buser.andre
+- title: Kaggle
+  icon: fab fa-kaggle
+  url: https://www.kaggle.com/busera
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile_andre_buser.jpeg
+about_content: | # this will include new lines to allow paragraphs
+  Auditing AI systems at one of the world's largest pharmaceutical companies. Reviewing whether governance frameworks hold up under scrutiny, whether controls around GenAI deployments are real or just documented, and whether the risk picture management sees matches what is in the system.
+
+  What sets this apart from standard IT audit: the technical depth to go beyond document review. A Master of Applied Data Science from Michigan (GPA 3.97) means reading a model card, tracing a training pipeline, and finding where governance gaps turn into real risk, not just checking a compliance box. Credentials include CISA, CISSP, CFE, ISACA's Advanced in AI Audit™ (AAIA™), and an executive program in AI in Health Care from Harvard Medical School.
+
+  Building the tooling, too. LLM pipelines that generate Audit Planning Memorandums and work programs from source documents, work that used to take days. An interactive risk visualization that turns an AI risk taxonomy into something you can explore. A prompt library for audit workflows. Most of it started as personal experiments. A few ended up in production.
+
+  Outside the day job: advisory board at CISS LTD, and Plateforme Tripartite, where industry, academia, and regulators work on the harder AI governance questions.
+
+content:
+  - title: AI and Audit
+    layout: list # Type of content section (list/text)
+    content:
+
+      - layout: left
+        border: weak
+        title: AEOS
+        sub_title: AI-Augmented Engagement Operating System
+        caption: September 2026
+        link: https://busera.github.io/aeos/
+        link_text: Explore AEOS
+        quote: >
+          Governed AI support for audit fieldwork, with professional authority retained by the auditor.
+        description: |
+          AEOS is an agentic engagement workspace for audit fieldwork execution. The public site sets out the problem it addresses, the operating model, a walkthrough of one procedure in the real working environment, the engagement lifecycle, the authority controls, and the setup and provider routes, without publishing private engagement material.
+
+      - layout: left
+        border: weak
+        title: AIRUM
+        sub_title: AI Risk Universe Matrix
+        caption: May 2026
+        link: https://busera.github.io/AIRUM-public-demo/
+        link_text: View public demo
+        quote: >
+          An interactive AI risk universe that helps audit teams explore and select relevant AI risks for audit planning.
+        description: |
+          AIRUM turns an AI risk universe into an explorable interface: a honeycomb risk landscape, source-backed example risks, guided filters, and a reduced example export. The public demo shows the concept without publishing the complete AIRUM data core or detailed methodology.
+
+  - title: Videos
+    layout: list
+    link: https://www.youtube.com/channel/UCeylEhSPTmVaLhWg3xsfbXg
+    link_text: View YouTube channel
+    content:
+      - layout: left
+        border: weak
+        title: API-CLI-MCP
+        thumbnail: /images/videos/r2bWqIfu64E.jpg
+        thumbnail_alt: Video thumbnail comparing API, CLI and MCP definitions.
+        thumbnail_width: 1280
+        thumbnail_height: 720
+        link: https://youtu.be/r2bWqIfu64E
+        link_text: Watch on YouTube
+        quote: >
+          What’s the difference between an API, a CLI, and MCP (Model Context Protocol)? This short introduction explains the basics and how each helps people, software, and AI tools interact with other systems.
+
+  - title: Audit Analytics Utilities / Experiments
+    layout: list
+    content:
+
+      - layout: left
+        border: weak
+        title: Fake Transaction Data Generator
+        link: github.com/busera/fake_transaction_data_generator
+        link_text: github.com
+        quote: >
+          Small educational utility for generating labeled synthetic transaction data for audit analytics exercises.
+        description: |
+          A standard-library Python prototype for creating fictional transaction datasets and an irregularity ledger. Useful for workshops, detector testing, and examples where real financial records cannot be used. Kept here as a utility/experiment rather than a flagship project.
+
+  - title: Publications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+
+      - layout: left
+        border: weak
+        title: Building an AI prototype for audit planning, without handing judgment to the machine
+        caption: May 2026
+        link: https://medium.com/@buser.andre/building-an-ai-prototype-for-audit-planning-without-handing-judgment-to-the-machine-d90d0055689b
+        link_text: medium.com
+        description: |
+          A build story about using agentic coding to prototype an AI-assisted audit planning workflow. The article focuses on three audit-planning problems: supporting risk-based planning before fieldwork, creating a stronger draft Audit Work Program for review and refinement, and accelerating planning without handing professional judgment to the machine.
+
+      - layout: left
+        border: weak
+        title: The Importance of AI Use Cases in System Classification and Risk Assessment
+        #sub_title: The Feedback Loop Between Algorithms and the Real World
+        caption: Nov 2024
+        link: https://medium.com/@buser.andre/the-importance-of-ai-use-cases-in-system-classification-and-risk-assessment-97795efbd11e
+        link_text: medium.com
+        #quote: >
+        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+        description: |
+          The same AI system can carry very different risks depending on how it's used. A ML model trained on financial data is low-risk when used for internal discussions but high-risk when preparing public financial statements. This distinction matters for classification under frameworks like the EU AI Act, and most organizations get it wrong by classifying the system rather than the use case.
+        
+      - layout: left
+        border: weak
+        title: Applying Data Analysis in Internal Audit
+        #sub_title: The Feedback Loop Between Algorithms and the Real World
+        caption: Aug 2024
+        link: https://medium.com/@buser.andre/applying-data-analysis-in-internal-audit-77b7a5d6071e
+        link_text: medium.com
+        #quote: >
+        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+        description: |
+          Most IIA and ISACA guides on audit analytics stay high-level. As someone with a data science background doing audit work, I kept running into the gap between what those guides describe and what you actually need to do in practice.
+
+          This article bridges that gap. It adapts academic research methodology concepts to the practical world of internal audit, with code examples and concrete techniques you can apply to real engagements.
+
+      - layout: left
+        border: weak
+        title: Algorithm Ossification
+        sub_title: The Feedback Loop Between Algorithms and the Real World
+        caption: Jul 2024
+        link: https://medium.com/@buser.andre/algorithm-ossification-the-feedback-loop-between-algorithms-and-fe52ecfbf218?source=friends_link&sk=a7da82f03950e839491d34bc6aaa17b1
+        link_text: medium.com
+        #quote: >
+        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+        description: |
+          Algorithms recommend what we watch and decide whether we get loans. But what happens when they start reshaping the world they were trained to describe? Algorithm ossification is the feedback loop where algorithmic decisions shape the data that future algorithms learn from, reinforcing existing patterns rather than reflecting reality.
+      
+      - layout: left
+        border: weak
+        title: Understanding AI System Classification and Risk Assessment
+        #sub_title: Explaining these concepts and how they relate to each other
+        caption: Jul 2024
+        link: https://medium.com/@buser.andre/understanding-ai-system-classification-and-risk-assessment-in-ai-images-tables-a5da2c1eb510?sk=bce834d52700f6741d57f27f4faf6c36
+        link_text: medium.com
+        #quote: >
+        #  An overview of ChatGPT, delving into its underlying mechanisms, constraints, and practical applications.
+        description: |
+          In the evolving field of artificial intelligence (AI) governance, two important concepts can get mixed up: AI System Classification and AI System Risk Assessment. This confusion can lead to problems in managing the related AI risks. This article aims to explain these concepts and how they relate to each other, using insights from major AI governance frameworks.
+
+      - layout: left
+        border: weak
+        title: Understanding Dataset Splitting in Machine Learning
+        caption: Jul 2024
+        link: https://medium.com/@buser.andre
+        link_text: medium.com
+        description: |
+          Best practices for splitting datasets in machine learning projects. Covers train/validation/test splits, stratification, time-series considerations, and common pitfalls that lead to data leakage.
+
+      - layout: left
+        border: weak
+        title: Data Ethics Checklist
+        sub_title: Case Study
+        caption: Jul 2021
+        link: github.com/busera/mads__data_science_ethics_checklist
+        link_text: github.com
+        #quote: >
+        #  Originally developed in April 2021 as part of the University of Michigan's Master of Applied Data Science program, SIADS501 - Being a Data Scientist course. This manifesto continues to guide my practice and is regularly updated to reflect new insights and evolving best practices in the field.
+        description: |
+          A Data Ethics Checklist for data science projects, built for MADS SIADS593 (Ethics). Structured around the CRISP-DM model, it walks through ethical questions at each project phase: data collection, preparation, modeling, evaluation, and deployment. Covers transparency, accountability, fairness, and explainability.
+      
+      - layout: left
+        border: weak
+        title: Data Science Compass
+        sub_title: A Personal Manifesto
+        caption: Apr 2021
+        link: github.com/busera/mads__ds_manifesto
+        link_text: github.com
+        #quote: >
+        #  Originally developed in April 2021 as part of the University of Michigan's Master of Applied Data Science program, SIADS501 - Being a Data Scientist course. This manifesto continues to guide my practice and is regularly updated to reflect new insights and evolving best practices in the field.
+        description: |
+          Written for MADS SIADS501 (Being a Data Scientist) at the University of Michigan, April 2021. A personal set of principles for how I approach data science work: methodology choices, ethical commitments, and quality standards. Still updated as my practice evolves.
+      
+  - title: Earlier Publications (LinkedIn Pulse)
+    layout: list
+    content:
+
+      - layout: left
+        border: weak
+        title: Decomposing the Term Information Security Risk
+        caption: Apr 2017
+        link: https://www.linkedin.com/pulse/decomposing-term-information-security-risk-andr%2525C3%2525A9-buser-cisa-cissp/
+        link_text: linkedin.com
+        description: |
+          Three ways to explain “what is an information security risk?” depending on your audience: a one-line formula, a standards-based definition, and a deep dive using ISO 31000:2009. Written from the perspective of an IS Auditor and Information Security Risk Manager.
+
+      - layout: left
+        #border: weak
+        title: How to Write (Better) Information Security Risks
+        caption: Oct 2016
+        link: https://www.linkedin.com/pulse/how-write-better-information-security-risks-simplified-andr%25C3%25A9-buser/?trackingId=fiWEJHVvRv8bgyNzcwoHNg
+        link_text: linkedin.com
+        description: |
+          Risk assessments often blur the line between risks, threats, and vulnerabilities. This matters because the choice of mitigation controls depends on getting that distinction right. The article walks through how to separate these concepts and write risks that are actually useful for decision-making.
+
+  
+  - title: Data Science and Machine Learning Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+
+      - layout: left
+        border: weak
+        title: Exploring Microsoft Responsible AI Toolkit
+        sub_title: In Progress
+        caption: Jul 2024 - Present
+        link: github.com/busera/rai__diabetes_analysis
+        link_text: github.com
+        #additional_links:
+        #  - title:  sproogen/modern-resume-theme
+        #    icon: fab fa-github
+        #    url: github.com/busera/mads__decode_dementia
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Applying Microsoft's Responsible AI toolkit to healthcare ML, focusing on fairness assessment, interpretability, and error analysis.
+        description: | # this will include new lines to allow paragraphs
+          Exploring and evaluating Microsoft's Responsible AI toolkit using the scikit-learn Diabetes dataset. The project covers fairness assessment, interpretability techniques, and error analysis in a healthcare ML context. The goal is hands-on experience with the same responsible AI tooling I evaluate in audit work.
+
+      - layout: left
+        border: weak
+        title: Readability Optimizer
+        sub_title: In Progress
+        caption: May 2020 - Present
+        link: github.com/busera/proto__readability_optimizer
+        link_text: github.com
+        #additional_links:
+        #  - title:  sproogen/modern-resume-theme
+        #    icon: fab fa-github
+        #    url: github.com/busera/mads__decode_dementia
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          Originally developed in my free time to practice Python, Readability Optimizer is a prototype tool designed to help authors improve the readability of their texts.
+        description: | # this will include new lines to allow paragraphs
+          Started as a Python learning project before my MADS at the University of Michigan. Became the foundation for an in-house audit report quality tool.
+
+          The tool imports audit reports, scores each observation paragraph for readability, and flags sections that need rewriting. It runs multiple readability tests (Flesch-Kincaid, Gunning Fog, etc.) and produces actionable suggestions.
+
+          Since expanded with LLM-based text improvement recommendations for audit report quality.
+
+      - layout: left
+        border: weak
+        title: Decode Dementia
+        caption: Oct 2023 - Dec 2023
+        link: github.com/busera/mads__decode_dementia
+        link_text: github.com
+        quote: >
+          Key findings indicate that TBIs, especially those involving loss of consciousness, alongside the presence of the APOE ε4 allele and male gender, significantly increase dementia risk, while higher education levels seem to offer some protective effects.
+        description: | # this will include new lines to allow paragraphs
+          MADS capstone project investigating what happens after traumatic brain injuries, specifically the link to dementia. We used causal inference methods to trace how TBI severity, genetics (APOE ε4), and demographics interact to affect dementia risk.
+      
+          The complete report can be accessed here: [Decode Dementia Report](https://github.com/busera/MADS__SIADS699__Decode_Dementia/blob/main/docs/Decoding%20Dementia%20-%20Report.pdf)
+
+      - layout: left
+        border: weak
+        title: Analyze GDPR Fines
+        caption: Nov 2021 - Dec 2021
+        link: github.com/busera/mads__analyze_gdpr_fines
+        link_text: github.com
+        description: |
+          Data visualization of GDPR fines imposed by European data protection authorities (2018-2021). Identifies non-compliance focus areas and patterns relevant to healthcare sector data privacy strategy.
+
+          Report: [Analyze GDPR Fines](https://github.com/busera/mads__analyze_gdpr_fines/blob/main/reports/Analyze_GDPR_Fines-Final_Report.pdf)
+
+      - layout: left
+        #border: weak
+        title: Predicting Text Difficulty
+        caption: Nov 2022 - Dec 2022
+        link: github.com/busera/mads__predicting_text_difficulty
+        link_text: github.com
+        quote: >
+          Our analysis found that the fine-tuned Random Forest model demonstrated the highest accuracy score of 0.7544.
+        description: | # this will include new lines to allow paragraphs
+          Classifying sentences from Simple English Wikipedia to determine which ones need simplification for readers with lower reading proficiency (students, children, non-native speakers). Used both supervised and unsupervised learning techniques for feature extraction and sentence classification.
+      
+          The complete report can be accessed here: [Predicting Text Difficulty Report](https://github.com/busera/mads__predicting_text_difficulty/blob/main/reports/Predicting_Text_Difficulty-Final_Report.pdf)
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        border: weak
+        title: Major Global Pharmaceutical Company
+        sub_title: Senior Manager Internal Audit | 16+ Years
+        caption: Apr 2010 - Present
+        quote: >
+          20+ years across internal audit, information security, and global security in one of the world's largest pharmaceutical companies.
+
+        description: |
+          Currently leading AI governance audits, reviewing how AI Strategy, risk frameworks, and GenAI deployment controls work in practice. Built the team's Audit Planning Memorandum (APM) generation system from scratch (Copilot-optimized, YAML-driven), cutting planning document prep from days to hours. Created an interactive AI risk visualization and a prompt library for structured audit workflows.
+
+          Previously served as Senior Manager Global Security (2022-2024), where I built an LLM prototype for automated investigation report drafting (GPT-4, Llama2, in-house model), a sanctions extraction system using fuzzy matching, and automated case management with data quality assurance.
+
+          Earlier roles include Director of Information Security and Risk Management (team of 15, SOX IT compliance, GEMINI EPS vendor transition) and Senior IT Auditor for vendor audits.
+
+      - layout: left
+        title: Advisory & Industry Roles
+        sub_title: AI Governance
+        caption: Ongoing
+        description: |
+          Advisory Board Member at CISS LTD, providing strategic guidance on AI initiatives and technology governance. Member of Plateforme Tripartite, bringing industry, academia, and regulators together on AI ethics and digital innovation questions.
+
+  - title: Key Certifications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        border: weak
+        title: AI in Health Care — From Strategies to Implementation
+        sub_title: Harvard Medical School Professional Education
+        caption: Oct 2025
+        description: |
+          Executive program at Harvard Medical School covering AI strategy, clinical implementation frameworks, and governance in health care. Topics include ML model validation in clinical settings, regulatory considerations for health AI, and building organizational readiness for AI adoption. Relevant to pharma audit work where AI systems touch patient data and clinical workflows. Credential ID: 164056593.
+
+      - layout: left
+        border: weak
+        title: Advanced in AI Audit™ (AAIA™)
+        sub_title: ISACA
+        caption: Jul 2025
+        description: |
+          ISACA's credential for AI audit assurance, covering AI risk assessment, AI governance frameworks, and audit procedures for AI systems in regulated environments. The certification validates the ability to evaluate AI controls, assess model risk, and audit AI governance structures against standards like the EU AI Act and ISO 42001. Applied directly in AI governance audits in regulated pharma. Credential ID: 252865917.
+
+      - layout: left
+        border: weak
+        title: Certified SAFe 6 Agilist
+        sub_title: Scaled Agile, Inc.
+        caption: Jun 2025
+        description: |
+          SAFe 6 certification for Lean-Agile leadership at enterprise scale. Covers Lean portfolio management, Agile product delivery, and organizational agility. Applied in audit engagements assessing Agile transformation maturity and DevOps governance.
+
+      - layout: left
+        border: weak
+        title: Certified Fraud Examiner (CFE)
+        sub_title: Association of Certified Fraud Examiners (ACFE)
+        caption: Feb 2024
+        description: |
+          Fraud detection, prevention, and investigation. Covers financial transaction analysis, fraud law, investigative techniques, and anti-fraud controls. Applied directly in data theft investigations and Data Loss Prevention (DLP) work during my tenure as Senior Manager Global Security (2022-2024), where I built automated investigation tools and led forensic data analytics.
+     
+      - layout: left
+        border: weak
+        title: Certified Data Protection Officer (CDPO)
+        sub_title: PECB
+        caption: Feb 2019
+        description: |
+          Data protection strategy, GDPR compliance, and privacy impact assessments. Covers breach management, regulatory liaison, and translating privacy requirements into operational practice. Applied across audit and governance roles in regulated pharma, particularly in engagements involving patient data, employee records, and cross-border data transfers. CDPO bridges the gap between legal privacy requirements and the technical controls that auditors actually test.
+      
+      - layout: left
+        border: weak
+        title: Certified Information Systems Security Professional (CISSP)
+        sub_title: ISC2
+        caption: Jan 2016
+        description: |
+          Information security architecture across all CBK domains: risk management, asset security, network protection, identity management, security operations, and secure development. Applied as Director of Information Security and Risk Management (2014-2017), leading an international team of 15, chairing the vendor governance board, and managing SOX IT compliance. The CISSP provides the security architecture foundation for evaluating AI system security controls in current audit work.
+      
+      - layout: left
+        #border: weak
+        title: Certified Information Systems Auditor (CISA)
+        sub_title: ISACA
+        caption: Aug 2011
+        description: |
+          IT audit, control evaluation, and compliance. Foundation certification for all my audit work since 2011, covering IT governance, security assessment, and risk-based audit strategy. Starting with vendor IT audits and SOX testing, now applied to AI governance audits, cloud security assessments, and data governance reviews. The CISA methodology underpins how I structure every audit engagement. Credential ID: 1193963.
+  
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: University of Michigan
+        caption: Jan 2021 - Dec 2023
+        sub_title: MSc Applied Data Science
+        link: https://www.si.umich.edu/programs/master-applied-data-science
+        link_text: umich.edu
+        quote: >
+          University of Michigan School of Information — ranked among the top data science programs in the U.S.
+        description: |
+          Completed the Master of Applied Data Science (MADS) program, graduating December 2023 with a 3.97 GPA. The curriculum covered machine learning, deep learning, NLP, statistical inference, data engineering, and visualization end-to-end.
+
+          AI-relevant coursework included supervised and unsupervised learning, neural networks, causal inference, and responsible AI (fairness, interpretability, ethics). Capstone project used causal inference to investigate TBI and dementia risk (Decode Dementia). Additional courses in generative AI fundamentals, LLM programming (Llama), and data science ethics taken post-graduation (2024).
+
+          This degree is the technical foundation for my current AI governance audit work — it's one thing to review an AI risk framework on paper, another to actually understand what's happening inside the model.
+
+
+#  - title: Publications
+#    layout: list
+#    content: | # this will include new lines to allow paragraphs
+#      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+#      - Rock climbing
+#      - Gaming
+#      - Knitting
+#      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)#
+#
+#      Look at this cool image  
+#      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+
+# Footer
+footer_show_references: false
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+# Repository files that should not be published to the site
+exclude:
+  - CLAUDE.md
+  - tests
+  - Gemfile
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
