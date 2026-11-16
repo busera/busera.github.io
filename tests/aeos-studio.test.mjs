@@ -30,7 +30,7 @@ test('Studio is isolated, fixed dark, and does not load or mutate original theme
   assert.match(edition, /href="\.\.\/styles.css"/);
   assert.match(edition, /href="studio.css"/);
   assert.doesNotMatch(edition, /localStorage|theme-toggle|data-theme-bootstrap/);
-  assert.match(css, /--canvas: #181a1c;/);
+  assert.match(css, /--canvas: #2b3035;/);
   assert.match(css, /--accent: #9bd5f5;/);
   assert.doesNotMatch(css, /#d8f36a|#151714|#20231e/i);
 });

@@ -4,13 +4,40 @@ A separate visual edition of the AEOS introduction. Open `index.html` directly i
 
 ## Design and scope
 
-- AAIR Studio's Atlas supplied the visual reference: fine rules, two-column overview, serif emphasis, Avenir body text, monospaced labels and squared controls.
-- Neutral charcoal `#181a1c`, raised surface `#202326`, light-blue accent `#9bd5f5` in place of the reference's lime/green tones.
+- AAIR Studio's Atlas supplied the starting visual reference. The refined edition retains fine rules, a two-column introduction, Avenir body text, restrained serif section headings and compact monospaced labels, without the oversized italic headline or decorative dotted panels.
+- Lighter slate-charcoal `#2b3035`, raised surface `#353c43`, light-blue accent `#9bd5f5` in place of the reference's lime/green tones. Brighter text and clearer surface separation support longer reading.
 - A six-stage linked overview leads to the matching support-list items. The underlying AEOS main content, boundary statement and footer disclaimer remain unchanged.
 - Fixed dark appearance by design; the original page retains its independent light/dark toggle.
 - Shared structural styles, gallery script and existing dark diagrams are referenced from the parent directory. No new dependency, remote font, server or model is required. Existing diagram assets remain unchanged; this edition desaturates their display slightly to suit charcoal surfaces.
 
-## Acceptance evidence — 2026-11-16
+## Current refinement and acceptance — 2026-11-16
+
+Owner direction: lighten the dark edition and improve it toward a professional appearance without generic AI-template styling. This is a visual refinement, not a content rewrite or authorization to publish.
+
+The initial implementation is retained in Git commit `73bf5d8`. Before-images were also captured before this refinement. The current section supersedes the earlier palette/appearance evidence below; the original public site remains untouched.
+
+Implementation route: parent-owned bounded CSS and matching HTML theme-color/test-token change. The test activity was assessed separately and also kept parent-owned: existing deterministic checks plus browser rendering are sufficient; no library, model route or additional builder is needed.
+
+Changes:
+
+- Lighter slate-charcoal canvas and raised panels, brighter body and secondary text; the light-blue accent is unchanged.
+- Smaller, upright headline rather than oversized blue italic emphasis.
+- Six linked rows replace the overview tile grid. Dotted textures, dashed slogan frame and large blue closing slab are removed. Blue is reserved primarily for navigation/actions and restrained structural emphasis.
+- Existing content, disclaimers, sources, six destinations and five diagram dialogs are unchanged. HTML differs only in the browser theme-color metadata.
+
+Verification:
+
+- `node --test`: **29 passed, 0 failed**, including original-site regression checks and normalized main-content/footer/boundary parity.
+- Browser emulation at **1440, 1024, 768, 390 and 320 px**: no horizontal overflow, one H1, no broken loaded images; navigation, stage links and buttons are at least 44 px high.
+- All five diagram dialogs open/close using their real controls. The provider-contract disclosure toggles/restores.
+- Desktop and 390 px mobile screenshots inspected: no observed clipping or overlap. Computed desktop H1 is 59.04 px, its emphasis is upright, and overview background-image is `none`.
+- Calculated contrast over the three main text-bearing surfaces: body text **7.04–9.62:1**, secondary text **5.55–7.57:1**, light-blue text **6.14–8.39:1**; dark text on the blue button **10.29:1**. These are scoped token checks, not a full accessibility certification or diagram-image audit.
+- Design self-audit: **0/10** against the skill's ten template tells. No glossy gradient, default indigo, generic feature-card grid, accent rail, blur, oversized metric, icon topper, centered-stack composition, unchosen default type or wrong surface. The remaining numbered rows describe real engagement stages; compact labels and serif section headings retain the intended editorial reference. This is a design judgment, not an objective guarantee of taste.
+- `git diff --check` and byte-diff of original-site HTML/CSS/scripts against the pre-refinement commit: clean/unchanged.
+
+Stop condition met: a lighter and restrained local edition with preserved content and exercised controls. View emulation is not physical-device testing. No publishing or deployment is included.
+
+## Historical initial-edition acceptance — before refinement, 2026-11-16
 
 Requested outcome: a second version of the existing AEOS introduction using Studio's design language with light blue instead of green. Stop condition: separate local edition with intact content, working links/dialogs and readable desktop/mobile layouts. Publishing and replacement of the original are out of scope.
 
@@ -30,8 +57,8 @@ Limits: view emulation is not physical-device testing. No deployment, push or Gi
 
 ## Recommended owner review
 
-- `aeos/studio/index.html` — header, hero and six-stage overview: assess the fit with AAIR Studio and whether the editorial hierarchy suits AEOS.
-- `aeos/studio/studio.css` — palette and narrow-screen rules: assess the chosen blue, contrast and mobile density.
+- `aeos/studio/studio.css` — palette, H1, overview rows and closing section: assess the lighter appearance, readable hierarchy and restrained use of blue. Check the mobile density as well as desktop.
+- `aeos/studio/index.html` — unchanged main content and matching theme-color metadata; context only for this CSS-led refinement.
 
 This is optional visual review, not permission to publish. Source checks are complete; publishing requires a separate explicit decision.
 
