@@ -1,8 +1,20 @@
 # AEOS — Studio edition
 
-A separate visual edition of the AEOS introduction. Open `index.html` directly in a browser. The original remains at `../index.html`; this edition does not replace it or change its theme preference.
+A separate visual edition of the AEOS introduction. Open `white.html` for the white-background version requested by the owner, or `index.html` for the retained charcoal comparison. The original remains at `../index.html`; neither edition replaces it or changes its theme preference.
 
-## Design and scope
+## White-background version — 2026-11-16
+
+Owner direction: keep a white page background, not light grey. `white.html` uses the same refined layout and content as the charcoal edition, with a final colour-only layer in `white.css`. Main canvas and panels are white `#ffffff`; text is charcoal, with restrained blue `#21658c` for links/actions and subtle pale section/table surfaces. Existing light diagrams are used without the charcoal edition's desaturation filter. Original assets are unchanged.
+
+Route: parent-owned output-only HTML/CSS and separately assessed focused test activity; no external dependencies, builder delegation or new processing route. Goal/stop condition: a distinct white edition with unchanged main content and working desktop/mobile controls; no publication. Existing charcoal and original-site HTML/CSS remain byte-unchanged against `b05c059`.
+
+Verification: `node --test` **32 passed, 0 failed**, including three new white-edition tests for content/footer parity, colour-layer/metadata isolation and resources/fragments/five dialog bindings. Browser emulation at **1440, 1024, 768, 390 and 320 px** showed no horizontal overflow and no navigation/stage/button target below 44 px high. All five dialogs opened/closed and the contract disclosure toggled/restored. Desktop and mobile screenshots showed no observed overlap/clipping. Computed canvas is `rgb(255, 255, 255)`.
+
+Scoped token contrast checks across white and the two pale text-bearing surfaces: body text **7.35–8.17:1**, secondary text **5.26–5.85:1**, blue text **5.72–6.35:1**. Not a full accessibility certification. The self-contained downloadable edition was separately exercised: white canvas, no broken loaded images, zero remote resource requests and all five dialogs working. `git diff --check` is clean. View emulation is not physical-device acceptance. Nothing was published.
+
+Recommended owner review: `white.html` hero/overview and `white.css` palette — confirm the white background, blue accent and restrained density. The charcoal edition below is retained for comparison, not silently restyled.
+
+## Charcoal edition — design and scope
 
 - AAIR Studio's Atlas supplied the starting visual reference. The refined edition retains fine rules, a two-column introduction, Avenir body text, restrained serif section headings and compact monospaced labels, without the oversized italic headline or decorative dotted panels.
 - Lighter slate-charcoal `#2b3035`, raised surface `#353c43`, light-blue accent `#9bd5f5` in place of the reference's lime/green tones. Brighter text and clearer surface separation support longer reading.
@@ -10,7 +22,7 @@ A separate visual edition of the AEOS introduction. Open `index.html` directly i
 - Fixed dark appearance by design; the original page retains its independent light/dark toggle.
 - Shared structural styles, gallery script and existing dark diagrams are referenced from the parent directory. No new dependency, remote font, server or model is required. Existing diagram assets remain unchanged; this edition desaturates their display slightly to suit charcoal surfaces.
 
-## Current refinement and acceptance — 2026-11-16
+## Charcoal refinement and acceptance — 2026-11-16
 
 Owner direction: lighten the dark edition and improve it toward a professional appearance without generic AI-template styling. This is a visual refinement, not a content rewrite or authorization to publish.
 

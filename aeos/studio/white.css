@@ -1,0 +1,35 @@
+/* White-background companion to the refined Studio edition.
+   Layout and typography stay in studio.css; this file owns colour only. */
+:root {
+  color-scheme: light;
+  --primary: #21658c;
+  --primary-active: #174d6c;
+  --accent: #21658c;
+  --accent-medium: #21658c;
+  --accent-soft: #dceefa;
+  --ink: #202a32;
+  --body: #42515e;
+  --mute: #566775;
+  --canvas: #ffffff;
+  --card: #ffffff;
+  --surface-soft: #edf4f8;
+  --surface-muted: #f4f7f9;
+  --grid-light: #e4e9ed;
+  --hairline: #d3dce3;
+  --hairline-strong: #81909b;
+  --dark-panel: #f6f8fa;
+  --dark-card: #ffffff;
+  --on-dark: #202a32;
+  --on-dark-muted: #42515e;
+  --dark-grid: #d3dce3;
+  --inverted-panel: #f6f8fa;
+  --on-primary: #ffffff;
+  --header-background: #ffffff;
+  --risk: #a63d3b;
+  --warning: #f0d59b;
+}
+.studio-atlas { background: var(--canvas); }
+.product-figure img, .demo-dialog img { filter: none; }
+.demo-dialog { background: var(--canvas); color: var(--ink); }
+.demo-dialog-close { background: var(--canvas); color: var(--ink); }
+.studio-nav a:first-child:hover { background: var(--primary-active); }
