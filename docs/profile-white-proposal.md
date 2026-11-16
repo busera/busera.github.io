@@ -6,7 +6,9 @@ The owner approved backing up the previous homepage and publishing the white lay
 
 Root `index.md` now selects `profile-white`, the accepted positioning and section order, with `permalink: /` and `draft_preview: false`. `_config.yml`, the old stylesheet and all AEOS files are unchanged. The review route remains `/profile-proposal/` and retains its draft noindex marker. This is layout publication, not a new factual qualification of the copied biography, credentials, statuses or tenure wording.
 
-Native build path: no suitable local Jekyll gems/container were present, so no install or image pull was performed. Use the existing owner-authorized GitHub Pages `main`/root route for the real compile and deployment; require exact-head success and read back the live records/links/styles. If it fails, diagnose one bounded correction; do not introduce dependencies or keep a broken public entry point without reporting the blocker. Publication verification will be recorded here only after observation.
+**Published and verified:** the real native Jekyll build and deployment succeeded for source commit `b51e139f423f78b3480fac883b775899b3cf413c` in [Pages run 43947081302](https://github.com/busera/busera.github.io/actions/runs/43947081302). Pages API returned `built` for that exact commit. No local install or image pull was performed. The root at `https://busera.github.io/` now uses the native white layout; the earlier unexecuted-template limitation is closed by this actual build, not by the derived preview.
+
+Publication verification: `node --test` **39 passed, 0 failed**. Live native output retained all eight sections, 28 item bodies, four biography paragraphs and 26 source link destinations. The first strict text comparison exposed two straight-to-curly apostrophe differences introduced by `markdownify` in quote fields; exact diff confirmed those were the only non-whitespace differences before the comparison normalized that typography. All 17 disclosure controls toggled/restored. Live widths 1440/1024/768/390/320 px had no horizontal overflow or broken images and selected navigation/button/disclosure/social targets were at least 44 px high. Root has no draft noindex marker; the native review route retains it. Live stylesheet and AEOS main HTML matched their project bytes exactly; local diff proves the full AEOS tree unchanged. Compact evidence: [native publication checks](evidence/profile-white-publication.json).
 
 Implementation and follow-on test routes: parent-owned bounded front-matter/static-site change and focused source/backup tests, no new builder/provider route. Acceptance: retained backup verified, native Pages build successful, live root uses the white layout with all 28 records and source links, no mobile overflow, working disclosures, AEOS unchanged. Recommended owner review: the live root's introduction, selected-work ordering and disclosure density; source review of `index.md` is optional.
 
@@ -16,7 +18,7 @@ Prepared an **unpublished** white-background portfolio proposal in the repositor
 
 The original proposal stage did not compile the native template because no local Jekyll, Liquid or Kramdown gems were installed. That limitation is historical evidence, not a claim about the subsequently observed Pages build. Static native-source checks and the browser-tested visual preview did not themselves prove a GitHub Pages build.
 
-## Goal and boundary
+## Historical proposal goal and boundary
 
 Owner requested a drafted homepage proposal, then clarified that the new site/layout must use GitHub's required format. For this repository that means its existing Jekyll/GitHub Pages structure, not a new framework or a pasted screenshot. Scope is an opt-in proposal page/layout and a working review artifact, not replacing the root page or deploying it.
 
@@ -27,6 +29,7 @@ The surface is a professional portfolio (Decide/Learn), not an application dashb
 | Role | File |
 | --- | --- |
 | Existing content authority, unchanged | `_config.yml` |
+| Published root entry point and accepted section order | `index.md` |
 | Native Jekyll page/front matter and section order | `profile-proposal.html` |
 | Isolated native Liquid layout | `_layouts/profile-white.html` |
 | Reusable record rendering include | `_includes/profile-white-item.html` |
@@ -35,7 +38,7 @@ The surface is a professional portfolio (Decide/Learn), not an application dashb
 | Compact source/coverage evidence | `previews/profile-white-evidence.json` |
 | Focused source/preview checks | `tests/profile-proposal.test.mjs` |
 
-The custom layout does not inherit or replace the remote theme's `default` layout. Root `index.md` remains unchanged and still uses `default`. The proposal front matter supplies the ordering and short positioning sentence; existing descriptions, roles, dates, titles and links continue to come from `_config.yml` in the native source. Jekyll's standard `markdownify`, `relative_url`, `slugify`, `where` and Liquid loops/includes are used; no plugins, package changes, JavaScript rendering, fonts service or tracking are added. The proposal is marked `noindex,nofollow` while it is a draft.
+The custom layout does not inherit or overwrite the remote theme's `default` layout. Root `index.md` now selects `profile-white`; the backed-up entry point selected `default`. Root and review-page front matter supply the same ordering and short positioning sentence; existing descriptions, roles, dates, titles and links continue to come from unchanged `_config.yml`. Jekyll's standard `markdownify`, `relative_url`, `slugify`, `where` and Liquid loops/includes are used; no plugins, package changes, JavaScript rendering, fonts service or tracking are added. Only the separate proposal route is marked `noindex,nofollow`; the published root is not.
 
 ## Layout and content decisions
 
@@ -49,7 +52,7 @@ The custom layout does not inherit or replace the remote theme's `default` layou
 
 The local review HTML is a **derived visual artifact, not the editable content authority**. It was generated from canonical YAML metadata and a bounded read-only capture of the existing public site's Jekyll-rendered item bodies/biography. Source HTML was allowlisted to text/list/link/formatting elements; source scripts were not copied. Its stylesheet is byte-identical to the native stylesheet, and its portrait is embedded so it opens offline. This lets the owner review the design without claiming that the native Liquid template was executed locally.
 
-## Verification and limits — 2026-11-16
+## Historical proposal verification and limits — 2026-11-16
 
 Routing assessment: parent-owned bounded output-only HTML/CSS work, with a separately assessed parent-owned test/correction activity. A builder adds overhead without a concrete benefit for this reversible design preview. No new model/delegation route, acquisition, dependency or service was used.
 
@@ -63,12 +66,12 @@ Routing assessment: parent-owned bounded output-only HTML/CSS work, with a separ
 - `git diff --check` clean. Byte-diff against the starting commit confirmed `_config.yml`, `index.md`, `assets/main.scss` and the whole `aeos/` tree unchanged.
 - Design self-audit: no glossy gradients, generic indigo, equal feature-card hero, accent rails, blur, fabricated statistics, icon toppers, centered-stack composition or unchosen default typography. The visual vocabulary follows the accepted white AEOS direction. This is a design judgment, not an objective guarantee of taste or a full accessibility audit.
 
-Not verified: a native Jekyll/Pages compile, physical devices, external link availability, currentness of retained biographical claims or production replacement. No files were pushed and nothing was published.
+At the proposal stage, a native Jekyll/Pages compile and production replacement had not been verified; no files had been pushed. Those two gates are now closed by the current publication evidence above. Physical devices, external link availability and factual currentness of retained biographical claims remain outside this layout-only scope.
 
 ## Recommended owner review
 
-1. `previews/profile-white.html` — name/positioning/portrait balance, whether selected work is prominent enough, and the amount of material visible versus expandable.
-2. `profile-proposal.html` — proposed section order and positioning sentence; existing record prose is unchanged.
-3. `_layouts/profile-white.html` — context for later native-build verification; do not treat the working visual preview as evidence this template has compiled.
+1. Live `https://busera.github.io/` — name/positioning/portrait balance, selected-work prominence and disclosure density. The self-contained preview remains a historical review artifact, not today's live authority.
+2. `index.md` — accepted root layout, section order and positioning sentence; `_config.yml` record prose is unchanged.
+3. `_backups/profile-2026-11-16-before-white/snapshot.html` — readable previous version. Its exact original HTTP bodies and source files are retained alongside it; the snapshot's grid fallbacks are a documented offline-rendering limit.
 
-After approval, validate the native route through an authorized existing build path before changing the root page. Promotion would be a separate scoped change to the root page's front matter and draft indexing state; preserve the old homepage and verify the actual Pages output. No installation, push, publication or root replacement follows automatically from this prepared proposal.
+The owner-approved publication and native verification are complete. This evidence-only closure changes this document and the compact verification JSON, not the deployed layout, source content, styles, backup or AEOS. No further installation, redesign or claim rewrite is authorized by closing this publication.
