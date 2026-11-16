@@ -1,6 +1,6 @@
 # AEOS introduction website
 
-The white-background Studio design is the selected main version at `index.html`, following the owner's explicit publication instruction on 2026-11-16. The personal profile site at the repository root is unchanged. Publication/deployment evidence is recorded below after remote verification.
+The white-background Studio design is published as the main version at `index.html`, following the owner's explicit publication instruction on 2026-11-16. The personal profile site at the repository root is unchanged. Verified deployment evidence is recorded below.
 
 ## Saved versions
 
@@ -41,4 +41,10 @@ Pre-publication checks:
 
 ## Deployment verification
 
-Pending the approved push and live readback. This is not a deployment-success claim.
+- Website source commit: `68076a9b867ccc9a950b830f24e32bbf3d19b9de`.
+- Exact-head [GitHub Pages build and deployment](https://github.com/busera/busera.github.io/actions/runs/43879264226): completed successfully. Pages build API returned `built` for that same commit with no error.
+- All five page entries in the saved-versions table returned HTTP 200 and bytes exactly equal to their project files. Shared base/layout/white/initial stylesheets, gallery/theme scripts and all five light diagram assets were also read back: **16 of 16** exact matches.
+- Actual live main URL `https://busera.github.io/aeos/#main` opened in the browser with theme `studio-white`, computed white canvas, no horizontal overflow/broken loaded images/missing local fragments, and all five diagram dialogs opening and closing correctly.
+- The deployment runner emitted hosted-action Node runtime and Ubuntu-image migration notices; the build/deploy succeeded. No workflow migration or repository configuration change was included.
+
+The website is published; retained alternatives remain directly reachable at the paths above. Subsequent evidence-only commits do not alter the verified HTML/CSS/scripts/assets.
